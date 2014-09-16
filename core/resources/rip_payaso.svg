@@ -24,14 +24,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="568.34265"
-     inkscape:cy="543.69861"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="289.65216"
+     inkscape:cy="761.52672"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4210"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="994"
+     inkscape:window-width="1440"
+     inkscape:window-height="849"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -211,9 +211,27 @@
            height="121.42857"
            x="222.85715"
            y="695.2193" /></flowRegion><flowPara
-         id="flowPara3858"></flowPara></flowRoot>    <g
+         id="flowPara3858" /></flowRoot>    <g
        id="g4210"
        transform="translate(-230.31478,-329.30973)">
+      <path
+         style="opacity:0.62331835999999996;fill:#ccdeff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 800.73053,430.97008 c -47.65485,0.44572 -104.68977,117.7954 -104.68977,117.7954 0,0 32.64597,59.97684 48.58619,42.11623 12.31702,-13.80089 66.82281,-26.10416 66.82281,-26.10416 18.50776,-12.47264 -84.26702,3.30145 -10.18424,-16.21151 2.49474,-0.6571 8.80521,-7.79962 6.45627,-8.86641 -12.90532,-5.86112 -52.57032,8.97274 -52.57032,8.97274 0,0 67.89542,-31.64831 65.07767,-36.93969 -9.72106,-18.25492 -63.42828,21.95306 -63.42828,21.95306 0,0 62.12328,-32.7743 66.30588,-44.15162 36.72434,-99.89593 -89.53979,42.3917 -89.53979,42.3917 0,0 78.26224,-101.05956 67.16358,-100.95574 z"
+         id="path3079"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scsssscscscs"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+         sodipodi:nodetypes="scsssscscscs"
+         inkscape:connector-curvature="0"
+         id="path3849"
+         d="m 452.37374,412.78733 c 47.65485,0.44572 104.68977,117.7954 104.68977,117.7954 0,0 -32.64597,59.97684 -48.58619,42.11623 -12.31702,-13.80089 -66.82281,-26.10416 -66.82281,-26.10416 -18.50776,-12.47264 84.26702,3.30145 10.18424,-16.21151 -2.49474,-0.6571 -8.80521,-7.79962 -6.45627,-8.86641 12.90532,-5.86112 52.57032,8.97274 52.57032,8.97274 0,0 -67.89542,-31.64831 -65.07767,-36.93969 9.72106,-18.25492 63.42828,21.95306 63.42828,21.95306 0,0 -62.12328,-32.7743 -66.30588,-44.15162 -36.72434,-99.89593 89.53979,42.3917 89.53979,42.3917 0,0 -78.26224,-101.05956 -67.16358,-100.95574 z"
+         style="opacity:0.62331836;fill:#ccdeff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <g
          style="opacity:0.62331836"
          id="g4185">
