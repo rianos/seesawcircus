@@ -1,5 +1,6 @@
 package es.eduardoanton.proyectos.juegos;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 
@@ -11,13 +12,16 @@ public class Payaso {
 	public Vector2 aceleracion;
 	public Rectangle dimensiones;
 	private GameWorld game;
-	public enum PayasoState { STANDBYL, STANDBYR, FLYING, JUMPING,MESS };
+	public enum PayasoState { STANDBYL, STANDBYR, FLYING, JUMPING,MESSDEATH,MESSCRASH, MESSCRY };
 	public PayasoState state;
+	public int PayasoID;
 	public final float vellimit = -600f;
 	private float time= 0f;
+	private boolean angelSplayed = false;
 	
 	
-	Payaso (int x, int y, int vx, int vy, PayasoState s, GameWorld game){
+	Payaso (int x, int y, int vx, int vy, PayasoState s, GameWorld game,int id){
+		PayasoID = id;
 		posicion = new Vector2(x,y);
 		velocidad = new Vector2(vx,vy);
 		//dimensiones = new Rectangle(0,0,45,62);
@@ -58,16 +62,43 @@ public class Payaso {
 					}
 				}
 				if (posicion.y < 20 ){
-					state = PayasoState.MESS;
-					time = delta;
-					posicion.y = -100;
-					game.crash.play();
+					if ( velocidad.y < -1200) {
+						state = PayasoState.MESSDEATH;
+						game.hurtS.play();
+						time = delta;
+						velocidad.x = 0f;
+						posicion.y = 25;
+						velocidad.y =  0f;
+					}else{
+						state = PayasoState.MESSCRASH;
+						time = delta;
+						posicion.y = -100;
+						game.crashS.play();
+					}
 				}
 			}
 		}
-		if ( state == PayasoState.MESS){
+		if ( state == PayasoState.MESSCRASH){
 			time+=delta;
 			if (time > 2){
+				state=PayasoState.FLYING;
+				velocidad.y = 500;
+				velocidad.x = 0;
+				posicion.y = 400;
+				posicion.x = 400;
+			}
+		}
+		if ( state == PayasoState.MESSDEATH){
+			time+=delta;
+			if (time > 0.5f && ! angelSplayed){
+				game.angelS.play();
+				velocidad.y = 200f;
+				angelSplayed = true;
+			}
+			posicion.add(velocidad.cpy().scl(delta));
+			
+			if (posicion.y > game.worlheight){
+				angelSplayed = false;
 				state=PayasoState.FLYING;
 				velocidad.y = 500;
 				velocidad.x = 0;

@@ -25,6 +25,8 @@ public class SeeSawCircus extends Game {
 		asset.load("payaso33.png", Texture.class);
 		asset.load("payaso2.png", Texture.class);
 		asset.load("payaso3.png", Texture.class);
+		asset.load("payasodeath.png", Texture.class);
+		asset.load("lapida.png", Texture.class);
 		asset.load("redondo.png", Texture.class);
 		asset.load("fondo.png", Texture.class);
 		asset.finishLoading();

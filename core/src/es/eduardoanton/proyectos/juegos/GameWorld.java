@@ -14,14 +14,18 @@ public class GameWorld {
 	public final static int maxvel = 1250;
 	public final static float redimen = 4.5f;
 	public final static float redimen2 = 12;
-	public Sound boing,crash; 
+	public final static int worlheight = 600;
+	public final static int worlwidth = 1024;
+	public Sound boingS,crashS,angelS,hurtS; 
 
 	GameWorld(){
 		trampolin = new Trampolin();
-		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this);
-		payaso2 = new Payaso(500,500,-90,0,PayasoState.FLYING, this);
-		boing = Gdx.audio.newSound(Gdx.files.internal("jump.ogg"));
-		crash = Gdx.audio.newSound(Gdx.files.internal("crash.ogg"));
+		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this, 1);
+		payaso2 = new Payaso(500,500,-90,0,PayasoState.FLYING, this, 2);
+		boingS = Gdx.audio.newSound(Gdx.files.internal("jump.ogg"));
+		crashS = Gdx.audio.newSound(Gdx.files.internal("crash.ogg"));
+		angelS = Gdx.audio.newSound(Gdx.files.internal("angel.mp3"));
+		hurtS = Gdx.audio.newSound(Gdx.files.internal("hurt.ogg"));
 
 	}
 	
@@ -71,7 +75,7 @@ public class GameWorld {
 				payaso1.state = PayasoState.FLYING;
 			}
 		}
-		boing.play();
+		boingS.play();
 		
 	}
 }

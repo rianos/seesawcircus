@@ -17,7 +17,7 @@ public class IngameScreen implements Screen{
 	private OrthographicCamera cam;
 	private Texture trampolintexturel;
 	private Texture trampolintexturer;
-	private Texture payaso,payaso2,fondo;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida;
 	private Sprite redondo;
 
 	private GameWorld gamew;
@@ -33,6 +33,8 @@ public class IngameScreen implements Screen{
 		trampolintexturer = game.getAsset().get("trampolin2.png", Texture.class );
 		payaso = game.getAsset().get("payaso22.png", Texture.class);
 		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
+		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
+		lapida =game.getAsset().get("lapida.png", Texture.class);
 		//payaso = game.getAsset().get("payaso2.png", Texture.class);
 		//payaso2 = game.getAsset().get("payaso3.png", Texture.class);
 				
@@ -45,12 +47,43 @@ public class IngameScreen implements Screen{
 	@Override
 	public void render(float delta) {
 		gamew.update(delta);
-		Gdx.gl.glClearColor(0, 0,0, 1);
+		Gdx.gl.glClearColor(0.2f,0.5f ,0.5f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		batch.begin();
 		//batch.draw(fondo,0,0);
-		batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
-		batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+		if (gamew.payaso1.state == Payaso.PayasoState.MESSDEATH){
+			renderCrashDeath(gamew.payaso1, gamew.payaso2,delta);
+		}
+		if (gamew.payaso2.state == Payaso.PayasoState.MESSDEATH){
+			renderCrashDeath(gamew.payaso2, gamew.payaso1,delta);
+		}
+	
+		if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH ){
+			batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
+			batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+			if ( gamew.trampolin.view == TrampolinState.RIGHT){
+				batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+			}else{
+				batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+			}
+			redondo.setX(gamew.trampolin.posicion.x + 62);
+			redondo.setY(gamew.trampolin.posicion.y);
+			redondo.rotate(gamew.redondo * delta);
+			redondo.draw(batch);
+		}
+		batch.end();
+			
+	}
+
+
+	public void renderCrashDeath(Payaso payasomuerto, Payaso payasovivo,float delta){
+		batch.draw(payasodeath, payasomuerto.posicion.x, payasomuerto.posicion.y);
+		batch.draw(lapida, payasomuerto.posicion.x - 20, 20);
+		if (payasovivo.PayasoID == 1){
+			batch.draw(payaso, payasovivo.posicion.x,payasovivo.posicion.y);
+		}else{
+			batch.draw(payaso2, payasovivo.posicion.x,payasovivo.posicion.y);
+		}
 		if ( gamew.trampolin.view == TrampolinState.RIGHT){
 			batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
 		}else{
@@ -60,10 +93,8 @@ public class IngameScreen implements Screen{
 		redondo.setY(gamew.trampolin.posicion.y);
 		redondo.rotate(gamew.redondo * delta);
 		redondo.draw(batch);
-		batch.end();
-			
 	}
-
+	
 	@Override
 	public void resize(int width, int height) {
 		// TODO Auto-generated method stub
