@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
 
@@ -16,8 +17,8 @@ public class IngameScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel;
-	private Texture trampolintexturer;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida;
+	private TextureRegion trampolintexturer;
 	private Sprite redondo;
 
 	private GameWorld gamew;
@@ -30,7 +31,8 @@ public class IngameScreen implements Screen{
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);	
 		trampolintexturel = game.getAsset().get("trampolin.png", Texture.class );
-		trampolintexturer = game.getAsset().get("trampolin2.png", Texture.class );
+		trampolintexturer = new TextureRegion(trampolintexturel);
+		trampolintexturer.flip(true,false);
 		payaso = game.getAsset().get("payaso22.png", Texture.class);
 		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
