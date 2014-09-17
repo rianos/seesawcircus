@@ -62,7 +62,7 @@ public class Payaso {
 					}
 				}
 				if (posicion.y < 20 ){
-					if ( velocidad.y < -1200) {
+					if ( velocidad.y < -1000) {
 						state = PayasoState.MESSDEATH;
 						game.hurtS.play();
 						time = delta;
@@ -81,7 +81,7 @@ public class Payaso {
 		}
 		if ( state == PayasoState.MESSCRASH){
 			time+=delta;
-			if (time > 4){
+			if (time > 3.5){
 				state=PayasoState.FLYING;
 				velocidad.y = 500;
 				velocidad.x = 0;
