@@ -16,7 +16,7 @@ public class GameWorld {
 	public final static float redimen2 = 12;
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
-	public Sound boingS,crashS,angelS,hurtS; 
+	public Sound boingS,crashS,angelS,hurtS,cryS; 
 
 	GameWorld(){
 		trampolin = new Trampolin();
@@ -26,6 +26,7 @@ public class GameWorld {
 		crashS = Gdx.audio.newSound(Gdx.files.internal("crash.ogg"));
 		angelS = Gdx.audio.newSound(Gdx.files.internal("angel.mp3"));
 		hurtS = Gdx.audio.newSound(Gdx.files.internal("hurt.ogg"));
+		cryS = Gdx.audio.newSound(Gdx.files.internal("cry.ogg"));
 
 	}
 	

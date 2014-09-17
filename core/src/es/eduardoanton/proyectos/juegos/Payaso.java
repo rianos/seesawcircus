@@ -72,15 +72,16 @@ public class Payaso {
 					}else{
 						state = PayasoState.MESSCRASH;
 						time = delta;
-						posicion.y = -100;
-						game.crashS.play();
+						posicion.y = 25;
+						game.hurtS.play();
+						game.cryS.play();
 					}
 				}
 			}
 		}
 		if ( state == PayasoState.MESSCRASH){
 			time+=delta;
-			if (time > 2){
+			if (time > 4){
 				state=PayasoState.FLYING;
 				velocidad.y = 500;
 				velocidad.x = 0;

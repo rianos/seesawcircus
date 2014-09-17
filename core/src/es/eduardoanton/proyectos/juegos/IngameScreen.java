@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -18,8 +19,10 @@ public class IngameScreen implements Screen{
 	private OrthographicCamera cam;
 	private Texture trampolintexturel;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida;
-	private TextureRegion trampolintexturer;
+	private TextureRegion trampolintexturer,p1llorando[],p2llorando[];
 	private Sprite redondo;
+	public Animation p1llorandoA,p2llorandoA;
+	private float statetime = 0f;
 
 	private GameWorld gamew;
 		
@@ -37,6 +40,16 @@ public class IngameScreen implements Screen{
 		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
 		lapida =game.getAsset().get("lapida.png", Texture.class);
+		p1llorando = new TextureRegion[2];
+		p1llorando[0] =  new TextureRegion(game.getAsset().get("p1c1.png", Texture.class));
+		p1llorando[1] =  new TextureRegion(game.getAsset().get("p1c2.png", Texture.class));
+		p1llorandoA = new Animation(0.1f,p1llorando);
+		p1llorandoA.setPlayMode(Animation.PlayMode.LOOP);
+		p2llorando = new TextureRegion[2];
+		p2llorando[0] =  new TextureRegion(game.getAsset().get("p2c1.png", Texture.class));
+		p2llorando[1] =  new TextureRegion(game.getAsset().get("p2c2.png", Texture.class));
+		p2llorandoA = new Animation(0.1f,p2llorando);
+		p2llorandoA.setPlayMode(Animation.PlayMode.LOOP);
 		//payaso = game.getAsset().get("payaso2.png", Texture.class);
 		//payaso2 = game.getAsset().get("payaso3.png", Texture.class);
 				
@@ -59,8 +72,17 @@ public class IngameScreen implements Screen{
 		if (gamew.payaso2.state == Payaso.PayasoState.MESSDEATH){
 			renderCrashDeath(gamew.payaso2, gamew.payaso1,delta);
 		}
-	
-		if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH ){
+		if (gamew.payaso1.state == Payaso.PayasoState.MESSCRASH){
+			statetime +=delta;
+			renderCryingDeath(gamew.payaso1, gamew.payaso2,delta);
+		}
+		if (gamew.payaso2.state == Payaso.PayasoState.MESSCRASH){
+			statetime +=delta;
+			renderCryingDeath(gamew.payaso2, gamew.payaso1,delta);
+		}
+		if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH 
+			&&	gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
+				){
 			batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
 			batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
 			if ( gamew.trampolin.view == TrampolinState.RIGHT){
@@ -84,6 +106,25 @@ public class IngameScreen implements Screen{
 		if (payasovivo.PayasoID == 1){
 			batch.draw(payaso, payasovivo.posicion.x,payasovivo.posicion.y);
 		}else{
+			batch.draw(payaso2, payasovivo.posicion.x,payasovivo.posicion.y);
+		}
+		if ( gamew.trampolin.view == TrampolinState.RIGHT){
+			batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+		}else{
+			batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+		}
+		redondo.setX(gamew.trampolin.posicion.x + 62);
+		redondo.setY(gamew.trampolin.posicion.y);
+		redondo.rotate(gamew.redondo * delta);
+		redondo.draw(batch);
+	}
+	
+	public void renderCryingDeath(Payaso payasomuerto, Payaso payasovivo,float delta){
+		if (payasovivo.PayasoID == 1){
+			batch.draw(p2llorandoA.getKeyFrame(statetime), payasomuerto.posicion.x, payasomuerto.posicion.y);
+			batch.draw(payaso, payasovivo.posicion.x,payasovivo.posicion.y);
+		}else{
+			batch.draw(p1llorandoA.getKeyFrame(statetime), payasomuerto.posicion.x, payasomuerto.posicion.y);
 			batch.draw(payaso2, payasovivo.posicion.x,payasovivo.posicion.y);
 		}
 		if ( gamew.trampolin.view == TrampolinState.RIGHT){
