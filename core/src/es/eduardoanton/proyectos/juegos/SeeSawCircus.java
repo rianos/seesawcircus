@@ -3,6 +3,7 @@ package es.eduardoanton.proyectos.juegos;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
 public class SeeSawCircus extends Game {
 
@@ -39,6 +40,12 @@ public class SeeSawCircus extends Game {
 		asset.load("lapida.png", Texture.class);
 		asset.load("redondo.png", Texture.class);
 		asset.load("fondo.png", Texture.class);
+		asset.load("corazon.png", Texture.class);
+		asset.load("carameloa.png", Texture.class);
+		asset.load("caramelor.png", Texture.class);
+		asset.load("carameloz.png", Texture.class);
+		asset.load("caramelov.png", Texture.class);
+		asset.load("fuente.fnt", BitmapFont.class);
 		asset.finishLoading();
 	}
 	

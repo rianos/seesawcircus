@@ -6,9 +6,11 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.MathUtils;
 
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
 
@@ -18,11 +20,15 @@ public class IngameScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon;
+	private Texture carameloa,carameloz,caramelov,caramelor;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA;
+	public BitmapFont marcador,gameover;
 	private float statetime = 0f;
+	public Texture caramelos[];
+
 
 	private GameWorld gamew;
 	private float a = 0f;
@@ -40,6 +46,13 @@ public class IngameScreen implements Screen{
 		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
 		lapida =game.getAsset().get("lapida.png", Texture.class);
+		corazon =game.getAsset().get("corazon.png", Texture.class);
+		caramelos = new Texture[4];
+		caramelos[0] = game.getAsset().get("carameloa.png", Texture.class);
+		caramelos[1] = game.getAsset().get("caramelov.png", Texture.class);
+		caramelos[2] = game.getAsset().get("caramelor.png", Texture.class);
+		caramelos[3] = game.getAsset().get("carameloa.png", Texture.class);
+
 		p1llorando = new TextureRegion[2];
 		p1llorando[0] =  new TextureRegion(game.getAsset().get("p1c1.png", Texture.class));
 		p1llorando[1] =  new TextureRegion(game.getAsset().get("p1c2.png", Texture.class));
@@ -72,6 +85,8 @@ public class IngameScreen implements Screen{
 		gamew = new GameWorld();
 		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
 		
+		marcador =game.getAsset().get("fuente.fnt", BitmapFont.class);
+		
 	}
 	@Override
 	public void render(float delta) {
@@ -80,9 +95,26 @@ public class IngameScreen implements Screen{
 		Gdx.gl.glClearColor(0.1f,0.2f ,0.2f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		batch.begin();
-		batch.draw(p1estrellasA.getKeyFrame(a), 100,200);
-		batch.draw(p2estrellasA.getKeyFrame(a), 200,200);
+	
+		for (int i=1;i<=10;i++){
+			//batch.draw(caramelos[1], 0 + (carameloa.getWidth() + 20)*i,450);
+			//batch.draw(caramelos[MathUtils.random(0,3)], 0 + (carameloa.getWidth() + 20)*i,450);
+			//batch.draw(caramelos[MathUtils.random(0,3)], 0 + (carameloa.getWidth() + 20)*i,500);
+			//batch.draw(caramelos[MathUtils.random(0,3)], 0 + (carameloa.getWidth() + 20)*i,550);
+		}
+		
+		marcador.draw(batch,String.format("%d", gamew.scoreboard), 300 - (marcador.getBounds(String.format("%d", gamew.scoreboard)).width), 400);
+		for ( int i=1;i<=gamew.vidas;i++){
+			batch.draw(corazon, 500 + (corazon.getWidth() + 10)*i,400);
+		}
+		//batch.draw(p1estrellasA.getKeyFrame(a), 100,200);
+		//batch.draw(p2estrellasA.getKeyFrame(a), 200,200);
 		//batch.draw(fondo,0,0);
+		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
+			marcador.setScale(3);
+			//marcador.setColor(0.5f, 0.3f, 0.7f, 1f);
+			marcador.draw(batch, "GAME OVER", 15, 400);
+		}
 		if (gamew.payaso1.state == Payaso.PayasoState.MESSDEATH){
 			renderCrashDeath(gamew.payaso1, gamew.payaso2,delta);
 		}

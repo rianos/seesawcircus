@@ -54,14 +54,17 @@ public class Payaso {
 					if ( game.trampolin.view == TrampolinState.LEFT){
 						if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){
 							game.flip();
+							game.scoreboard+=10;
 						}
 					}else{
 						if ( posicion.x  < game.trampolin.posicion.x + game.trampolin.dimensiones.width && (posicion.x + (dimensiones.width/2)) > (game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 ))){
 							game.flip();
+							game.scoreboard+=10;
 						}
 					}
 				}
 				if (posicion.y < 20 ){
+				game.vidas--;
 					if ( velocidad.y < -1000) {
 						state = PayasoState.MESSDEATH;
 						game.hurtS.play();

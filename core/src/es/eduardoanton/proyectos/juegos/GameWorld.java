@@ -16,7 +16,11 @@ public class GameWorld {
 	public final static float redimen2 = 12;
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
-	public Sound boingS,crashS,angelS,hurtS,cryS; 
+	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS; 
+	public long scoreboard = 1;
+	public short vidas = 3;
+	public enum GameState { GAMEOVER, RUNNING};
+	public GameState gamestate  = GameState.RUNNING;
 
 	GameWorld(){
 		trampolin = new Trampolin();
@@ -27,6 +31,8 @@ public class GameWorld {
 		angelS = Gdx.audio.newSound(Gdx.files.internal("angel.mp3"));
 		hurtS = Gdx.audio.newSound(Gdx.files.internal("hurt.ogg"));
 		cryS = Gdx.audio.newSound(Gdx.files.internal("cry.ogg"));
+		mareoS = Gdx.audio.newSound(Gdx.files.internal("mareo.ogg"));
+		
 
 	}
 	
@@ -35,6 +41,9 @@ public class GameWorld {
 		trampolin.update(delta);
 		payaso1.update(delta);
 		payaso2.update(delta);
+		if ( this.vidas == 0){
+			this.gamestate = GameState.GAMEOVER;
+		}
 	}
 	
 	public void flip(){
@@ -79,4 +88,5 @@ public class GameWorld {
 		boingS.play();
 		
 	}
+	
 }
