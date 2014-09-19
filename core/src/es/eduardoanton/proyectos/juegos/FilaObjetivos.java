@@ -23,7 +23,8 @@ public class FilaObjetivos {
 	public FilaObjetivos(int id, float x, float y, float vel,GameWorld gam){
 		this.ID = id;
 		posicion = new Vector2(x,y);
-		velocidad = new Vector2(MathUtils.random(300,600)*vel,0);
+		velocidad = new Vector2(MathUtils.random(200,400)*vel,0);
+	
 		//velocidad = new Vector2(0,0);
 		elementos = new int[10];
 		game = gam;
@@ -46,6 +47,15 @@ public class FilaObjetivos {
 						game.scoreboard+=10;
 						quedan--;
 						elementos[i]= -1;
+						if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
+							p.velocidad.y*=-1;
+							//p.velocidad.y+=20;
+						}
+						if ( (posicion.y   > p.posicion.y ) && p.velocidad.y > 0){
+							p.velocidad.y=-10;
+							//p.velocidad.y+=20;
+						}
+						
 						game.clanS.play();
 					}		
 				}

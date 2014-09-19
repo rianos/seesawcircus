@@ -25,8 +25,8 @@ public class GameWorld {
 
 	GameWorld(){
 		trampolin = new Trampolin();
-		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this, 1);
-		payaso2 = new Payaso(500,500,-90,0,PayasoState.FLYING, this, 2);
+		payaso1 = new Payaso(400,50,0,0,PayasoState.STANDBYL, this, 1);
+		payaso2 = new Payaso(500,300,0,0,PayasoState.FLYING, this, 2);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
@@ -110,7 +110,7 @@ public class GameWorld {
 				payaso1.state = PayasoState.FLYING;
 			}
 		}
-		boingS.play(0.5f);	
+		boingS.play(0.3f);	
 	}
 	
 	public Payaso  getPayasoFlying(){

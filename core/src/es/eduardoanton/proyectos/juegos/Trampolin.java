@@ -11,7 +11,7 @@ public class Trampolin {
 	public TrampolinState view;
 	
 	Trampolin (){
-		posicion = new Vector2(512,40);
+		posicion = new Vector2(410,40);
 		velocidad = new Vector2(0,0);
 		dimensiones = new Rectangle(0,0,170,42);
 		view = TrampolinState.RIGHT;

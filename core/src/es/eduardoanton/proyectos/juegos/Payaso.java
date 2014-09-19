@@ -93,6 +93,7 @@ public class Payaso {
 				velocidad.x = 0;
 				posicion.y = 400;
 				posicion.x = 400;
+			    game.trampolin.posicion.x = 410;
 			}
 		}
 		if ( state == PayasoState.MESSDEATH){
@@ -112,6 +113,7 @@ public class Payaso {
 				velocidad.x = 0;
 				posicion.y = 400;
 				posicion.x = 400;
+				 game.trampolin.posicion.x = 410;
 			}
 		}
 	}
