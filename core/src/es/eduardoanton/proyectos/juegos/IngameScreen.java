@@ -10,6 +10,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.MathUtils;
 
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
@@ -51,7 +53,7 @@ public class IngameScreen implements Screen{
 		caramelos[0] = game.getAsset().get("carameloa.png", Texture.class);
 		caramelos[1] = game.getAsset().get("caramelov.png", Texture.class);
 		caramelos[2] = game.getAsset().get("caramelor.png", Texture.class);
-		caramelos[3] = game.getAsset().get("carameloa.png", Texture.class);
+		caramelos[3] = game.getAsset().get("carameloz.png", Texture.class);
 
 		p1llorando = new TextureRegion[2];
 		p1llorando[0] =  new TextureRegion(game.getAsset().get("p1c1.png", Texture.class));
@@ -92,28 +94,30 @@ public class IngameScreen implements Screen{
 	public void render(float delta) {
 		a+=delta;
 		gamew.update(delta);
-		Gdx.gl.glClearColor(0.1f,0.2f ,0.2f, 1);
+		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
+		
 		batch.begin();
-	
-		for (int i=1;i<=10;i++){
-			//batch.draw(caramelos[1], 0 + (carameloa.getWidth() + 20)*i,450);
-			//batch.draw(caramelos[MathUtils.random(0,3)], 0 + (carameloa.getWidth() + 20)*i,450);
-			//batch.draw(caramelos[MathUtils.random(0,3)], 0 + (carameloa.getWidth() + 20)*i,500);
-			//batch.draw(caramelos[MathUtils.random(0,3)], 0 + (carameloa.getWidth() + 20)*i,550);
+		for (int j=0;j<4;j++){
+			for (int i=0;i<10;i++){
+				if (gamew.arrayFilaObjetivos[j].elementos[i] != -1 ){
+					batch.draw(caramelos[(gamew.arrayFilaObjetivos[j].elementos[i])], gamew.arrayFilaObjetivos[j].posicion.x + (caramelos[1].getWidth() + 20)*i,gamew.arrayFilaObjetivos[j].posicion.y);
+				}
+			}
 		}
 		
-		marcador.draw(batch,String.format("%d", gamew.scoreboard), 300 - (marcador.getBounds(String.format("%d", gamew.scoreboard)).width), 400);
+		marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
+	
 		for ( int i=1;i<=gamew.vidas;i++){
-			batch.draw(corazon, 500 + (corazon.getWidth() + 10)*i,400);
+			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
 		}
 		//batch.draw(p1estrellasA.getKeyFrame(a), 100,200);
 		//batch.draw(p2estrellasA.getKeyFrame(a), 200,200);
 		//batch.draw(fondo,0,0);
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
-			marcador.setScale(3);
+			marcador.setScale(2);
 			//marcador.setColor(0.5f, 0.3f, 0.7f, 1f);
-			marcador.draw(batch, "GAME OVER", 15, 400);
+			marcador.draw(batch, "GAME OVER", 15, 200);
 		}
 		if (gamew.payaso1.state == Payaso.PayasoState.MESSDEATH){
 			renderCrashDeath(gamew.payaso1, gamew.payaso2,delta);

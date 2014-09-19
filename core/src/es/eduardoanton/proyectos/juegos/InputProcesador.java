@@ -6,6 +6,8 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector3;
 
+import es.eduardoanton.proyectos.juegos.GameWorld.GameState;
+
 public class InputProcesador implements InputProcessor{
 
 	private OrthographicCamera cam;
@@ -88,7 +90,9 @@ public class InputProcesador implements InputProcessor{
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		// TODO Auto-generated method stub
+		if ( gamew.gamestate == GameState.GAMEOVER){
+			gamew.reset();
+		}
 		return false;
 	}
 
