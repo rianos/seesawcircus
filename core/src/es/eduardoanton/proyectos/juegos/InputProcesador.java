@@ -22,7 +22,9 @@ public class InputProcesador implements InputProcessor{
 	}
 	@Override
 	public boolean keyDown(int keycode) {
-		if ( gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH){
+		if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH 
+				&&	gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
+					){
 			if (keycode == Input.Keys.LEFT){
 				gamew.trampolin.setVelocity(-400);
 				gamew.redondo = rotationSpeed;

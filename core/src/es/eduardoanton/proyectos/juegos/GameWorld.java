@@ -27,13 +27,15 @@ public class GameWorld {
 		trampolin = new Trampolin();
 		payaso1 = new Payaso(400,50,0,0,PayasoState.STANDBYL, this, 1);
 		payaso2 = new Payaso(500,300,0,0,PayasoState.FLYING, this, 2);
+		payaso1.setPayasoCompañero(payaso2);
+		payaso2.setPayasoCompañero(payaso1);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
 		arrayFilaObjetivos[2] = new FilaObjetivos(2,0,500,-1,this);
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		boingS = Gdx.audio.newSound(Gdx.files.internal("jump.ogg"));
-		crashS = Gdx.audio.newSound(Gdx.files.internal("crash.ogg"));
+		crashS = Gdx.audio.newSound(Gdx.files.internal("crash.mp3"));
 		angelS = Gdx.audio.newSound(Gdx.files.internal("angel.mp3"));
 		hurtS = Gdx.audio.newSound(Gdx.files.internal("hurt.ogg"));
 		cryS = Gdx.audio.newSound(Gdx.files.internal("cry.ogg"));
@@ -47,6 +49,8 @@ public class GameWorld {
 		trampolin = new Trampolin();
 		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this, 1);
 		payaso2 = new Payaso(500,500,-90,0,PayasoState.FLYING, this, 2);
+		payaso1.setPayasoCompañero(payaso2);
+		payaso2.setPayasoCompañero(payaso1);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
@@ -118,6 +122,14 @@ public class GameWorld {
 			return payaso1;
 		}else{
 			return payaso2;
+		}
+	}
+	
+	public Payaso  notgetPayasoFlying(){
+		if (payaso1.state == PayasoState.FLYING){
+			return payaso2;
+		}else{
+			return payaso1;
 		}
 	}
 	

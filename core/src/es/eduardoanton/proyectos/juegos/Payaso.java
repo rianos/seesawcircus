@@ -14,8 +14,9 @@ public class Payaso {
 	public Rectangle dimensiones;
 	private GameWorld game;
 	public enum PayasoState { STANDBYL, STANDBYR, FLYING, JUMPING,MESSDEATH,MESSCRASH, MESSCRY };
-	public PayasoState state;
+	public PayasoState state,oldstate;
 	public int PayasoID;
+	public Payaso pc; 
 	public final float vellimit = -600f;
 	private float time= 0f;
 	private boolean angelSplayed = false;
@@ -33,6 +34,9 @@ public class Payaso {
 		this.game = game;
 	}
 	
+	public void setPayasoCompañero(Payaso p){
+		pc = p;
+	}
 
 	
 	public void update(float delta ){
@@ -50,7 +54,8 @@ public class Payaso {
 			if ( state == PayasoState.FLYING ){
 				if (posicion.y < 20 ){
 					game.vidas--;
-					if ( velocidad.y < -1000) {
+					if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
+							(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
 						state = PayasoState.MESSDEATH;
 						game.gamestate = GameState.DEATH;
 						game.hurtS.play();
@@ -58,13 +63,23 @@ public class Payaso {
 						velocidad.x = 0f;
 						posicion.y = 25;
 						velocidad.y =  0f;
+					
+					   
 					}else{
 						state = PayasoState.MESSCRASH;
 						game.gamestate = GameState.DEATH;
 						time = delta;
 						posicion.y = 25;
+						game.trampolin.velocidad.y = Math.min(-velocidad.y,800);
+						game.trampolin.velocidad.x = velocidad.x;
+						game.trampolin.aceleracion.y= GameWorld.aceleracion;
+						pc.oldstate = pc.state;
+						pc.state = Payaso.PayasoState.MESSCRY;
+						pc.velocidad.x = 0f;
+						pc.posicion.y = 25;
+						pc.velocidad.y =  0f;
 						game.hurtS.play();
-						//game.cryS.play();
+						game.crashS.play();
 					}
 				}else if (posicion.x <= 0 || posicion.x >= 1024 - dimensiones.width ){
 					velocidad.x = velocidad.x * -1;
@@ -94,6 +109,12 @@ public class Payaso {
 				posicion.y = 400;
 				posicion.x = 400;
 			    game.trampolin.posicion.x = 410;
+			    game.trampolin.velocidad.y = 0;
+				game.trampolin.velocidad.x = 0;
+				pc.posicion.y = 50;
+				pc.state = pc.oldstate;
+				game.trampolin.aceleracion.y = 0;
+				game.trampolin.posicion.y = 40;
 			}
 		}
 		if ( state == PayasoState.MESSDEATH){

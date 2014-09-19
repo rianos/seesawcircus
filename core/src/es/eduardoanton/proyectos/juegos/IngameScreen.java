@@ -175,10 +175,10 @@ public class IngameScreen implements Screen{
 	public void renderCryingDeath(Payaso payasomuerto, Payaso payasovivo,float delta){
 		if (payasovivo.PayasoID == 1){
 			batch.draw(p2llorandoA.getKeyFrame(statetime), payasomuerto.posicion.x, payasomuerto.posicion.y);
-			batch.draw(payaso, payasovivo.posicion.x,payasovivo.posicion.y);
+			batch.draw(p1estrellasA.getKeyFrame(statetime), payasovivo.posicion.x,payasovivo.posicion.y);
 		}else{
 			batch.draw(p1llorandoA.getKeyFrame(statetime), payasomuerto.posicion.x, payasomuerto.posicion.y);
-			batch.draw(payaso2, payasovivo.posicion.x,payasovivo.posicion.y);
+			batch.draw(p2estrellasA.getKeyFrame(statetime), payasovivo.posicion.x,payasovivo.posicion.y);
 		}
 		if ( gamew.trampolin.view == TrampolinState.RIGHT){
 			batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
