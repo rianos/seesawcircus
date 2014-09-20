@@ -2,6 +2,7 @@ package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -27,9 +28,10 @@ public class IngameScreen implements Screen{
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
-	public BitmapFont marcador,gameover;
+	public BitmapFont marcador,gameover,letrero;
 	public static float statetime = 0f;
 	public Texture caramelos[];
+	
 
 
 	private GameWorld gamew;
@@ -94,7 +96,8 @@ public class IngameScreen implements Screen{
 		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
 		
 		marcador =game.getAsset().get("fuente.fnt", BitmapFont.class);
-		
+		letrero = new BitmapFont();
+		Musica.playRandom();
 	}
 	@Override
 	public void render(float delta) {
@@ -113,7 +116,7 @@ public class IngameScreen implements Screen{
 		}
 		
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
-	
+		letrero.draw(batch, Musica.getName(), 5, 20);
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
 		}

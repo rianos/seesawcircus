@@ -63,7 +63,7 @@ public class Payaso {
 						velocidad.x = 0f;
 						posicion.y = 25;
 						velocidad.y =  0f;
-					
+						Musica.setVolume(0.2f);
 					   
 					}else{
 						state = PayasoState.MESSCRASH;
@@ -80,6 +80,8 @@ public class Payaso {
 						pc.posicion.y = 25;
 						pc.velocidad.y =  0f;
 						game.hurtS.play();
+						game.cryS.play(0.2f);
+						
 						game.crashS.play();
 					}
 				}else if (posicion.x <= 0 || posicion.x >= 1024 - dimensiones.width ){
@@ -136,6 +138,7 @@ public class Payaso {
 				posicion.y = 400;
 				posicion.x = 400;
 				 game.trampolin.posicion.x = 410;
+				 Musica.setVolume(0.5f);
 			}
 		}
 	}

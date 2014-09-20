@@ -1,7 +1,9 @@
 package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+
 import es.eduardoanton.proyectos.juegos.Payaso.PayasoState;
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
 
@@ -59,9 +61,13 @@ public class GameWorld {
 		scoreboard = 0;
 		vidas = 5;
 		this.gamestate = GameState.RUNNING;
+		
 	}
 	
 	public void update(float delta){
+		if (!Musica.isPlaying()){
+			Musica.playRandom();
+		}
 		if (gamestate != GameState.GAMEOVER){
 			trampolin.update(delta);
 			payaso1.update(delta);
@@ -114,7 +120,7 @@ public class GameWorld {
 				payaso1.state = PayasoState.FLYING;
 			}
 		}
-		boingS.play(0.3f);	
+		boingS.play(0.15f);	
 	}
 	
 	public Payaso  getPayasoFlying(){

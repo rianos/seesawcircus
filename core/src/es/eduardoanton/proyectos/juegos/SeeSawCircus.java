@@ -2,12 +2,13 @@ package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
 public class SeeSawCircus extends Game {
 
-	private AssetManager asset;
+	private static AssetManager asset;
 	
 	
 	@Override
@@ -49,12 +50,15 @@ public class SeeSawCircus extends Game {
 		asset.load("explosion2.png", Texture.class);
 		asset.load("explosion3.png", Texture.class);
 		asset.load("explosion4.png", Texture.class);
+		for ( String musica : Musica.lista){
+			asset.load(musica, Music.class);
+		}
 		asset.load("fuente.fnt", BitmapFont.class);
 		asset.finishLoading();
 	}
 	
-	public AssetManager getAsset(){
-		return this.asset;
+	public static AssetManager getAsset(){
+		return asset;
 	}
 }
 		
