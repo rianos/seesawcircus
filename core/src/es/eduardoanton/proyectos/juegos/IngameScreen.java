@@ -24,11 +24,11 @@ public class IngameScreen implements Screen{
 	private Texture trampolintexturel;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon;
 	private Texture carameloa,carameloz,caramelov,caramelor;
-	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[];
+	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
-	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA;
+	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
 	public BitmapFont marcador,gameover;
-	private float statetime = 0f;
+	public static float statetime = 0f;
 	public Texture caramelos[];
 
 
@@ -49,6 +49,12 @@ public class IngameScreen implements Screen{
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
 		lapida =game.getAsset().get("lapida.png", Texture.class);
 		corazon =game.getAsset().get("corazon.png", Texture.class);
+		explosion = new TextureRegion[4];
+		explosion[0] = new TextureRegion(game.getAsset().get("explosion1.png", Texture.class));
+		explosion[1] = new TextureRegion(game.getAsset().get("explosion2.png", Texture.class));
+		explosion[2] = new TextureRegion(game.getAsset().get("explosion3.png", Texture.class));
+		explosion[3] = new TextureRegion(game.getAsset().get("explosion4.png", Texture.class));
+		explosionA = new Animation(0.2f,explosion);
 		caramelos = new Texture[4];
 		caramelos[0] = game.getAsset().get("carameloa.png", Texture.class);
 		caramelos[1] = game.getAsset().get("caramelov.png", Texture.class);
@@ -173,6 +179,7 @@ public class IngameScreen implements Screen{
 	}
 	
 	public void renderCryingDeath(Payaso payasomuerto, Payaso payasovivo,float delta){
+		
 		if (payasovivo.PayasoID == 1){
 			batch.draw(p2llorandoA.getKeyFrame(statetime), payasomuerto.posicion.x, payasomuerto.posicion.y);
 			batch.draw(p1estrellasA.getKeyFrame(statetime), payasovivo.posicion.x,payasovivo.posicion.y);
@@ -189,6 +196,9 @@ public class IngameScreen implements Screen{
 		redondo.setY(gamew.trampolin.posicion.y);
 		redondo.rotate(gamew.redondo * delta);
 		redondo.draw(batch);
+		if ( ! explosionA.isAnimationFinished(statetime)){
+			batch.draw(explosionA.getKeyFrame(statetime),payasomuerto.posicion.x - 100, -40);
+		}
 	}
 	
 	@Override

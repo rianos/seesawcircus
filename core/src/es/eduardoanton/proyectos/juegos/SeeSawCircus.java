@@ -45,6 +45,10 @@ public class SeeSawCircus extends Game {
 		asset.load("caramelor.png", Texture.class);
 		asset.load("carameloz.png", Texture.class);
 		asset.load("caramelov.png", Texture.class);
+		asset.load("explosion1.png", Texture.class);
+		asset.load("explosion2.png", Texture.class);
+		asset.load("explosion3.png", Texture.class);
+		asset.load("explosion4.png", Texture.class);
 		asset.load("fuente.fnt", BitmapFont.class);
 		asset.finishLoading();
 	}

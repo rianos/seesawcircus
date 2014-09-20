@@ -69,6 +69,7 @@ public class Payaso {
 						state = PayasoState.MESSCRASH;
 						game.gamestate = GameState.DEATH;
 						time = delta;
+						IngameScreen.statetime = 0f;
 						posicion.y = 25;
 						game.trampolin.velocidad.y = Math.min(-velocidad.y,800);
 						game.trampolin.velocidad.x = velocidad.x;
@@ -101,7 +102,7 @@ public class Payaso {
 		}
 		if ( state == PayasoState.MESSCRASH){
 			time+=delta;
-			if (time > 3.5){
+			if (time > 2.5){
 				state=PayasoState.FLYING;
 				game.gamestate = GameState.RUNNING;
 				velocidad.y = 500;
