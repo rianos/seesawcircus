@@ -70,8 +70,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="510.86284"
-     inkscape:cy="638.09158"
+     inkscape:cx="-624.05451"
+     inkscape:cy="768.22012"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -88,7 +88,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -420,5 +420,130 @@
         </g>
       </g>
     </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4552"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4554"><rect
+           id="rect4556"
+           width="256.57874"
+           height="202.0305"
+           x="-585.88849"
+           y="484.65646" /></flowRegion><flowPara
+         id="flowPara4558"></flowPara></flowRoot>    <path
+       style="fill:#101c70;fill-opacity:1;stroke:#000000;stroke-width:13.34;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M -302.4375 -229.875 C -389.25086 -229.01768 -500.06126 -163.92422 -585.4375 -196.625 C -588.65187 -199.83937 -593.02354 -201.90033 -597.875 -202.1875 C -597.91651 -202.20894 -597.95851 -202.22851 -598 -202.25 C -599.43887 -202.99534 -600.63743 -202.86939 -601.625 -202.0625 C -611.01966 -200.80117 -618.21875 -192.81343 -618.21875 -183.0625 L -618.21875 176.1875 C -663.82888 180.83782 -699.03125 210.8939 -699.03125 247.28125 C -699.03125 286.89157 -657.32104 319 -605.875 319 C -554.42896 319 -512.71875 286.89157 -512.71875 247.28125 C -512.71875 214.64216 -541.0606 187.12226 -579.8125 178.4375 L -579.8125 -9.53125 C -574.5815 -4.3220062 -568.76126 -0.73402334 -563.53125 -1.03125 C -463.98462 -6.6885813 -354.05176 -89.620668 -248.5 -112.09375 L -248.5 115.875 C -259.07128 112.66786 -270.57444 110.90625 -282.625 110.90625 C -334.07104 110.90625 -375.78125 143.01468 -375.78125 182.625 C -375.78125 222.23532 -334.07104 254.34375 -282.625 254.34375 C -231.17896 254.34375 -189.46875 222.23532 -189.46875 182.625 C -189.46875 165.57677 -197.22122 149.93204 -210.125 137.625 L -210.125 -118.40625 C -208.67211 -119.0226 -208.80533 -119.65387 -210.125 -120.375 L -210.125 -181.03125 C -210.125 -182.11041 -210.23668 -183.15783 -210.40625 -184.1875 C -210.10878 -185.02862 -210.45527 -186.20854 -211.34375 -187.71875 C -212.89391 -191.90778 -215.84937 -195.37583 -219.65625 -197.59375 C -220.4736 -198.43466 -221.32122 -199.32122 -222.21875 -200.21875 C -244.5997 -222.5997 -272.05792 -230.17501 -302.4375 -229.875 z M -252.0625 -187.5 C -250.49606 -187.50074 -248.93419 -187.48927 -247.375 -187.4375 C -248.08084 -185.43371 -248.5 -183.28244 -248.5 -181.03125 L -248.5 -126.875 C -249.25714 -126.88767 -250.01922 -126.90441 -250.78125 -126.90625 C -343.96887 -127.13147 -473.60907 -47.230256 -579.8125 -44.625 L -579.8125 -98.5625 C -482.18532 -67.399846 -358.85191 -187.44989 -252.0625 -187.5 z "
+       id="path4560"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       style="fill:#fdfcb3;fill-opacity:0.44086022;stroke:none"
+       d="m -555.58388,188.68175 c 22.63192,-13.50524 -24.19439,8.08123 -71.72083,21.21321 -46.78355,12.92672 -69.59809,95.81542 -75.76144,55.55839 -10.10153,-65.97992 43.40595,-90.57798 91.92388,-91.92388 36.41476,-1.01015 53.07484,16.6343 55.55839,15.15228 z"
+       id="path4584"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path4587"
+       d="m -227.01245,127.25318 c -23.23351,12.44184 -24.19439,8.08123 -71.72083,21.21321 -46.78355,12.92672 -69.59809,95.81542 -75.76144,55.55839 -10.10153,-65.97992 43.38729,-91.92388 91.92388,-91.92388 48.53659,0 91.46064,-4.07383 55.55839,15.15228 z"
+       style="fill:#fdfcb3;fill-opacity:0.44086022;stroke:none"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path4589"
+       d="m -525.72082,222.32515 c -20.88492,16.07531 -4.23288,15.05544 -41.79929,46.9925 -36.97922,31.43784 -125.91248,25.1119 -88.02195,40.04254 49.9152,19.66892 98.90475,7.17072 127.69076,-23.88894 32.99284,-35.59877 10.93286,-69.92137 2.13048,-63.1461 z"
+       style="fill:#5f0c4a;fill-opacity:0.44086022;stroke:none"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       style="fill:#5f0c4a;fill-opacity:0.44086022;stroke:none"
+       d="m -202.47201,155.65508 c -20.88492,16.07531 -4.23288,15.05544 -41.79929,46.9925 -36.97922,31.43784 -125.91248,25.1119 -88.02195,40.04254 49.9152,19.66892 98.90475,7.17072 127.69076,-23.88894 32.99284,-35.59877 10.93286,-69.92137 2.13048,-63.1461 z"
+       id="path4591"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <rect
+       style="fill:#5f0c4a;fill-opacity:0.44086022;stroke:none"
+       id="rect4593"
+       width="14.142136"
+       height="321.22852"
+       x="-595.98999"
+       y="-157.80057"
+       ry="7.0710678"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <rect
+       ry="7.0710678"
+       y="-192.00217"
+       x="-224.1313"
+       height="306.94266"
+       width="11.999269"
+       id="rect4595"
+       style="fill:#5f0c4a;fill-opacity:0.44086022;stroke:none"
+       rx="0"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <rect
+       ry="7.0710678"
+       y="-157.80057"
+       x="-620.23364"
+       height="321.22852"
+       width="14.142136"
+       id="rect4597"
+       style="fill:#fdf6b9;fill-opacity:0.44086021;stroke:none"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <rect
+       style="fill:#fdf6b9;fill-opacity:0.44086022;stroke:none"
+       id="rect4599"
+       width="14.142136"
+       height="321.22852"
+       x="-248.49751"
+       y="-210.32851"
+       ry="7.0710678"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path4601"
+       d="m -418.60924,-207.64467 c 22.63192,-13.50524 -49.86153,62.87882 -98.86369,68.35606 -45.35498,5.06958 -107.53827,-11.13286 -98.61858,-50.87018 7.75561,-34.55135 58.40595,17.27916 104.06674,0.21898 34.12467,-12.74996 90.93198,-16.22284 93.41553,-17.70486 z"
+       style="fill:#fdfcb3;fill-opacity:0.44086022;stroke:none"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       style="fill:#5d0d4b;fill-opacity:0.44086021;stroke:none"
+       d="m -249.32352,-188.55563 c -7.44069,-3.35086 -9.86153,4.97833 -58.86369,-0.49891 -45.35498,-5.06958 -120.48198,7.99811 -112.90429,48.01303 2.75561,14.55135 51.8058,-20.4303 99.06674,-32.36183 26.06984,-6.58162 72.70124,-15.15229 72.70124,-15.15229 z"
+       id="path4603"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
+    <path
+       style="fill:#fdfcb3;fill-opacity:0.44086022;stroke:none"
+       d="m -317.08891,-118.24617 c 22.63192,-13.50524 -81.40389,43.18129 -128.66319,57.244382 -44.64069,13.283866 -121.98358,57.5921853 -134.47899,18.830346 -2.34592,-7.277231 85.17499,-14.035569 142.45253,-36.146511 33.98448,-13.119081 118.2061,-38.446197 120.68965,-39.928217 z"
+       id="path4605"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\musica.png"
+       inkscape:export-xdpi="4.3223357"
+       inkscape:export-ydpi="4.3223357" />
   </g>
 </svg>

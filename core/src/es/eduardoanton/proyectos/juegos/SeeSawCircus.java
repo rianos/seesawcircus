@@ -50,6 +50,7 @@ public class SeeSawCircus extends Game {
 		asset.load("explosion2.png", Texture.class);
 		asset.load("explosion3.png", Texture.class);
 		asset.load("explosion4.png", Texture.class);
+		asset.load("musica.png", Texture.class);
 		for ( String musica : Musica.lista){
 			asset.load(musica, Music.class);
 		}

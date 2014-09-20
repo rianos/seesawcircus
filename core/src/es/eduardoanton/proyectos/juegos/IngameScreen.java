@@ -3,6 +3,7 @@ package es.eduardoanton.proyectos.juegos;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -23,7 +24,7 @@ public class IngameScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica;
 	private Texture carameloa,carameloz,caramelov,caramelor;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
@@ -51,6 +52,7 @@ public class IngameScreen implements Screen{
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
 		lapida =game.getAsset().get("lapida.png", Texture.class);
 		corazon =game.getAsset().get("corazon.png", Texture.class);
+		musica =game.getAsset().get("musica.png", Texture.class);
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.getAsset().get("explosion1.png", Texture.class));
 		explosion[1] = new TextureRegion(game.getAsset().get("explosion2.png", Texture.class));
@@ -96,17 +98,21 @@ public class IngameScreen implements Screen{
 		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
 		
 		marcador =game.getAsset().get("fuente.fnt", BitmapFont.class);
+		//marcador.setColor(Color.BLACK);
+		
 		letrero = new BitmapFont();
 		Musica.playRandom();
 	}
 	@Override
 	public void render(float delta) {
+		
 		a+=delta;
 		gamew.update(delta);
 		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		
 		batch.begin();
+		batch.draw(fondo,0,0);
 		for (int j=0;j<4;j++){
 			for (int i=0;i<10;i++){
 				if (gamew.arrayFilaObjetivos[j].elementos[i] != -1 ){
@@ -115,14 +121,16 @@ public class IngameScreen implements Screen{
 			}
 		}
 		
-		marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
-		letrero.draw(batch, Musica.getName(), 5, 20);
+		//marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
+		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
+		batch.draw(musica, 0, 0);
+		letrero.draw(batch, Musica.getName(), 25, 20);
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
 		}
 		//batch.draw(p1estrellasA.getKeyFrame(a), 100,200);
 		//batch.draw(p2estrellasA.getKeyFrame(a), 200,200);
-		//batch.draw(fondo,0,0);
+		
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setScale(2);
 			//marcador.setColor(0.5f, 0.3f, 0.7f, 1f);
