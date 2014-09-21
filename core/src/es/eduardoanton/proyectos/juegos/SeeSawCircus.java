@@ -9,7 +9,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 public class SeeSawCircus extends Game {
 
 	private static AssetManager asset;
-	
+	public final static float screenwidth = 1024f;
+	public final static float screenheight = 600f;
 	
 	@Override
 	public void create() {
@@ -51,6 +52,8 @@ public class SeeSawCircus extends Game {
 		asset.load("explosion3.png", Texture.class);
 		asset.load("explosion4.png", Texture.class);
 		asset.load("musica.png", Texture.class);
+		asset.load("trampolin_sombra.png", Texture.class);
+		asset.load("payaso_sombra.png", Texture.class);
 		for ( String musica : Musica.lista){
 			asset.load(musica, Music.class);
 		}

@@ -13,8 +13,11 @@ public class FilaObjetivos {
 	public int ID;
 	public int elementos[];
 	public int quedan;
-	private final static float limitexI = -1024f;
-	private final static float limitexD = 1024f;
+	//private final static float limitexI = -1024f;
+	//private final static float limitexD = 1024f;
+	private final static float limitexI = -SeeSawCircus.screenwidth /3;
+	private final static float limitexD = SeeSawCircus.screenwidth /3;
+
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
 	private GameWorld game;
@@ -33,37 +36,44 @@ public class FilaObjetivos {
 	
 	public void update (float delta){
 		posicion.add(velocidad.cpy().scl(delta));
-		if (posicion.x < limitexI || posicion.x > limitexD){
+		if (posicion.x < limitexI){
 			velocidad.x*=-1;
+			posicion.x = limitexI + 2;
+		}
+		if ( posicion.x > limitexD){
+			velocidad.x*=-1;
+			posicion.x = limitexD - 2;
 		}
 		if (game.gamestate == GameState.RUNNING){
 			Payaso p = game.getPayasoFlying();
 			p.dimensiones.x = p.posicion.x;
 			p.dimensiones.y = p.posicion.y;
-			for (int i=0;i<10;i++){
-				if (elementos[i] != -1 ){
-					Rectangle r = new Rectangle(posicion.x + (20 + objetowidth)*i,posicion.y,objetowidth,objetoheight);
-					if (p.dimensiones.overlaps(r)){
-						game.scoreboard+=10;
-						quedan--;
-						elementos[i]= -1;
-						if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
-							p.velocidad.y*=-1;
-							//p.velocidad.y+=20;
+			if ( p.posicion.y > 300){
+				for (int i=0;i<10;i++){
+					if (elementos[i] != -1 ){
+						Rectangle r = new Rectangle(posicion.x + (20 + objetowidth)*i,posicion.y,objetowidth,objetoheight);
+						if (p.dimensiones.overlaps(r)){
+							game.scoreboard+=(10*(ID+1));
+							quedan--;
+							elementos[i]= -1;
+							if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
+								p.velocidad.y*=-1;
+								//p.velocidad.y+=20;
+							}
+							if ( (posicion.y   > p.posicion.y ) && p.velocidad.y > 0){
+								p.velocidad.y=-10;
+							 //p.velocidad.y+=20;
+							}
+							
+							game.clanS.play();
 						}
-						if ( (posicion.y   > p.posicion.y ) && p.velocidad.y > 0){
-							p.velocidad.y=-10;
-							//p.velocidad.y+=20;
-						}
-						
-						game.clanS.play();
-					}		
+					}
 				}
 			}
 			if (this.quedan == 0){
 				Gdx.app.log("CIRCUS", "CERO" + ID + " :" + quedan);
 				game.succesS.play();
-				game.scoreboard+=100;
+				game.scoreboard+=(100*(ID+1));
 				generarFila();
 			}
 		}

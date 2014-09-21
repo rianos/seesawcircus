@@ -23,7 +23,7 @@ public class IngameScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture trampolintexturel;
+	private Texture trampolintexturel,trampolinsombra,payasosombra;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica;
 	private Texture carameloa,carameloz,caramelov,caramelor;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
@@ -45,6 +45,8 @@ public class IngameScreen implements Screen{
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);	
 		trampolintexturel = game.getAsset().get("trampolin.png", Texture.class );
+		trampolinsombra = game.getAsset().get("trampolin_sombra.png", Texture.class );
+		payasosombra = game.getAsset().get("payaso_sombra.png", Texture.class );
 		trampolintexturer = new TextureRegion(trampolintexturel);
 		trampolintexturer.flip(true,false);
 		payaso = game.getAsset().get("payaso22.png", Texture.class);
@@ -155,10 +157,17 @@ public class IngameScreen implements Screen{
 				){
 			batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
 			batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+		
+			//batch.draw(payasosombra, gamew.payaso2.posicion.x,30);
+			
 			if ( gamew.trampolin.view == TrampolinState.RIGHT){
+				batch.draw(payasosombra, gamew.payaso2.posicion.x,30);
 				batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+				batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 30);
 			}else{
+				batch.draw(payasosombra, gamew.payaso1.posicion.x,30);
 				batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+				batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 30);
 			}
 			redondo.setX(gamew.trampolin.posicion.x + 62);
 			redondo.setY(gamew.trampolin.posicion.y);
@@ -180,8 +189,10 @@ public class IngameScreen implements Screen{
 		}
 		if ( gamew.trampolin.view == TrampolinState.RIGHT){
 			batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+			batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 30);
 		}else{
 			batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+			batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 30);
 		}
 		redondo.setX(gamew.trampolin.posicion.x + 62);
 		redondo.setY(gamew.trampolin.posicion.y);
@@ -200,8 +211,10 @@ public class IngameScreen implements Screen{
 		}
 		if ( gamew.trampolin.view == TrampolinState.RIGHT){
 			batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+			batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 10);
 		}else{
 			batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
+			batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 10);
 		}
 		redondo.setX(gamew.trampolin.posicion.x + 62);
 		redondo.setY(gamew.trampolin.posicion.y);
