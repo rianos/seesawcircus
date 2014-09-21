@@ -24,7 +24,7 @@ public class IngameScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b;
 	private Texture carameloa,carameloz,caramelov,caramelor;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
@@ -51,6 +51,8 @@ public class IngameScreen implements Screen{
 		trampolintexturer.flip(true,false);
 		payaso = game.getAsset().get("payaso22.png", Texture.class);
 		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
+		payasob = game.getAsset().get("payaso22bajando.png", Texture.class);
+		payaso2b = game.getAsset().get("payaso33bajando.png", Texture.class);
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
 		lapida =game.getAsset().get("lapida.png", Texture.class);
 		corazon =game.getAsset().get("corazon.png", Texture.class);
@@ -155,11 +157,17 @@ public class IngameScreen implements Screen{
 		if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH 
 			&&	gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
 				){
-			batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
-			batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+			if (gamew.payaso1.velocidad.y >= 0f || gamew.payaso1.state != Payaso.PayasoState.FLYING ){
+				batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
+			}else{
+				batch.draw(payasob, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
+			}
+			if (gamew.payaso2.velocidad.y >= 0f  || gamew.payaso2.state != Payaso.PayasoState.FLYING){
+				batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+			}else{
+				batch.draw(payaso2b, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+			}
 		
-			//batch.draw(payasosombra, gamew.payaso2.posicion.x,30);
-			
 			if ( gamew.trampolin.view == TrampolinState.RIGHT){
 				batch.draw(payasosombra, gamew.payaso2.posicion.x,30);
 				batch.draw(trampolintexturer,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
