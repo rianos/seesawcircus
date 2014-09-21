@@ -19,7 +19,7 @@ public class GameWorld {
 	public final static float redimen2 = 12;
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
-	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS; 
+	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S; 
 	public long scoreboard = 0;
 	public short vidas = 5;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
@@ -44,6 +44,9 @@ public class GameWorld {
 		mareoS = Gdx.audio.newSound(Gdx.files.internal("mareo.ogg"));
 		clanS = Gdx.audio.newSound(Gdx.files.internal("clan.wav"));
 		succesS = Gdx.audio.newSound(Gdx.files.internal("succes.wav"));
+		wowS = Gdx.audio.newSound(Gdx.files.internal("small_crowd_saying_wow.mp3"));
+		jump2S = Gdx.audio.newSound(Gdx.files.internal("comedy_siren_whistle_great_for_slips_and_trips_002.mp3"));
+		
 		
 
 	}
@@ -120,7 +123,11 @@ public class GameWorld {
 				payaso1.state = PayasoState.FLYING;
 			}
 		}
-		boingS.play(0.15f);	
+		if ((payaso1.velocidad.y > 1200 || payaso2.velocidad.y > 1200) && Math.random() > 0.7f){
+			jump2S.play(0.4f);
+		}else{
+			boingS.play(0.15f);
+		}
 	}
 	
 	public Payaso  getPayasoFlying(){

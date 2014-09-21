@@ -81,6 +81,7 @@ public class Payaso {
 						pc.velocidad.y =  0f;
 						game.hurtS.play();
 						game.cryS.play(0.2f);
+						game.wowS.play();
 						
 						game.crashS.play();
 					}
