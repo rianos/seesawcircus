@@ -28,6 +28,8 @@ public class SeeSawCircus extends Game {
 		asset.load("payaso33.png", Texture.class);
 		asset.load("payaso22bajando.png", Texture.class);
 		asset.load("payaso33bajando.png", Texture.class);
+		asset.load("payaso22cruz.png", Texture.class);
+		asset.load("payaso33cruz.png", Texture.class);
 		asset.load("p1c1.png", Texture.class);
 		asset.load("p1c2.png", Texture.class);
 		asset.load("p2c1.png", Texture.class);
@@ -60,6 +62,7 @@ public class SeeSawCircus extends Game {
 			asset.load(musica, Music.class);
 		}
 		asset.load("fuente.fnt", BitmapFont.class);
+		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.finishLoading();
 	}
 	

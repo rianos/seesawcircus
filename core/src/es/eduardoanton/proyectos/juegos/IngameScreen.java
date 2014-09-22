@@ -24,7 +24,7 @@ public class IngameScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
 	private Texture carameloa,carameloz,caramelov,caramelor;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
@@ -53,6 +53,8 @@ public class IngameScreen implements Screen{
 		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
 		payasob = game.getAsset().get("payaso22bajando.png", Texture.class);
 		payaso2b = game.getAsset().get("payaso33bajando.png", Texture.class);
+		payasoc = game.getAsset().get("payaso22cruz.png", Texture.class);
+		payaso2c = game.getAsset().get("payaso33cruz.png", Texture.class);
 		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
 		lapida =game.getAsset().get("lapida.png", Texture.class);
 		corazon =game.getAsset().get("corazon.png", Texture.class);
@@ -101,10 +103,11 @@ public class IngameScreen implements Screen{
 		gamew = new GameWorld();
 		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
 		
-		marcador =game.getAsset().get("fuente.fnt", BitmapFont.class);
-		//marcador.setColor(Color.BLACK);
+		marcador =game.getAsset().get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
+		
 		
 		letrero = new BitmapFont();
+		letrero.setColor(Color.BLACK);
 		Musica.playRandom();
 	}
 	@Override
@@ -136,7 +139,7 @@ public class IngameScreen implements Screen{
 		//batch.draw(p2estrellasA.getKeyFrame(a), 200,200);
 		
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
-			marcador.setScale(2);
+			//marcador.setScale(2);
 			//marcador.setColor(0.5f, 0.3f, 0.7f, 1f);
 			marcador.draw(batch, "GAME OVER", 15, 200);
 		}
@@ -157,12 +160,17 @@ public class IngameScreen implements Screen{
 		if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH 
 			&&	gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
 				){
-			if (gamew.payaso1.velocidad.y >= 0f || gamew.payaso1.state != Payaso.PayasoState.FLYING ){
+			if (gamew.payaso1.velocidad.y  <= 300f && gamew.payaso1.velocidad.y >= -300f && gamew.payaso1.state == Payaso.PayasoState.FLYING ){
+				batch.draw(payasoc, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
+		    }else if (gamew.payaso1.velocidad.y >= 0f || gamew.payaso1.state != Payaso.PayasoState.FLYING ){
 				batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
+			
 			}else{
 				batch.draw(payasob, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
 			}
-			if (gamew.payaso2.velocidad.y >= 0f  || gamew.payaso2.state != Payaso.PayasoState.FLYING){
+			if (gamew.payaso2.velocidad.y  <= 300f && gamew.payaso2.velocidad.y >= -300f && gamew.payaso2.state == Payaso.PayasoState.FLYING ){
+				batch.draw(payaso2c, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
+			}else if (gamew.payaso2.velocidad.y >= 0f  || gamew.payaso2.state != Payaso.PayasoState.FLYING){
 				batch.draw(payaso2, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
 			}else{
 				batch.draw(payaso2b, gamew.payaso2.posicion.x,gamew.payaso2.posicion.y);
