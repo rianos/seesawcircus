@@ -13,6 +13,9 @@ public class FilaObjetivos {
 	public int ID;
 	public int elementos[];
 	public int quedan;
+	public static int teninarow = 0;
+	public boolean bonus = false;
+	public  float time = 0f;
 	//private final static float limitexI = -1024f;
 	//private final static float limitexD = 1024f;
 	private final static float limitexI = -SeeSawCircus.screenwidth /3;
@@ -37,6 +40,12 @@ public class FilaObjetivos {
 	
 	public void update (float delta){
 		posicion.add(velocidad.cpy().scl(delta));
+		if (bonus){
+			time+=delta;
+			if ( time > 4){
+				bonus = false;
+			}
+		}
 		if (posicion.x < limitexI){
 			velocidad.x*=-1;
 			posicion.x = limitexI + 2;
@@ -56,6 +65,7 @@ public class FilaObjetivos {
 						if (p.dimensiones.overlaps(r)){
 							game.scoreboard+=puntos[elementos[i]];
 							quedan--;
+							teninarow++;
 							if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
 								p.velocidad.y*=-1;
 								//p.velocidad.y+=20;
@@ -73,10 +83,19 @@ public class FilaObjetivos {
 							}else{
 								game.clanS.play();
 							}
+							if (teninarow >= 3){
+								teninarow = 0;
+								game.scoreboard+=1000;
+								game.welldoneS.play();
+								bonus = true;
+								time = 0;
+							}
 							elementos[i]= -1;
 						}
 					}
 				}
+			}else{
+				teninarow = 0;
 			}
 			if (this.quedan == 0){
 				game.succesS.play();

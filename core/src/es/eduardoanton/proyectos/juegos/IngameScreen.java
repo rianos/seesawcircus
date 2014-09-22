@@ -194,6 +194,9 @@ public class IngameScreen implements Screen{
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);
 			redondo.draw(batch);
+			/*if (FilaObjetivos.bonus){
+				marcador.draw(batch,"BONUS +1000", 100,350);
+			}*/
 		}
 		batch.end();
 			
