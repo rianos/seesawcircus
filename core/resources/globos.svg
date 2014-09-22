@@ -28,15 +28,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="102.7329"
-     inkscape:cy="345.08329"
+     inkscape:cx="-6.7687342"
+     inkscape:cy="405.67005"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1090"
      inkscape:window-height="761"
-     inkscape:window-x="207"
-     inkscape:window-y="207"
+     inkscape:window-x="183"
+     inkscape:window-y="82"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -57,7 +57,7 @@
     <g
        id="g3774"
        transform="matrix(0.03781833,0.99928463,-0.99928463,0.03781833,882.02122,224.78193)"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\globoz.png"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globoz.png"
        inkscape:export-xdpi="18.410648"
        inkscape:export-ydpi="18.410648">
       <path
@@ -67,16 +67,16 @@
          sodipodi:cy="558.07648"
          sodipodi:cx="324.28571"
          id="path2985"
-         style="color:#000000;fill:#0024f9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#00aef9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc" />
       <path
          sodipodi:nodetypes="sssss"
          inkscape:connector-curvature="0"
          id="path2987"
          d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
-         style="color:#000000;fill:#0024f9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#00aef9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <path
-         style="color:#000000;fill:#0032dd;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#00aef9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
          id="path2990"
          inkscape:connector-curvature="0"
@@ -121,12 +121,12 @@
     <g
        inkscape:export-ydpi="18.410648"
        inkscape:export-xdpi="18.410648"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\globov.png"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globoa.png"
        transform="matrix(0.03781833,0.99928463,-0.99928463,0.03781833,772.92475,-64.121698)"
        id="g3785">
       <path
          sodipodi:type="arc"
-         style="color:#000000;fill:#0e6000;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#ff00a4;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="path3787"
          sodipodi:cx="324.28571"
          sodipodi:cy="558.07648"
@@ -134,7 +134,7 @@
          sodipodi:ry="115.71429"
          d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z" />
       <path
-         style="color:#000000;fill:#0e6000;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#ff00a4;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
          id="path3789"
          inkscape:connector-curvature="0"
@@ -144,7 +144,7 @@
          inkscape:connector-curvature="0"
          id="path3791"
          d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
-         style="color:#000000;fill:#0e6000;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#ff00a4;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <path
          style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 282.88826,480.74621 c 3.19673,-4.90617 19.45337,9.1572 13.80276,11.52415 -8.6095,3.6064 -14.83762,23.65843 -14.83762,23.65843 l -21.60104,-11.52415 c 0,0 18.26869,-16.95587 22.6359,-23.65843 z"
@@ -185,9 +185,9 @@
     <g
        id="g3805"
        transform="matrix(0.03781833,0.99928463,-0.99928463,0.03781833,785.04658,455.09671)"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\globor.png"
-       inkscape:export-xdpi="18.410648"
-       inkscape:export-ydpi="18.410648">
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globor.png"
+       inkscape:export-xdpi="17.786308"
+       inkscape:export-ydpi="17.786308">
       <path
          d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z"
          sodipodi:ry="115.71429"
@@ -247,14 +247,14 @@
          style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     </g>
     <g
-       inkscape:export-ydpi="18.410648"
-       inkscape:export-xdpi="18.410648"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\globor.png"
+       inkscape:export-ydpi="17.786308"
+       inkscape:export-xdpi="17.786308"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globor.png"
        transform="matrix(0.03781833,0.99928463,-0.99928463,0.03781833,785.04658,455.09671)"
        id="g3825">
       <path
          sodipodi:type="arc"
-         style="color:#000000;fill:#dd0000;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#ff000c;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="path3827"
          sodipodi:cx="324.28571"
          sodipodi:cy="558.07648"
@@ -262,7 +262,7 @@
          sodipodi:ry="115.71429"
          d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z" />
       <path
-         style="color:#000000;fill:#dd0000;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#ff000c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
          id="path3829"
          inkscape:connector-curvature="0"
@@ -272,7 +272,7 @@
          inkscape:connector-curvature="0"
          id="path3831"
          d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
-         style="color:#000000;fill:#dd0000;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#ff000c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <path
          style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 282.88826,480.74621 c 3.19673,-4.90617 19.45337,9.1572 13.80276,11.52415 -8.6095,3.6064 -14.83762,23.65843 -14.83762,23.65843 l -21.60104,-11.52415 c 0,0 18.26869,-16.95587 22.6359,-23.65843 z"
@@ -313,7 +313,7 @@
     <g
        id="g3845"
        transform="matrix(0.03781833,0.99928463,-0.99928463,0.03781833,316.3358,202.55857)"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\globoa.png"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globov.png"
        inkscape:export-xdpi="18.242367"
        inkscape:export-ydpi="18.242367">
       <path
@@ -323,16 +323,16 @@
          sodipodi:cy="558.07648"
          sodipodi:cx="324.28571"
          id="path3847"
-         style="color:#000000;fill:#ddab00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#87ff00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc" />
       <path
          sodipodi:nodetypes="sssss"
          inkscape:connector-curvature="0"
          id="path3849"
          d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
-         style="color:#000000;fill:#ddab00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#87ff00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <path
-         style="color:#000000;fill:#ddab00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#87ff00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
          id="path3851"
          inkscape:connector-curvature="0"

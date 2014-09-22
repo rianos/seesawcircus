@@ -13,9 +13,6 @@ public class FilaObjetivos {
 	public int ID;
 	public int elementos[];
 	public int quedan;
-	public static int teninarow = 0;
-	public boolean bonus = false;
-	public  float time = 0f;
 	//private final static float limitexI = -1024f;
 	//private final static float limitexD = 1024f;
 	private final static float limitexI = -SeeSawCircus.screenwidth /3;
@@ -23,7 +20,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
-	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,30f,30f,40f,40f,50f};
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,30f,30f,40f,40f,50f};
 	private GameWorld game;
 	
 	
@@ -40,12 +37,6 @@ public class FilaObjetivos {
 	
 	public void update (float delta){
 		posicion.add(velocidad.cpy().scl(delta));
-		if (bonus){
-			time+=delta;
-			if ( time > 4){
-				bonus = false;
-			}
-		}
 		if (posicion.x < limitexI){
 			velocidad.x*=-1;
 			posicion.x = limitexI + 2;
@@ -65,7 +56,6 @@ public class FilaObjetivos {
 						if (p.dimensiones.overlaps(r)){
 							game.scoreboard+=puntos[elementos[i]];
 							quedan--;
-							teninarow++;
 							if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
 								p.velocidad.y*=-1;
 								//p.velocidad.y+=20;
@@ -74,28 +64,28 @@ public class FilaObjetivos {
 								p.velocidad.y=-10;
 							 //p.velocidad.y+=20;
 							}
-							if ( elementos[i] >= 8 && elementos[i] <= 11){
+							if ( elementos[i] >= 12 && elementos[i] <= 15){
 								game.coinS.play();
-							}else if ( elementos[i] == 12){
+							}else if ( elementos[i] == 16){
 								game.billeteS.play();
 							}else if ( elementos[i] >=4 && elementos[i] <= 7){
 								game.ballonS.play();
+							}else if (elementos[i] == 8){
+								game.lionroarS.play();
+							}else if (elementos[i] == 10){
+								game.bearS.play();
+							}else if (elementos[i] == 9){
+								game.horseS.play();
+							}else if (elementos[i] == 11){
+								game.elephantS.play();
 							}else{
 								game.clanS.play();
 							}
-							if (teninarow >= 3){
-								teninarow = 0;
-								game.scoreboard+=1000;
-								game.welldoneS.play();
-								bonus = true;
-								time = 0;
-							}
+							
 							elementos[i]= -1;
 						}
 					}
 				}
-			}else{
-				teninarow = 0;
 			}
 			if (this.quedan == 0){
 				game.succesS.play();
@@ -108,7 +98,7 @@ public class FilaObjetivos {
 	public void generarFila(){
 		if ( ID == 3){
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(4,12);
+				this.elementos[i]=MathUtils.random(8,16);
 			}
 		}else if ( ID == 1){
 			for (int i=0;i<10;i++){
@@ -116,11 +106,11 @@ public class FilaObjetivos {
 			}
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(0,9);
+				this.elementos[i]=MathUtils.random(0,12);
 			}
 		}else{
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(0,3);
+				this.elementos[i]=MathUtils.random(0,4);
 			}
 		}
 		this.quedan = 10;

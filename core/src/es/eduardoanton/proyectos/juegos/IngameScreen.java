@@ -66,7 +66,7 @@ public class IngameScreen implements Screen{
 		explosion[3] = new TextureRegion(game.getAsset().get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
 		//caramelos = new Texture[4];
-		caramelos = new Texture[13];
+		caramelos = new Texture[17];
 		caramelos[0] = game.getAsset().get("carameloa.png", Texture.class);
 		caramelos[1] = game.getAsset().get("caramelov.png", Texture.class);
 		caramelos[2] = game.getAsset().get("caramelor.png", Texture.class);
@@ -76,11 +76,16 @@ public class IngameScreen implements Screen{
 		caramelos[5] = game.getAsset().get("globoz.png", Texture.class);
 		caramelos[6] = game.getAsset().get("globov.png", Texture.class);
 		caramelos[7] = game.getAsset().get("globor.png", Texture.class);
-		caramelos[8] = game.getAsset().get("monedaluciap.png", Texture.class);
-		caramelos[9] = game.getAsset().get("monedasoniap.png", Texture.class);
-		caramelos[10] = game.getAsset().get("monedasonia.png", Texture.class);
-		caramelos[11] = game.getAsset().get("monedasonia.png", Texture.class);
-		caramelos[12] = game.getAsset().get("billeteedu.png", Texture.class);
+		
+		caramelos[12] = game.getAsset().get("monedaluciap.png", Texture.class);
+		caramelos[13] = game.getAsset().get("monedasoniap.png", Texture.class);
+		caramelos[14] = game.getAsset().get("monedasonia.png", Texture.class);
+		caramelos[15] = game.getAsset().get("monedasonia.png", Texture.class);
+		caramelos[16] = game.getAsset().get("billeteedu.png", Texture.class);
+		caramelos[8] = game.getAsset().get("leon.png", Texture.class);
+		caramelos[9] = game.getAsset().get("caballo.png", Texture.class);
+		caramelos[10] = game.getAsset().get("oso.png", Texture.class);
+		caramelos[11] = game.getAsset().get("elefante.png", Texture.class);
 		p1llorando = new TextureRegion[2];
 		p1llorando[0] =  new TextureRegion(game.getAsset().get("p1c1.png", Texture.class));
 		p1llorando[1] =  new TextureRegion(game.getAsset().get("p1c2.png", Texture.class));
@@ -194,9 +199,7 @@ public class IngameScreen implements Screen{
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);
 			redondo.draw(batch);
-			/*if (FilaObjetivos.bonus){
-				marcador.draw(batch,"BONUS +1000", 100,350);
-			}*/
+			
 		}
 		batch.end();
 			
