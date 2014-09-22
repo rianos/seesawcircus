@@ -20,6 +20,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,30f,30f,40f,40f,50f};
 	private GameWorld game;
 	
 	
@@ -53,9 +54,8 @@ public class FilaObjetivos {
 					if (elementos[i] != -1 ){
 						Rectangle r = new Rectangle(posicion.x + (20 + objetowidth)*i,posicion.y,objetowidth,objetoheight);
 						if (p.dimensiones.overlaps(r)){
-							game.scoreboard+=(10*(ID+1));
+							game.scoreboard+=puntos[elementos[i]];
 							quedan--;
-							elementos[i]= -1;
 							if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
 								p.velocidad.y*=-1;
 								//p.velocidad.y+=20;
@@ -64,14 +64,21 @@ public class FilaObjetivos {
 								p.velocidad.y=-10;
 							 //p.velocidad.y+=20;
 							}
-							
-							game.clanS.play();
+							if ( elementos[i] >= 8 && elementos[i] <= 11){
+								game.coinS.play();
+							}else if ( elementos[i] == 12){
+								game.billeteS.play();
+							}else if ( elementos[i] >=4 && elementos[i] <= 7){
+								game.ballonS.play();
+							}else{
+								game.clanS.play();
+							}
+							elementos[i]= -1;
 						}
 					}
 				}
 			}
 			if (this.quedan == 0){
-				Gdx.app.log("CIRCUS", "CERO" + ID + " :" + quedan);
 				game.succesS.play();
 				game.scoreboard+=(100*(ID+1));
 				generarFila();
@@ -80,8 +87,22 @@ public class FilaObjetivos {
 	}
 	
 	public void generarFila(){
-		for (int i=0;i<10;i++){
-			this.elementos[i]=MathUtils.random(0,3);
+		if ( ID == 3){
+			for (int i=0;i<10;i++){
+				this.elementos[i]=MathUtils.random(4,12);
+			}
+		}else if ( ID == 1){
+			for (int i=0;i<10;i++){
+				this.elementos[i]=MathUtils.random(0,7);
+			}
+		}else if ( ID == 2){
+			for (int i=0;i<10;i++){
+				this.elementos[i]=MathUtils.random(0,9);
+			}
+		}else{
+			for (int i=0;i<10;i++){
+				this.elementos[i]=MathUtils.random(0,3);
+			}
 		}
 		this.quedan = 10;
 	}

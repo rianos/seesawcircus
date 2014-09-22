@@ -51,6 +51,15 @@ public class SeeSawCircus extends Game {
 		asset.load("caramelor.png", Texture.class);
 		asset.load("carameloz.png", Texture.class);
 		asset.load("caramelov.png", Texture.class);
+		asset.load("monedalucia.png", Texture.class);
+		asset.load("monedasonia.png", Texture.class);
+		asset.load("monedaluciap.png", Texture.class);
+		asset.load("monedasoniap.png", Texture.class);
+		asset.load("billeteedu.png", Texture.class);
+		asset.load("globoa.png", Texture.class);
+		asset.load("globoz.png", Texture.class);
+		asset.load("globor.png", Texture.class);
+		asset.load("globov.png", Texture.class);
 		asset.load("explosion1.png", Texture.class);
 		asset.load("explosion2.png", Texture.class);
 		asset.load("explosion3.png", Texture.class);

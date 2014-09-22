@@ -19,7 +19,7 @@ public class GameWorld {
 	public final static float redimen2 = 12;
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
-	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S; 
+	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS; 
 	public long scoreboard = 0;
 	public short vidas = 5;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
@@ -46,6 +46,9 @@ public class GameWorld {
 		succesS = Gdx.audio.newSound(Gdx.files.internal("succes.wav"));
 		wowS = Gdx.audio.newSound(Gdx.files.internal("small_crowd_saying_wow.mp3"));
 		jump2S = Gdx.audio.newSound(Gdx.files.internal("comedy_siren_whistle_great_for_slips_and_trips_002.mp3"));
+		coinS = Gdx.audio.newSound(Gdx.files.internal("money_piggy_bank_coin_insert_004.mp3"));
+		billeteS = Gdx.audio.newSound(Gdx.files.internal("antique_cash_register_punching_single_key.mp3"));
+		ballonS = Gdx.audio.newSound(Gdx.files.internal("comedy_bubble_pop_002.mp3"));
 		
 		
 

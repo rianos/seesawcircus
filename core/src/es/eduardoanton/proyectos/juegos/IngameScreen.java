@@ -65,12 +65,22 @@ public class IngameScreen implements Screen{
 		explosion[2] = new TextureRegion(game.getAsset().get("explosion3.png", Texture.class));
 		explosion[3] = new TextureRegion(game.getAsset().get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
-		caramelos = new Texture[4];
+		//caramelos = new Texture[4];
+		caramelos = new Texture[13];
 		caramelos[0] = game.getAsset().get("carameloa.png", Texture.class);
 		caramelos[1] = game.getAsset().get("caramelov.png", Texture.class);
 		caramelos[2] = game.getAsset().get("caramelor.png", Texture.class);
 		caramelos[3] = game.getAsset().get("carameloz.png", Texture.class);
-
+	
+		caramelos[4] = game.getAsset().get("globoa.png", Texture.class);
+		caramelos[5] = game.getAsset().get("globoz.png", Texture.class);
+		caramelos[6] = game.getAsset().get("globov.png", Texture.class);
+		caramelos[7] = game.getAsset().get("globor.png", Texture.class);
+		caramelos[8] = game.getAsset().get("monedaluciap.png", Texture.class);
+		caramelos[9] = game.getAsset().get("monedasoniap.png", Texture.class);
+		caramelos[10] = game.getAsset().get("monedasonia.png", Texture.class);
+		caramelos[11] = game.getAsset().get("monedasonia.png", Texture.class);
+		caramelos[12] = game.getAsset().get("billeteedu.png", Texture.class);
 		p1llorando = new TextureRegion[2];
 		p1llorando[0] =  new TextureRegion(game.getAsset().get("p1c1.png", Texture.class));
 		p1llorando[1] =  new TextureRegion(game.getAsset().get("p1c2.png", Texture.class));
@@ -112,7 +122,7 @@ public class IngameScreen implements Screen{
 	}
 	@Override
 	public void render(float delta) {
-		
+	
 		a+=delta;
 		gamew.update(delta);
 		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
@@ -134,13 +144,8 @@ public class IngameScreen implements Screen{
 		letrero.draw(batch, Musica.getName(), 25, 20);
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
-		}
-		//batch.draw(p1estrellasA.getKeyFrame(a), 100,200);
-		//batch.draw(p2estrellasA.getKeyFrame(a), 200,200);
-		
+		}	
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
-			//marcador.setScale(2);
-			//marcador.setColor(0.5f, 0.3f, 0.7f, 1f);
 			marcador.draw(batch, "GAME OVER", 15, 200);
 		}
 		if (gamew.payaso1.state == Payaso.PayasoState.MESSDEATH){
