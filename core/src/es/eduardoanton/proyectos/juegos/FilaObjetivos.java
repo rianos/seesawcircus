@@ -108,15 +108,15 @@ public class FilaObjetivos {
 			}
 		}else if ( ID == 1){
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(0,7);
+				this.elementos[i]=MathUtils.random(0,13);
 			}
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(0,12);
+				this.elementos[i]=MathUtils.random(6,18);
 			}
 		}else{
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(12,19);
+				this.elementos[i]=MathUtils.random(0,5);
 			}
 		}
 		this.quedan = 10;
