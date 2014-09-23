@@ -11,18 +11,23 @@ public class SeeSawCircus extends Game {
 	private static AssetManager asset;
 	public final static float screenwidth = 1024f;
 	public final static float screenheight = 600f;
+	public static MainScreen mainscreen;
+	public static IngameScreen ingamescreen;
 	
 	@Override
 	public void create() {
 		loadassets();
-		IngameScreen ingamescreen = new IngameScreen( this );
-		this.setScreen( ingamescreen);
+		 mainscreen = new MainScreen(this);
+		 ingamescreen = new IngameScreen( this );
 		
+		//this.setScreen( ingamescreen);
+		this.setScreen(mainscreen);
 	}
 	
 	private void loadassets(){
 		asset = new AssetManager();
-		asset.load("trampolin.png", Texture.class);	
+		asset.load("trampolin.png", Texture.class);
+		asset.load("fondoinicio.png", Texture.class);	
 		asset.load("trampolin2.png", Texture.class);
 		asset.load("payaso22.png", Texture.class);
 		asset.load("payaso33.png", Texture.class);

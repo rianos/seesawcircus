@@ -120,14 +120,19 @@ public class IngameScreen implements Screen{
 		fondo = game.getAsset().get("fondo.png", Texture.class);
 		redondo =  new Sprite( (Texture) game.getAsset().get("redondo.png"));
 		gamew = new GameWorld();
-		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
 		
 		marcador =game.getAsset().get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		
 		
 		letrero = new BitmapFont();
 		letrero.setColor(Color.BLACK);
+		
+	}
+	
+	public void init(){
+		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
 		Musica.playRandom();
+		
 	}
 	@Override
 	public void render(float delta) {
@@ -264,7 +269,7 @@ public class IngameScreen implements Screen{
 
 	@Override
 	public void show() {
-		// TODO Auto-generated method stub
+		init();
 		
 	}
 

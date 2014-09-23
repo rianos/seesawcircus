@@ -14,7 +14,7 @@ public class Musica {
 	public static void playRandom(){
 		i = MathUtils.random(lista.length - 1);
 		musica = SeeSawCircus.getAsset().get(lista[i]);
-		musica.setVolume(0.4f);
+		musica.setVolume(1f);
 		musica.setLooping(false);
 		musica.play();
 	}
