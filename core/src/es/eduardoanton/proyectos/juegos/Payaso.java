@@ -139,7 +139,7 @@ public class Payaso {
 				posicion.y = 400;
 				posicion.x = 400;
 				 game.trampolin.posicion.x = 410;
-				 Musica.setVolume(0.5f);
+				 Musica.setVolume(0.4f);
 			}
 		}
 	}

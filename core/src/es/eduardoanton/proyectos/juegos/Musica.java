@@ -7,14 +7,14 @@ import com.badlogic.gdx.math.MathUtils;
 public class Musica {
 	public static Music musica;
 	public static int i;
-	public static String[] lista = {"Run Amok.mp3","Monkeys Spinning Monkeys.mp3"
-		,"Waunobe March.mp3","Fig Leaf Times Two.mp3","Merry Go.mp3","Plucky Daisy.mp3","Look Busy.mp3",
-		"Five Card Shuffle.mp3","Friendly Day.mp3"};
+	public static String[] lista = {"Run Amok.ogg","Monkeys Spinning Monkeys.ogg"
+		,"Waunobe March.ogg","Fig Leaf Times Two.ogg","Merry Go.ogg","Plucky Daisy.ogg","Look Busy.ogg",
+		"Five Card Shuffle.ogg","Friendly Day.ogg"};
 	
 	public static void playRandom(){
 		i = MathUtils.random(lista.length - 1);
 		musica = SeeSawCircus.getAsset().get(lista[i]);
-		musica.setVolume(0.5f);
+		musica.setVolume(0.4f);
 		musica.setLooping(false);
 		musica.play();
 	}
