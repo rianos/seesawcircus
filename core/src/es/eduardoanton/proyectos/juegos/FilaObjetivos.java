@@ -20,7 +20,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
-	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,30f,30f,40f,40f,50f};
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f};
 	private GameWorld game;
 	
 	
@@ -64,9 +64,9 @@ public class FilaObjetivos {
 								p.velocidad.y=-10;
 							 //p.velocidad.y+=20;
 							}
-							if ( elementos[i] >= 12 && elementos[i] <= 15){
+							if ( elementos[i] >= 15 && elementos[i] <= 18){
 								game.coinS.play();
-							}else if ( elementos[i] == 16){
+							}else if ( elementos[i] == 19){
 								game.billeteS.play();
 							}else if ( elementos[i] >=4 && elementos[i] <= 7){
 								game.ballonS.play();
@@ -78,6 +78,12 @@ public class FilaObjetivos {
 								game.horseS.play();
 							}else if (elementos[i] == 11){
 								game.elephantS.play();
+							}else if (elementos[i] == 14){
+								game.dogS.play();
+							}else if (elementos[i] == 12){
+								game.monoS.play();
+							}else if (elementos[i] == 13){
+								game.focaS.play();
 							}else{
 								game.clanS.play();
 							}
@@ -98,7 +104,7 @@ public class FilaObjetivos {
 	public void generarFila(){
 		if ( ID == 3){
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(8,16);
+				this.elementos[i]=MathUtils.random(8,19);
 			}
 		}else if ( ID == 1){
 			for (int i=0;i<10;i++){
@@ -110,7 +116,7 @@ public class FilaObjetivos {
 			}
 		}else{
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(0,4);
+				this.elementos[i]=MathUtils.random(12,19);
 			}
 		}
 		this.quedan = 10;

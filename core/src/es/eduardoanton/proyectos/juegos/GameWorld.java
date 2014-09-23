@@ -20,7 +20,7 @@ public class GameWorld {
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS;
-	public Sound horseS,lionroarS,bearS,elephantS;
+	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS;
 	public long scoreboard = 0;
 	public short vidas = 5;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
@@ -55,6 +55,9 @@ public class GameWorld {
 		lionroarS = Gdx.audio.newSound(Gdx.files.internal("lionroar.ogg"));
 		bearS = Gdx.audio.newSound(Gdx.files.internal("bear.ogg"));
 		elephantS = Gdx.audio.newSound(Gdx.files.internal("elephant.ogg"));
+		dogS = Gdx.audio.newSound(Gdx.files.internal("dog_barking_05.mp3"));
+		monoS = Gdx.audio.newSound(Gdx.files.internal("animal_chimpanzee_chimp_screams.ogg"));
+		focaS = Gdx.audio.newSound(Gdx.files.internal("41384__sandyrb__milk-jug-seal-01.ogg"));
 		
 		
 
