@@ -1,6 +1,7 @@
 package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Color;
@@ -25,13 +26,14 @@ public class IngameScreen implements Screen{
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
-	private Texture carameloa,carameloz,caramelov,caramelor;
+	private Texture carameloa,carameloz,caramelov,caramelor,corona;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
 	public BitmapFont marcador,gameover,letrero;
 	public static float statetime = 0f;
 	public Texture caramelos[];
+	private InputProcessor iproc;
 	
 
 
@@ -42,86 +44,85 @@ public class IngameScreen implements Screen{
 		cam = new OrthographicCamera();
 		cam.setToOrtho(false, 1024,600);
 		cam.update();
+		
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);	
-		trampolintexturel = game.getAsset().get("trampolin.png", Texture.class );
-		trampolinsombra = game.getAsset().get("trampolin_sombra.png", Texture.class );
-		payasosombra = game.getAsset().get("payaso_sombra.png", Texture.class );
+		trampolintexturel = game.asset.get("trampolin.png", Texture.class );
+		trampolinsombra = game.asset.get("trampolin_sombra.png", Texture.class );
+		payasosombra = game.asset.get("payaso_sombra.png", Texture.class );
 		trampolintexturer = new TextureRegion(trampolintexturel);
 		trampolintexturer.flip(true,false);
-		payaso = game.getAsset().get("payaso22.png", Texture.class);
-		payaso2 = game.getAsset().get("payaso33.png", Texture.class);
-		payasob = game.getAsset().get("payaso22bajando.png", Texture.class);
-		payaso2b = game.getAsset().get("payaso33bajando.png", Texture.class);
-		payasoc = game.getAsset().get("payaso22cruz.png", Texture.class);
-		payaso2c = game.getAsset().get("payaso33cruz.png", Texture.class);
-		payasodeath =game.getAsset().get("payasodeath.png", Texture.class);
-		lapida =game.getAsset().get("lapida.png", Texture.class);
-		corazon =game.getAsset().get("corazon.png", Texture.class);
-		musica =game.getAsset().get("musica.png", Texture.class);
+		payaso = game.asset.get("payaso22.png", Texture.class);
+		payaso2 = game.asset.get("payaso33.png", Texture.class);
+		payasob = game.asset.get("payaso22bajando.png", Texture.class);
+		payaso2b = game.asset.get("payaso33bajando.png", Texture.class);
+		payasoc = game.asset.get("payaso22cruz.png", Texture.class);
+		payaso2c = game.asset.get("payaso33cruz.png", Texture.class);
+		payasodeath =game.asset.get("payasodeath.png", Texture.class);
+		lapida =game.asset.get("lapida.png", Texture.class);
+		corazon =game.asset.get("corazon.png", Texture.class);
+		musica =game.asset.get("musica.png", Texture.class);
+		corona = game.asset.get("record.png", Texture.class);
 		explosion = new TextureRegion[4];
-		explosion[0] = new TextureRegion(game.getAsset().get("explosion1.png", Texture.class));
-		explosion[1] = new TextureRegion(game.getAsset().get("explosion2.png", Texture.class));
-		explosion[2] = new TextureRegion(game.getAsset().get("explosion3.png", Texture.class));
-		explosion[3] = new TextureRegion(game.getAsset().get("explosion4.png", Texture.class));
+		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
+		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
+		explosion[2] = new TextureRegion(game.asset.get("explosion3.png", Texture.class));
+		explosion[3] = new TextureRegion(game.asset.get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
 		//caramelos = new Texture[4];
 		caramelos = new Texture[20];
-		caramelos[0] = game.getAsset().get("carameloa.png", Texture.class);
-		caramelos[1] = game.getAsset().get("caramelov.png", Texture.class);
-		caramelos[2] = game.getAsset().get("caramelor.png", Texture.class);
-		caramelos[3] = game.getAsset().get("carameloz.png", Texture.class);
+		caramelos[0] = game.asset.get("carameloa.png", Texture.class);
+		caramelos[1] = game.asset.get("caramelov.png", Texture.class);
+		caramelos[2] = game.asset.get("caramelor.png", Texture.class);
+		caramelos[3] = game.asset.get("carameloz.png", Texture.class);
 	
-		caramelos[4] = game.getAsset().get("globoa.png", Texture.class);
-		caramelos[5] = game.getAsset().get("globoz.png", Texture.class);
-		caramelos[6] = game.getAsset().get("globov.png", Texture.class);
-		caramelos[7] = game.getAsset().get("globor.png", Texture.class);
+		caramelos[4] = game.asset.get("globoa.png", Texture.class);
+		caramelos[5] = game.asset.get("globoz.png", Texture.class);
+		caramelos[6] = game.asset.get("globov.png", Texture.class);
+		caramelos[7] = game.asset.get("globor.png", Texture.class);
 		
-		caramelos[15] = game.getAsset().get("monedaluciap.png", Texture.class);
-		caramelos[16] = game.getAsset().get("monedasoniap.png", Texture.class);
-		caramelos[17] = game.getAsset().get("monedasonia.png", Texture.class);
-		caramelos[18] = game.getAsset().get("monedasonia.png", Texture.class);
-		caramelos[19] = game.getAsset().get("billeteedu.png", Texture.class);
-		caramelos[8] = game.getAsset().get("leon.png", Texture.class);
-		caramelos[9] = game.getAsset().get("caballo.png", Texture.class);
-		caramelos[10] = game.getAsset().get("oso.png", Texture.class);
-		caramelos[11] = game.getAsset().get("elefante.png", Texture.class);
-		caramelos[12] = game.getAsset().get("mono.png", Texture.class);
-		caramelos[13] = game.getAsset().get("foca.png", Texture.class);
-		caramelos[14] = game.getAsset().get("perro.png", Texture.class);
+		caramelos[15] = game.asset.get("monedaluciap.png", Texture.class);
+		caramelos[16] = game.asset.get("monedasoniap.png", Texture.class);
+		caramelos[17] = game.asset.get("monedasonia.png", Texture.class);
+		caramelos[18] = game.asset.get("monedasonia.png", Texture.class);
+		caramelos[19] = game.asset.get("billeteedu.png", Texture.class);
+		caramelos[8] = game.asset.get("leon.png", Texture.class);
+		caramelos[9] = game.asset.get("caballo.png", Texture.class);
+		caramelos[10] = game.asset.get("oso.png", Texture.class);
+		caramelos[11] = game.asset.get("elefante.png", Texture.class);
+		caramelos[12] = game.asset.get("mono.png", Texture.class);
+		caramelos[13] = game.asset.get("foca.png", Texture.class);
+		caramelos[14] = game.asset.get("perro.png", Texture.class);
 		
 		p1llorando = new TextureRegion[2];
-		p1llorando[0] =  new TextureRegion(game.getAsset().get("p1c1.png", Texture.class));
-		p1llorando[1] =  new TextureRegion(game.getAsset().get("p1c2.png", Texture.class));
+		p1llorando[0] =  new TextureRegion(game.asset.get("p1c1.png", Texture.class));
+		p1llorando[1] =  new TextureRegion(game.asset.get("p1c2.png", Texture.class));
 		p1llorandoA = new Animation(0.1f,p1llorando);
 		p1llorandoA.setPlayMode(Animation.PlayMode.LOOP);
 		p2llorando = new TextureRegion[2];
-		p2llorando[0] =  new TextureRegion(game.getAsset().get("p2c1.png", Texture.class));
-		p2llorando[1] =  new TextureRegion(game.getAsset().get("p2c2.png", Texture.class));
+		p2llorando[0] =  new TextureRegion(game.asset.get("p2c1.png", Texture.class));
+		p2llorando[1] =  new TextureRegion(game.asset.get("p2c2.png", Texture.class));
 		p2llorandoA = new Animation(0.1f,p2llorando);
 		p2llorandoA.setPlayMode(Animation.PlayMode.LOOP);
 		p1estrellas = new TextureRegion[4];
-		p1estrellas[0] =  new TextureRegion(game.getAsset().get("p1e1.png", Texture.class));
-		p1estrellas[1] =  new TextureRegion(game.getAsset().get("p1e2.png", Texture.class));
-		p1estrellas[2] =  new TextureRegion(game.getAsset().get("p1e3.png", Texture.class));
-		p1estrellas[3] =  new TextureRegion(game.getAsset().get("p1e4.png", Texture.class));
+		p1estrellas[0] =  new TextureRegion(game.asset.get("p1e1.png", Texture.class));
+		p1estrellas[1] =  new TextureRegion(game.asset.get("p1e2.png", Texture.class));
+		p1estrellas[2] =  new TextureRegion(game.asset.get("p1e3.png", Texture.class));
+		p1estrellas[3] =  new TextureRegion(game.asset.get("p1e4.png", Texture.class));
 		p1estrellasA = new Animation(0.24f,p1estrellas);
 		p1estrellasA.setPlayMode(Animation.PlayMode.LOOP);
 		p2estrellas = new TextureRegion[4];
-		p2estrellas[0] =  new TextureRegion(game.getAsset().get("p2e1.png", Texture.class));
-		p2estrellas[1] =  new TextureRegion(game.getAsset().get("p2e2.png", Texture.class));
-		p2estrellas[2] =  new TextureRegion(game.getAsset().get("p2e3.png", Texture.class));
-		p2estrellas[3] =  new TextureRegion(game.getAsset().get("p2e4.png", Texture.class));
+		p2estrellas[0] =  new TextureRegion(game.asset.get("p2e1.png", Texture.class));
+		p2estrellas[1] =  new TextureRegion(game.asset.get("p2e2.png", Texture.class));
+		p2estrellas[2] =  new TextureRegion(game.asset.get("p2e3.png", Texture.class));
+		p2estrellas[3] =  new TextureRegion(game.asset.get("p2e4.png", Texture.class));
 		p2estrellasA = new Animation(0.24f,p2estrellas);
-		p2estrellasA.setPlayMode(Animation.PlayMode.LOOP);
-		//payaso = game.getAsset().get("payaso2.png", Texture.class);
-		//payaso2 = game.getAsset().get("payaso3.png", Texture.class);
-				
-		fondo = game.getAsset().get("fondo.png", Texture.class);
-		redondo =  new Sprite( (Texture) game.getAsset().get("redondo.png"));
-		gamew = new GameWorld();
-		
-		marcador =game.getAsset().get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
+		p2estrellasA.setPlayMode(Animation.PlayMode.LOOP);		
+		fondo = game.asset.get("fondo.png", Texture.class);
+		redondo =  new Sprite( (Texture) game.asset.get("redondo.png"));
+		gamew = SeeSawCircus.gamew;
+		iproc = new InputProcesador(cam,gamew);
+		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		
 		
 		letrero = new BitmapFont();
@@ -129,11 +130,7 @@ public class IngameScreen implements Screen{
 		
 	}
 	
-	public void init(){
-		Gdx.input.setInputProcessor(new InputProcesador(cam,gamew));
-		Musica.playRandom();
-		
-	}
+	
 	@Override
 	public void render(float delta) {
 	
@@ -153,6 +150,9 @@ public class IngameScreen implements Screen{
 		}
 		
 		//marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
+		if ( gamew.isrecord){
+			batch.draw(corona, 512, 512);
+		}
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
 		batch.draw(musica, 0, 0);
 		letrero.draw(batch, Musica.getName() , 25, 20);
@@ -269,13 +269,14 @@ public class IngameScreen implements Screen{
 
 	@Override
 	public void show() {
-		init();
-		
+		Gdx.input.setInputProcessor(iproc);
+		Musica.playRandom();	
+		gamew.reset();
 	}
 
 	@Override
 	public void hide() {
-		// TODO Auto-generated method stub
+		Musica.stop();	
 		
 	}
 

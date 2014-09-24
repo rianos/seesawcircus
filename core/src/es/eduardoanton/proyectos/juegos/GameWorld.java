@@ -8,6 +8,7 @@ import es.eduardoanton.proyectos.juegos.Payaso.PayasoState;
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
 
 public class GameWorld {
+	public SeeSawCircus game;
 	public Trampolin trampolin;
 	public Payaso payaso1;
 	public Payaso payaso2;
@@ -20,13 +21,16 @@ public class GameWorld {
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS;
-	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS;
-	public long scoreboard = 0;
+	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS;
+	public long scoreboard = 0,record = 0;
 	public short vidas = 5;
+	public float time = 0f;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
 	public GameState gamestate  = GameState.RUNNING;
+	public boolean isrecord,playedrecord;
 
-	GameWorld(){
+	GameWorld(SeeSawCircus game){
+		this.game = game;
 		trampolin = new Trampolin();
 		payaso1 = new Payaso(400,50,0,0,PayasoState.STANDBYL, this, 1);
 		payaso2 = new Payaso(500,300,0,0,PayasoState.FLYING, this, 2);
@@ -58,10 +62,9 @@ public class GameWorld {
 		dogS = Gdx.audio.newSound(Gdx.files.internal("dog_barking_05.mp3"));
 		monoS = Gdx.audio.newSound(Gdx.files.internal("animal_chimpanzee_chimp_screams.ogg"));
 		focaS = Gdx.audio.newSound(Gdx.files.internal("41384__sandyrb__milk-jug-seal-01.ogg"));
-		
-		
-
+		highscoreS = SeeSawCircus.asset.get("comedy_male_yelling_yee_ha.mp3");
 	}
+	
 	public void reset(){
 		trampolin = new Trampolin();
 		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this, 1);
@@ -75,23 +78,42 @@ public class GameWorld {
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		scoreboard = 0;
 		vidas = 5;
+		isrecord = false;
+		playedrecord = false;
+		record = SeeSawCircus.prefs.getLong("record", 0);
 		this.gamestate = GameState.RUNNING;
 		
 	}
 	
 	public void update(float delta){
-		if (!Musica.isPlaying()){
-			Musica.playRandom();
+		if ( gamestate == GameState.GAMEOVER){
+			time+=delta;
+			if (time > 2){
+				game.setScreen(SeeSawCircus.gameoverscreen);
+			}
 		}
 		if (gamestate != GameState.GAMEOVER){
+			if (!Musica.isPlaying()){
+				Musica.playRandom();
+			}
 			trampolin.update(delta);
 			payaso1.update(delta);
 			payaso2.update(delta);
 			for (FilaObjetivos fila : arrayFilaObjetivos){
 				fila.update(delta);
 			}
+			if ( scoreboard >= record){
+				record = scoreboard;
+				if (!playedrecord){
+					highscoreS.play();
+					isrecord = true;
+					playedrecord = true;
+				}
+			}
 			if ( this.vidas == 0){
 				this.gamestate = GameState.GAMEOVER;
+				time = delta;
+				Musica.stop();
 			}
 		}
 	}

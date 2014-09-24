@@ -13,8 +13,8 @@ public class Musica {
 	
 	public static void playRandom(){
 		i = MathUtils.random(lista.length - 1);
-		musica = SeeSawCircus.getAsset().get(lista[i]);
-		musica.setVolume(1f);
+		musica = SeeSawCircus.asset.get(lista[i]);
+		musica.setVolume(0.5f);
 		musica.setLooping(false);
 		musica.play();
 	}
@@ -33,5 +33,8 @@ public class Musica {
 		return lista[i].substring(0, lista[i].lastIndexOf('.'));
 	}
 
+	public static void stop(){
+		musica.stop();
+	}
 	
 }

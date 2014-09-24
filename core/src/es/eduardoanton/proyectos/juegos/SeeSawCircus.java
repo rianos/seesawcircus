@@ -1,26 +1,35 @@
 package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
 public class SeeSawCircus extends Game {
 
-	private static AssetManager asset;
+	public static AssetManager asset;
 	public final static float screenwidth = 1024f;
 	public final static float screenheight = 600f;
-	public static MainScreen mainscreen;
-	public static IngameScreen ingamescreen;
+	public static Screen mainscreen,ingamescreen,gameoverscreen;
+	public static GameWorld gamew;
+	public static Preferences prefs;
+	
 	
 	@Override
 	public void create() {
 		loadassets();
-		 mainscreen = new MainScreen(this);
-		 ingamescreen = new IngameScreen( this );
-		
-		//this.setScreen( ingamescreen);
+		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
+		prefs.putLong("record", 200);
+		prefs.flush();
+		gamew = new GameWorld(this);
+		mainscreen = new MainScreen(this);
+		ingamescreen = new IngameScreen( this );
+		gameoverscreen = new GameOverScreen(this); 
 		this.setScreen(mainscreen);
 	}
 	
@@ -71,6 +80,7 @@ public class SeeSawCircus extends Game {
 		asset.load("perro.png", Texture.class);
 		asset.load("mono.png", Texture.class);
 		asset.load("foca.png", Texture.class);
+		asset.load("record.png", Texture.class);
 		asset.load("elefante.png", Texture.class);
 		asset.load("explosion1.png", Texture.class);
 		asset.load("explosion2.png", Texture.class);
@@ -82,13 +92,13 @@ public class SeeSawCircus extends Game {
 		for ( String musica : Musica.lista){
 			asset.load(musica, Music.class);
 		}
+		asset.load("Circus Dilemma.ogg", Music.class);
 		asset.load("fuente.fnt", BitmapFont.class);
+		asset.load("app_game_interactive_alert_tone_015.mp3", Sound.class);
+		asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.finishLoading();
 	}
 	
-	public static AssetManager getAsset(){
-		return asset;
-	}
 }
 		
