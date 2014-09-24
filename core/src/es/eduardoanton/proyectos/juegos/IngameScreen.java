@@ -151,7 +151,7 @@ public class IngameScreen implements Screen{
 		
 		//marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
 		if ( gamew.isrecord){
-			batch.draw(corona, 512, 512);
+			batch.draw(corona, SeeSawCircus.screenwidth - corona.getWidth() -10, 10);
 		}
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
 		batch.draw(musica, 0, 0);

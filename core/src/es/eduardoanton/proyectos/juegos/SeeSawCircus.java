@@ -95,7 +95,8 @@ public class SeeSawCircus extends Game {
 		asset.load("Circus Dilemma.ogg", Music.class);
 		asset.load("fuente.fnt", BitmapFont.class);
 		asset.load("app_game_interactive_alert_tone_015.mp3", Sound.class);
-		asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
+		//asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
+		asset.load("record.ogg", Sound.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.finishLoading();
 	}
