@@ -24,7 +24,7 @@ public class SeeSawCircus extends Game {
 	public void create() {
 		loadassets();
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
-		prefs.putLong("record", 200);
+		prefs.putLong("record", 800);
 		prefs.flush();
 		gamew = new GameWorld(this);
 		mainscreen = new MainScreen(this);

@@ -92,9 +92,7 @@ public class InputProcesador implements InputProcessor{
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		if ( gamew.gamestate == GameState.GAMEOVER){
-			gamew.reset();
-		}
+	
 		return false;
 	}
 
