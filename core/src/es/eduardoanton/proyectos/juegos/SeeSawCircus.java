@@ -36,7 +36,12 @@ public class SeeSawCircus extends Game {
 	private void loadassets(){
 		asset = new AssetManager();
 		asset.load("trampolin.png", Texture.class);
-		asset.load("fondoinicio.png", Texture.class);	
+		asset.load("fondoinicio.png", Texture.class);
+		asset.load("nube.png", Texture.class);
+		asset.load("circo.png", Texture.class);
+		asset.load("letrero.png", Texture.class);
+		asset.load("letreroe.png", Texture.class);
+		asset.load("fondomain.png", Texture.class);
 		asset.load("trampolin2.png", Texture.class);
 		asset.load("payaso22.png", Texture.class);
 		asset.load("payaso33.png", Texture.class);
