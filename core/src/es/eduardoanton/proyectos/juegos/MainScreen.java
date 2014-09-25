@@ -54,32 +54,32 @@ public class MainScreen implements Screen{
 	              moveTo(1024, 300, 8)
 	              ))); 
 		circo = new ActorGenerico(220f,600f,"circo.png");
-		circo.addAction(sequence(moveTo(220f,80f,0.5f),moveTo(220f,100f,0.2f),moveTo(220f,80f,0.1f)
+		circo.addAction(sequence(delay(4f),moveTo(220f,80f,0.5f),moveTo(220f,100f,0.2f),moveTo(220f,80f,0.1f)
 				));
 	    //fondoincio.addAction(Actions.moveTo(600, 60, 3f));
 		letrero = new ActorGenerico(50,900,"letrero.png");
-		letrero.addAction(sequence(delay(4),moveTo(50,420f,2f)
+		letrero.addAction(sequence(delay(8),moveTo(50,420f,2f)
 				));
 		letreroe = new ActorGenerico(-500,450,"letreroe.png");
-		letreroe.addAction(sequence(delay(4.5f),moveTo(250,400f,1.5f)
+		letreroe.addAction(sequence(delay(8.5f),moveTo(250,400f,1.5f)
 				));
 		payaso1 = new ActorGenerico(90,600,"payasoinicio1.png");
-		payaso1.addAction(moveTo(90,30,3f)
+		payaso1.addAction(sequence(delay(4f),moveTo(90,30,3f))
 				);
 		payaso2 = new ActorGenerico(700,700,"payasoinicio2.png");
-		payaso2.addAction(moveTo(700,30,3f)
+		payaso2.addAction(sequence(delay(4f),moveTo(700,30,3f))
 				);
 		globos1 = new ActorGenerico(170,730,"globosinicio.png");
 		globos2 = new ActorGenerico(800,730,"globosinicio.png");
-		globos1.addAction(sequence(moveTo(170,160,3f),moveTo(170,730,2f)));
-		globos2.addAction(sequence(moveTo(800,160,3f),moveTo(800,730,2f)));
+		globos1.addAction(sequence(delay(4f),moveTo(170,160,3f),moveTo(170,730,2f)));
+		globos2.addAction(sequence(delay(4f),moveTo(800,160,3f),moveTo(800,730,2f)));
 		gato = new ActorGenerico(512,50,"gato.png");
-		gato.addAction(sequence(
-				delay(7),moveTo(512,240,0.3f),moveTo(700,240,1.5f),moveTo(500,360,0.1f)
+		gato.addAction(sequence(visible(false),delay(6),visible(true),
+				delay(2),moveTo(512,240,0.3f),moveTo(700,240,1.5f),moveTo(500,360,0.1f)
 				));
 		botoninicio = new ActorGenerico(430,40,"botoninicio.png");
 		botoninicio.addAction(sequence(
-				visible(false),delay(8),visible(true)
+				visible(false),delay(9),visible(true)
 				));
 	    stage.addActor(fondoincio);
 	    stage.addActor(nube1);
@@ -93,6 +93,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(globos2);
 	    stage.addActor(gato);
 	    stage.addActor(botoninicio);
+	
 	}
 	@Override
 	public void render(float delta) {

@@ -5,7 +5,7 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.math.MathUtils;
 
 public class Musica {
-	public static Music musica;
+	public static Music musica,hsmusic;
 	public static int i;
 	public static String[] lista = {"Run Amok.ogg","Monkeys Spinning Monkeys.ogg"
 		,"Waunobe March.ogg","Fig Leaf Times Two.ogg","Merry Go.ogg","Plucky Daisy.ogg","Look Busy.ogg",
@@ -23,6 +23,12 @@ public class Musica {
 		musica.setVolume(vol);
 	}
 
+	public static void highscoreplay(float vol){
+		musica.pause();
+		hsmusic = SeeSawCircus.asset.get("record.ogg");
+		hsmusic.setVolume(vol);
+		hsmusic.play();
+	}
 
 	public static boolean isPlaying() {
 		return musica.isPlaying();

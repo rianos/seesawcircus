@@ -105,7 +105,7 @@ public class GameWorld {
 			if ( scoreboard >= record){
 				record = scoreboard;
 				if (!playedrecord){
-					highscoreS.play(0.5f);
+					Musica.highscoreplay(0.5f);
 					isrecord = true;
 					playedrecord = true;
 				}
