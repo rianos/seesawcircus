@@ -13,6 +13,8 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.badlogic.gdx.utils.viewport.StretchViewport;
+
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
 public class MainScreen implements Screen{
@@ -25,6 +27,7 @@ public class MainScreen implements Screen{
 	private InputProcessor iproc;
 	private Stage stage;
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
+	private Actor payaso1,payaso2,globos1,globos2,gato,botoninicio;
 	
 	public MainScreen (SeeSawCircus game){
 		this.game = game;
@@ -38,10 +41,10 @@ public class MainScreen implements Screen{
 		musica = SeeSawCircus.asset.get("Circus Dilemma.ogg");
 		clic = SeeSawCircus.asset.get("app_game_interactive_alert_tone_015.mp3");
 		iproc = new InputProcesadorMain(cam,game);
-	    stage = new Stage(new ScreenViewport());
-	    fondoincio = new ActorFondoInicio();
-	    nube1 = new ActorNube(0f,400f);
-	    nube2 = new ActorNube(1024f,300f);
+	    stage = new Stage(new StretchViewport(1024, 600));
+	    fondoincio = new ActorGenerico(0f,0f,"fondomain.png");
+	    nube1 = new ActorGenerico(0f,400f,"nube.png");
+	    nube2 = new ActorGenerico(1024f,300f,"nube.png");
 	    nube1.addAction(forever(sequence(
 	              moveTo(1024, 400, 10),
 	              moveTo(0, 400, 10)
@@ -50,15 +53,33 @@ public class MainScreen implements Screen{
 	              moveTo(0, 300, 10),
 	              moveTo(1024, 300, 8)
 	              ))); 
-		circo = new ActorCirco(220f,600f);
+		circo = new ActorGenerico(220f,600f,"circo.png");
 		circo.addAction(sequence(moveTo(220f,80f,0.5f),moveTo(220f,100f,0.2f),moveTo(220f,80f,0.1f)
 				));
 	    //fondoincio.addAction(Actions.moveTo(600, 60, 3f));
-		letrero = new ActorLetrero(50,900);
-		letrero.addAction(sequence(moveTo(50,420f,2f)
+		letrero = new ActorGenerico(50,900,"letrero.png");
+		letrero.addAction(sequence(delay(4),moveTo(50,420f,2f)
 				));
-		letreroe = new ActorLetreroe(-500,450);
-		letreroe.addAction(sequence(delay(0.5f),moveTo(250,400f,1.5f)
+		letreroe = new ActorGenerico(-500,450,"letreroe.png");
+		letreroe.addAction(sequence(delay(4.5f),moveTo(250,400f,1.5f)
+				));
+		payaso1 = new ActorGenerico(90,600,"payasoinicio1.png");
+		payaso1.addAction(moveTo(90,30,3f)
+				);
+		payaso2 = new ActorGenerico(700,700,"payasoinicio2.png");
+		payaso2.addAction(moveTo(700,30,3f)
+				);
+		globos1 = new ActorGenerico(170,730,"globosinicio.png");
+		globos2 = new ActorGenerico(800,730,"globosinicio.png");
+		globos1.addAction(sequence(moveTo(170,160,3f),moveTo(170,730,2f)));
+		globos2.addAction(sequence(moveTo(800,160,3f),moveTo(800,730,2f)));
+		gato = new ActorGenerico(512,50,"gato.png");
+		gato.addAction(sequence(
+				delay(7),moveTo(512,240,0.3f),moveTo(700,240,1.5f),moveTo(500,360,0.1f)
+				));
+		botoninicio = new ActorGenerico(430,40,"botoninicio.png");
+		botoninicio.addAction(sequence(
+				visible(false),delay(8),visible(true)
 				));
 	    stage.addActor(fondoincio);
 	    stage.addActor(nube1);
@@ -66,6 +87,12 @@ public class MainScreen implements Screen{
 	    stage.addActor(circo);
 	    stage.addActor(letrero);
 	    stage.addActor(letreroe);
+	    stage.addActor(payaso1);
+	    stage.addActor(payaso2);
+	    stage.addActor(globos1);
+	    stage.addActor(globos2);
+	    stage.addActor(gato);
+	    stage.addActor(botoninicio);
 	}
 	@Override
 	public void render(float delta) {

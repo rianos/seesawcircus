@@ -399,6 +399,26 @@
        id="linearGradient7304"
        xlink:href="#linearGradient6499-4"
        inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5550-7"
+       id="linearGradient6566-0"
+       gradientUnits="userSpaceOnUse"
+       x1="-3803.9329"
+       y1="325.05237"
+       x2="-3808.5767"
+       y2="1347.3268" />
+    <linearGradient
+       id="linearGradient5550-7">
+      <stop
+         id="stop5552-3"
+         offset="0"
+         style="stop-color:#2c7900;stop-opacity:1;" />
+      <stop
+         id="stop5554-4"
+         offset="1"
+         style="stop-color:#81ff18;stop-opacity:1" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -407,16 +427,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="-2744.8662"
-     inkscape:cy="536.41309"
+     inkscape:zoom="0.49497474"
+     inkscape:cx="-254.63974"
+     inkscape:cy="1127.3442"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="994"
+     inkscape:window-width="1440"
+     inkscape:window-height="849"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
@@ -1716,7 +1736,7 @@
            height="40.406101"
            width="791.95959"
            id="rect6638" /></flowRegion><flowPara
-         id="flowPara6640"></flowPara></flowRoot>    <g
+         id="flowPara6640" /></flowRoot>    <g
        inkscape:export-ydpi="27.434013"
        inkscape:export-xdpi="27.434013"
        inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
@@ -3346,6 +3366,1744 @@
          height="286.28558"
          x="-4155.9136"
          y="2866.1599" />
+    </g>
+    <g
+       transform="matrix(2.3044649,0,0,2.3044649,-5129.4891,-1947.5802)"
+       id="g4808-1"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
+       inkscape:export-xdpi="27.434013"
+       inkscape:export-ydpi="27.434013">
+      <g
+         id="g5277"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\payasoinicio1.png"
+         inkscape:export-xdpi="25"
+         inkscape:export-ydpi="25">
+        <path
+           style="fill:#54bd42;fill-opacity:1;stroke:#000000;stroke-width:1.19298244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 167.30211,966.55508 c 11.77838,12.40671 1.07495,14.69606 -6.53236,22.41096 -7.60729,7.71489 -9.23777,17.93386 -21.01612,5.52717 -11.77837,-12.40671 -15.15968,-28.71847 -7.55237,-36.43337 7.6073,-7.7149 23.32249,-3.91144 35.10085,8.49524 z"
+           id="path5011-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path5009-4"
+           d="m 60.801519,992.74574 c -13.37278,10.66886 -14.73407,-0.19165 -21.76685,-8.43366 -7.03278,-8.242 -17.07388,-10.74443 -3.70111,-21.41329 13.37278,-10.66888 29.91474,-12.63624 36.94752,-4.39423 7.03278,8.24201 1.8932,23.57231 -11.47956,34.24118 z"
+           style="fill:#54bd42;fill-opacity:1;stroke:#000000;stroke-width:1.19298244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#54bd42;fill-opacity:1;stroke:#000000;stroke-width:1.19298244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 19.372949,844.17431 c -13.3727799,10.66886 -14.7340699,-0.19165 -21.7668499,-8.43366 -7.03278,-8.242 -17.0738801,-10.74443 -3.70111,-21.41329 13.37278,-10.66888 29.9147399,-12.63624 36.9475199,-4.39423 7.03278,8.24201 1.8932,23.57231 -11.47956,34.24118 z"
+           id="path4982-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4980-9"
+           d="m 193.69609,817.30112 c 14.56072,8.98004 4.79938,13.93181 -0.58072,23.33634 -5.3801,9.40453 -4.34163,19.70052 -18.90235,10.72048 -14.56073,-8.98004 -22.0031,-23.88367 -16.62299,-33.2882 5.3801,-9.40453 21.54534,-9.74865 36.10606,-0.76862 z"
+           style="fill:#54bd42;fill-opacity:1;stroke:#000000;stroke-width:1.19298244;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#550000;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+           d="m 71.172929,1003.7134 c 0,-5.17786 8.26129,-17.25206 -13.97616,-19.91216 -8.97007,-1.07303 -15.18516,3.4308 -23.9603,1.4358 -9.54196,-2.1693 -88.7675,-23.26318 -89.61465,21.28906 -0.653,34.339 71.81752,-6.1805 93.70081,4.6543 14.20195,7.0317 33.41901,-1.7844 34.6805,-10.2122"
+           id="path4974-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cssssc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="cssssc"
+           inkscape:connector-curvature="0"
+           id="path4037-8"
+           d="m 136.10328,991.3098 c 0,5.9652 -7.43827,19.8753 12.5838,22.9399 8.07643,1.2361 13.67235,-3.9525 21.57328,-1.6542 8.59134,2.4992 79.92412,26.8004 80.68687,-24.526 0.58795,-39.56035 -64.66277,7.1201 -84.36595,-5.36213 -12.7871,-8.10078 -30.08969,2.05579 -31.2255,11.76503"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#550000;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#54bd42;fill-opacity:1;stroke:#000000;stroke-width:1.79766035;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 195.19741,883.95485 c 0.54751,32.62545 -52.61283,44.68312 -98.456531,44.68312 -45.84371,0 -98.2830899,-15.37157 -99.3482499,-47.98827 -2.02031,-61.86471 47.9209899,-91.2863 93.7646999,-91.2863 45.843701,0 103.029931,34.39738 104.040081,94.59145 z"
+           id="path4796-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           inkscape:export-ydpi="25.530243"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path5872-2"
+           d="m 160.60905,817.92371 c -6.89505,-1.13997 21.63362,55.00598 -6.90125,76.11248 -25.87825,19.14146 -86.037076,19.08748 -79.185186,20.62589 12.99616,2.91795 117.864146,7.24836 121.519036,-28.05554 3.65489,-35.30389 -22.71123,-66.57958 -35.4326,-68.68283 z"
+           style="fill:#480530;fill-opacity:0.43010751;stroke:none" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4820-4"
+           d="m 196.20757,901.8903 c 0.54751,-17.18888 -54.63314,16.86458 -100.476841,16.86458 -45.84371,0 -95.25262985,-28.26688 -96.31778985,-11.08269 -2.02031005,32.59371 58.02250985,70.31787 103.86622085,70.31787 45.8437,0 91.91826,-44.38627 92.92841,-76.09976 z"
+           style="fill:#484e4b;fill-opacity:1;stroke:#000000;stroke-width:1.30482638;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="scsssscscscs"
+           inkscape:connector-curvature="0"
+           id="rect4718-5"
+           d="m 2.0293291,735.57648 c 35.5879299,-21.89522 78.2142799,-1.42857 78.2142799,-1.42857 0,0 3.73598,59.7542 -16.42857,53.92857 -15.58114,-4.50146 -61.7857099,11.78571 -61.7857099,11.78571 -15.4868301,-3.18541 64.1029999,-36.85182 0,-16.78571 -2.15861995,0.67571 -10.17492,-1.68388 -8.92857,-3.57143 6.84760005,-10.37045 43.2142799,-17.85714 43.2142799,-17.85714 0,0 -44.7073199,5.77568 -34.2857099,1.07143 16.5274099,-7.46038 26.0714299,-11.42857 26.0714299,-11.42857 0,0 -34.4380799,4.41098 -26.0714299,-2.14286 10.4299199,-8.17006 42.4999999,-10 42.4999999,-10 0,0 -50.7883299,1.5279 -42.4999999,-3.57143 z"
+           style="fill:#fb7e24;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#fb7e24;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 195.02875,731.29077 c -35.58793,-21.89522 -78.21428,-1.42857 -78.21428,-1.42857 0,0 -3.73598,59.7542 16.42857,53.92857 15.58114,-4.50146 61.78571,11.78571 61.78571,11.78571 15.48683,-3.18541 -64.103,-36.85182 0,-16.78571 2.15862,0.67571 10.17492,-1.68388 8.92857,-3.57143 -6.8476,-10.37045 -43.21428,-17.85714 -43.21428,-17.85714 0,0 44.70732,5.77568 34.28571,1.07143 -16.52741,-7.46038 -26.07143,-11.42857 -26.07143,-11.42857 0,0 34.43808,4.41098 26.07143,-2.14286 -10.42992,-8.17006 -42.5,-10 -42.5,-10 0,0 50.78833,1.5279 42.5,-3.57143 z"
+           id="path4721-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="scsssscscscs"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4188-1"
+           d="m 155.2436,814.14793 c 0,28.20597 -31.91803,38.62654 -59.729511,38.62654 -27.81149,0 -60.27049,-13.27772 -60.27049,-41.48369 0,-28.20598 33.97423,-80.35714 61.78572,-80.35714 27.811481,0 58.214281,55.00831 58.214281,83.21429 z"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#680056;fill-opacity:0.43010751;stroke:none"
+           id="path4748-7"
+           sodipodi:cx="149.25005"
+           sodipodi:cy="746.53851"
+           sodipodi:rx="16.414978"
+           sodipodi:ry="16.414978"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+           transform="matrix(1.2114472,0,0,1.2114472,-99.491262,-135.37759)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(0.96062715,0,0,0.96606643,-65.993081,34.193825)"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+           sodipodi:ry="16.414978"
+           sodipodi:rx="16.414978"
+           sodipodi:cy="746.53851"
+           sodipodi:cx="149.25005"
+           id="path4754-1"
+           style="fill:#fffbc0;fill-opacity:0.48387098;stroke:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="translate(-175.26147,-0.50507627)"
+           d="m 292.94425,797.55121 c 0,7.67101 -8.14069,13.8896 -18.18274,13.8896 -10.04206,0 -18.18275,-6.21859 -18.18275,-13.8896 0,-7.67101 8.14069,-13.8896 18.18275,-13.8896 10.04205,0 18.18274,6.21859 18.18274,13.8896 z"
+           sodipodi:ry="13.889598"
+           sodipodi:rx="18.182745"
+           sodipodi:cy="797.55121"
+           sodipodi:cx="274.76151"
+           id="path4699-1"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4701-5"
+           d="m 114.28215,803.10705 c 0,3.00343 -6.47649,7.71104 -14.465661,7.71104 -7.98917,0 -14.46566,-4.70761 -14.46566,-7.71104 0,-3.00344 6.22395,-0.13491 14.21313,-0.13491 7.989161,0 14.718191,-2.86853 14.718191,0.13491 z"
+           style="fill:#430055;fill-opacity:0.48387098;stroke:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(1.4270833,0,0,1.1666667,-286.19935,-133.30401)"
+           d="m 273.75133,792.24792 c 0,1.67368 -1.80904,3.03046 -4.04061,3.03046 -2.23156,0 -4.04061,-1.35678 -4.04061,-3.03046 0,-1.67367 1.80905,-3.03045 4.04061,-3.03045 2.23157,0 4.04061,1.35678 4.04061,3.03045 z"
+           sodipodi:ry="3.0304577"
+           sodipodi:rx="4.0406103"
+           sodipodi:cy="792.24792"
+           sodipodi:cx="269.71072"
+           id="path4704-2"
+           style="fill:#fffdde;fill-opacity:0.82258061;stroke:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(1.2114472,0,0,1.2114472,-100.50141,-139.92328)"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+           sodipodi:ry="16.414978"
+           sodipodi:rx="16.414978"
+           sodipodi:cy="746.53851"
+           sodipodi:cx="149.25005"
+           id="path4706-7"
+           style="fill:#fffdde;fill-opacity:0.82258061;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(1.0422164,0,0,1.0422164,-39.509571,-9.7979142)"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+           sodipodi:ry="16.414978"
+           sodipodi:rx="16.414978"
+           sodipodi:cy="746.53851"
+           sodipodi:cx="149.25005"
+           id="path4750-6"
+           style="fill:#680056;fill-opacity:0.43010751;stroke:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#fffbc0;fill-opacity:0.48387098;stroke:none"
+           id="path4752-1"
+           sodipodi:cx="149.25005"
+           sodipodi:cy="746.53851"
+           sodipodi:rx="16.414978"
+           sodipodi:ry="16.414978"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+           transform="matrix(0.96062715,0,0,0.96606643,-29.207371,36.693825)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#fffdde;fill-opacity:0.82258061;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4708-4"
+           sodipodi:cx="149.25005"
+           sodipodi:cy="746.53851"
+           sodipodi:rx="16.414978"
+           sodipodi:ry="16.414978"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+           transform="matrix(0.91542111,0,0,0.91542111,-20.711621,81.324132)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(0.30147063,0,0,0.30147063,71.748341,541.32159)"
+           d="m 165.66502,746.53851 a 16.414978,16.414978 0 1 1 -32.82995,0 16.414978,16.414978 0 1 1 32.82995,0 z"
+           sodipodi:ry="16.414978"
+           sodipodi:rx="16.414978"
+           sodipodi:cy="746.53851"
+           sodipodi:cx="149.25005"
+           id="path4710-2"
+           style="fill:#000000;fill-opacity:0.82258061;stroke:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#000000;fill-opacity:0.82258061;stroke:none"
+           id="path4712-3"
+           sodipodi:cx="149.25005"
+           sodipodi:cy="746.53851"
+           sodipodi:rx="16.414978"
+           sodipodi:ry="16.414978"
+           d="m 165.66502,746.53851 a 16.414978,16.414978 0 1 1 -32.82995,0 16.414978,16.414978 0 1 1 32.82995,0 z"
+           transform="matrix(0.30147063,0,0,0.30147063,36.445483,540.19076)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#54bd42;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 124.52933,714.14791 c 0,15.97681 -11.90717,10.35714 -25.714291,10.35714 -13.80712,0 -24.28571,5.61967 -24.28571,-10.35714 0,-15.97681 11.19288,-28.92857 25,-28.92857 13.807121,0 25.000001,12.95176 25.000001,28.92857 z"
+           id="path4723-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#3e8544;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 133.81504,726.29079 c 0,6.11458 -10.55218,10.35713 -36.785711,10.35713 -26.23352,0 -38.92857,-4.95684 -38.92857,-11.07142 0,-6.11459 18.40934,0.35714 44.642861,0.35714 26.23353,0 31.07142,-5.75744 31.07142,0.35715 z"
+           id="path4726-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4733-1"
+           d="m 149.19183,809.25589 c 0,28.27967 -28.33349,37.03517 -51.207053,37.03517 -22.873566,0 -57.844834,-14.26058 -54.987681,-35.39739 4.362309,-32.27189 34.256958,6.03117 57.130524,6.03117 22.87356,0 49.06421,-35.23433 49.06421,-7.66895 z"
+           style="fill:#f0bfbf;fill-opacity:1;stroke:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#111111;fill-opacity:1;stroke:none"
+           d="m 138.68896,809.4266 c 0,5.70919 -21.33391,28.29303 -37.108,28.29303 -15.774101,0 -50.605321,-24.30755 -48.634961,-28.57471 3.00834,-6.51515 32.19575,11.93188 47.969841,11.93188 15.7741,0 37.77312,-17.21518 37.77312,-11.6502 z"
+           id="path4736-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4738-8"
+           d="m 124.84381,716.83474 c 2.29197,12.41745 -9.41078,6.40001 -20.32318,6.40001 -10.912391,0 -29.254581,2.94621 -17.765531,-2.29287 9.28572,-4.23434 12.46843,-4.24228 23.380831,-4.24228 10.9124,0 7.56502,-38.56349 14.70788,0.13514 z"
+           style="fill:#4c004b;fill-opacity:0.44623652;stroke:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#f1d731;fill-opacity:0.44623652;stroke:none"
+           d="m 80.003459,698.70791 c 5.0692,-8.78618 11.70377,-12.31279 20.680331,-12.29287 11.05636,0.0245 2.46886,0.0895 11.51553,4.43573 9.19906,4.41944 -8.00415,2.09942 -16.773691,6.74228 -9.64418,5.10591 -24.98766,17.69424 -15.42217,1.11486 z"
+           id="path4740-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4742-7"
+           d="m 133.81504,726.29079 c 0,6.11458 -10.55218,10.35713 -36.785711,10.35713 -26.23352,0 -38.92857,-3.44161 -38.92857,-9.55619 0,-6.11459 12.8535,5.91298 39.08702,5.91298 26.233531,0 36.627261,-12.82851 36.627261,-6.71392 z"
+           style="fill:#540f54;fill-opacity:0.4623656;stroke:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#47033e;fill-opacity:0.38709675;stroke:none"
+           d="m 148.68675,818.85234 c -3.03045,16.15784 -27.82841,31.47933 -50.701971,31.47933 -22.87357,0 -50.36669,-14.57494 -54.98768,-35.39739 -0.94099,-4.24016 36.78233,25.98168 59.655901,25.98168 22.87357,0 49.29958,-39.4764 46.03375,-22.06362 z"
+           id="path4758-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="scsssscscscs"
+           inkscape:connector-curvature="0"
+           id="path4744-1"
+           d="m 186.31363,745.88858 c -28.85021,-17.74989 -51.30675,10.35712 -51.30675,10.35712 0,0 7.77971,26.24012 19.07583,29.34611 12.6773,3.48576 42.94521,10.26866 42.94521,10.26866 12.55477,-2.58233 -52.72425,-33.15781 -0.75761,-16.89074 1.74993,0.54778 7.996,-2.37523 6.98561,-3.90541 -5.55117,-8.40706 -31.87968,-18.04031 -31.87968,-18.04031 0,0 30.31213,5.21572 21.86361,1.40211 -13.39835,-6.04794 -17.34736,-1.94124 -17.34736,-1.94124 0,0 14.34662,2.86158 7.564,-2.45145 -8.45527,-6.62325 -25.16793,-5.96388 -25.16793,-5.96388 0,0 34.7442,1.95292 28.02507,-2.18097 z"
+           style="fill:#4c1251;fill-opacity:0.38172045;stroke:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#4c1251;fill-opacity:0.38172045;stroke:none"
+           d="m 3.0615291,751.19189 c 29.6078199,-8.91106 52.0643599,8.08427 52.0643599,8.08427 0,0 -7.0221,17.14875 -16.29791,28.5885 -8.28069,10.21247 -38.90459985,11.53135 -38.90459985,11.53135 -12.55477015,-2.58233 52.72424985,-33.15781 0.75761,-16.89074 -1.74993005,0.54778 -7.99600005,-2.37523 -6.98561005,-3.90541 5.55117005,-8.40706 31.8796799,-18.04031 31.8796799,-18.04031 0,0 -30.3121299,5.21572 -21.8636099,1.40211 13.3983499,-6.04794 17.3473599,-1.94124 17.3473599,-1.94124 0,0 -14.3466199,2.86158 -7.564,-2.45145 8.45527,-6.62325 24.91539,-1.92327 24.91539,-1.92327 0,0 -42.9029099,-2.18022 -35.3486699,-4.45381 z"
+           id="path4746-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="scsssscscscs"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4716-9"
+           d="m 134.4507,803.29312 c -1.99126,1.73257 -2.01786,1.24095 2.63571,6.58935 4.65357,5.34841 3.71472,9.47019 5.70597,7.73763 1.99127,-1.73257 2.88378,-3.77223 -1.76979,-9.12063 -4.65357,-5.3484 -4.58062,-6.93891 -6.57189,-5.20635 z"
+           style="fill:#180d09;fill-opacity:1;stroke:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#180d09;fill-opacity:1;stroke:none"
+           d="m 57.780449,803.11454 c 1.99126,1.73257 2.01786,1.24095 -2.63571,6.58935 -4.65357,5.34841 -3.71472,9.47019 -5.70597,7.73763 -1.99127,-1.73257 -2.88378,-3.77223 1.76979,-9.12063 4.65357,-5.3484 4.58062,-6.93891 6.57189,-5.20635 z"
+           id="path4756-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path4800-7"
+           d="m 87.386479,866.29077 c 0,15.97681 -11.90717,10.35714 -25.71429,10.35714 -13.80712,0 -24.28571,14.90538 -24.28571,-10.35714 0,-15.97681 -8.80712,-32.5 5,-32.5 13.80712,0 45,16.52319 45,32.5 z"
+           style="fill:#e6cd08;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#e6cd08;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 104.61883,866.29077 c 0,15.97681 11.90717,10.35714 25.71429,10.35714 13.80712,0 24.28571,14.90538 24.28571,-10.35714 0,-15.97681 8.80712,-32.5 -5,-32.5 -13.80712,0 -45,16.52319 -45,32.5 z"
+           id="path4802-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#e6cd08;fill-opacity:1;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4798-5"
+           sodipodi:cx="303.04578"
+           sodipodi:cy="914.98145"
+           sodipodi:rx="15.152288"
+           sodipodi:ry="15.152288"
+           d="m 318.19806,914.98145 c 0,8.36837 -6.78391,15.15228 -15.15228,15.15228 -8.36838,0 -15.15229,-6.78391 -15.15229,-15.15228 0,-8.36838 6.78391,-15.15229 15.15229,-15.15229 8.36837,0 15.15228,6.78391 15.15228,15.15229 z"
+           transform="translate(-205.06457,-46.645437)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#54bd42;fill-opacity:1;stroke:none"
+           id="path4804-4"
+           sodipodi:cx="271.78571"
+           sodipodi:cy="914.86218"
+           sodipodi:rx="8.2142859"
+           sodipodi:ry="8.9285717"
+           d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+           transform="translate(-222.61353,-65.714289)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="translate(-126.89925,-65.714289)"
+           d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+           sodipodi:ry="8.9285717"
+           sodipodi:rx="8.2142859"
+           sodipodi:cy="914.86218"
+           sodipodi:cx="271.78571"
+           id="path4806-3"
+           style="fill:#54bd42;fill-opacity:1;stroke:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#54bd42;fill-opacity:1;stroke:none"
+           id="path4808-1"
+           sodipodi:cx="271.78571"
+           sodipodi:cy="914.86218"
+           sodipodi:rx="8.2142859"
+           sodipodi:ry="8.9285717"
+           d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+           transform="matrix(0.69565218,0,0,0.69565218,-62.396141,224.29035)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(0.69565218,0,0,0.69565218,-116.68185,230.71892)"
+           d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+           sodipodi:ry="8.9285717"
+           sodipodi:rx="8.2142859"
+           sodipodi:cy="914.86218"
+           sodipodi:cx="271.78571"
+           id="path4810-2"
+           style="fill:#54bd42;fill-opacity:1;stroke:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#54bd42;fill-opacity:1;stroke:none"
+           id="path4812-3"
+           sodipodi:cx="271.78571"
+           sodipodi:cy="914.86218"
+           sodipodi:rx="8.2142859"
+           sodipodi:ry="8.9285717"
+           d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+           transform="matrix(0.52173914,0,0,0.57565218,-45.843351,333.71667)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.21069646;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4814-3"
+           sodipodi:cx="342.5"
+           sodipodi:cy="797.18597"
+           sodipodi:rx="6.0714288"
+           sodipodi:ry="9.8237782"
+           d="m 348.57143,797.18597 c 0,5.42553 -2.71827,9.82378 -6.07143,9.82378 -3.35316,0 -6.07143,-4.39825 -6.07143,-9.82378 0,-5.42552 2.71827,-9.82377 6.07143,-9.82377 3.35316,0 6.07143,4.39825 6.07143,9.82377 z"
+           transform="matrix(1.3529412,0,0,0.85458024,-364.21017,217.35516)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="matrix(1.3529412,0,0,0.85458024,-362.7816,240.92659)"
+           d="m 348.57143,797.18597 c 0,5.42553 -2.71827,9.82378 -6.07143,9.82378 -3.35316,0 -6.07143,-4.39825 -6.07143,-9.82378 0,-5.42552 2.71827,-9.82377 6.07143,-9.82377 3.35316,0 6.07143,4.39825 6.07143,9.82377 z"
+           sodipodi:ry="9.8237782"
+           sodipodi:rx="6.0714288"
+           sodipodi:cy="797.18597"
+           sodipodi:cx="342.5"
+           id="path4816-4"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.21069646;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <g
+           id="g4999-1"
+           transform="matrix(0.86650719,0,0,0.86650719,-85.745559,266.65375)"
+           style="stroke-width:3.46217561;stroke-miterlimit:4;stroke-dasharray:none"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243">
+          <path
+             sodipodi:nodetypes="sssss"
+             inkscape:connector-curvature="0"
+             id="path4996-1"
+             d="m 124.24876,570.51941 c 0,8.92627 -14.23221,19.85466 -29.200474,25.62048 -9.207523,3.54677 -26.451857,-2.50714 -26.451857,-11.43341 0,-8.92627 11.747092,-30.34951 27.368064,-30.34951 15.620967,0 28.284267,7.23617 28.284267,16.16244 z"
+             style="fill:#f6f6f6;fill-opacity:1;stroke:#000000;stroke-width:4.37813902;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             transform="matrix(0.38980583,0,0,0.30208599,23.727446,487.96729)" />
+          <path
+             sodipodi:nodetypes="sssssssssss"
+             inkscape:connector-curvature="0"
+             id="path4993-3"
+             d="m 96.12442,659.9402 c 0.884733,1.38096 -5.715299,4.36786 -8.717631,5.91463 -3.001869,1.54653 -6.834915,7.59716 7.458771,18.24573 5.97402,4.45056 -0.01211,7.82923 -2.531674,7.35196 -2.519565,-0.47727 -10.127384,-1.63505 -12.617537,-3.90958 -7.906164,-7.22157 -4.151576,-22.17465 -3.782296,-25.99546 0.369279,-3.82081 -10.503895,-1.1522 -13.737012,-1.34468 -3.233117,-0.19248 -7.397607,0.68253 -10.753817,1.13166 -3.35621,0.44913 -5.904141,0.47239 -5.904141,-1.42359 0,-7.58391 11.37718,-15.21244 24.277717,-14.8553 15.751645,0.43607 14.961542,-2.82522 26.30762,14.88463 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.50237739;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        </g>
+        <g
+           style="stroke-width:3.46217561;stroke-miterlimit:4;stroke-dasharray:none"
+           transform="matrix(-0.86650719,0,0,0.86650719,273.50635,271.70452)"
+           id="g5003-8"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243">
+          <path
+             transform="matrix(0.38980583,0,0,0.30208599,23.727446,487.96729)"
+             style="fill:#f6f6f6;fill-opacity:1;stroke:#000000;stroke-width:4.37813902;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             d="m 124.24876,570.51941 c 0,8.92627 -14.23221,19.85466 -29.200474,25.62048 -9.207523,3.54677 -26.451857,-2.50714 -26.451857,-11.43341 0,-8.92627 11.747092,-30.34951 27.368064,-30.34951 15.620967,0 28.284267,7.23617 28.284267,16.16244 z"
+             id="path5005-7"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssss" />
+          <path
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.50237739;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             d="m 96.12442,659.9402 c 0.884733,1.38096 -5.715299,4.36786 -8.717631,5.91463 -3.001869,1.54653 -6.834915,7.59716 7.458771,18.24573 5.97402,4.45056 -0.01211,7.82923 -2.531674,7.35196 -2.519565,-0.47727 -10.127384,-1.63505 -12.617537,-3.90958 -7.906164,-7.22157 -4.151576,-22.17465 -3.782296,-25.99546 0.369279,-3.82081 -10.503895,-1.1522 -13.737012,-1.34468 -3.233117,-0.19248 -7.397607,0.68253 -10.753817,1.13166 -3.35621,0.44913 -5.904141,0.47239 -5.904141,-1.42359 0,-7.58391 11.37718,-15.21244 24.277717,-14.8553 15.751645,0.43607 14.961542,-2.82522 26.30762,14.88463 z"
+             id="path5007-4"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssssssssss" />
+        </g>
+        <path
+           style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+           d="m 174.99528,945.08608 c 0.42388,-6.97579 -38.25682,16.9457 -73.74939,16.9457 -35.492591,0 -77.786001,-21.57311 -78.610651,-14.59923 -1.56414,13.22755 44.92151,28.5372 80.414091,28.5372 35.49258,0 71.16388,-18.01335 71.94595,-30.88367 z"
+           id="path5013-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           style="fill:#fff125;fill-opacity:0.43010751;stroke:none"
+           d="m 32.482985,811.35772 c 6.89505,-1.13997 -22.6437685,57.53136 5.891097,78.63786 25.87825,19.14146 65.411798,22.23751 58.477068,21.13097 C 80.319456,908.48866 0.70527906,916.3546 -2.9496109,881.0507 -6.6045009,845.74681 19.761615,813.46097 32.482985,811.35772 z"
+           id="path5874-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           inkscape:export-ydpi="25.530243"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path5876-79"
+           d="m 146.88326,973.57128 c -3.86353,8.21086 -18.26525,15.98251 -10.06928,16.32933 8.19597,0.34683 33.67942,-2.50454 34.09986,-7.93208 0.79748,-10.29456 -2.79428,-20.17098 -10.99025,-20.51781 -8.19597,-0.34682 -8.76484,3.03418 -13.04033,12.12056 z"
+           style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+           inkscape:transform-center-x="-103.03556"
+           inkscape:transform-center-y="-31.314729" />
+        <path
+           inkscape:transform-center-y="-31.314729"
+           inkscape:transform-center-x="103.03556"
+           style="fill:#feef9a;fill-opacity:0.43010751;stroke:none"
+           d="m 27.230564,810.53339 c 0.32799,5.43294 -9.75034,7.16598 -17.9463099,7.5128 -8.1959702,0.34683 -18.6794202,16.14611 -19.0998602,10.71857 -0.7974799,-10.29456 9.43206001,-22.68149 17.6280302,-23.02832 8.1959699,-0.34682 18.8130499,-5.22682 19.4181399,4.79695 z"
+           id="path5889-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           inkscape:export-ydpi="25.530243"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path5876-4-1"
+           d="m 43.632868,985.62632 c -9.047077,-0.70469 -20.101413,-16.63515 -12.717892,-13.06053 15.288258,7.40157 40.558035,-7.77714 40.321146,2.91488 -0.228708,10.32282 -5.885417,11.46012 -14.030807,10.48702 -8.1454,-0.9729 -6.47133,0.21174 -13.572447,-0.34137 z"
+           style="fill:#480530;fill-opacity:0.43010751;stroke:#000000;stroke-width:1.30182064;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           inkscape:transform-center-x="6.6275428"
+           inkscape:transform-center-y="-0.70564334" />
+        <path
+           inkscape:export-ydpi="25.530243"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           sodipodi:nodetypes="cssssc"
+           inkscape:connector-curvature="0"
+           id="path6028-98"
+           d="m 69.44849,1007.9641 c 0,-2.3324 8.26129,-7.7715 -13.97616,-8.96976 -8.97007,-0.4833 -15.18516,1.54546 -23.9603,0.6468 -9.54196,-0.9772 -92.013719,-5.66083 -86.043221,13.51866 4.704142,15.1114 51.0540732,-2.4391 84.415095,-4.332 20.102581,-1.1406 0.87863,13.8391 40.394786,-2.1003"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#131014;fill-opacity:0.47849462;stroke:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold" />
+        <path
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#131014;fill-opacity:0.47849462;stroke:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+           d="m 136.82064,1004.702 c 0,-2.3324 -5.76129,-6.70005 16.47616,-7.89831 8.97007,-0.4833 9.82802,5.47401 18.60316,4.57541 9.54196,-0.9772 86.29535,-17.01703 76.75751,0.6615 -14.70414,27.2542 -42.15639,17.9307 -74.77224,10.668 -14.74544,-3.2835 -26.81269,10.0936 -36.10907,-5.6718"
+           id="path6055-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cssssc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.34521472;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path6057-5"
+           sodipodi:cx="55.053314"
+           sodipodi:cy="889.22253"
+           sodipodi:rx="8.586297"
+           sodipodi:ry="8.586297"
+           d="m 63.639611,889.22253 c 0,4.74209 -3.844216,8.5863 -8.586297,8.5863 -4.742081,0 -8.586297,-3.84421 -8.586297,-8.5863 0,-4.74208 3.844216,-8.58629 8.586297,-8.58629 4.742081,0 8.586297,3.84421 8.586297,8.58629 z"
+           transform="translate(-75.765049,91.745462)"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+        <path
+           transform="translate(145.45836,89.725157)"
+           d="m 63.639611,889.22253 c 0,4.74209 -3.844216,8.5863 -8.586297,8.5863 -4.742081,0 -8.586297,-3.84421 -8.586297,-8.5863 0,-4.74208 3.844216,-8.58629 8.586297,-8.58629 4.742081,0 8.586297,3.84421 8.586297,8.58629 z"
+           sodipodi:ry="8.586297"
+           sodipodi:rx="8.586297"
+           sodipodi:cy="889.22253"
+           sodipodi:cx="55.053314"
+           id="path6063-0"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.34521472;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           sodipodi:type="arc"
+           inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
+           inkscape:export-xdpi="25.530243"
+           inkscape:export-ydpi="25.530243" />
+      </g>
+    </g>
+    <g
+       transform="matrix(2.2749977,0,0,2.2743504,-1498.5071,-1408.2632)"
+       id="g5068-2"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\payasoinicio2.png"
+       inkscape:export-xdpi="27.434013"
+       inkscape:export-ydpi="27.434013">
+      <path
+         style="fill:#4271bd;fill-opacity:1;stroke:#000000;stroke-width:1.20860672;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         d="m 565.30222,957.46371 c 11.77838,12.40671 1.07495,14.69606 -6.53236,22.41096 -7.60729,7.71489 -9.23777,17.93386 -21.01612,5.52717 -11.77837,-12.40671 -15.15968,-28.71847 -7.55237,-36.43337 7.6073,-7.7149 23.32249,-3.91144 35.10085,8.49524 z"
+         id="path5260-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5262-6"
+         d="m 458.80163,983.65437 c -13.37278,10.66886 -14.73407,-0.19165 -21.76685,-8.43366 -7.03278,-8.242 -17.07388,-10.74443 -3.70111,-21.41329 13.37278,-10.66888 29.91474,-12.63624 36.94752,-4.39423 7.03278,8.24201 1.8932,23.57231 -11.47956,34.24118 z"
+         style="fill:#4271bd;fill-opacity:1;stroke:#000000;stroke-width:1.20860672;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#4271bd;fill-opacity:1;stroke:#000000;stroke-width:1.20860672;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         d="m 417.37306,835.08294 c -13.37278,10.66886 -14.73407,-0.19165 -21.76685,-8.43366 -7.03278,-8.242 -17.07388,-10.74443 -3.70111,-21.41329 13.37278,-10.66888 29.91474,-12.63624 36.94752,-4.39423 7.03278,8.24201 1.8932,23.57231 -11.47956,34.24118 z"
+         id="path5264-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5266-2"
+         d="m 591.6962,808.20975 c 14.56072,8.98004 4.79938,13.93181 -0.58072,23.33634 -5.3801,9.40453 -4.34163,19.70052 -18.90235,10.72048 -14.56073,-8.98004 -22.0031,-23.88367 -16.62299,-33.2882 5.3801,-9.40453 21.54534,-9.74865 36.10606,-0.76862 z"
+         style="fill:#4271bd;fill-opacity:1;stroke:#000000;stroke-width:1.20860672;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#550000;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+         d="m 469.17304,994.62203 c 0,-5.17786 8.26129,-17.25206 -13.97616,-19.91216 -8.97007,-1.07303 -15.18516,3.4308 -23.9603,1.4358 -9.54196,-2.1693 -88.7675,-23.26318 -89.61465,21.28906 -0.653,34.33897 71.81752,-6.1805 93.70081,4.65427 14.20195,7.0317 33.41901,-1.7844 34.6805,-10.21217"
+         id="path5268-4"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssssc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="cssssc"
+         inkscape:connector-curvature="0"
+         id="path5270-8"
+         d="m 534.10339,981.20828 c 0,5.9652 -7.43827,19.87522 12.5838,22.93982 8.07643,1.2361 13.67235,-3.9525 21.57328,-1.6542 8.59134,2.4992 79.92412,26.8004 80.68687,-24.52592 0.58795,-39.56035 -64.66277,7.1201 -84.36595,-5.36213 -12.7871,-8.10078 -30.08969,2.05579 -31.2255,11.76503"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#550000;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#6b8cef;fill-opacity:1;stroke:#000000;stroke-width:1.82120383;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 593.19752,874.86348 c 0.54751,32.62545 -52.61283,44.68312 -98.45653,44.68312 -45.84371,0 -98.28309,-15.37157 -99.34825,-47.98827 -2.02031,-61.86471 47.92099,-91.2863 93.7647,-91.2863 45.8437,0 103.02993,34.39738 104.04008,94.59145 z"
+         id="path5272-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5274-5"
+         d="m 594.20768,892.79893 c 0.54751,-17.18888 -54.63314,16.86458 -100.47684,16.86458 -45.84371,0 -95.25263,-28.26688 -96.31779,-11.08269 -2.02031,32.59371 58.02251,70.31787 103.86622,70.31787 45.8437,0 91.91826,-44.38627 92.92841,-76.09976 z"
+         style="fill:#214b8d;fill-opacity:1;stroke:#000000;stroke-width:1.32191539;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="scsssscscscs"
+         inkscape:connector-curvature="0"
+         id="path5276-0"
+         d="m 400.02944,726.48511 c 35.58793,-21.89522 78.21428,-1.42857 78.21428,-1.42857 0,0 3.73598,59.7542 -16.42857,53.92857 -15.58114,-4.50146 -61.78571,11.78571 -61.78571,11.78571 -15.48683,-3.18541 64.103,-36.85182 0,-16.78571 -2.15862,0.67571 -10.17492,-1.68388 -8.92857,-3.57143 6.8476,-10.37045 43.21428,-17.85714 43.21428,-17.85714 0,0 -44.70732,5.77568 -34.28571,1.07143 16.52741,-7.46038 26.07143,-11.42857 26.07143,-11.42857 0,0 -34.43808,4.41098 -26.07143,-2.14286 10.42992,-8.17006 42.5,-10 42.5,-10 0,0 -50.78833,1.5279 -42.5,-3.57143 z"
+         style="fill:#fbd724;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#fbd724;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 593.02886,722.1994 c -35.58793,-21.89522 -78.21428,-1.42857 -78.21428,-1.42857 0,0 -3.73598,59.7542 16.42857,53.92857 15.58114,-4.50146 61.78571,11.78571 61.78571,11.78571 15.48683,-3.18541 -64.103,-36.85182 0,-16.78571 2.15862,0.67571 10.17492,-1.68388 8.92857,-3.57143 -6.8476,-10.37045 -43.21428,-17.85714 -43.21428,-17.85714 0,0 44.70732,5.77568 34.28571,1.07143 -16.52741,-7.46038 -26.07143,-11.42857 -26.07143,-11.42857 0,0 34.43808,4.41098 26.07143,-2.14286 -10.42992,-8.17006 -42.5,-10 -42.5,-10 0,0 50.78833,1.5279 42.5,-3.57143 z"
+         id="path5278-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scsssscscscs"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5280-0"
+         d="m 553.24371,805.05656 c 0,28.20597 -31.91803,38.62654 -59.72951,38.62654 -27.81149,0 -60.27049,-13.27772 -60.27049,-41.48369 0,-28.20598 33.97423,-80.35714 61.78572,-80.35714 27.81148,0 58.21428,55.00831 58.21428,83.21429 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#680056;fill-opacity:0.43010751;stroke:none"
+         id="path5282-0"
+         sodipodi:cx="149.25005"
+         sodipodi:cy="746.53851"
+         sodipodi:rx="16.414978"
+         sodipodi:ry="16.414978"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         transform="matrix(1.2114472,0,0,1.2114472,298.50885,-144.46896)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(0.96062715,0,0,0.96606643,332.00703,25.102452)"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         sodipodi:ry="16.414978"
+         sodipodi:rx="16.414978"
+         sodipodi:cy="746.53851"
+         sodipodi:cx="149.25005"
+         id="path5284-6"
+         style="fill:#fffbc0;fill-opacity:0.48387098;stroke:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="translate(222.73864,-9.5964492)"
+         d="m 292.94425,797.55121 c 0,7.67101 -8.14069,13.8896 -18.18274,13.8896 -10.04206,0 -18.18275,-6.21859 -18.18275,-13.8896 0,-7.67101 8.14069,-13.8896 18.18275,-13.8896 10.04205,0 18.18274,6.21859 18.18274,13.8896 z"
+         sodipodi:ry="13.889598"
+         sodipodi:rx="18.182745"
+         sodipodi:cy="797.55121"
+         sodipodi:cx="274.76151"
+         id="path5286-1"
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5288-3"
+         d="m 512.28226,794.01568 c 0,3.00343 -6.47649,7.71104 -14.46566,7.71104 -7.98917,0 -14.46566,-4.70761 -14.46566,-7.71104 0,-3.00344 6.22395,-0.13491 14.21313,-0.13491 7.98916,0 14.71819,-2.86853 14.71819,0.13491 z"
+         style="fill:#430055;fill-opacity:0.48387098;stroke:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(1.4270833,0,0,1.1666667,111.80076,-142.39538)"
+         d="m 273.75133,792.24792 c 0,1.67368 -1.80904,3.03046 -4.04061,3.03046 -2.23156,0 -4.04061,-1.35678 -4.04061,-3.03046 0,-1.67367 1.80905,-3.03045 4.04061,-3.03045 2.23157,0 4.04061,1.35678 4.04061,3.03045 z"
+         sodipodi:ry="3.0304577"
+         sodipodi:rx="4.0406103"
+         sodipodi:cy="792.24792"
+         sodipodi:cx="269.71072"
+         id="path5290-8"
+         style="fill:#fffdde;fill-opacity:0.82258061;stroke:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(1.2114472,0,0,1.2114472,297.49869,-149.01465)"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         sodipodi:ry="16.414978"
+         sodipodi:rx="16.414978"
+         sodipodi:cy="746.53851"
+         sodipodi:cx="149.25005"
+         id="path5292-9"
+         style="fill:#fffdde;fill-opacity:0.82258061;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(1.0422164,0,0,1.0422164,358.49054,-18.889287)"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         sodipodi:ry="16.414978"
+         sodipodi:rx="16.414978"
+         sodipodi:cy="746.53851"
+         sodipodi:cx="149.25005"
+         id="path5294-3"
+         style="fill:#680056;fill-opacity:0.43010751;stroke:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#fffbc0;fill-opacity:0.48387098;stroke:none"
+         id="path5296-4"
+         sodipodi:cx="149.25005"
+         sodipodi:cy="746.53851"
+         sodipodi:rx="16.414978"
+         sodipodi:ry="16.414978"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         transform="matrix(0.96062715,0,0,0.96606643,368.79274,27.602452)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#fffdde;fill-opacity:0.82258061;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path5298-4"
+         sodipodi:cx="149.25005"
+         sodipodi:cy="746.53851"
+         sodipodi:rx="16.414978"
+         sodipodi:ry="16.414978"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         transform="matrix(0.91542111,0,0,0.91542111,377.28849,72.232759)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(0.30147063,0,0,0.30147063,468.20635,535.15202)"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         sodipodi:ry="16.414978"
+         sodipodi:rx="16.414978"
+         sodipodi:cy="746.53851"
+         sodipodi:cx="149.25005"
+         id="path5300-6"
+         style="fill:#000000;fill-opacity:0.82258061;stroke:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#000000;fill-opacity:0.82258061;stroke:none"
+         id="path5302-0"
+         sodipodi:cx="149.25005"
+         sodipodi:cy="746.53851"
+         sodipodi:rx="16.414978"
+         sodipodi:ry="16.414978"
+         d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
+         transform="matrix(0.30147063,0,0,0.30147063,436.06965,520.49865)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#4271bd;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         d="m 522.52944,705.05654 c 0,15.97681 -11.90717,10.35714 -25.71429,10.35714 -13.80712,0 -24.28571,5.61967 -24.28571,-10.35714 0,-15.97681 11.19288,-28.92857 25,-28.92857 13.80712,0 25,12.95176 25,28.92857 z"
+         id="path5304-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#6d90f1;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         d="m 531.81515,717.19942 c 0,6.11458 -10.55218,10.35713 -36.78571,10.35713 -26.23352,0 -38.92857,-4.95684 -38.92857,-11.07142 0,-6.11459 18.40934,0.35714 44.64286,0.35714 26.23353,0 31.07142,-5.75744 31.07142,0.35715 z"
+         id="path5306-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5308-1"
+         d="m 547.19194,800.16452 c 0,28.27967 -28.33349,37.03517 -51.20706,37.03517 -22.87356,0 -57.84483,-14.26058 -54.98768,-35.39739 4.36231,-32.27189 34.25696,6.03117 57.13053,6.03117 22.87356,0 49.06421,-35.23433 49.06421,-7.66895 z"
+         style="fill:#f0bfbf;fill-opacity:1;stroke:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#111111;fill-opacity:1;stroke:none"
+         d="m 517.40336,813.11252 c 0,5.43704 -5.10725,18.73003 -17.86181,18.73003 -12.75457,0 -25.56112,-14.57739 -23.96794,-18.64114 2.43248,-6.20457 6.74701,-1.85119 19.50157,-1.85119 12.75457,0 22.32818,-3.5374 22.32818,1.7623 z"
+         id="path5310-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5312-4"
+         d="m 522.84392,707.74337 c 2.29197,12.41745 -9.41078,6.40001 -20.32318,6.40001 -10.91239,0 -29.25458,2.94621 -17.76553,-2.29287 9.28572,-4.23434 12.46843,-4.24228 23.38083,-4.24228 10.9124,0 7.56502,-38.56349 14.70788,0.13514 z"
+         style="fill:#00164c;fill-opacity:0.44623652;stroke:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#f1d731;fill-opacity:0.44623652;stroke:none"
+         d="m 478.00357,689.61654 c 5.0692,-8.78618 11.70377,-12.31279 20.68033,-12.29287 11.05636,0.0245 2.46886,0.0895 11.51553,4.43573 9.19906,4.41944 -8.00415,2.09942 -16.77369,6.74228 -9.64418,5.10591 -24.98766,17.69424 -15.42217,1.11486 z"
+         id="path5314-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5316-6"
+         d="m 531.81515,717.19942 c 0,6.11458 -10.55218,10.35713 -36.78571,10.35713 -26.23352,0 -38.92857,-3.44161 -38.92857,-9.55619 0,-6.11459 12.8535,5.91298 39.08702,5.91298 26.23353,0 36.62726,-12.82851 36.62726,-6.71392 z"
+         style="fill:#6164e7;fill-opacity:0.4623656;stroke:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#47033e;fill-opacity:0.38709675;stroke:none"
+         d="m 546.68686,809.76097 c -3.03045,16.15784 -27.82841,31.47933 -50.70197,31.47933 -22.87357,0 -50.36669,-14.57494 -54.98768,-35.39739 -0.94099,-4.24016 36.78233,25.98168 59.6559,25.98168 22.87357,0 49.29958,-39.4764 46.03375,-22.06362 z"
+         id="path5318-3"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="scsssscscscs"
+         inkscape:connector-curvature="0"
+         id="path5320-7"
+         d="m 584.31374,736.79721 c -28.85021,-17.74989 -51.30675,10.35712 -51.30675,10.35712 0,0 7.77971,26.24012 19.07583,29.34611 12.6773,3.48576 42.94521,10.26866 42.94521,10.26866 12.55477,-2.58233 -52.72425,-33.15781 -0.75761,-16.89074 1.74993,0.54778 7.996,-2.37523 6.98561,-3.90541 -5.55117,-8.40706 -31.87968,-18.04031 -31.87968,-18.04031 0,0 30.31213,5.21572 21.86361,1.40211 -13.39835,-6.04794 -17.34736,-1.94124 -17.34736,-1.94124 0,0 14.34662,2.86158 7.564,-2.45145 -8.45527,-6.62325 -25.16793,-5.96388 -25.16793,-5.96388 0,0 34.7442,1.95292 28.02507,-2.18097 z"
+         style="fill:#4c1251;fill-opacity:0.38172045;stroke:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#4c1251;fill-opacity:0.38172045;stroke:none"
+         d="m 401.06164,742.10052 c 29.60782,-8.91106 52.06436,8.08427 52.06436,8.08427 0,0 -7.0221,17.14875 -16.29791,28.5885 -8.28069,10.21247 -38.9046,11.53135 -38.9046,11.53135 -12.55477,-2.58233 52.72425,-33.15781 0.75761,-16.89074 -1.74993,0.54778 -7.996,-2.37523 -6.98561,-3.90541 5.55117,-8.40706 31.87968,-18.04031 31.87968,-18.04031 0,0 -30.31213,5.21572 -21.86361,1.40211 13.39835,-6.04794 17.34736,-1.94124 17.34736,-1.94124 0,0 -14.34662,2.86158 -7.564,-2.45145 8.45527,-6.62325 24.91539,-1.92327 24.91539,-1.92327 0,0 -42.90291,-2.18022 -35.34867,-4.45381 z"
+         id="path5322-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scsssscscscs"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5324-8"
+         d="m 511.37938,803.84461 c -1.99126,1.73257 -2.01786,1.24095 2.63571,6.58935 4.65357,5.34841 3.71472,9.47019 5.70597,7.73763 1.99127,-1.73257 2.88378,-3.77223 -1.76979,-9.12063 -4.65357,-5.3484 -4.58062,-6.93891 -6.57189,-5.20635 z"
+         style="fill:#180d09;fill-opacity:1;stroke:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#180d09;fill-opacity:1;stroke:none"
+         d="m 479.70913,805.0946 c 1.99126,1.73257 2.01786,1.24095 -2.63571,6.58935 -4.65357,5.34841 -3.71472,9.47019 -5.70597,7.73763 -1.99127,-1.73257 -2.88378,-3.77223 1.76979,-9.12063 4.65357,-5.3484 4.58062,-6.93891 6.57189,-5.20635 z"
+         id="path5326-2"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5328-9"
+         d="m 485.38659,857.1994 c 0,15.97681 -11.90717,10.35714 -25.71429,10.35714 -13.80712,0 -24.28571,14.90538 -24.28571,-10.35714 0,-15.97681 -8.80712,-32.5 5,-32.5 13.80712,0 45,16.52319 45,32.5 z"
+         style="fill:#f7ff00;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="fill:#f7ff00;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+         d="m 502.61894,857.1994 c 0,15.97681 11.90717,10.35714 25.71429,10.35714 13.80712,0 24.28571,14.90538 24.28571,-10.35714 0,-15.97681 8.80712,-32.5 -5,-32.5 -13.80712,0 -45,16.52319 -45,32.5 z"
+         id="path5330-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#f7ff00;fill-opacity:1;stroke:#000000;stroke-width:1.31887031;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path5332-3"
+         sodipodi:cx="303.04578"
+         sodipodi:cy="914.98145"
+         sodipodi:rx="15.152288"
+         sodipodi:ry="15.152288"
+         d="m 318.19806,914.98145 c 0,8.36837 -6.78391,15.15228 -15.15228,15.15228 -8.36838,0 -15.15229,-6.78391 -15.15229,-15.15228 0,-8.36838 6.78391,-15.15229 15.15229,-15.15229 8.36837,0 15.15228,6.78391 15.15228,15.15229 z"
+         transform="translate(192.93553,-55.73681)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#431f7a;fill-opacity:1;stroke:none"
+         id="path5334-5"
+         sodipodi:cx="271.78571"
+         sodipodi:cy="914.86218"
+         sodipodi:rx="8.2142859"
+         sodipodi:ry="8.9285717"
+         d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+         transform="translate(175.38657,-74.805662)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="translate(271.10086,-74.805662)"
+         d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+         sodipodi:ry="8.9285717"
+         sodipodi:rx="8.2142859"
+         sodipodi:cy="914.86218"
+         sodipodi:cx="271.78571"
+         id="path5336-9"
+         style="fill:#431f7a;fill-opacity:1;stroke:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#f7ff00;fill-opacity:1;stroke:none"
+         id="path5338-8"
+         sodipodi:cx="271.78571"
+         sodipodi:cy="914.86218"
+         sodipodi:rx="8.2142859"
+         sodipodi:ry="8.9285717"
+         d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+         transform="matrix(0.69565218,0,0,0.69565218,335.60397,215.19898)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(0.69565218,0,0,0.69565218,281.31825,221.62755)"
+         d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+         sodipodi:ry="8.9285717"
+         sodipodi:rx="8.2142859"
+         sodipodi:cy="914.86218"
+         sodipodi:cx="271.78571"
+         id="path5340-4"
+         style="fill:#431f7a;fill-opacity:1;stroke:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#431f7a;fill-opacity:1;stroke:none"
+         id="path5342-0"
+         sodipodi:cx="271.78571"
+         sodipodi:cy="914.86218"
+         sodipodi:rx="8.2142859"
+         sodipodi:ry="8.9285717"
+         d="m 279.99999,914.86218 c 0,4.93112 -3.67766,8.92857 -8.21428,8.92857 -4.53663,0 -8.21429,-3.99745 -8.21429,-8.92857 0,-4.93111 3.67766,-8.92857 8.21429,-8.92857 4.53662,0 8.21428,3.99746 8.21428,8.92857 z"
+         transform="matrix(0.52173914,0,0,0.57565218,352.15676,324.6253)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.22655272;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path5344-7"
+         sodipodi:cx="342.5"
+         sodipodi:cy="797.18597"
+         sodipodi:rx="6.0714288"
+         sodipodi:ry="9.8237782"
+         d="m 348.57143,797.18597 c 0,5.42553 -2.71827,9.82378 -6.07143,9.82378 -3.35316,0 -6.07143,-4.39825 -6.07143,-9.82378 0,-5.42552 2.71827,-9.82377 6.07143,-9.82377 3.35316,0 6.07143,4.39825 6.07143,9.82377 z"
+         transform="matrix(1.3529412,0,0,0.85458024,33.789936,208.26379)"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         transform="matrix(1.3529412,0,0,0.85458024,35.218506,231.83522)"
+         d="m 348.57143,797.18597 c 0,5.42553 -2.71827,9.82378 -6.07143,9.82378 -3.35316,0 -6.07143,-4.39825 -6.07143,-9.82378 0,-5.42552 2.71827,-9.82377 6.07143,-9.82377 3.35316,0 6.07143,4.39825 6.07143,9.82377 z"
+         sodipodi:ry="9.8237782"
+         sodipodi:rx="6.0714288"
+         sodipodi:cy="797.18597"
+         sodipodi:cx="342.5"
+         id="path5346-6"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.22655272;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <g
+         id="g5348-3"
+         transform="matrix(0.86650719,0,0,0.86650719,312.25455,257.56238)"
+         style="stroke-width:3.46217561;stroke-miterlimit:4;stroke-dasharray:none"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243">
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path5350-6"
+           d="m 124.24876,570.51941 c 0,8.92627 -14.23221,19.85466 -29.200474,25.62048 -9.207523,3.54677 -26.451857,-2.50714 -26.451857,-11.43341 0,-8.92627 11.747092,-30.34951 27.368064,-30.34951 15.620967,0 28.284267,7.23617 28.284267,16.16244 z"
+           style="fill:#f6f6f6;fill-opacity:1;stroke:#000000;stroke-width:4.43547869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           transform="matrix(0.38980583,0,0,0.30208599,23.727446,487.96729)" />
+        <path
+           sodipodi:nodetypes="sssssssssss"
+           inkscape:connector-curvature="0"
+           id="path5352-1"
+           d="m 96.12442,659.9402 c 0.884733,1.38096 -5.715299,4.36786 -8.717631,5.91463 -3.001869,1.54653 -6.834915,7.59716 7.458771,18.24573 5.97402,4.45056 -0.01211,7.82923 -2.531674,7.35196 -2.519565,-0.47727 -10.127384,-1.63505 -12.617537,-3.90958 -7.906164,-7.22157 -4.151576,-22.17465 -3.782296,-25.99546 0.369279,-3.82081 -10.503895,-1.1522 -13.737012,-1.34468 -3.233117,-0.19248 -7.397607,0.68253 -10.753817,1.13166 -3.35621,0.44913 -5.904141,0.47239 -5.904141,-1.42359 0,-7.58391 11.37718,-15.21244 24.277717,-14.8553 15.751645,0.43607 14.961542,-2.82522 26.30762,14.88463 z"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5220536;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      </g>
+      <g
+         style="stroke-width:3.46217561;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="matrix(-0.86650719,0,0,0.86650719,671.50646,262.61315)"
+         id="g5354-5"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243">
+        <path
+           transform="matrix(0.38980583,0,0,0.30208599,23.727446,487.96729)"
+           style="fill:#f6f6f6;fill-opacity:1;stroke:#000000;stroke-width:4.43547869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 124.24876,570.51941 c 0,8.92627 -14.23221,19.85466 -29.200474,25.62048 -9.207523,3.54677 -26.451857,-2.50714 -26.451857,-11.43341 0,-8.92627 11.747092,-30.34951 27.368064,-30.34951 15.620967,0 28.284267,7.23617 28.284267,16.16244 z"
+           id="path5356-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5220536;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 96.12442,659.9402 c 0.884733,1.38096 -5.715299,4.36786 -8.717631,5.91463 -3.001869,1.54653 -6.834915,7.59716 7.458771,18.24573 5.97402,4.45056 -0.01211,7.82923 -2.531674,7.35196 -2.519565,-0.47727 -10.127384,-1.63505 -12.617537,-3.90958 -7.906164,-7.22157 -4.151576,-22.17465 -3.782296,-25.99546 0.369279,-3.82081 -10.503895,-1.1522 -13.737012,-1.34468 -3.233117,-0.19248 -7.397607,0.68253 -10.753817,1.13166 -3.35621,0.44913 -5.904141,0.47239 -5.904141,-1.42359 0,-7.58391 11.37718,-15.21244 24.277717,-14.8553 15.751645,0.43607 14.961542,-2.82522 26.30762,14.88463 z"
+           id="path5358-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssssssssss" />
+      </g>
+      <path
+         style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+         d="m 572.99539,935.99471 c 0.42388,-6.97579 -38.25682,16.9457 -73.74939,16.9457 -35.49259,0 -77.786,-21.57311 -78.61065,-14.59923 -1.56414,13.22755 44.92151,28.5372 80.41409,28.5372 35.49258,0 71.16388,-18.01335 71.94595,-30.88367 z"
+         id="path5360-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <rect
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         transform="translate(-70.714286,102.85714)"
+         y="708.07648"
+         x="560.35712"
+         height="7.1428571"
+         width="5.3571429"
+         id="rect5870-9"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5889-1-7"
+         d="m 424.25542,800.82324 c 0.32799,5.43294 -9.75034,7.16598 -17.94631,7.5128 -8.19597,0.34683 -18.67942,16.14611 -19.09986,10.71857 -0.79748,-10.29456 9.43206,-22.68149 17.62803,-23.02832 8.19597,-0.34682 18.81305,-5.22682 19.41814,4.79695 z"
+         style="fill:#feef9a;fill-opacity:0.43010751;stroke:none"
+         inkscape:transform-center-x="103.03556"
+         inkscape:transform-center-y="-31.314729" />
+      <path
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path5874-3-3"
+         d="m 431.01706,803.10172 c 6.89505,-1.13997 -22.64376,57.53136 5.8911,78.63786 25.87825,19.14146 65.4118,22.23751 58.47707,21.13097 -16.5317,-2.63789 -96.14587,5.22805 -99.80076,-30.07585 -3.65489,-35.30389 22.71122,-67.58973 35.43259,-69.69298 z"
+         style="fill:#fff125;fill-opacity:0.43010751;stroke:none" />
+      <path
+         style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+         d="m 558.28184,806.62317 c -6.89505,-1.13997 21.63362,55.00598 -6.90125,76.11248 -25.87825,19.14146 -86.03708,19.08748 -79.18519,20.62589 12.99616,2.91795 117.86415,7.24836 121.51904,-28.05554 3.65489,-35.30389 -22.71123,-66.57958 -35.4326,-68.68283 z"
+         id="path5872-8-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         inkscape:transform-center-y="-31.314729"
+         inkscape:transform-center-x="-103.03556"
+         style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+         d="m 562.17316,807.9661 c -0.32799,5.43294 9.75034,7.16598 17.94631,7.5128 8.19597,0.34683 18.67942,16.14611 19.09986,10.71857 0.79748,-10.29456 -9.43206,-22.68149 -17.62803,-23.02832 -8.19597,-0.34682 -18.81305,-5.22682 -19.41814,4.79695 z"
+         id="path5876-7-2"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         inkscape:transform-center-y="-31.314729"
+         inkscape:transform-center-x="-103.03556"
+         style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+         d="m 547.76608,964.21425 c -3.86353,8.21086 -18.26525,15.98251 -10.06928,16.32933 8.19597,0.34683 33.67942,-2.50454 34.09986,-7.93208 0.79748,-10.29456 -2.79428,-20.17098 -10.99025,-20.51781 -8.19597,-0.34682 -8.76484,3.03418 -13.04033,12.12056 z"
+         id="path5876-2-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         inkscape:transform-center-y="-0.70564334"
+         inkscape:transform-center-x="6.6275428"
+         style="fill:#480530;fill-opacity:0.43010751;stroke:none"
+         d="m 441.25912,975.08372 c -9.04708,-0.70469 -20.10141,-16.63515 -12.71789,-13.06053 15.28825,7.40157 40.55803,-7.77714 40.32114,2.91488 -0.22871,10.32282 -5.88541,11.46012 -14.0308,10.48702 -8.1454,-0.9729 -6.47133,0.21174 -13.57245,-0.34137 z"
+         id="path5876-4-7-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#131014;fill-opacity:0.47849462;stroke:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+         d="m 468.77576,998.30979 c 0,-2.3324 8.26129,-7.77153 -13.97616,-8.96979 -8.97007,-0.4833 -15.18516,1.54546 -23.9603,0.6468 -9.54196,-0.9772 -92.01372,-5.66084 -86.04322,13.5187 4.70414,15.1114 51.05407,-2.4391 84.41509,-4.33201 20.10259,-1.1406 0.87863,13.83911 40.39479,-2.1003"
+         id="path6028-7-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssssc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#131014;fill-opacity:0.47849462;stroke:none;font-family:Bangers;-inkscape-font-specification:Bangers Bold"
+         d="m 534.32064,994.70202 c 0,-2.3324 -5.76129,-6.70007 16.47616,-7.89833 8.97007,-0.4833 9.82802,5.47403 18.60316,4.57537 9.54196,-0.9772 86.29535,-17.01699 76.75751,0.6615 -14.70414,27.25424 -42.15639,17.93074 -74.77224,10.66804 -14.74544,-3.28348 -26.81269,10.0936 -36.10907,-5.67175"
+         id="path6028-9-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssssc"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-ydpi="25.530243" />
+      <path
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         transform="translate(330.31628,79.623632)"
+         d="m 63.639611,889.22253 c 0,4.74209 -3.844216,8.5863 -8.586297,8.5863 -4.742081,0 -8.586297,-3.84421 -8.586297,-8.5863 0,-4.74208 3.844216,-8.58629 8.586297,-8.58629 4.742081,0 8.586297,3.84421 8.586297,8.58629 z"
+         sodipodi:ry="8.586297"
+         sodipodi:rx="8.586297"
+         sodipodi:cy="889.22253"
+         sodipodi:cx="55.053314"
+         id="path6065-5"
+         style="fill:#f7e900;fill-opacity:1;stroke:#000000;stroke-width:1.36283255;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         sodipodi:type="arc"
+         style="fill:#f7e900;fill-opacity:1;stroke:#000000;stroke-width:1.36283255;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path6067-7"
+         sodipodi:cx="55.053314"
+         sodipodi:cy="889.22253"
+         sodipodi:rx="8.586297"
+         sodipodi:ry="8.586297"
+         d="m 63.639611,889.22253 c 0,4.74209 -3.844216,8.5863 -8.586297,8.5863 -4.742081,0 -8.586297,-3.84421 -8.586297,-8.5863 0,-4.74208 3.844216,-8.58629 8.586297,-8.58629 4.742081,0 8.586297,3.84421 8.586297,8.58629 z"
+         transform="translate(330.31628,79.623632)" />
+      <path
+         inkscape:export-ydpi="25.530243"
+         inkscape:export-xdpi="25.530243"
+         inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso3.png"
+         transform="translate(541.43816,78.613479)"
+         d="m 63.639611,889.22253 c 0,4.74209 -3.844216,8.5863 -8.586297,8.5863 -4.742081,0 -8.586297,-3.84421 -8.586297,-8.5863 0,-4.74208 3.844216,-8.58629 8.586297,-8.58629 4.742081,0 8.586297,3.84421 8.586297,8.58629 z"
+         sodipodi:ry="8.586297"
+         sodipodi:rx="8.586297"
+         sodipodi:cy="889.22253"
+         sodipodi:cx="55.053314"
+         id="path6069-5"
+         style="fill:#f7e900;fill-opacity:1;stroke:#000000;stroke-width:1.36283255;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       transform="matrix(0.72683756,0,0,0.72683756,2126.5674,-1695.5873)"
+       id="g6035-4"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globosinicio.png"
+       inkscape:export-xdpi="27.434013"
+       inkscape:export-ydpi="27.434013">
+      <g
+         id="g3774-1"
+         transform="matrix(1.374839,-0.05203134,0.05203134,1.374839,-2441.7029,1986.7572)"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globoz.png"
+         inkscape:export-xdpi="18.410648"
+         inkscape:export-ydpi="18.410648">
+        <path
+           d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z"
+           sodipodi:ry="115.71429"
+           sodipodi:rx="97.14286"
+           sodipodi:cy="558.07648"
+           sodipodi:cx="324.28571"
+           id="path2985-2"
+           style="color:#000000;fill:#00aef9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path2987-0"
+           d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
+           style="color:#000000;fill:#00aef9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#00aef9;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
+           id="path2990-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="ssccs"
+           inkscape:connector-curvature="0"
+           id="rect3760-1"
+           d="m 282.88826,480.74621 c 3.19673,-4.90617 19.45337,9.1572 13.80276,11.52415 -8.6095,3.6064 -14.83762,23.65843 -14.83762,23.65843 l -21.60104,-11.52415 c 0,0 18.26869,-16.95587 22.6359,-23.65843 z"
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 254.8132,514.67298 c 3.19673,-4.90617 27.57048,9.99403 21.91987,12.36098 -8.6095,3.6064 -8.7767,14.56706 -8.7767,14.56706 l -21.60104,-11.52415 c 0,0 4.09066,-8.70133 8.45787,-15.40389 z"
+           id="path3763-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssccs" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3765-6"
+           d="m 273.30139,561.09279 c 0,62.32928 62.12152,109.12653 30.96665,109.12653 -31.15488,0 -74.98232,-51.95644 -74.98232,-114.28572 0,-62.32928 50.25601,-111.42857 81.41089,-111.42857 31.15487,0 -37.39522,54.25848 -37.39522,116.58776 z"
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#58082a;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 378.37144,561.09279 c 0,62.32928 -62.12152,109.12653 -30.96665,109.12653 31.15488,0 74.98232,-51.95644 74.98232,-114.28572 0,-62.32928 -50.25601,-111.42857 -81.41089,-111.42857 -31.15487,0 37.39522,54.25848 37.39522,116.58776 z"
+           id="path3768-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 301.95286,681.88252 c 0,6.90356 -0.71268,9.94394 -6.26597,9.94394 -5.5533,0 -2.8341,-5.56722 0.20597,-11.76537 3.03572,-6.18928 4.31518,-7.52034 9.86848,-9.6632 5.18095,-1.99918 -3.80848,4.58107 -3.80848,11.48463 z"
+           id="path3770-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3772-1"
+           d="m 320.42174,682.18246 c 3.90725,5.69145 5.04048,8.60137 0.46222,11.74439 -4.57826,3.14302 -5.4874,-2.98571 -6.48909,-9.81621 -1.00026,-6.82073 -0.6988,-8.64222 2.66666,-13.55188 3.13981,-4.58045 -0.54702,5.93225 3.36021,11.6237 z"
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+      <g
+         inkscape:export-ydpi="18.410648"
+         inkscape:export-xdpi="18.410648"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globoa.png"
+         transform="matrix(1.374839,-0.05203134,0.05203134,1.374839,-2658.5104,1722.6969)"
+         id="g3785-7">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#ff00a4;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path3787-77"
+           sodipodi:cx="324.28571"
+           sodipodi:cy="558.07648"
+           sodipodi:rx="97.14286"
+           sodipodi:ry="115.71429"
+           d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z" />
+        <path
+           style="color:#000000;fill:#ff00a4;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
+           id="path3789-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3791-3"
+           d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
+           style="color:#000000;fill:#ff00a4;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 282.88826,480.74621 c 3.19673,-4.90617 19.45337,9.1572 13.80276,11.52415 -8.6095,3.6064 -14.83762,23.65843 -14.83762,23.65843 l -21.60104,-11.52415 c 0,0 18.26869,-16.95587 22.6359,-23.65843 z"
+           id="path3793-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssccs" />
+        <path
+           sodipodi:nodetypes="ssccs"
+           inkscape:connector-curvature="0"
+           id="path3795-5"
+           d="m 254.8132,514.67298 c 3.19673,-4.90617 27.57048,9.99403 21.91987,12.36098 -8.6095,3.6064 -8.7767,14.56706 -8.7767,14.56706 l -21.60104,-11.52415 c 0,0 4.09066,-8.70133 8.45787,-15.40389 z"
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 273.30139,561.09279 c 0,62.32928 62.12152,109.12653 30.96665,109.12653 -31.15488,0 -74.98232,-51.95644 -74.98232,-114.28572 0,-62.32928 50.25601,-111.42857 81.41089,-111.42857 31.15487,0 -37.39522,54.25848 -37.39522,116.58776 z"
+           id="path3797-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3799-98"
+           d="m 378.37144,561.09279 c 0,62.32928 -62.12152,109.12653 -30.96665,109.12653 31.15488,0 74.98232,-51.95644 74.98232,-114.28572 0,-62.32928 -50.25601,-111.42857 -81.41089,-111.42857 -31.15487,0 37.39522,54.25848 37.39522,116.58776 z"
+           style="color:#000000;fill:#58082a;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3801-1"
+           d="m 301.95286,681.88252 c 0,6.90356 -0.71268,9.94394 -6.26597,9.94394 -5.5533,0 -2.8341,-5.56722 0.20597,-11.76537 3.03572,-6.18928 4.31518,-7.52034 9.86848,-9.6632 5.18095,-1.99918 -3.80848,4.58107 -3.80848,11.48463 z"
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 320.42174,682.18246 c 3.90725,5.69145 5.04048,8.60137 0.46222,11.74439 -4.57826,3.14302 -5.4874,-2.98571 -6.48909,-9.81621 -1.00026,-6.82073 -0.6988,-8.64222 2.66666,-13.55188 3.13981,-4.58045 -0.54702,5.93225 3.36021,11.6237 z"
+           id="path3803-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+      </g>
+      <g
+         inkscape:export-ydpi="17.786308"
+         inkscape:export-xdpi="17.786308"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globor.png"
+         transform="matrix(1.374839,-0.05203134,0.05203134,1.374839,-2664.0695,2103.4997)"
+         id="g3825-2">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#ff000c;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path3827-6"
+           sodipodi:cx="324.28571"
+           sodipodi:cy="558.07648"
+           sodipodi:rx="97.14286"
+           sodipodi:ry="115.71429"
+           d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z" />
+        <path
+           style="color:#000000;fill:#ff000c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
+           id="path3829-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3831-0"
+           d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
+           style="color:#000000;fill:#ff000c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 282.88826,480.74621 c 3.19673,-4.90617 19.45337,9.1572 13.80276,11.52415 -8.6095,3.6064 -14.83762,23.65843 -14.83762,23.65843 l -21.60104,-11.52415 c 0,0 18.26869,-16.95587 22.6359,-23.65843 z"
+           id="path3833-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssccs" />
+        <path
+           sodipodi:nodetypes="ssccs"
+           inkscape:connector-curvature="0"
+           id="path3835-8"
+           d="m 254.8132,514.67298 c 3.19673,-4.90617 27.57048,9.99403 21.91987,12.36098 -8.6095,3.6064 -8.7767,14.56706 -8.7767,14.56706 l -21.60104,-11.52415 c 0,0 4.09066,-8.70133 8.45787,-15.40389 z"
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 273.30139,561.09279 c 0,62.32928 62.12152,109.12653 30.96665,109.12653 -31.15488,0 -74.98232,-51.95644 -74.98232,-114.28572 0,-62.32928 50.25601,-111.42857 81.41089,-111.42857 31.15487,0 -37.39522,54.25848 -37.39522,116.58776 z"
+           id="path3837-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3839-1"
+           d="m 378.37144,561.09279 c 0,62.32928 -62.12152,109.12653 -30.96665,109.12653 31.15488,0 74.98232,-51.95644 74.98232,-114.28572 0,-62.32928 -50.25601,-111.42857 -81.41089,-111.42857 -31.15487,0 37.39522,54.25848 37.39522,116.58776 z"
+           style="color:#000000;fill:#58082a;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3841-2"
+           d="m 301.95286,681.88252 c 0,6.90356 -0.71268,9.94394 -6.26597,9.94394 -5.5533,0 -2.8341,-5.56722 0.20597,-11.76537 3.03572,-6.18928 4.31518,-7.52034 9.86848,-9.6632 5.18095,-1.99918 -3.80848,4.58107 -3.80848,11.48463 z"
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 320.42174,682.18246 c 3.90725,5.69145 5.04048,8.60137 0.46222,11.74439 -4.57826,3.14302 -5.4874,-2.98571 -6.48909,-9.81621 -1.00026,-6.82073 -0.6988,-8.64222 2.66666,-13.55188 3.13981,-4.58045 -0.54702,5.93225 3.36021,11.6237 z"
+           id="path3843-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+      </g>
+      <g
+         id="g3845-0"
+         transform="matrix(1.374839,-0.05203134,0.05203134,1.374839,-2875.3178,1895.031)"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\globov.png"
+         inkscape:export-xdpi="18.242367"
+         inkscape:export-ydpi="18.242367">
+        <path
+           d="m 421.42857,558.07648 c 0,63.90723 -43.49234,115.71428 -97.14286,115.71428 -53.65052,0 -97.14286,-51.80705 -97.14286,-115.71428 0,-63.90724 43.49234,-115.71429 97.14286,-115.71429 53.65052,0 97.14286,51.80705 97.14286,115.71429 z"
+           sodipodi:ry="115.71429"
+           sodipodi:rx="97.14286"
+           sodipodi:cy="558.07648"
+           sodipodi:cx="324.28571"
+           id="path3847-9"
+           style="color:#000000;fill:#87ff00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3849-4"
+           d="m 318.88657,683.27942 c 1.26738,19.81663 -2.61156,9.36679 -9.2467,8.57954 -16.18955,-1.92088 -11.14776,3.95105 -16.53411,0.92398 -7.3347,-4.12204 7.00081,-24.73553 13.68251,-24.73553 6.6817,0 11.56137,6.83675 12.0983,15.23201 z"
+           style="color:#000000;fill:#87ff00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#87ff00;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 334.07355,674.11671 c 14.12614,13.95554 4.27945,8.73174 -1.19905,12.55676 -13.36741,9.33294 -5.69703,10.36471 -11.73265,11.68656 -8.21883,1.79996 -11.22318,-23.12786 -6.2335,-27.57175 4.9897,-4.44388 13.18068,-2.5838 19.1652,3.32843 z"
+           id="path3851-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="ssccs"
+           inkscape:connector-curvature="0"
+           id="path3853-8"
+           d="m 282.88826,480.74621 c 3.19673,-4.90617 19.45337,9.1572 13.80276,11.52415 -8.6095,3.6064 -14.83762,23.65843 -14.83762,23.65843 l -21.60104,-11.52415 c 0,0 18.26869,-16.95587 22.6359,-23.65843 z"
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#ebebeb;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 254.8132,514.67298 c 3.19673,-4.90617 27.57048,9.99403 21.91987,12.36098 -8.6095,3.6064 -8.7767,14.56706 -8.7767,14.56706 l -21.60104,-11.52415 c 0,0 4.09066,-8.70133 8.45787,-15.40389 z"
+           id="path3855-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssccs" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3857-5"
+           d="m 273.30139,561.09279 c 0,62.32928 62.12152,109.12653 30.96665,109.12653 -31.15488,0 -74.98232,-51.95644 -74.98232,-114.28572 0,-62.32928 50.25601,-111.42857 81.41089,-111.42857 31.15487,0 -37.39522,54.25848 -37.39522,116.58776 z"
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           style="color:#000000;fill:#58082a;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 378.37144,561.09279 c 0,62.32928 -62.12152,109.12653 -30.96665,109.12653 31.15488,0 74.98232,-51.95644 74.98232,-114.28572 0,-62.32928 -50.25601,-111.42857 -81.41089,-111.42857 -31.15487,0 37.39522,54.25848 37.39522,116.58776 z"
+           id="path3859-3-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 301.95286,681.88252 c 0,6.90356 -0.71268,9.94394 -6.26597,9.94394 -5.5533,0 -2.8341,-5.56722 0.20597,-11.76537 3.03572,-6.18928 4.31518,-7.52034 9.86848,-9.6632 5.18095,-1.99918 -3.80848,4.58107 -3.80848,11.48463 z"
+           id="path3861-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           id="path3863-0"
+           d="m 320.42174,682.18246 c 3.90725,5.69145 5.04048,8.60137 0.46222,11.74439 -4.57826,3.14302 -5.4874,-2.98571 -6.48909,-9.81621 -1.00026,-6.82073 -0.6988,-8.64222 2.66666,-13.55188 3.13981,-4.58045 -0.54702,5.93225 3.36021,11.6237 z"
+           style="color:#000000;fill:#ffde50;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -2416.2848,1428.1389 c 109.0965,145.462 173.7462,456.589 173.7462,456.589"
+         id="path6026-1"
+         inkscape:connector-curvature="0"
+         transform="matrix(1.3758232,0,0,1.3758232,901.70435,865.73896)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -2254.6604,1290.7582 16.1624,593.9697"
+         id="path6029-6"
+         inkscape:connector-curvature="0"
+         transform="matrix(1.3758232,0,0,1.3758232,901.70435,865.73896)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -2258.701,1573.6009 12.1218,282.8427"
+         id="path6031-4"
+         inkscape:connector-curvature="0"
+         transform="matrix(1.3758232,0,0,1.3758232,901.70435,865.73896)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -2101.1172,1476.6262 -133.3402,371.7362"
+         id="path6033-0"
+         inkscape:connector-curvature="0"
+         transform="matrix(1.3758232,0,0,1.3758232,901.70435,865.73896)" />
+    </g>
+    <g
+       id="g4631-6"
+       transform="matrix(0.90459676,0,0,0.90459676,692.25082,-733.47885)"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\gato.png"
+       inkscape:export-xdpi="27.434013"
+       inkscape:export-ydpi="27.434013">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4619-1"
+         d="M -615.71429,489.86218 -630,495.21933 l -10.71429,17.14285 1.42857,9.64286 -3.92857,35 -2.85714,14.64286 -4.28572,-1.07143 -2.14286,3.92857 11.07143,3.21429 2.5,-10.71429 3.92857,-23.92857 10.35715,-10 5.71428,15 7.14286,5 17.5,-1.78571 20,-0.35715 10.35714,-15.71428 1.78572,-4.64286 2.85714,22.85714 -2.5,14.64286 1.42857,10 8.92857,-0.71429 5.35715,-3.92857 -2.14286,-3.57143 -6.78571,0.71429 3.21428,-29.28571 2.14286,-17.14286 -6.07143,-34.28572 z"
+         style="fill:#e7e7e7;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4587-8"
+         d="m -613.82867,389.70783 -13.13199,17.67767 0,28.78935 9.09138,23.23351 0.50507,23.23351 9.59645,16.16244 10.6066,7.07107 25.25382,-3.03046 26.26396,-21.71828 7.07107,-29.7995 5.55584,-47.98225 -5.05076,-27.77919 -8.08122,5.55584 -3.03046,13.63706 -17.17259,-6.06092 -20.20305,2.52538 -10.60661,-19.1929 z"
+         style="fill:#e7e7e7;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4589-9"
+         d="m -597.16116,373.54539 -4.54568,8.08122 0.50507,10.60661 6.566,4.54568 9.59644,-1.51523 0.50508,-2.52538 z"
+         style="fill:#e7bfdb;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4591-8"
+         d="m -539.07738,380.61646 -7.57615,13.13198 1.01015,9.09138 9.59645,0.50507 0.50508,-13.63706 z"
+         style="fill:#c788b5;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4593-4"
+         d="m -617.36421,460.92359 21.71828,-13.63706 8.5863,-1.51523 14.14213,4.54569 10.60661,-1.51523 12.12183,5.05076 7.57614,17.1726 -3.53553,11.11167 -23.73859,19.69798 -37.88072,-6.56599 -9.59645,-31.81981 z"
+         style="fill:#d8d8d8;fill-opacity:1;stroke:none" />
+      <path
+         transform="matrix(1.4570745,0,0,1.2697588,339.59218,285.40025)"
+         d="m -635.38598,102.81879 c 0,3.0684 -3.50502,5.55584 -7.82868,5.55584 -4.32366,0 -7.82868,-2.48744 -7.82868,-5.55584 0,-3.068409 3.50502,-5.555842 7.82868,-5.555842 4.32366,0 7.82868,2.487433 7.82868,5.555842 z"
+         sodipodi:ry="5.5558391"
+         sodipodi:rx="7.8286824"
+         sodipodi:cy="102.81879"
+         sodipodi:cx="-643.21466"
+         id="path4595-1"
+         style="fill:#fff5f5;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#fff5f5;fill-opacity:1;stroke:none"
+         id="path4597-4"
+         sodipodi:cx="-643.21466"
+         sodipodi:cy="102.81879"
+         sodipodi:rx="7.8286824"
+         sodipodi:ry="5.5558391"
+         d="m -635.38598,102.81879 c 0,3.0684 -3.50502,5.55584 -7.82868,5.55584 -4.32366,0 -7.82868,-2.48744 -7.82868,-5.55584 0,-3.068409 3.50502,-5.555842 7.82868,-5.555842 4.32366,0 7.82868,2.487433 7.82868,5.555842 z"
+         transform="matrix(1.4570745,0,0,1.2697588,381.00843,282.87487)" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#00530f;fill-opacity:1;stroke:none"
+         id="path4601-3"
+         sodipodi:cx="-643.21466"
+         sodipodi:cy="102.81879"
+         sodipodi:rx="7.8286824"
+         sodipodi:ry="5.5558391"
+         d="m -635.38598,102.81879 c 0,3.0684 -3.50502,5.55584 -7.82868,5.55584 -4.32366,0 -7.82868,-2.48744 -7.82868,-5.55584 0,-3.068409 3.50502,-5.555842 7.82868,-5.555842 4.32366,0 7.82868,2.487433 7.82868,5.555842 z"
+         transform="matrix(-0.06780694,0.93066287,-0.76449612,-0.11153794,-521.29116,1023.3224)" />
+      <path
+         transform="matrix(-0.06780694,0.93066287,-0.76449612,-0.11153794,-562.78101,1025.9703)"
+         d="m -635.38598,102.81879 c 0,3.0684 -3.50502,5.55584 -7.82868,5.55584 -4.32366,0 -7.82868,-2.48744 -7.82868,-5.55584 0,-3.068409 3.50502,-5.555842 7.82868,-5.555842 4.32366,0 7.82868,2.487433 7.82868,5.555842 z"
+         sodipodi:ry="5.5558391"
+         sodipodi:rx="7.8286824"
+         sodipodi:cy="102.81879"
+         sodipodi:cx="-643.21466"
+         id="path4603-9"
+         style="fill:#00530f;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4605-8"
+         d="m -588.21429,460.21933 -3.21429,16.07143 9.64286,-5 6.78572,-7.5 -4.28572,-3.57143 z"
+         style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4607-8"
+         d="m -610.71429,462.00504 c 0,0 -18.57143,3.92857 -20.35714,4.28572 -1.78572,0.35714 -19.28572,10.71428 -19.28572,10.71428 l -21.07143,23.92857 1.07143,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4609-0"
+         d="m -660.71429,497.36218 20.71428,-16.07142 21.78572,-11.42858 17.14286,-7.85714"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4611-8"
+         d="m -601.42858,472.00504 -28.57142,10 -20.35715,13.92857 -13.21428,15.35715"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4613-7"
+         d="m -649.28572,507.71933 15,-16.42857 14.64286,-9.64286 8.57143,-4.64286"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4615-7"
+         d="m -600.35715,476.6479 0.71429,5 3.92857,0 5.71429,-4.28572 0.35714,5.35715 5,3.92857 4.28571,-1.78572"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4617-8"
+         d="m -557.14286,485.93361 7.5,23.57143 -1.42857,24.64286 -0.35715,0.71428"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4621-3"
+         d="m -615.35715,518.07647 -5.35714,50.35714 -1.42857,8.21429 5.35714,0.71428 0.35714,-5 0.35715,5.71429 3.92857,1.07143 2.85714,-6.42857 2.85714,2.14285 -3.92857,-8.57142 6.07143,-47.85715"
+         style="fill:#d8d8d8;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4623-8"
+         d="m -593.57143,517.36218 c 0,0 -3.57143,53.57143 -3.92857,52.14286 -0.35715,-1.42857 -1.78572,5.71429 -2.14286,3.92857 -0.35714,-1.78571 -2.14286,4.28572 -2.14286,4.28572 l 5.71429,0.35714 6.07143,-3.57143 2.5,4.28572 4.64285,-4.28572 -0.71428,-13.21428 -0.35715,-42.85715"
+         style="fill:#d8d8d8;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4625-3"
+         d="m -565.71429,483.43361 0.71429,47.5 c 0,0 -1.78572,-3.57143 -1.78572,-2.14285 0,1.42857 2.14286,2.5 2.14286,2.5"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4627-7"
+         d="m -562.5,464.86218 c 0,0 14.28571,23.57143 14.28571,22.14286 0,-1.42857 1.07143,16.78572 1.07143,16.78572"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4629-1"
+         d="m -553.57143,467.00504 c 0,0 11.42857,26.07143 11.07143,25.35714 -0.35715,-0.71428 2.14285,25.35715 2.14285,25.35715"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6562-9"
+       transform="matrix(0.84312773,0,0,0.84312773,1498.1129,-1591.9412)">
+      <path
+         inkscape:export-ydpi="27.434013"
+         inkscape:export-xdpi="27.434013"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
+         transform="matrix(0.65653472,0,0,0.65671642,168.82052,899.50409)"
+         d="m -3543.6151,866.49414 c 0,149.51506 -119.3969,270.72086 -266.6803,270.72086 -147.2835,0 -266.6803,-121.2058 -266.6803,-270.72086 0,-149.51502 119.3968,-270.72089 266.6803,-270.72089 147.2834,0 266.6803,121.20587 266.6803,270.72089 z"
+         sodipodi:ry="270.72089"
+         sodipodi:rx="266.68027"
+         sodipodi:cy="866.49414"
+         sodipodi:cx="-3810.2954"
+         id="path5518-6"
+         style="fill:url(#linearGradient6566-0);fill-opacity:1;stroke:#717171;stroke-width:35.40339661;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="27.434013"
+         inkscape:export-xdpi="27.434013"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
+         transform="matrix(0.47559137,0.16765509,-0.16765509,0.47559137,-353.23808,2494.559)"
+         d="m -4396.9618,-404.26748 c -43.7985,-8.66787 -72.5355,-122.21008 -86.9282,-164.47467 -14.3926,-42.2646 -60.9231,-149.74745 -31.5172,-183.34418 29.4059,-33.59672 142.1048,-1.71253 185.9034,6.95534 43.7985,8.66787 160.1466,22.11278 174.5393,64.37737 14.3927,42.2646 -69.5693,123.92262 -98.9752,157.51934 -29.4059,33.59673 -99.2235,127.63467 -143.0221,118.9668 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0.24"
+         inkscape:flatsided="false"
+         sodipodi:arg2="2.8133724"
+         sodipodi:arg1="1.7661748"
+         sodipodi:r2="135.33673"
+         sodipodi:r1="212.13774"
+         sodipodi:cy="-612.36914"
+         sodipodi:cx="-4355.7778"
+         sodipodi:sides="3"
+         id="path5520-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:#330000;stroke-width:10.60032558;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star" />
     </g>
   </g>
 </svg>
