@@ -3,6 +3,7 @@ package es.eduardoanton.proyectos.juegos;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector3;
 
 public class InputProcesadorMain implements InputProcessor{
@@ -63,6 +64,7 @@ public class InputProcesadorMain implements InputProcessor{
 			Gdx.app.exit();
 			return true;
 		}
+		playRandomSound();
 		return false;
 	}
 
@@ -82,5 +84,17 @@ public class InputProcesadorMain implements InputProcessor{
 	public boolean scrolled(int amount) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+	
+	public void playRandomSound(){
+		switch(MathUtils.random(1,6)){
+			case 1: SeeSawCircus.gamew.horseS.play(); break;
+			case 2: SeeSawCircus.gamew.elephantS.play(); break;
+			case 3: SeeSawCircus.gamew.dogS.play(); break;
+			case 4: SeeSawCircus.gamew.focaS.play(); break;
+			case 5: SeeSawCircus.gamew.lionroarS.play(); break;
+			case 6: SeeSawCircus.gamew.bearS.play(); break;
+		
+		}
 	}
 }

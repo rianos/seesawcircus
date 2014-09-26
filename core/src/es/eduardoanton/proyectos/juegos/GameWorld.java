@@ -62,7 +62,6 @@ public class GameWorld {
 		dogS = Gdx.audio.newSound(Gdx.files.internal("dog_barking_05.mp3"));
 		monoS = Gdx.audio.newSound(Gdx.files.internal("animal_chimpanzee_chimp_screams.ogg"));
 		focaS = Gdx.audio.newSound(Gdx.files.internal("41384__sandyrb__milk-jug-seal-01.ogg"));
-		highscoreS = SeeSawCircus.asset.get("record.ogg");
 	}
 	
 	public void reset(){
@@ -108,6 +107,7 @@ public class GameWorld {
 					Musica.highscoreplay(0.5f);
 					isrecord = true;
 					playedrecord = true;
+					time = delta;
 				}
 			}
 			if ( this.vidas == 0){

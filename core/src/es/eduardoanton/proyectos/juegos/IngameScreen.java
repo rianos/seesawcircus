@@ -30,7 +30,7 @@ public class IngameScreen implements Screen{
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
-	public BitmapFont marcador,gameover,letrero;
+	public BitmapFont marcador,gameover,letrero,informe;
 	public static float statetime = 0f;
 	public Texture caramelos[];
 	private InputProcessor iproc;
@@ -123,10 +123,10 @@ public class IngameScreen implements Screen{
 		gamew = SeeSawCircus.gamew;
 		iproc = new InputProcesador(cam,gamew);
 		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
-		
-		
+		informe =game.asset.get("fuente.fnt", BitmapFont.class);	
+		informe.setColor(Color.YELLOW);
 		letrero = new BitmapFont();
-		letrero.setColor(Color.BLACK);
+		letrero.setColor(Color.GRAY);
 		
 	}
 	
@@ -152,10 +152,16 @@ public class IngameScreen implements Screen{
 		//marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
 		if ( gamew.isrecord){
 			batch.draw(corona, SeeSawCircus.screenwidth - corona.getWidth() -10, 10);
+			if ( gamew.time < 2){
+				gamew.time+=delta;
+				informe.setColor(Color.YELLOW);
+				informe.draw(batch,"¡NUEVO RECORD!", 512 - (informe.getBounds("¡NUEVO RECORD!").width/2), 450);
+				informe.draw(batch,"NEW RECORD!", 512 - (informe.getBounds("NEW RECORD!").width/2), 400);
+			}
 		}
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
 		batch.draw(musica, 0, 0);
-		letrero.draw(batch, Musica.getName() , 25, 20);
+		letrero.draw(batch, " " + Musica.getName() , 25, 20);
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
 		}	

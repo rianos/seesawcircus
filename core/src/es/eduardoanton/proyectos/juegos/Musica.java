@@ -24,10 +24,10 @@ public class Musica {
 	}
 
 	public static void highscoreplay(float vol){
-		musica.pause();
-		hsmusic = SeeSawCircus.asset.get("record.ogg");
-		hsmusic.setVolume(vol);
-		hsmusic.play();
+		musica.stop();
+		musica = SeeSawCircus.asset.get("record.ogg");
+		musica.setVolume(vol);
+		musica.play();
 	}
 
 	public static boolean isPlaying() {

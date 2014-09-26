@@ -24,7 +24,7 @@ public class SeeSawCircus extends Game {
 	public void create() {
 		loadassets();
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
-		prefs.putLong("record", 1000);
+		prefs.putLong("record", 200);
 		prefs.flush();
 		loadingscreen = new LoadingScreen(this);
 		this.setScreen(loadingscreen);
@@ -115,7 +115,7 @@ public class SeeSawCircus extends Game {
 		asset.load("fuente.fnt", BitmapFont.class);
 		asset.load("app_game_interactive_alert_tone_015.mp3", Sound.class);
 		//asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
-		asset.load("record.ogg", Sound.class);
+		asset.load("record.ogg", Music.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.load("cat_meow_human_voice_3.mp3", Sound.class);
 		asset.load("box_trash_impact_03.mp3", Sound.class);
