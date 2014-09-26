@@ -26,8 +26,6 @@ public class Payaso {
 		PayasoID = id;
 		posicion = new Vector2(x,y);
 		velocidad = new Vector2(vx,vy);
-		//dimensiones = new Rectangle(0,0,45,62);
-		//dimensiones = new Rectangle(0,0,88,96);
 		dimensiones = new Rectangle(0,0,64,59);
 		aceleracion = new Vector2(0,GameWorld.aceleracion);
 		state = s;
@@ -92,11 +90,13 @@ public class Payaso {
 						if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){
 							game.flip();
 							game.scoreboard+=1;
+							game.flipsC+=1;
 						}
 					}else{
 						if ( posicion.x  < game.trampolin.posicion.x + game.trampolin.dimensiones.width && (posicion.x + (dimensiones.width/2)) > (game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 ))){
 							game.flip();
 							game.scoreboard+=1;
+							game.flipsC+=1;
 						}
 					}
 				}

@@ -22,7 +22,7 @@ public class GameWorld {
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS;
 	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS;
-	public long scoreboard = 0,record = 0;
+	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0;
 	public short vidas = 5;
 	public float time = 0f;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
@@ -77,6 +77,14 @@ public class GameWorld {
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		scoreboard = 0;
 		vidas = 5;
+		flipsC = 0;
+		caramelosC = 0;
+		globosC=0;
+		animalesC=0;
+		mplataC=0;
+		moroC=0;
+		billeteC=0;
+		fcompletaC=0;
 		isrecord = false;
 		playedrecord = false;
 		record = SeeSawCircus.prefs.getLong("record", 0);

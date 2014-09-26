@@ -83,7 +83,7 @@ public class IngameScreen implements Screen{
 		
 		caramelos[15] = game.asset.get("monedaluciap.png", Texture.class);
 		caramelos[16] = game.asset.get("monedasoniap.png", Texture.class);
-		caramelos[17] = game.asset.get("monedasonia.png", Texture.class);
+		caramelos[17] = game.asset.get("monedalucia.png", Texture.class);
 		caramelos[18] = game.asset.get("monedasonia.png", Texture.class);
 		caramelos[19] = game.asset.get("billeteedu.png", Texture.class);
 		caramelos[8] = game.asset.get("leon.png", Texture.class);
@@ -155,8 +155,8 @@ public class IngameScreen implements Screen{
 			if ( gamew.time < 2){
 				gamew.time+=delta;
 				informe.setColor(Color.YELLOW);
-				informe.draw(batch,"¡NUEVO RECORD!", 512 - (informe.getBounds("¡NUEVO RECORD!").width/2), 450);
-				informe.draw(batch,"NEW RECORD!", 512 - (informe.getBounds("NEW RECORD!").width/2), 400);
+				informe.draw(batch,"NUEVO RECORD", 512 - (informe.getBounds("NUEVO RECORD").width/2), 450);
+				informe.draw(batch,"NEW RECORD", 512 - (informe.getBounds("NEW RECORD").width/2), 400);
 			}
 		}
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);

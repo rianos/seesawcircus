@@ -13,8 +13,6 @@ public class FilaObjetivos {
 	public int ID;
 	public int elementos[];
 	public int quedan;
-	//private final static float limitexI = -1024f;
-	//private final static float limitexD = 1024f;
 	private final static float limitexI = -SeeSawCircus.screenwidth /3;
 	private final static float limitexD = SeeSawCircus.screenwidth /3;
 
@@ -28,8 +26,6 @@ public class FilaObjetivos {
 		this.ID = id;
 		posicion = new Vector2(x,y);
 		velocidad = new Vector2(MathUtils.random(200,400)*vel,0);
-	
-		//velocidad = new Vector2(0,0);
 		elementos = new int[10];
 		game = gam;
 		generarFila();
@@ -57,35 +53,47 @@ public class FilaObjetivos {
 							game.scoreboard+=puntos[elementos[i]];
 							quedan--;
 							if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
-								p.velocidad.y*=-1;
-								//p.velocidad.y+=20;
+								p.velocidad.y*=-1;							
 							}
 							if ( (posicion.y   > p.posicion.y ) && p.velocidad.y > 0){
 								p.velocidad.y=-10;
-							 //p.velocidad.y+=20;
 							}
-							if ( elementos[i] >= 15 && elementos[i] <= 18){
+							if ( elementos[i] >= 15 && elementos[i] <= 16){
 								game.coinS.play();
+								game.mplataC+=1;
+							}else if ( elementos[i] >= 17 && elementos[i] <= 18){
+								game.coinS.play();
+								game.moroC+=1;
 							}else if ( elementos[i] == 19){
 								game.billeteS.play();
+								game.billeteC+=1;
 							}else if ( elementos[i] >=4 && elementos[i] <= 7){
 								game.ballonS.play();
+								game.globosC+=1;
 							}else if (elementos[i] == 8){
 								game.lionroarS.play();
+								game.animalesC+=1;
 							}else if (elementos[i] == 10){
 								game.bearS.play();
+								game.animalesC+=1;
 							}else if (elementos[i] == 9){
 								game.horseS.play();
+								game.animalesC+=1;
 							}else if (elementos[i] == 11){
 								game.elephantS.play();
+								game.animalesC+=1;
 							}else if (elementos[i] == 14){
 								game.dogS.play();
+								game.animalesC+=1;
 							}else if (elementos[i] == 12){
 								game.monoS.play();
+								game.animalesC+=1;
 							}else if (elementos[i] == 13){
 								game.focaS.play();
+								game.animalesC+=1;
 							}else{
 								game.clanS.play();
+								game.caramelosC+=1;
 							}
 							
 							elementos[i]= -1;
@@ -95,7 +103,7 @@ public class FilaObjetivos {
 			}
 			if (this.quedan == 0){
 				game.succesS.play();
-				game.scoreboard+=(100*(ID+1));
+				game.scoreboard+=200;
 				generarFila();
 			}
 		}
