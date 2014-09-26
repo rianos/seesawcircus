@@ -419,6 +419,26 @@
          offset="1"
          style="stop-color:#81ff18;stop-opacity:1" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5550-7-7"
+       id="linearGradient6566-0-1"
+       gradientUnits="userSpaceOnUse"
+       x1="-3803.9329"
+       y1="325.05237"
+       x2="-3808.5767"
+       y2="1347.3268" />
+    <linearGradient
+       id="linearGradient5550-7-7">
+      <stop
+         id="stop5552-3-4"
+         offset="0"
+         style="stop-color:#f3eb3a;stop-opacity:1;" />
+      <stop
+         id="stop5554-4-0"
+         offset="1"
+         style="stop-color:#f5df52;stop-opacity:1;" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -428,15 +448,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497474"
-     inkscape:cx="-254.63974"
-     inkscape:cy="1127.3442"
+     inkscape:cx="-566.77688"
+     inkscape:cy="1109.1615"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="849"
+     inkscape:window-width="1680"
+     inkscape:window-height="994"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
@@ -3601,7 +3621,7 @@
            inkscape:export-ydpi="25.530243" />
         <path
            transform="matrix(0.30147063,0,0,0.30147063,71.748341,541.32159)"
-           d="m 165.66502,746.53851 a 16.414978,16.414978 0 1 1 -32.82995,0 16.414978,16.414978 0 1 1 32.82995,0 z"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
            sodipodi:ry="16.414978"
            sodipodi:rx="16.414978"
            sodipodi:cy="746.53851"
@@ -3620,7 +3640,7 @@
            sodipodi:cy="746.53851"
            sodipodi:rx="16.414978"
            sodipodi:ry="16.414978"
-           d="m 165.66502,746.53851 a 16.414978,16.414978 0 1 1 -32.82995,0 16.414978,16.414978 0 1 1 32.82995,0 z"
+           d="m 165.66502,746.53851 c 0,9.06575 -7.34923,16.41498 -16.41497,16.41498 -9.06575,0 -16.41498,-7.34923 -16.41498,-16.41498 0,-9.06574 7.34923,-16.41497 16.41498,-16.41497 9.06574,0 16.41497,7.34923 16.41497,16.41497 z"
            transform="matrix(0.30147063,0,0,0.30147063,36.445483,540.19076)"
            inkscape:export-filename="C:\gdx\seesaw\android\assets\payaso2.png"
            inkscape:export-xdpi="25.530243"
@@ -4939,7 +4959,7 @@
     </g>
     <g
        id="g4631-6"
-       transform="matrix(0.90459676,0,0,0.90459676,692.25082,-733.47885)"
+       transform="matrix(0.90459676,0,0,0.90459676,964.99201,-606.19963)"
        inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\gato.png"
        inkscape:export-xdpi="27.434013"
        inkscape:export-ydpi="27.434013">
@@ -5102,6 +5122,45 @@
          sodipodi:cx="-4355.7778"
          sodipodi:sides="3"
          id="path5520-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:#330000;stroke-width:10.60032558;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star" />
+    </g>
+    <g
+       id="g6562-9-9"
+       transform="matrix(0.84312773,0,0,0.84312773,1956.7222,-1808.1139)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoniniciop.png"
+       inkscape:export-xdpi="43.112625"
+       inkscape:export-ydpi="43.112625">
+      <path
+         inkscape:export-ydpi="27.434013"
+         inkscape:export-xdpi="27.434013"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
+         transform="matrix(0.65653472,0,0,0.65671642,168.82052,899.50409)"
+         d="m -3543.6151,866.49414 c 0,149.51506 -119.3969,270.72086 -266.6803,270.72086 -147.2835,0 -266.6803,-121.2058 -266.6803,-270.72086 0,-149.51502 119.3968,-270.72089 266.6803,-270.72089 147.2834,0 266.6803,121.20587 266.6803,270.72089 z"
+         sodipodi:ry="270.72089"
+         sodipodi:rx="266.68027"
+         sodipodi:cy="866.49414"
+         sodipodi:cx="-3810.2954"
+         id="path5518-6-4"
+         style="fill:url(#linearGradient6566-0-1);fill-opacity:1;stroke:#717171;stroke-width:35.40339661;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="27.434013"
+         inkscape:export-xdpi="27.434013"
+         inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
+         transform="matrix(0.47559137,0.16765509,-0.16765509,0.47559137,-353.23808,2494.559)"
+         d="m -4396.9618,-404.26748 c -43.7985,-8.66787 -72.5355,-122.21008 -86.9282,-164.47467 -14.3926,-42.2646 -60.9231,-149.74745 -31.5172,-183.34418 29.4059,-33.59672 142.1048,-1.71253 185.9034,6.95534 43.7985,8.66787 160.1466,22.11278 174.5393,64.37737 14.3927,42.2646 -69.5693,123.92262 -98.9752,157.51934 -29.4059,33.59673 -99.2235,127.63467 -143.0221,118.9668 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0.24"
+         inkscape:flatsided="false"
+         sodipodi:arg2="2.8133724"
+         sodipodi:arg1="1.7661748"
+         sodipodi:r2="135.33673"
+         sodipodi:r1="212.13774"
+         sodipodi:cy="-612.36914"
+         sodipodi:cx="-4355.7778"
+         sodipodi:sides="3"
+         id="path5520-5-8"
          style="fill:#ffffff;fill-opacity:1;stroke:#330000;stroke-width:10.60032558;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:type="star" />
     </g>

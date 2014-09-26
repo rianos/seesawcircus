@@ -57,7 +57,6 @@ public class InputProcesador implements InputProcessor{
 		cuentabotones++;
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
-		Gdx.app.log("CIRCUS", "X: " + touchpos.x);
 		if ( gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH
 		  && gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
 				){

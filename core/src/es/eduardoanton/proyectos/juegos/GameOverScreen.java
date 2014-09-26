@@ -32,7 +32,7 @@ public class GameOverScreen implements Screen{
 		corona = game.asset.get("record.png");
 		musica = SeeSawCircus.asset.get("Circus Dilemma.ogg");
 		clic = SeeSawCircus.asset.get("app_game_interactive_alert_tone_015.mp3");
-		iproc = new InputProcesadorMain(cam,game);
+		//iproc = new InputProcesadorMain(cam,game,);
 		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		fuente = game.asset.get("fuente.fnt", BitmapFont.class);
 	}

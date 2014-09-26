@@ -27,7 +27,6 @@ public class SeeSawCircus extends Game {
 		prefs.putLong("record", 800);
 		prefs.flush();
 		loadingscreen = new LoadingScreen(this);
-		//this.setScreen(mainscreen);
 		this.setScreen(loadingscreen);
 	}
 	
@@ -46,6 +45,9 @@ public class SeeSawCircus extends Game {
 		asset.load("nube.png", Texture.class);
 		asset.load("gato.png", Texture.class);
 		asset.load("botoninicio.png", Texture.class);
+		asset.load("botoniniciop.png", Texture.class);
+		asset.load("salir.png", Texture.class);
+		asset.load("salirp.png", Texture.class);
 		asset.load("circo.png", Texture.class);
 		asset.load("letrero.png", Texture.class);
 		asset.load("letreroe.png", Texture.class);
@@ -114,7 +116,8 @@ public class SeeSawCircus extends Game {
 		//asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
 		asset.load("record.ogg", Sound.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
-		//asset.finishLoading();
+		asset.load("cat_meow_human_voice_3.mp3", Sound.class);
+		asset.load("box_trash_impact_03.mp3", Sound.class);
 	}
 	
 }

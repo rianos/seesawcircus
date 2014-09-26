@@ -49,7 +49,7 @@ public class LoadingScreen implements Screen{
 			batch.draw(circo, 200, 150);
 			empty.draw(batch, 200, 70, SeeSawCircus.screenwidth -400, 30);
 			full.draw(batch, 200, 70, game.asset.getProgress()*(SeeSawCircus.screenwidth - 400) + 1, 30);
-			font.drawMultiLine(batch,"cargando... " + (int)(game.asset.getProgress()*100)+"% loaded",500,92,0, BitmapFont.HAlignment.CENTER);
+			font.drawMultiLine(batch,"Cargando... " + (int)(game.asset.getProgress()*100)+"% loaded",500,92,0, BitmapFont.HAlignment.CENTER);
 			batch.end();
 		}		
 	}
