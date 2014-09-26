@@ -5,10 +5,13 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
@@ -29,15 +32,22 @@ public class MainScreen implements Screen{
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
 	private Actor payaso1,payaso2,globos1,globos2,gato;
 	public  ActorGenerico botoninicio,salir;
+	public BitmapFont marcador;
+	private Texture corona;
 	
 	public MainScreen (SeeSawCircus game){
 		this.game = game;
 		cam = new OrthographicCamera();
 		cam.setToOrtho(false, 1024,600);
 		cam.update();
+		batch = new SpriteBatch();
+		batch.setProjectionMatrix(cam.combined);
+		corona = SeeSawCircus.asset.get("recordp.png");
 		musica = SeeSawCircus.asset.get("Circus Dilemma.ogg");
 		clic = SeeSawCircus.asset.get("app_game_interactive_alert_tone_015.mp3");
 		iproc = new InputProcesadorMain(cam,game,this);
+		marcador =game.asset.get("fuente.fnt", BitmapFont.class);
+		marcador.setColor(Color.GRAY);
 	    stage = new Stage(new StretchViewport(1024, 600));
 	    fondoincio = new ActorGenerico(0f,0f,"fondomain.png");
 	    nube1 = new ActorGenerico(0f,400f,"nube.png");
@@ -134,6 +144,12 @@ public class MainScreen implements Screen{
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		stage.act(delta);
 		stage.draw();
+		if (gato.isVisible()){
+			batch.begin();
+			marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("record",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2),45);
+			batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,5);
+			batch.end();
+		}
 	}
 
 	@Override

@@ -447,11 +447,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497474"
-     inkscape:cx="-566.77688"
-     inkscape:cy="1109.1615"
+     inkscape:zoom="0.98994948"
+     inkscape:cx="198.92922"
+     inkscape:cy="1553.6419"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4958"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -5163,6 +5163,53 @@
          id="path5520-5-8"
          style="fill:#ffffff;fill-opacity:1;stroke:#330000;stroke-width:10.60032558;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:type="star" />
+    </g>
+    <g
+       id="g4444"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\salir.png"
+       inkscape:export-xdpi="27"
+       inkscape:export-ydpi="27"
+       transform="matrix(0.5046344,0,0,0.5046344,115.68795,-420.15085)">
+      <g
+         id="g4958"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\salir.png"
+         inkscape:export-xdpi="27"
+         inkscape:export-ydpi="27">
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;fill:#80fb04;fill-opacity:1;fill-rule:nonzero;stroke:#050400;stroke-width:13.15407753;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 350.66556,-848.16316 c -64.89712,0 -117.12502,52.22786 -117.12502,117.125 l 0,334.28125 c 0,64.89714 52.2279,117.15625 117.12502,117.15625 l 180,0 c 64.89714,0 117.15625,-52.25911 117.15625,-117.15625 l 0,-82.84375 -111.75903,-4.0035 2.00175,63.28327 c 1.35941,42.97639 9.41141,19.54296 -33.58647,19.54296 l -119.25,0 c -42.99788,0 -41.98206,-10.57661 -41.5935,-53.57273 l 2.00175,-221.5 c 0.38857,-42.99612 -3.39941,-46.80755 39.59175,-47.56748 l 113.24475,-2.00175 c 42.99116,-0.75993 2.6084,72.69564 45.59698,73.59025 l 38.03327,0.79148 65.71875,0 0,-80 c 0,-64.89714 -52.25911,-117.125 -117.15625,-117.125 z"
+           id="rect2985"
+           inkscape:export-filename="C:\gdx\seesawcircus\android\assets\salir.png"
+           inkscape:export-xdpi="27"
+           inkscape:export-ydpi="27"
+           sodipodi:nodetypes="ssssssccssssssssccsss" />
+        <path
+           id="rect3784"
+           transform="matrix(1.9816326,0,0,1.9816326,-229.25102,832.58464)"
+           d="M 474.5 -759.78125 L 474.84375 -735.71875 L 334.46875 -735.71875 L 334.46875 -673.71875 L 475.6875 -673.71875 L 475.9375 -655.96875 L 542.25 -700.6875 L 474.5 -759.78125 z "
+           style="color:#000000;fill:#faf3f3;fill-opacity:1;fill-rule:nonzero;stroke:#271e00;stroke-width:8.19999980999999960;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-opacity:1"
+           inkscape:export-filename="C:\gdx\seesawcircus\android\assets\salir.png"
+           inkscape:export-xdpi="27"
+           inkscape:export-ydpi="27" />
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;fill:#f4e24b;fill-opacity:1;fill-rule:nonzero;stroke:#050400;stroke-width:13.15407753000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 854.33962,-310.87751 c -64.89712,0 -117.12502,52.22786 -117.12502,117.125 l 0,334.28122 c 0,64.8972 52.2279,117.1563 117.12502,117.1563 l 179.99998,0 c 64.8972,0 117.1563,-52.2591 117.1563,-117.1563 l 0,-82.843698 -111.7591,-4.0035 2.0018,63.283298 c 1.3594,42.9763 9.4114,19.5429 -33.5865,19.5429 l -119.24998,0 c -42.99788,0 -41.98206,-10.5766 -41.5935,-53.572698 l 2.00175,-221.500002 c 0.38857,-42.99614 -3.39941,-46.80757 39.59175,-47.5675 l 113.24478,-2.00175 c 42.9911,-0.75993 2.6084,72.69565 45.5969,73.59025 l 38.0333,0.7915 65.7188,0 0,-80.00002 c 0,-64.89714 -52.2591,-117.125 -117.1563,-117.125 z"
+           id="rect2985-1"
+           inkscape:export-filename="C:\gdx\seesawcircus\android\assets\salirp.png"
+           inkscape:export-xdpi="27"
+           inkscape:export-ydpi="27"
+           sodipodi:nodetypes="ssssssccssssssssccsss" />
+        <path
+           inkscape:connector-curvature="0"
+           id="rect3784-7"
+           d="m 1214.7077,-135.73699 0.6812,47.683002 -278.17166,0 0,122.8612 279.84366,0 0.4954,35.174 131.407,-88.6161 -134.2556,-117.102102 z"
+           style="color:#000000;fill:#d0ffa3;fill-opacity:1;fill-rule:nonzero;stroke:#271e00;stroke-width:16.24938774000000000;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           inkscape:export-filename="C:\gdx\seesawcircus\android\assets\salirp.png"
+           inkscape:export-xdpi="27"
+           inkscape:export-ydpi="27" />
+      </g>
     </g>
   </g>
 </svg>
