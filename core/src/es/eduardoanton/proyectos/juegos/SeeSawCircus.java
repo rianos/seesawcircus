@@ -15,7 +15,7 @@ public class SeeSawCircus extends Game {
 	public static AssetManager asset;
 	public final static float screenwidth = 1024f;
 	public final static float screenheight = 600f;
-	public static Screen mainscreen,ingamescreen,gameoverscreen;
+	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen;
 	public static GameWorld gamew;
 	public static Preferences prefs;
 	
@@ -26,10 +26,16 @@ public class SeeSawCircus extends Game {
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
 		prefs.putLong("record", 800);
 		prefs.flush();
+		loadingscreen = new LoadingScreen(this);
+		//this.setScreen(mainscreen);
+		this.setScreen(loadingscreen);
+	}
+	
+	public  void mainscreen(){
 		gamew = new GameWorld(this);
 		mainscreen = new MainScreen(this);
 		ingamescreen = new IngameScreen( this );
-		gameoverscreen = new GameOverScreen(this); 
+		gameoverscreen = new GameOverScreen(this);
 		this.setScreen(mainscreen);
 	}
 	
@@ -108,7 +114,7 @@ public class SeeSawCircus extends Game {
 		//asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
 		asset.load("record.ogg", Sound.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
-		asset.finishLoading();
+		//asset.finishLoading();
 	}
 	
 }
