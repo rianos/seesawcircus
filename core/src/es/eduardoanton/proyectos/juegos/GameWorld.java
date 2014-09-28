@@ -131,39 +131,22 @@ public class GameWorld {
 		if (trampolin.view == TrampolinState.LEFT){
 			trampolin.view = TrampolinState.RIGHT;
 			distancia = (trampolin.posicion.x + (trampolin.dimensiones.width / 4));
-			if (payaso1.state == PayasoState.FLYING){
-				distancia = distancia - payaso1.posicion.x - (payaso1.dimensiones.width /2);		
-				payaso1.state = PayasoState.STANDBYL;
-				payaso2.velocidad.y = payaso1.velocidad.y*-1  + distancia*redimen2;
-				payaso2.velocidad.y = Math.min(payaso2.velocidad.y, maxvel);
-				payaso2.velocidad.x = distancia * redimen ;
-				payaso2.state = PayasoState.FLYING;
-			}else{
-				distancia = distancia - payaso2.posicion.x - (payaso2.dimensiones.width /2);
-				payaso2.state = PayasoState.STANDBYL;
-				payaso1.velocidad.y = payaso2.velocidad.y*-1  + distancia*redimen2;
-				payaso1.velocidad.y = Math.min(payaso1.velocidad.y, maxvel);
-				payaso1.velocidad.x = distancia * redimen ;
-				payaso1.state = PayasoState.FLYING;
-			}
+			distancia = distancia - payaso1.posicion.x - (payaso1.dimensiones.width /2);		
+			payaso1.state = PayasoState.STANDBYL;
+			payaso2.velocidad.y = payaso1.velocidad.y*-1  + distancia*redimen2;
+			payaso2.velocidad.y = Math.min(payaso2.velocidad.y, maxvel);
+			payaso2.velocidad.x = distancia * redimen ;
+			payaso2.state = PayasoState.FLYING;
+			
 		}else{
 			trampolin.view = TrampolinState.LEFT;
 			distancia = (trampolin.posicion.x + (trampolin.dimensiones.width / 4)*3);
-			if (payaso1.state == PayasoState.FLYING){
-				distancia = distancia - payaso1.posicion.x - (payaso1.dimensiones.width /2);
-				payaso1.state = PayasoState.STANDBYR;
-				payaso2.velocidad.y = payaso1.velocidad.y*-1  - distancia*redimen2;
-				payaso2.velocidad.y = Math.min(payaso2.velocidad.y, maxvel);
-				payaso2.velocidad.x = distancia * redimen ;
-				payaso2.state = PayasoState.FLYING;
-			}else{
-				distancia = distancia - payaso2.posicion.x - (payaso2.dimensiones.width /2);
-				payaso2.state = PayasoState.STANDBYR;
-				payaso1.velocidad.y = payaso2.velocidad.y*-1  - distancia*redimen2;
-				payaso1.velocidad.y = Math.min(payaso1.velocidad.y, maxvel);
-				payaso1.velocidad.x = distancia * redimen ;
-				payaso1.state = PayasoState.FLYING;
-			}
+			distancia = distancia - payaso2.posicion.x - (payaso2.dimensiones.width /2);
+			payaso2.state = PayasoState.STANDBYR;
+			payaso1.velocidad.y = payaso2.velocidad.y*-1  - distancia*redimen2;
+			payaso1.velocidad.y = Math.min(payaso1.velocidad.y, maxvel);
+			payaso1.velocidad.x = distancia * redimen ;
+			payaso1.state = PayasoState.FLYING;
 		}
 		if ((payaso1.velocidad.y > 1200 || payaso2.velocidad.y > 1200) && Math.random() > 0.7f){
 			jump2S.play(0.4f);

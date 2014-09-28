@@ -100,7 +100,7 @@ public class Payaso {
 						}
 					}
 				}
-				
+
 			}
 		}
 		if ( state == PayasoState.MESSCRASH){
