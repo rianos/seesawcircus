@@ -91,10 +91,18 @@ public class Payaso {
 							game.flip();
 							game.scoreboard+=1;
 							game.flipsC+=1;
+						}else if (game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.5){
+							game.flipParaguas();
+							game.scoreboard+=1;
+							game.flipsC+=1;
 						}
 					}else{
 						if ( posicion.x  < game.trampolin.posicion.x + game.trampolin.dimensiones.width && (posicion.x + (dimensiones.width/2)) > (game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 ))){
 							game.flip();
+							game.scoreboard+=1;
+							game.flipsC+=1;
+						}else if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /2 ){
+							game.flipParaguas();
 							game.scoreboard+=1;
 							game.flipsC+=1;
 						}

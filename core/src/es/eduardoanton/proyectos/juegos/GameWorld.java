@@ -155,6 +155,18 @@ public class GameWorld {
 		}
 	}
 	
+	public void flipParaguas(){
+		if (trampolin.view == TrampolinState.LEFT){
+			payaso1.velocidad.y = 1000;
+			payaso1.velocidad.x = -100 ;
+		
+		}else{
+			payaso2.velocidad.y = 1000;
+			payaso2.velocidad.x = 100 ;
+		}
+		coinS.play(0.4f);
+	}
+	
 	public Payaso  getPayasoFlying(){
 		if (payaso1.state == PayasoState.FLYING){
 			return payaso1;
