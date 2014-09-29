@@ -41,74 +41,89 @@ public class Payaso {
 		if ( state == PayasoState.STANDBYR ){
 			posicion.y = 50;
 			posicion.x = game.trampolin.posicion.x + game.trampolin.dimensiones.width  - dimensiones.width;
+			if ( game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25 ){
+				game.paraguas.x = posicion.x;
+				game.paraguas.y = posicion.y + dimensiones.height/2;
+			}else{
+				game.paraguas.x = -100;
+				game.paraguas.y = -100;
+			}
 		}
 		if ( state == PayasoState.STANDBYL ){
 			posicion.y = 50;
 			posicion.x = game.trampolin.posicion.x  ;
+			if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /4 ){
+				game.paraguas.x = posicion.x;
+				game.paraguas.y = posicion.y + dimensiones.height/2;
+			}else{
+				game.paraguas.x = -100;
+				game.paraguas.y = -100;
+			}
 		}
 		if ( state == PayasoState.FLYING){
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
-			if ( state == PayasoState.FLYING ){
-				if (posicion.y < 20 ){
-					game.vidas--;
-					if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
+			if (posicion.y < 20 ){
+				game.vidas--;
+				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
 							(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
-						state = PayasoState.MESSDEATH;
-						game.gamestate = GameState.DEATH;
-						game.hurtS.play();
-						time = delta;
-						velocidad.x = 0f;
-						posicion.y = 25;
-						velocidad.y =  0f;
-						Musica.setVolume(0.2f);
-					   
-					}else{
-						state = PayasoState.MESSCRASH;
-						game.gamestate = GameState.DEATH;
-						time = delta;
-						IngameScreen.statetime = 0f;
-						posicion.y = 25;
-						game.trampolin.velocidad.y = Math.min(-velocidad.y,800);
-						game.trampolin.velocidad.x = velocidad.x;
-						game.trampolin.aceleracion.y= GameWorld.aceleracion;
-						pc.oldstate = pc.state;
-						pc.state = Payaso.PayasoState.MESSCRY;
-						pc.velocidad.x = 0f;
-						pc.posicion.y = 25;
-						pc.velocidad.y =  0f;
-						game.hurtS.play();
-						game.cryS.play(0.2f);
-						game.wowS.play();
-						
-						game.crashS.play();
-					}
-				}else if (posicion.x <= 0 || posicion.x >= 1024 - dimensiones.width ){
-					velocidad.x = velocidad.x * -1;
-				}else if (posicion.y < (game.trampolin.dimensiones.height/2 + game.trampolin.posicion.y) && (velocidad.y < vellimit) ){
-					if ( game.trampolin.view == TrampolinState.LEFT){
-						if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){
-							game.flip();
-							game.scoreboard+=1;
-							game.flipsC+=1;
-						}else if (game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.5){
-							game.flipParaguas();
-							game.scoreboard+=1;
-							game.flipsC+=1;
-						}
-					}else{
-						if ( posicion.x  < game.trampolin.posicion.x + game.trampolin.dimensiones.width && (posicion.x + (dimensiones.width/2)) > (game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 ))){
-							game.flip();
-							game.scoreboard+=1;
-							game.flipsC+=1;
-						}else if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /2 ){
-							game.flipParaguas();
-							game.scoreboard+=1;
-							game.flipsC+=1;
-						}
-					}
+					state = PayasoState.MESSDEATH;
+					game.gamestate = GameState.DEATH;
+					game.hurtS.play();
+					time = delta;
+					velocidad.x = 0f;
+					posicion.y = 25;
+					velocidad.y =  0f;
+					Musica.setVolume(0.2f);		   
+				}else{
+					state = PayasoState.MESSCRASH;
+					game.gamestate = GameState.DEATH;
+					time = delta;
+					IngameScreen.statetime = 0f;
+					posicion.y = 25;
+					game.trampolin.velocidad.y = Math.min(-velocidad.y,800);
+					game.trampolin.velocidad.x = velocidad.x;
+					game.trampolin.aceleracion.y= GameWorld.aceleracion;
+					pc.oldstate = pc.state;
+					pc.state = Payaso.PayasoState.MESSCRY;
+					pc.velocidad.x = 0f;
+					pc.posicion.y = 25;
+					pc.velocidad.y =  0f;
+					game.hurtS.play();
+					game.cryS.play(0.2f);
+					game.wowS.play();
+					game.crashS.play();
 				}
-
+			}else if (posicion.x <= 0 || posicion.x >= 1024 - dimensiones.width ){
+				velocidad.x = velocidad.x * -1;
+			}else if (posicion.y < (game.trampolin.dimensiones.height/2 + game.trampolin.posicion.y) && (velocidad.y < vellimit) ){
+				if ( game.trampolin.view == TrampolinState.LEFT){
+					if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){
+						game.flip();
+						game.scoreboard+=1;
+						game.flipsC+=1;
+					}
+				}else{
+					if ( posicion.x  < game.trampolin.posicion.x + game.trampolin.dimensiones.width && (posicion.x + (dimensiones.width/2)) > (game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 ))){
+						game.flip();
+						game.scoreboard+=1;
+						game.flipsC+=1;
+					}
+				}		
+			}else if (posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y) && (velocidad.y < vellimit)){
+				if ( game.trampolin.view == TrampolinState.LEFT){
+					if (game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25){
+						game.flipParaguas();
+						game.scoreboard+=1;
+						game.flipsC+=1;
+					}
+				}else{
+					 if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /4 ){
+						game.flipParaguas();
+						game.scoreboard+=1;
+						game.flipsC+=1;
+					 }
+				}	
 			}
 		}
 		if ( state == PayasoState.MESSCRASH){

@@ -3,6 +3,7 @@ package es.eduardoanton.proyectos.juegos;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.math.Vector2;
 
 import es.eduardoanton.proyectos.juegos.Payaso.PayasoState;
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
@@ -12,6 +13,8 @@ public class GameWorld {
 	public Trampolin trampolin;
 	public Payaso payaso1;
 	public Payaso payaso2;
+	public Vector2 paraguas;
+	public Vector2 paraguasv;
 	public FilaObjetivos arrayFilaObjetivos[];
 	public float redondo = 0;
 	public final static int aceleracion = -1380;
@@ -36,6 +39,8 @@ public class GameWorld {
 		payaso2 = new Payaso(500,300,0,0,PayasoState.FLYING, this, 2);
 		payaso1.setPayasoCompañero(payaso2);
 		payaso2.setPayasoCompañero(payaso1);
+		paraguas = new Vector2(-100,-100);
+		paraguasv = new Vector2(0,0);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
@@ -65,6 +70,8 @@ public class GameWorld {
 	}
 	
 	public void reset(){
+		paraguas = new Vector2(-100,-100);
+		paraguasv = new Vector2(0,0);
 		trampolin = new Trampolin();
 		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this, 1);
 		payaso2 = new Payaso(500,500,-90,0,PayasoState.FLYING, this, 2);

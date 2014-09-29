@@ -210,6 +210,7 @@ public class IngameScreen implements Screen{
 				batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
 				batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 30);
 			}
+			batch.draw(caramelos[19],gamew.paraguas.x,gamew.paraguas.y);
 			redondo.setX(gamew.trampolin.posicion.x + 62);
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);
