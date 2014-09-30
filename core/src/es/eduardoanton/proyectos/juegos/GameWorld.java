@@ -24,14 +24,15 @@ public class GameWorld {
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS;
-	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS;
+	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS;
 	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0;
 	public short vidas = 5;
 	public short paraguasc = 3;
 	public float time = 0f;
+	public float timeregalo = 0f;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
 	public GameState gamestate  = GameState.RUNNING;
-	public boolean isrecord,playedrecord;
+	public boolean isrecord,playedrecord,ispremio;
 
 	GameWorld(SeeSawCircus game){
 		this.game = game;
@@ -70,6 +71,8 @@ public class GameWorld {
 		monoS = Gdx.audio.newSound(Gdx.files.internal("animal_chimpanzee_chimp_screams.ogg"));
 		focaS = Gdx.audio.newSound(Gdx.files.internal("41384__sandyrb__milk-jug-seal-01.ogg"));
 		boingpS = SeeSawCircus.asset.get("boingsda.mp3",Sound.class);
+		bonusS = SeeSawCircus.asset.get("bonus_1.mp3",Sound.class);
+		ispremio = false;
 	}
 	
 	public void reset(){
@@ -97,8 +100,10 @@ public class GameWorld {
 		moroC=0;
 		billeteC=0;
 		fcompletaC=0;
+		timeregalo = 0f;
 		isrecord = false;
 		playedrecord = false;
+		ispremio = false;
 		record = SeeSawCircus.prefs.getLong("record", 0);
 		this.gamestate = GameState.RUNNING;
 		

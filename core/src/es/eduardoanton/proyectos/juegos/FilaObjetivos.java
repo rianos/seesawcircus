@@ -18,7 +18,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
-	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f};
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f};
 	private GameWorld game;
 	
 	
@@ -92,6 +92,10 @@ public class FilaObjetivos {
 							}else if (elementos[i] == 13){
 								game.focaS.play();
 								game.animalesC+=1;
+							}else if (elementos[i] == 20){
+								game.bonusS.play();
+								game.timeregalo = delta;
+								game.ispremio = true;
 							}else{
 								game.clanS.play();
 								game.caramelosC+=1;
@@ -115,6 +119,7 @@ public class FilaObjetivos {
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(8,19);
 			}
+			this.elementos[MathUtils.random(0,9)] = 20;
 		}else if ( ID == 1){
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,13);

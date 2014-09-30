@@ -88,6 +88,7 @@ public class SeeSawCircus extends Game {
 		asset.load("monedaluciap.png", Texture.class);
 		asset.load("monedasoniap.png", Texture.class);
 		asset.load("billeteedu.png", Texture.class);
+		asset.load("regalo.png", Texture.class);
 		asset.load("globoa.png", Texture.class);
 		asset.load("globoz.png", Texture.class);
 		asset.load("globor.png", Texture.class);
@@ -120,6 +121,7 @@ public class SeeSawCircus extends Game {
 		asset.load("record.ogg", Music.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.load("cat_meow_human_voice_3.mp3", Sound.class);
+		asset.load("bonus_1.mp3", Sound.class);
 		asset.load("boingsda.mp3",Sound.class);
 		asset.load("box_trash_impact_03.mp3", Sound.class);
 	}

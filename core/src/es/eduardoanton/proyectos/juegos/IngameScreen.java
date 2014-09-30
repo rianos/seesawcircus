@@ -27,13 +27,14 @@ public class IngameScreen implements Screen{
 	private Texture trampolintexturel,trampolinsombra,payasosombra;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
 	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp;
-	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
+	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio;
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
 	public BitmapFont marcador,gameover,letrero,informe;
 	public static float statetime = 0f;
 	public Texture caramelos[];
 	private InputProcessor iproc;
+	public Color tmp;
 	
 
 
@@ -61,6 +62,7 @@ public class IngameScreen implements Screen{
 		payasodeath =game.asset.get("payasodeath.png", Texture.class);
 		lapida =game.asset.get("lapida.png", Texture.class);
 		corazon =game.asset.get("corazon.png", Texture.class);
+		premio = new TextureRegion(corazon);
 		musica =game.asset.get("musica.png", Texture.class);
 		corona = game.asset.get("record.png", Texture.class);
 		paraguas = game.asset.get("paraguas.png", Texture.class);
@@ -72,7 +74,7 @@ public class IngameScreen implements Screen{
 		explosion[3] = new TextureRegion(game.asset.get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
 		//caramelos = new Texture[4];
-		caramelos = new Texture[20];
+		caramelos = new Texture[21];
 		caramelos[0] = game.asset.get("carameloa.png", Texture.class);
 		caramelos[1] = game.asset.get("caramelov.png", Texture.class);
 		caramelos[2] = game.asset.get("caramelor.png", Texture.class);
@@ -88,6 +90,7 @@ public class IngameScreen implements Screen{
 		caramelos[17] = game.asset.get("monedalucia.png", Texture.class);
 		caramelos[18] = game.asset.get("monedasonia.png", Texture.class);
 		caramelos[19] = game.asset.get("billeteedu.png", Texture.class);
+		caramelos[20] = game.asset.get("regalo.png", Texture.class);
 		caramelos[8] = game.asset.get("leon.png", Texture.class);
 		caramelos[9] = game.asset.get("caballo.png", Texture.class);
 		caramelos[10] = game.asset.get("oso.png", Texture.class);
@@ -223,6 +226,19 @@ public class IngameScreen implements Screen{
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);
 			redondo.draw(batch);
+			if ( gamew.ispremio){
+				if ( gamew.timeregalo < 2f ){
+					gamew.timeregalo+=delta;
+					tmp = batch.getColor();
+					tmp.a = 0.5f;
+					batch.setColor(tmp);
+					batch.draw(premio, 500, 300, 0, 0, premio.getRegionWidth(), premio.getRegionHeight(), 5f, 5f,-90f, false);
+					tmp.a = 1f;
+					batch.setColor(tmp);
+				}else{
+					gamew.ispremio = false;
+				}
+			}
 			
 		}
 		batch.end();
