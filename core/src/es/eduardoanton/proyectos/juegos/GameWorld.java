@@ -13,7 +13,7 @@ public class GameWorld {
 	public Trampolin trampolin;
 	public Payaso payaso1;
 	public Payaso payaso2;
-	public Vector2 paraguas;
+	public Vector2 paraguas,paraguasfalling;
 	public Vector2 paraguasv;
 	public FilaObjetivos arrayFilaObjetivos[];
 	public float redondo = 0;
@@ -24,9 +24,10 @@ public class GameWorld {
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS;
-	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS;
+	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS;
 	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0;
 	public short vidas = 5;
+	public short paraguasc = 3;
 	public float time = 0f;
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
 	public GameState gamestate  = GameState.RUNNING;
@@ -40,7 +41,8 @@ public class GameWorld {
 		payaso1.setPayasoCompañero(payaso2);
 		payaso2.setPayasoCompañero(payaso1);
 		paraguas = new Vector2(-100,-100);
-		paraguasv = new Vector2(0,0);
+		paraguasfalling = new Vector2(-100,-100);
+		paraguasv = new Vector2(0,-200);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
@@ -67,11 +69,13 @@ public class GameWorld {
 		dogS = Gdx.audio.newSound(Gdx.files.internal("dog_barking_05.mp3"));
 		monoS = Gdx.audio.newSound(Gdx.files.internal("animal_chimpanzee_chimp_screams.ogg"));
 		focaS = Gdx.audio.newSound(Gdx.files.internal("41384__sandyrb__milk-jug-seal-01.ogg"));
+		boingpS = SeeSawCircus.asset.get("boingsda.mp3",Sound.class);
 	}
 	
 	public void reset(){
 		paraguas = new Vector2(-100,-100);
-		paraguasv = new Vector2(0,0);
+		paraguasfalling = new Vector2(-100,-100);
+		paraguasv = new Vector2(0,-200);
 		trampolin = new Trampolin();
 		payaso1 = new Payaso(500,50,0,0,PayasoState.STANDBYL, this, 1);
 		payaso2 = new Payaso(500,500,-90,0,PayasoState.FLYING, this, 2);
@@ -84,6 +88,7 @@ public class GameWorld {
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		scoreboard = 0;
 		vidas = 5;
+		paraguasc = 3;
 		flipsC = 0;
 		caramelosC = 0;
 		globosC=0;
@@ -113,6 +118,13 @@ public class GameWorld {
 			trampolin.update(delta);
 			payaso1.update(delta);
 			payaso2.update(delta);
+			if ( paraguasfalling.y < -10 ){
+				paraguasfalling.x = -100;
+				paraguasfalling.y = 0;
+				
+			}else{
+				paraguasfalling.add(paraguasv.cpy().scl(delta));
+			}
 			for (FilaObjetivos fila : arrayFilaObjetivos){
 				fila.update(delta);
 			}
@@ -171,7 +183,10 @@ public class GameWorld {
 			payaso2.velocidad.y = 1000;
 			payaso2.velocidad.x = 100 ;
 		}
-		coinS.play(0.4f);
+		paraguasfalling.x = paraguas.x;
+		paraguasfalling.y = paraguas.y; 
+		paraguasc--;
+		boingpS.play();
 	}
 	
 	public Payaso  getPayasoFlying(){

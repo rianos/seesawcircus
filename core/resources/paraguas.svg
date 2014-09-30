@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="paraguas.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="379.42245"
+     inkscape:cy="867.06276"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3891"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="994"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3873"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+       inkscape:export-xdpi="27"
+       inkscape:export-ydpi="27"
+       transform="matrix(0.66630786,0,0,0.66630786,111.7257,166.12667)">
+      <g
+         id="g3891"
+         inkscape:export-xdpi="27"
+         inkscape:export-ydpi="27"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png">
+        <g
+           id="g3008">
+          <path
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:connector-curvature="0"
+             id="path3853"
+             d="m 327.70182,306.36453 0,99.95615 13.56622,-0.26445 -2.4666,-99.42726 z"
+             style="fill:#932b00;fill-opacity:1;stroke:#000000;stroke-width:1.50080776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:connector-curvature="0"
+             id="path2985"
+             d="m 336.875,185.65625 c -109.62575,0 -198.46875,79.7595 -198.46875,178.14218 0,7.83802 0.56257,15.54295 1.65625,23.11358 3.97542,-2.8532 8.1595,-5.61137 12.5,-8.2842 -1.30814,-2.90331 -2.0625,-6.11833 -2.0625,-9.51736 0,-12.70085 10.19743,-22.98711 22.75,-22.98711 8.71325,0 16.24809,4.95398 20.0625,12.2366 2.57656,-1.02902 5.19765,-2.02821 7.84375,-3.00382 C 199.78387,352.3952 199,349.10407 199,345.61743 c 0,-12.70085 10.16618,-23.01873 22.71875,-23.01873 11.54977,0 21.08109,8.72857 22.53125,20.01492 1.8354,-0.42156 3.67478,-0.83522 5.53125,-1.23315 -1.47404,-3.04766 -2.28125,-6.46478 -2.28125,-10.08651 0,-12.70083 10.16618,-22.9871 22.71875,-22.9871 12.55257,0 22.71875,10.28627 22.71875,22.9871 0,1.11327 -0.0676,2.2174 -0.21875,3.2884 2.73373,-0.29054 5.48656,-0.54873 8.25,-0.79048 C 300.35329,331.70519 300,329.50424 300,327.21509 c 0,-12.70083 10.19743,-22.9871 22.75,-22.9871 12.55257,0 22.71875,10.28627 22.71875,22.9871 0,1.68684 -0.19053,3.31747 -0.53125,4.90098 2.39343,0.0263 4.77946,0.0631 7.15625,0.12653 -0.35837,-1.62185 -0.5625,-3.29626 -0.5625,-5.02745 0,-12.70084 10.16618,-22.98711 22.71875,-22.98711 12.55257,0 22.75,10.28627 22.75,22.98711 0,2.93417 -0.54122,5.73565 -1.53125,8.31583 2.1989,0.27689 4.38546,0.57651 6.5625,0.88534 0,-12.70085 10.19743,-23.01873 22.75,-23.01873 12.55257,0 22.71875,10.31788 22.71875,23.01873 0,3.07961 -0.60214,6.01091 -1.6875,8.69526 1.93131,0.50047 3.84507,1.02258 5.75,1.54934 0.51377,-12.24034 10.49489,-22.00691 22.71875,-22.00691 12.55257,0 22.71875,10.28626 22.71875,22.98711 0,0.0641 5.2e-4,0.12571 0,0.18971 2.65301,-1.09818 5.55009,-1.70743 8.59375,-1.70743 12.55257,0 22.71875,10.28626 22.71875,22.9871 0,3.21524 -0.66602,6.26407 -1.84375,9.04308 2.64776,1.61444 5.23611,3.2504 7.75,4.93257 0.76051,-6.33742 1.15625,-12.76889 1.15625,-19.28767 0,-98.38268 -88.87425,-178.14218 -198.5,-178.14218 z"
+             style="color:#000000;fill:#49bd04;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             style="color:#000000;fill:#6aff5e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             d="m 337.98739,184.29252 c -2.70411,-1.86362 -42.17247,24.32926 -88.07344,72.73298 -45.90097,48.40372 -55.19777,102.93231 -56.0651,99.79593 -0.86732,-3.13638 -20.11345,-66.84642 25.78752,-115.25014 45.90098,-48.40372 121.03043,-55.43218 118.35102,-57.27877 z"
+             id="path3845"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssss" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             sodipodi:nodetypes="sssss"
+             inkscape:connector-curvature="0"
+             id="path3847"
+             d="m 334.89882,185.00681 c 2.70411,-1.86362 39.67247,37.1864 91.28773,74.87583 53.87323,39.33821 63.99861,68.88255 73.20795,83.72451 1.7157,2.76505 3.32774,-53.63214 -42.57323,-102.03586 C 410.92029,193.16757 332.21941,186.8534 334.89882,185.00681 z"
+             style="color:#000000;fill:#6aff5e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             sodipodi:nodetypes="sssss"
+             inkscape:connector-curvature="0"
+             id="path3849"
+             d="m 336.91597,186.07823 c -2.70411,-1.86362 -9.50275,13.19366 -15.57344,63.09012 -7.68767,63.18674 -22.13161,90.00972 -23.20796,86.93879 -1.22446,-3.49352 -35.47059,-43.98928 -10.28391,-95.25014 29.41692,-59.8704 51.74472,-52.93218 49.06531,-54.77877 z"
+             style="color:#000000;fill:#f0ffed;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             style="color:#000000;fill:#f0ffed;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             d="m 334.55945,185.72109 c 2.70411,-1.86362 -7.22167,13.74535 17.00201,61.30441 39.49379,77.5393 51.41733,85.724 52.49368,82.65307 1.22447,-3.49352 4.7563,-37.91785 -20.43038,-89.17871 -29.41692,-59.8704 -51.74472,-52.93218 -49.06531,-54.77877 z"
+             id="path3851"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssss" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             transform="translate(163.64472,-187.88837)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3801"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3855"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,81.407078,240.57326)" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             transform="matrix(0.37777776,0,0,0.37777776,129.8944,218.85498)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3857"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3859"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,179.39187,201.17731)" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             transform="matrix(0.37777776,0,0,0.37777776,229.89949,188.04533)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3861"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3863"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,282.42742,185.01487)" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             transform="matrix(0.37777776,0,0,0.37777776,332.93505,193.09609)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3865"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3867"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,382.43252,202.69254)" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             transform="matrix(0.37777776,0,0,0.37777776,430.91984,210.26868)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3869"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z" />
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3871"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.63800001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,465.26503,234.00726)" />
+        </g>
+        <g
+           id="g3026"
+           transform="matrix(0.49620086,0,0,0.63850583,317.85076,-172.63412)"
+           style="stroke:#000000;stroke-width:0.36729306;stroke-opacity:1"
+           inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguasp.png"
+           inkscape:export-xdpi="27"
+           inkscape:export-ydpi="27">
+          <path
+             inkscape:export-ydpi="27"
+             inkscape:export-xdpi="27"
+             style="fill:#932b00;fill-opacity:1;stroke:#000000;stroke-width:2.66632986px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 327.70182,306.36453 0,99.95615 13.56622,-0.26445 -2.4666,-99.42726 z"
+             id="path3028"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png" />
+          <path
+             style="color:#000000;fill:#49bd04;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             d="m 336.875,185.65625 c -109.62575,0 -198.46875,79.7595 -198.46875,178.14218 0,7.83802 0.56257,15.54295 1.65625,23.11358 3.97542,-2.8532 8.1595,-5.61137 12.5,-8.2842 -1.30814,-2.90331 -2.0625,-6.11833 -2.0625,-9.51736 0,-12.70085 10.19743,-22.98711 22.75,-22.98711 8.71325,0 16.24809,4.95398 20.0625,12.2366 2.57656,-1.02902 5.19765,-2.02821 7.84375,-3.00382 C 199.78387,352.3952 199,349.10407 199,345.61743 c 0,-12.70085 10.16618,-23.01873 22.71875,-23.01873 11.54977,0 21.08109,8.72857 22.53125,20.01492 1.8354,-0.42156 3.67478,-0.83522 5.53125,-1.23315 -1.47404,-3.04766 -2.28125,-6.46478 -2.28125,-10.08651 0,-12.70083 10.16618,-22.9871 22.71875,-22.9871 12.55257,0 22.71875,10.28627 22.71875,22.9871 0,1.11327 -0.0676,2.2174 -0.21875,3.2884 2.73373,-0.29054 5.48656,-0.54873 8.25,-0.79048 C 300.35329,331.70519 300,329.50424 300,327.21509 c 0,-12.70083 10.19743,-22.9871 22.75,-22.9871 12.55257,0 22.71875,10.28627 22.71875,22.9871 0,1.68684 -0.19053,3.31747 -0.53125,4.90098 2.39343,0.0263 4.77946,0.0631 7.15625,0.12653 -0.35837,-1.62185 -0.5625,-3.29626 -0.5625,-5.02745 0,-12.70084 10.16618,-22.98711 22.71875,-22.98711 12.55257,0 22.75,10.28627 22.75,22.98711 0,2.93417 -0.54122,5.73565 -1.53125,8.31583 2.1989,0.27689 4.38546,0.57651 6.5625,0.88534 0,-12.70085 10.19743,-23.01873 22.75,-23.01873 12.55257,0 22.71875,10.31788 22.71875,23.01873 0,3.07961 -0.60214,6.01091 -1.6875,8.69526 1.93131,0.50047 3.84507,1.02258 5.75,1.54934 0.51377,-12.24034 10.49489,-22.00691 22.71875,-22.00691 12.55257,0 22.71875,10.28626 22.71875,22.98711 0,0.0641 5.2e-4,0.12571 0,0.18971 2.65301,-1.09818 5.55009,-1.70743 8.59375,-1.70743 12.55257,0 22.71875,10.28626 22.71875,22.9871 0,3.21524 -0.66602,6.26407 -1.84375,9.04308 2.64776,1.61444 5.23611,3.2504 7.75,4.93257 0.76051,-6.33742 1.15625,-12.76889 1.15625,-19.28767 0,-98.38268 -88.87425,-178.14218 -198.5,-178.14218 z"
+             id="path3030"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             sodipodi:nodetypes="sssss"
+             inkscape:connector-curvature="0"
+             id="path3032"
+             d="m 337.98739,184.29252 c -2.70411,-1.86362 -42.17247,24.32926 -88.07344,72.73298 -45.90097,48.40372 -55.19777,102.93231 -56.0651,99.79593 -0.86732,-3.13638 -20.11345,-66.84642 25.78752,-115.25014 45.90098,-48.40372 121.03043,-55.43218 118.35102,-57.27877 z"
+             style="color:#000000;fill:#6aff5e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             style="color:#000000;fill:#6aff5e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             d="m 334.89882,185.00681 c 2.70411,-1.86362 39.67247,37.1864 91.28773,74.87583 53.87323,39.33821 63.99861,68.88255 73.20795,83.72451 1.7157,2.76505 3.32774,-53.63214 -42.57323,-102.03586 C 410.92029,193.16757 332.21941,186.8534 334.89882,185.00681 z"
+             id="path3034"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssss"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             style="color:#000000;fill:#f0ffed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             d="m 336.91597,186.07823 c -2.70411,-1.86362 -9.50275,13.19366 -15.57344,63.09012 -7.68767,63.18674 -22.13161,90.00972 -23.20796,86.93879 -1.22446,-3.49352 -35.47059,-43.98928 -10.28391,-95.25014 29.41692,-59.8704 51.74472,-52.93218 49.06531,-54.77877 z"
+             id="path3036"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssss"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             sodipodi:nodetypes="sssss"
+             inkscape:connector-curvature="0"
+             id="path3038"
+             d="m 334.55945,185.72109 c 2.70411,-1.86362 -7.22167,13.74535 17.00201,61.30441 39.49379,77.5393 51.41733,85.724 52.49368,82.65307 1.22447,-3.49352 4.7563,-37.91785 -20.43038,-89.17871 -29.41692,-59.8704 -51.74472,-52.93218 -49.06531,-54.77877 z"
+             style="color:#000000;fill:#f0ffed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3040"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="translate(163.64472,-187.88837)"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             transform="matrix(0.37777776,0,0,0.37777776,81.407078,240.57326)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3042"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3044"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,129.8944,218.85498)"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             transform="matrix(0.37777776,0,0,0.37777776,179.39187,201.17731)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3046"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3048"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,229.89949,188.04533)"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             transform="matrix(0.37777776,0,0,0.37777776,282.42742,185.01487)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3050"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3052"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,332.93505,193.09609)"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             transform="matrix(0.37777776,0,0,0.37777776,382.43252,202.69254)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3054"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             sodipodi:ry="22.728432"
+             sodipodi:rx="22.728432"
+             sodipodi:cy="372.02444"
+             sodipodi:cx="172.231"
+             id="path3056"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc"
+             transform="matrix(0.37777776,0,0,0.37777776,430.91984,210.26868)"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+          <path
+             transform="matrix(0.37777776,0,0,0.37777776,465.26503,234.00726)"
+             sodipodi:type="arc"
+             style="color:#000000;fill:#577d40;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.43809128;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3058"
+             sodipodi:cx="172.231"
+             sodipodi:cy="372.02444"
+             sodipodi:rx="22.728432"
+             sodipodi:ry="22.728432"
+             d="m 194.95943,372.02444 c 0,12.55257 -10.17586,22.72844 -22.72843,22.72844 -12.55256,0 -22.72843,-10.17587 -22.72843,-22.72844 0,-12.55256 10.17587,-22.72843 22.72843,-22.72843 12.55257,0 22.72843,10.17587 22.72843,22.72843 z"
+             inkscape:export-filename="C:\gdx\seesawcircus\android\assets\paraguas.png"
+             inkscape:export-xdpi="27"
+             inkscape:export-ydpi="27" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

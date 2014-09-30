@@ -41,9 +41,9 @@ public class Payaso {
 		if ( state == PayasoState.STANDBYR ){
 			posicion.y = 50;
 			posicion.x = game.trampolin.posicion.x + game.trampolin.dimensiones.width  - dimensiones.width;
-			if ( game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25 ){
-				game.paraguas.x = posicion.x;
-				game.paraguas.y = posicion.y + dimensiones.height/2;
+			if ( game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.125 ){
+				game.paraguas.x = posicion.x - 10;
+				game.paraguas.y = posicion.y + 15 ;
 			}else{
 				game.paraguas.x = -100;
 				game.paraguas.y = -100;
@@ -52,9 +52,9 @@ public class Payaso {
 		if ( state == PayasoState.STANDBYL ){
 			posicion.y = 50;
 			posicion.x = game.trampolin.posicion.x  ;
-			if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /4 ){
-				game.paraguas.x = posicion.x;
-				game.paraguas.y = posicion.y + dimensiones.height/2;
+			if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /8 ){
+				game.paraguas.x = posicion.x - 10;
+				game.paraguas.y = posicion.y + 15;
 			}else{
 				game.paraguas.x = -100;
 				game.paraguas.y = -100;
@@ -64,6 +64,7 @@ public class Payaso {
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
 			if (posicion.y < 20 ){
+			//if (false){
 				game.vidas--;
 				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
 							(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
@@ -110,15 +111,19 @@ public class Payaso {
 						game.flipsC+=1;
 					}
 				}		
-			}else if (posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y) && (velocidad.y < vellimit)){
+			}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (velocidad.y < vellimit)) && game.paraguasc > 0){
 				if ( game.trampolin.view == TrampolinState.LEFT){
-					if (game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25){
+					if ((game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25) &&
+							 (posicion.x + (dimensiones.width/2) > game.trampolin.posicion.x + (game.trampolin.dimensiones.width/2))
+							){
 						game.flipParaguas();
 						game.scoreboard+=1;
 						game.flipsC+=1;
 					}
 				}else{
-					 if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /4 ){
+					 if (( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /4 ) &&
+							((posicion.x - (dimensiones.width /2)) < game.trampolin.dimensiones.width/4)					 
+							 ){
 						game.flipParaguas();
 						game.scoreboard+=1;
 						game.flipsC+=1;

@@ -33,9 +33,7 @@ public class FilaObjetivos {
 	
 	public void update (float delta){
 		posicion.add(velocidad.cpy().scl(delta));
-		if (true){
-			return;
-		}
+		
 		if (posicion.x < limitexI){
 			velocidad.x*=-1;
 			posicion.x = limitexI + 2;

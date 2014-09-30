@@ -35,9 +35,17 @@ public class InputProcesadorGameOver implements InputProcessor{
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+		
+		return false;
+	}
+
+	@Override
+	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
 		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
+	
+		
 		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.ingamescreen);
@@ -47,12 +55,6 @@ public class InputProcesadorGameOver implements InputProcessor{
 			Gdx.app.exit();
 			return true;
 		}
-		return false;
-	}
-
-	@Override
-	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

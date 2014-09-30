@@ -26,7 +26,7 @@ public class IngameScreen implements Screen{
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
-	private Texture carameloa,carameloz,caramelov,caramelor,corona;
+	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
@@ -63,6 +63,8 @@ public class IngameScreen implements Screen{
 		corazon =game.asset.get("corazon.png", Texture.class);
 		musica =game.asset.get("musica.png", Texture.class);
 		corona = game.asset.get("record.png", Texture.class);
+		paraguas = game.asset.get("paraguas.png", Texture.class);
+		paraguasp = game.asset.get("paraguasp.png", Texture.class);
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
 		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
@@ -164,6 +166,9 @@ public class IngameScreen implements Screen{
 		letrero.draw(batch, " " + Musica.getName() , 25, 20);
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
+		}
+		for ( int i=1;i<=gamew.paraguasc;i++){
+			batch.draw(paraguasp, -30 + 45*i,500);
 		}	
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.draw(batch, "GAME OVER", 15, 200);
@@ -210,7 +215,10 @@ public class IngameScreen implements Screen{
 				batch.draw(trampolintexturel,gamew.trampolin.posicion.x,gamew.trampolin.posicion.y);
 				batch.draw(trampolinsombra, gamew.trampolin.posicion.x, 30);
 			}
-			batch.draw(caramelos[19],gamew.paraguas.x,gamew.paraguas.y);
+			if ( gamew.paraguasc > 0){
+				batch.draw(paraguas,gamew.paraguas.x,gamew.paraguas.y);
+			}
+			batch.draw(paraguas,gamew.paraguasfalling.x,gamew.paraguasfalling.y);
 			redondo.setX(gamew.trampolin.posicion.x + 62);
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);

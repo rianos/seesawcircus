@@ -24,7 +24,7 @@ public class SeeSawCircus extends Game {
 	public void create() {
 		loadassets();
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
-		prefs.putLong("record", 200);
+		prefs.putLong("record", 1000);
 		prefs.flush();
 		loadingscreen = new LoadingScreen(this);
 		this.setScreen(loadingscreen);
@@ -107,6 +107,8 @@ public class SeeSawCircus extends Game {
 		asset.load("explosion4.png", Texture.class);
 		asset.load("musica.png", Texture.class);
 		asset.load("trampolin_sombra.png", Texture.class);
+		asset.load("paraguas.png", Texture.class);
+		asset.load("paraguasp.png", Texture.class);
 		asset.load("payaso_sombra.png", Texture.class);
 		for ( String musica : Musica.lista){
 			asset.load(musica, Music.class);
@@ -118,6 +120,7 @@ public class SeeSawCircus extends Game {
 		asset.load("record.ogg", Music.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.load("cat_meow_human_voice_3.mp3", Sound.class);
+		asset.load("boingsda.mp3",Sound.class);
 		asset.load("box_trash_impact_03.mp3", Sound.class);
 	}
 	
