@@ -126,6 +126,7 @@ public class SeeSawCircus extends Game {
 		asset.load("record.ogg", Music.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.load("cat_meow_human_voice_3.mp3", Sound.class);
+		asset.load("179055__robinhood76__04148-a-circus-jump-with-clarinet.ogg", Sound.class);
 		asset.load("bonus_1.mp3", Sound.class);
 		asset.load("boingsda.mp3",Sound.class);
 		asset.load("box_trash_impact_03.mp3", Sound.class);
