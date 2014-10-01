@@ -18,7 +18,7 @@ public class Trampolin {
 		view = TrampolinState.RIGHT;
 	}
 	
-	public void setVelocity(int vel){
+	public void setVelocity(float vel){
 		velocidad.x= vel;
 	}
 	

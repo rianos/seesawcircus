@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.MathUtils;
 
+import es.eduardoanton.proyectos.juegos.GameWorld.GameState;
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
 
 public class IngameScreen implements Screen{
@@ -26,8 +27,8 @@ public class IngameScreen implements Screen{
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
-	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp;
-	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio;
+	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso;
+	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
 	public BitmapFont marcador,gameover,letrero,informe;
@@ -35,7 +36,7 @@ public class IngameScreen implements Screen{
 	public Texture caramelos[];
 	private InputProcessor iproc;
 	public Color tmp;
-	
+	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED"};
 
 
 	private GameWorld gamew;
@@ -62,11 +63,22 @@ public class IngameScreen implements Screen{
 		payasodeath =game.asset.get("payasodeath.png", Texture.class);
 		lapida =game.asset.get("lapida.png", Texture.class);
 		corazon =game.asset.get("corazon.png", Texture.class);
-		premio = new TextureRegion(corazon);
+		premiospeed  =game.asset.get("premiospeed.png", Texture.class);
+		premiocorazon  =game.asset.get("premiocorazon.png", Texture.class);
+		premioparaguas  =game.asset.get("premioparaguas.png", Texture.class);
+		premiogordo = game.asset.get("premiogordo.png", Texture.class);
+		premiohueso = game.asset.get("premiohueso.png", Texture.class);
+		premio = new TextureRegion[5];
+		premio[0] = new TextureRegion(premiocorazon);
+		premio[1] = new TextureRegion(premioparaguas);
+		premio[2] = new TextureRegion(premiogordo);
+		premio[3] = new TextureRegion(premiohueso);
+		premio[4] = new TextureRegion(premiospeed);
 		musica =game.asset.get("musica.png", Texture.class);
 		corona = game.asset.get("record.png", Texture.class);
 		paraguas = game.asset.get("paraguas.png", Texture.class);
 		paraguasp = game.asset.get("paraguasp.png", Texture.class);
+	
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
 		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
@@ -160,8 +172,8 @@ public class IngameScreen implements Screen{
 			if ( gamew.time < 2){
 				gamew.time+=delta;
 				informe.setColor(Color.YELLOW);
-				informe.draw(batch,"NUEVO RECORD", 512 - (informe.getBounds("NUEVO RECORD").width/2), 450);
-				informe.draw(batch,"NEW RECORD", 512 - (informe.getBounds("NEW RECORD").width/2), 400);
+				informe.draw(batch,"NUEVO RECORD / NEW RECORD", 512 - (informe.getBounds("NUEVO RECORD / NEW RECORD").width/2), 450);
+				//informe.draw(batch,"NEW RECORD", 512 - (informe.getBounds("NEW RECORD").width/2), 400);
 			}
 		}
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
@@ -174,7 +186,7 @@ public class IngameScreen implements Screen{
 			batch.draw(paraguasp, -30 + 45*i,500);
 		}	
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
-			marcador.draw(batch, "GAME OVER", 15, 200);
+			marcador.draw(batch, "GAME OVER", 200, 350);
 		}
 		if (gamew.payaso1.state == Payaso.PayasoState.MESSDEATH){
 			renderCrashDeath(gamew.payaso1, gamew.payaso2,delta);
@@ -226,13 +238,15 @@ public class IngameScreen implements Screen{
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);
 			redondo.draw(batch);
-			if ( gamew.ispremio){
-				if ( gamew.timeregalo < 2f ){
+			if ( gamew.ispremio ){
+				if ( gamew.timeregalo < 4f && gamew.gamestate == GameState.RUNNING){
 					gamew.timeregalo+=delta;
 					tmp = batch.getColor();
-					tmp.a = 0.5f;
+					tmp.a = 0.9f;
 					batch.setColor(tmp);
-					batch.draw(premio, 500, 300, 0, 0, premio.getRegionWidth(), premio.getRegionHeight(), 5f, 5f,-90f, false);
+					//batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2) , 300, 0, 0, premio[gamew.regalo].getRegionWidth(), premio[gamew.regalo].getRegionHeight(), 1f, 1f,-90f, false);
+					batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2), 200);
+					informe.draw(batch,mensaje[gamew.regalo], 512 - (informe.getBounds(mensaje[gamew.regalo]).width/2), 400);
 					tmp.a = 1f;
 					batch.setColor(tmp);
 				}else{

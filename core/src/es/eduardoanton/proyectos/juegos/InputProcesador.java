@@ -26,12 +26,12 @@ public class InputProcesador implements InputProcessor{
 				&&	gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
 					){
 			if (keycode == Input.Keys.LEFT){
-				gamew.trampolin.setVelocity(-400);
+				gamew.trampolin.setVelocity(-400*gamew.isvelocidad);
 				gamew.redondo = rotationSpeed;
 			//	gamew.trampolin.view = 1;
 			}
 			if (keycode == Input.Keys.RIGHT){
-				gamew.trampolin.setVelocity(400);
+				gamew.trampolin.setVelocity(400*gamew.isvelocidad);
 				gamew.redondo = -rotationSpeed;
 				//gamew.trampolin.view = 0;
 			}
@@ -57,19 +57,15 @@ public class InputProcesador implements InputProcessor{
 		cuentabotones++;
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
-		//SeeSawCircus.gamew.getPayasoFlying().posicion.x = touchpos.x;
-		//SeeSawCircus.gamew.getPayasoFlying().posicion.y = 400;
-		//SeeSawCircus.gamew.getPayasoFlying().velocidad.y = 0;
-		//SeeSawCircus.gamew.getPayasoFlying().velocidad.x = 0;
 		if ( gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH
 		  && gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
 				){
 			if ( touchpos.x <= 512 ){
-				gamew.trampolin.setVelocity(-400);
+				gamew.trampolin.setVelocity(-400*gamew.isvelocidad);
 				gamew.redondo = rotationSpeed;
 				last = 0;
 			}else{
-				gamew.trampolin.setVelocity(400);
+				gamew.trampolin.setVelocity(400*gamew.isvelocidad);
 				gamew.redondo =  -rotationSpeed;
 				last = 1;
 			}

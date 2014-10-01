@@ -3,6 +3,7 @@ package es.eduardoanton.proyectos.juegos;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 
 import es.eduardoanton.proyectos.juegos.Payaso.PayasoState;
@@ -33,6 +34,8 @@ public class GameWorld {
 	public enum GameState { GAMEOVER, RUNNING, DEATH};
 	public GameState gamestate  = GameState.RUNNING;
 	public boolean isrecord,playedrecord,ispremio;
+	public float isvelocidad = 1;
+	public int regalo;
 
 	GameWorld(SeeSawCircus game){
 		this.game = game;
@@ -77,6 +80,7 @@ public class GameWorld {
 	
 	public void reset(){
 		paraguas = new Vector2(-100,-100);
+		isvelocidad = 1f;
 		paraguasfalling = new Vector2(-100,-100);
 		paraguasv = new Vector2(0,-200);
 		trampolin = new Trampolin();
@@ -148,6 +152,48 @@ public class GameWorld {
 				Musica.stop();
 			}
 		}
+	}
+	
+	
+	public int generapremio(){
+		// premios
+		// vida = 0
+		// paraguas = 1
+		// gran premio = 2
+		// hueso = 3
+		// velocidad = 4
+		int tmp;
+		if (vidas < 5  && paraguasc < 3){
+			int array[] = {0,0,0,1,1,1,1,1,2,2,3,4};
+			tmp =  MathUtils.random(0,11);
+			tmp = array[tmp];
+		}else if (vidas < 5 && paraguasc == 3){
+			int array[] =  {0,0,0,2,3,4};
+			tmp =   MathUtils.random(0,5);
+			tmp = array[tmp];
+		}else if (vidas == 5 && paraguasc < 3){
+			int array[] = {1,1,1,1,2,2,3,4};
+			tmp =  MathUtils.random(0,7);
+			tmp = array[tmp];
+		}else{
+			int array[] = {2,2,2,3,4};
+			tmp =  MathUtils.random(0,4);
+			tmp = array[tmp];
+		}
+		switch (tmp){
+			case 0: vidas++;
+					break;
+			case 1: paraguasc++;
+					break;
+			case 2: scoreboard+=1000;
+					break;
+			case 3: scoreboard+=5000;
+					dogS.play();
+					break;
+			case 4: isvelocidad = 1.5f;
+					break;
+		}
+		return tmp;
 	}
 	
 	public void flip(){

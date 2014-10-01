@@ -64,12 +64,13 @@ public class Payaso {
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
 			if (posicion.y < 20 ){
-			//if (false){
 				game.vidas--;
+				game.isvelocidad = 1f;
 				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
 							(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
 					state = PayasoState.MESSDEATH;
 					game.gamestate = GameState.DEATH;
+					game.ispremio = false;
 					game.hurtS.play();
 					time = delta;
 					velocidad.x = 0f;
@@ -79,6 +80,7 @@ public class Payaso {
 				}else{
 					state = PayasoState.MESSCRASH;
 					game.gamestate = GameState.DEATH;
+					game.ispremio= false;
 					time = delta;
 					IngameScreen.statetime = 0f;
 					posicion.y = 25;
