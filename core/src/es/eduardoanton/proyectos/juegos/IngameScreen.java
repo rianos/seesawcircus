@@ -25,7 +25,7 @@ public class IngameScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture trampolintexturel,trampolinsombra,payasosombra;
+	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
 	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
@@ -78,6 +78,7 @@ public class IngameScreen implements Screen{
 		corona = game.asset.get("record.png", Texture.class);
 		paraguas = game.asset.get("paraguas.png", Texture.class);
 		paraguasp = game.asset.get("paraguasp.png", Texture.class);
+		trapecio = game.asset.get("trapecio.png", Texture.class);
 	
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
@@ -184,7 +185,7 @@ public class IngameScreen implements Screen{
 		}
 		for ( int i=1;i<=gamew.paraguasc;i++){
 			batch.draw(paraguasp, -30 + 45*i,500);
-		}	
+		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.draw(batch, "GAME OVER", 200, 350);
 		}
@@ -238,11 +239,12 @@ public class IngameScreen implements Screen{
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.redondo * delta);
 			redondo.draw(batch);
+			batch.draw(trapecio, gamew.trapecio.x,gamew.trapecio.y);
 			if ( gamew.ispremio ){
 				if ( gamew.timeregalo < 4f && gamew.gamestate == GameState.RUNNING){
 					gamew.timeregalo+=delta;
 					tmp = batch.getColor();
-					tmp.a = 0.9f;
+					tmp.a = 0.8f;
 					batch.setColor(tmp);
 					//batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2) , 300, 0, 0, premio[gamew.regalo].getRegionWidth(), premio[gamew.regalo].getRegionHeight(), 1f, 1f,-90f, false);
 					batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2), 200);

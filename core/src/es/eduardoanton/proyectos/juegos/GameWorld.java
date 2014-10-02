@@ -15,7 +15,7 @@ public class GameWorld {
 	public Payaso payaso1;
 	public Payaso payaso2;
 	public Vector2 paraguas,paraguasfalling;
-	public Vector2 paraguasv;
+	public Vector2 paraguasv,trapecio;
 	public FilaObjetivos arrayFilaObjetivos[];
 	public float redondo = 0;
 	public final static int aceleracion = -1380;
@@ -76,7 +76,7 @@ public class GameWorld {
 		focaS = Gdx.audio.newSound(Gdx.files.internal("41384__sandyrb__milk-jug-seal-01.ogg"));
 		boingpS = SeeSawCircus.asset.get("boingsda.mp3",Sound.class);
 		bonusS = SeeSawCircus.asset.get("bonus_1.mp3",Sound.class);
-		jumpiniS = SeeSawCircus.asset.get("179055__robinhood76__04148-a-circus-jump-with-clarinet.ogg", Sound.class);
+		jumpiniS = SeeSawCircus.asset.get("182442__qubodup__drum-roll-with-cymbals-crash.ogg", Sound.class);
 		ispremio = false;
 		timeready = 0f;
 	}
@@ -112,38 +112,50 @@ public class GameWorld {
 		isrecord = false;
 		playedrecord = false;
 		ispremio = false;
+		trapecio = new Vector2(446,580);
 		record = SeeSawCircus.prefs.getLong("record", 0);
 		resetready(payaso2);
 	}
 	
 	public void resetready(Payaso p){
 		gamestate = GameState.READY;
-		p.posicion.x = 500;
-		p.posicion.y = 300;
+		trapecio.y = 595;
+		p.posicion.x = 450;
+		p.posicion.y = 600;
 		p.velocidad.x = 0;
-		p.velocidad.y = 200;
-		trampolin.posicion.x = 410;
+		p.velocidad.y = 301;
+		trampolin.posicion.x = 390;
 	    trampolin.velocidad.y = 0;
 		trampolin.velocidad.x = 0;
-		//p.pc.posicion.x = 400;
-		//p.pc.posicion.y = 50;
-		//p.pc.state = p.pc.oldstate;
+		if (p.PayasoID == 1){
+			p.pc.posicion.x = 350;
+			p.pc.posicion.y = 50;
+			p.pc.state = PayasoState.STANDBYR;
+		}else{
+			p.pc.posicion.x = 350;
+			p.pc.posicion.y = 50;
+			p.pc.state = PayasoState.STANDBYL;	
+		}
 		trampolin.aceleracion.y = 0;
 		trampolin.posicion.y = 40;
 		jumpiniS.play();
+		timeready = 0;
+		Musica.setVolume(1f);
 	}
 	
 	public void update(float delta){
 		if (gamestate == GameState.READY){
 			Musica.stop();	
 			timeready+=delta;
+			updatetrapecio(delta);
+			
 			trampolin.update(delta);
 			payaso1.update(delta);
 			payaso2.update(delta);
 			for (FilaObjetivos fila : arrayFilaObjetivos){
 				fila.update(delta);
 			}
-			if (timeready > 3.5){
+			if (timeready > 5.5){
 				gamestate = GameState.RUNNING;
 			}
 		}
@@ -155,6 +167,7 @@ public class GameWorld {
 			}
 		}
 		if (gamestate == GameState.RUNNING || gamestate == GameState.DEATH){
+			updatetrapecio(delta);
 			if (!Musica.isPlaying()){
 				Musica.playRandom();
 			}
@@ -184,6 +197,21 @@ public class GameWorld {
 				this.gamestate = GameState.GAMEOVER;
 				time = delta;
 				Musica.stop();
+			}
+		}
+	}
+	
+	public void updatetrapecio(float delta){
+		if (gamestate == GameState.READY ){
+			trapecio.y-=100*delta;
+			if ( trapecio.y <= 295){
+				trapecio.y = 295;
+			}
+		}
+		if ( gamestate == GameState.RUNNING || gamestate == GameState.DEATH ){
+			trapecio.y+=300*delta;
+			if (trapecio.y > 800){
+				trapecio.y = 800;
 			}
 		}
 	}

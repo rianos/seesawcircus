@@ -60,6 +60,13 @@ public class Payaso {
 				game.paraguas.y = -100;
 			}
 		}
+		if ( state == PayasoState.FLYING && game.gamestate == GameState.READY){
+			posicion.y-=100*delta;
+			if ( posicion.y <= 300){
+				posicion.y = 300;
+			}
+		}
+		
 		if ( state == PayasoState.FLYING && game.gamestate == GameState.RUNNING){
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
@@ -113,7 +120,8 @@ public class Payaso {
 						game.flipsC+=1;
 					}
 				}		
-			}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (velocidad.y < vellimit)) && game.paraguasc > 0){
+			//}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (velocidad.y < vellimit)) && game.paraguasc > 0){
+			}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (true)) && game.paraguasc > 0){
 				if ( game.trampolin.view == TrampolinState.LEFT){
 					if ((game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25) &&
 							 (posicion.x + (dimensiones.width/2) > game.trampolin.posicion.x + (game.trampolin.dimensiones.width/2))
