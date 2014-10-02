@@ -24,7 +24,7 @@ public class SeeSawCircus extends Game {
 	public void create() {
 		loadassets();
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
-		prefs.putLong("record", 1000);
+		//prefs.putLong("record", 1000);
 		prefs.flush();
 		loadingscreen = new LoadingScreen(this);
 		this.setScreen(loadingscreen);
@@ -113,7 +113,11 @@ public class SeeSawCircus extends Game {
 		asset.load("premiohueso.png", Texture.class);
 		asset.load("musica.png", Texture.class);
 		asset.load("trampolin_sombra.png", Texture.class);
+		asset.load("filascompletas.png", Texture.class);
+		asset.load("finalscore.png", Texture.class);
 		asset.load("paraguas.png", Texture.class);
+		asset.load("botonhome.png", Texture.class);
+		asset.load("botonreload.png", Texture.class);
 		asset.load("paraguasp.png", Texture.class);
 		asset.load("payaso_sombra.png", Texture.class);
 		asset.load("trapecio.png", Texture.class);

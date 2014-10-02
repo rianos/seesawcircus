@@ -26,7 +26,7 @@ public class GameWorld {
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS,gameoverS;
 	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS,jumpiniS;
-	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0;
+	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0,regalosC = 0;
 	public short vidas = 5;
 	public short paraguasc = 3;
 	public float time = 0f,timeready = 0f;
@@ -109,6 +109,7 @@ public class GameWorld {
 		moroC=0;
 		billeteC=0;
 		fcompletaC=0;
+		regalosC = 0;
 		timeregalo = 0f;
 		isrecord = false;
 		playedrecord = false;

@@ -96,6 +96,7 @@ public class FilaObjetivos {
 								game.bonusS.play();
 								game.timeregalo = delta;
 								game.regalo = game.generapremio();
+								game.regalosC++;
 								game.ispremio = true;
 							}else{
 								game.clanS.play();
@@ -110,6 +111,7 @@ public class FilaObjetivos {
 			if (this.quedan == 0){
 				game.succesS.play();
 				game.scoreboard+=200;
+				game.fcompletaC++;
 				generarFila();
 			}
 		}
