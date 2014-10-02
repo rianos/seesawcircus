@@ -24,7 +24,7 @@ public class GameWorld {
 	public final static float redimen2 = 12;
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
-	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS;
+	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,welldoneS,gameoverS;
 	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS,jumpiniS;
 	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0;
 	public short vidas = 5;
@@ -77,6 +77,7 @@ public class GameWorld {
 		boingpS = SeeSawCircus.asset.get("boingsda.mp3",Sound.class);
 		bonusS = SeeSawCircus.asset.get("bonus_1.mp3",Sound.class);
 		jumpiniS = SeeSawCircus.asset.get("182442__qubodup__drum-roll-with-cymbals-crash.ogg", Sound.class);
+		gameoverS = SeeSawCircus.asset.get("comedy_trumpet_playing_sad_song_wah_wah_wah_wah.mp3", Sound.class);
 		ispremio = false;
 		timeready = 0f;
 	}
@@ -162,7 +163,7 @@ public class GameWorld {
 		
 		if ( gamestate == GameState.GAMEOVER){
 			time+=delta;
-			if (time > 2){
+			if (time > 3){
 				game.setScreen(SeeSawCircus.gameoverscreen);
 			}
 		}
@@ -197,6 +198,7 @@ public class GameWorld {
 				this.gamestate = GameState.GAMEOVER;
 				time = delta;
 				Musica.stop();
+				gameoverS.play();
 			}
 		}
 	}

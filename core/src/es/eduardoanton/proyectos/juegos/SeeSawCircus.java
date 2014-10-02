@@ -132,6 +132,7 @@ public class SeeSawCircus extends Game {
 		asset.load("bonus_1.mp3", Sound.class);
 		asset.load("boingsda.mp3",Sound.class);
 		asset.load("box_trash_impact_03.mp3", Sound.class);
+		asset.load("comedy_trumpet_playing_sad_song_wah_wah_wah_wah.mp3", Sound.class);
 	}
 	
 }

@@ -158,6 +158,11 @@ public class IngameScreen implements Screen{
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		
 		batch.begin();
+		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
+			tmp = batch.getColor();
+			tmp.a = 0.4f;
+			batch.setColor(tmp);
+		}
 		batch.draw(fondo,0,0);
 		for (int j=0;j<4;j++){
 			for (int i=0;i<10;i++){
@@ -187,6 +192,7 @@ public class IngameScreen implements Screen{
 			batch.draw(paraguasp, -30 + 45*i,500);
 		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
+			marcador.setColor(Color.YELLOW);
 			marcador.draw(batch, "GAME OVER", 200, 350);
 		}
 		if (gamew.payaso1.state == Payaso.PayasoState.MESSDEATH){
