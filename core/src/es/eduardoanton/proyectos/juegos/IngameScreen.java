@@ -254,6 +254,7 @@ public class IngameScreen implements Screen{
 					batch.setColor(tmp);
 					//batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2) , 300, 0, 0, premio[gamew.regalo].getRegionWidth(), premio[gamew.regalo].getRegionHeight(), 1f, 1f,-90f, false);
 					batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2), 200);
+					informe.setColor(Color.WHITE);
 					informe.draw(batch,mensaje[gamew.regalo], 512 - (informe.getBounds(mensaje[gamew.regalo]).width/2), 400);
 					tmp.a = 1f;
 					batch.setColor(tmp);

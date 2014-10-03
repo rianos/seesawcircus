@@ -35,8 +35,18 @@ public class InputProcesadorGameOver implements InputProcessor{
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		
+		Vector3 touchpos = new Vector3(screenX,screenY,0);
+		cam.unproject(touchpos);
+		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
+			//gameover.botoninicio.setTexture("botoniniciop.png");
+			return true;
+		}
+		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 480 && touchpos.y < 600 ){
+			//mscreen.salir.setTexture("salirp.png");
+			return true;
+		}
 		return false;
+		
 	}
 
 	@Override
@@ -44,14 +54,18 @@ public class InputProcesadorGameOver implements InputProcessor{
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
 		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
-	
-		
-		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
+		if (touchpos.x > 512 && touchpos.x < 720 && touchpos.y > 00 && touchpos.y < 220 ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.ingamescreen);
 			return true;
 		}
+		if (touchpos.x > 760 && touchpos.x < 990 && touchpos.y > 0 && touchpos.y < 220 ){
+			MainScreen.clic.play();
+			this.game.setScreen(SeeSawCircus.mainscreen);
+			return true;
+		}
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 480 && touchpos.y < 600 ){
+			MainScreen.clic.play();
 			Gdx.app.exit();
 			return true;
 		}

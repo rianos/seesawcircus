@@ -129,7 +129,7 @@ public class FilaObjetivos {
 			}
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
-				this.elementos[i]=MathUtils.random(6,18);
+				this.elementos[i]=MathUtils.random(0,18);
 			}
 		}else{
 			for (int i=0;i<10;i++){

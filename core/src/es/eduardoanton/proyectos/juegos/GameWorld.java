@@ -99,7 +99,7 @@ public class GameWorld {
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		scoreboard = 0;
 		timeready = 0f;
-		vidas = 5;
+		vidas = 3;
 		paraguasc = 3;
 		flipsC = 0;
 		caramelosC = 0;
