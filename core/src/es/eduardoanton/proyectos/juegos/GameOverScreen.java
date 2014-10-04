@@ -32,7 +32,6 @@ public class GameOverScreen implements Screen{
 		cam.update();
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);	
-		fondo = game.asset.get("fondoinicio.png", Texture.class );
 		trampolin = game.asset.get("redondo.png");
 		caramelo = game.asset.get("carameloz.png");
 		globo = game.asset.get("globor.png");

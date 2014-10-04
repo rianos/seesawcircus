@@ -25,7 +25,7 @@ public class SeeSawCircus extends Game {
 		loadassets();
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
 		//prefs.putLong("record", 1000);
-		prefs.flush();
+		//prefs.flush();
 		loadingscreen = new LoadingScreen(this);
 		this.setScreen(loadingscreen);
 	}
@@ -41,7 +41,6 @@ public class SeeSawCircus extends Game {
 	private void loadassets(){
 		asset = new AssetManager();
 		asset.load("trampolin.png", Texture.class);
-		asset.load("fondoinicio.png", Texture.class);
 		asset.load("nube.png", Texture.class);
 		asset.load("gato.png", Texture.class);
 		asset.load("botoninicio.png", Texture.class);
@@ -52,7 +51,6 @@ public class SeeSawCircus extends Game {
 		asset.load("letrero.png", Texture.class);
 		asset.load("letreroe.png", Texture.class);
 		asset.load("fondomain.png", Texture.class);
-		asset.load("trampolin2.png", Texture.class);
 		asset.load("payasoinicio1.png", Texture.class);
 		asset.load("payasoinicio2.png", Texture.class);
 		asset.load("globosinicio.png", Texture.class);
@@ -127,17 +125,34 @@ public class SeeSawCircus extends Game {
 		asset.load("Circus Dilemma.ogg", Music.class);
 		asset.load("fuente.fnt", BitmapFont.class);
 		asset.load("app_game_interactive_alert_tone_015.mp3", Sound.class);
-		//asset.load("comedy_male_yelling_yee_ha.mp3", Sound.class);
 		asset.load("record.ogg", Music.class);
 		asset.load("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		asset.load("cat_meow_human_voice_3.mp3", Sound.class);
-		asset.load("179055__robinhood76__04148-a-circus-jump-with-clarinet.ogg", Sound.class);
 		asset.load("182442__qubodup__drum-roll-with-cymbals-crash.ogg", Sound.class);
 		asset.load("bonus_1.mp3", Sound.class);
 		asset.load("boingsda.mp3",Sound.class);
 		asset.load("box_trash_impact_03.mp3", Sound.class);
 		asset.load("comedy_trumpet_playing_sad_song_wah_wah_wah_wah.mp3", Sound.class);
+		asset.load("jump.ogg", Sound.class);
+		asset.load("crash.mp3", Sound.class);
+		asset.load("angel.mp3", Sound.class);
+		asset.load("hurt.ogg", Sound.class);
+		asset.load("cry.ogg", Sound.class);
+		asset.load("mareo.ogg", Sound.class);
+		asset.load("clan.wav", Sound.class);
+		asset.load("succes.wav", Sound.class);
+		asset.load("small_crowd_saying_wow.mp3", Sound.class);
+		asset.load("comedy_siren_whistle_great_for_slips_and_trips_002.mp3", Sound.class);
+		asset.load("multimedia_tone_signifies_end.mp3", Sound.class);
+		asset.load("antique_cash_register_punching_single_key.mp3", Sound.class);
+		asset.load("comedy_bubble_pop_002.mp3", Sound.class);
+		asset.load("horse.ogg", Sound.class);
+		asset.load("lionroar.ogg", Sound.class);
+		asset.load("bear.ogg", Sound.class);
+		asset.load("elephant.ogg", Sound.class);
+		asset.load("dog_barking_05.mp3", Sound.class);
+		asset.load("animal_chimpanzee_chimp_screams.ogg", Sound.class);
+		asset.load("41384__sandyrb__milk-jug-seal-01.ogg", Sound.class);
 	}
-	
 }
 		

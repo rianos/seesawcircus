@@ -26,16 +26,16 @@ public class LoadingScreen implements Screen{
 	public LoadingScreen (SeeSawCircus game){
 		this.game = game;
 		cam = new OrthographicCamera();
-		cam.setToOrtho(false, 1024,600);
+		cam.setToOrtho(false, SeeSawCircus.screenwidth,SeeSawCircus.screenheight);
 		cam.update();	
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);	
-		font=new BitmapFont();
-		emptyT=new Texture(Gdx.files.internal("empty.png"));
-		fullT=new Texture(Gdx.files.internal("full.png"));
+		font = new BitmapFont();
+		emptyT = new Texture(Gdx.files.internal("empty.png"));
+		fullT = new Texture(Gdx.files.internal("full.png"));
 		circo = new Texture(Gdx.files.internal("circo.png"));
-		empty=new NinePatch(new TextureRegion(emptyT,24,24),8,8,8,8);
-		full=new NinePatch(new TextureRegion(fullT,24,24),8,8,8,8);
+		empty = new NinePatch(new TextureRegion(emptyT,24,24),8,8,8,8);
+		full = new NinePatch(new TextureRegion(fullT,24,24),8,8,8,8);
 	}
 	
 	@Override
@@ -86,8 +86,9 @@ public class LoadingScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		this.emptyT.dispose();
+		this.fullT.dispose();
+		this.font.dispose();
+		this.circo.dispose();
 	}
-
 }

@@ -9,7 +9,7 @@ public class Musica {
 	public static int i;
 	public static String[] lista = {"Run Amok.ogg","Monkeys Spinning Monkeys.ogg"
 		,"Waunobe March.ogg","Fig Leaf Times Two.ogg","Merry Go.ogg","Plucky Daisy.ogg","Look Busy.ogg",
-		"Five Card Shuffle.ogg","Friendly Day.ogg"};
+		"Five Card Shuffle.ogg","Friendly Day.ogg","Hyperfun.ogg"};
 	
 	public static void playRandom(){
 		i = MathUtils.random(lista.length - 1);
