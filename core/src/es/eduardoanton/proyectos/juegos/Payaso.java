@@ -147,18 +147,6 @@ public class Payaso {
 				state=PayasoState.FLYING;
 				game.gamestate = GameState.READY;
 				game.resetready(this);
-				//game.gamestate = GameState.RUNNING;
-				//velocidad.y = 500;
-				//velocidad.x = 0;
-				//posicion.y = 400;
-				//posicion.x = 400;
-			    //game.trampolin.posicion.x = 410;
-			    //game.trampolin.velocidad.y = 0;
-				//game.trampolin.velocidad.x = 0;
-				//pc.posicion.y = 50;
-				//pc.state = pc.oldstate;
-				//game.trampolin.aceleracion.y = 0;
-				//game.trampolin.posicion.y = 40;
 			}
 		}
 		if ( state == PayasoState.MESSDEATH){
@@ -175,13 +163,6 @@ public class Payaso {
 				state=PayasoState.FLYING;
 				game.gamestate = GameState.READY;
 				game.resetready(this);
-				//game.gamestate = GameState.RUNNING;
-				//velocidad.y = 500;
-				//velocidad.x = 0;
-				//posicion.y = 400;
-				//posicion.x = 400;
-				//game.trampolin.posicion.x = 410;
-				//Musica.setVolume(1f);
 			}
 		}
 	}

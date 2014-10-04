@@ -17,7 +17,6 @@ public class GameWorld {
 	public Vector2 paraguas,paraguasfalling;
 	public Vector2 paraguasv,trapecio;
 	public FilaObjetivos arrayFilaObjetivos[];
-	public float redondo = 0;
 	public final static int aceleracion = -1380;
 	public final static int maxvel = 1250;
 	public final static float redimen = 4.5f;
@@ -98,7 +97,7 @@ public class GameWorld {
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		scoreboard = 0;
 		timeready = 0f;
-		vidas = 3;
+		vidas = 5;
 		paraguasc = 3;
 		flipsC = 0;
 		caramelosC = 0;

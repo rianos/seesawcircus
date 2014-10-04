@@ -38,7 +38,7 @@ public class MainScreen implements Screen{
 	public MainScreen (SeeSawCircus game){
 		this.game = game;
 		cam = new OrthographicCamera();
-		cam.setToOrtho(false, 1024,600);
+		cam.setToOrtho(false, SeeSawCircus.screenwidth,SeeSawCircus.screenheight);
 		cam.update();
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);
@@ -48,7 +48,7 @@ public class MainScreen implements Screen{
 		iproc = new InputProcesadorMain(cam,game,this);
 		marcador =game.asset.get("fuente.fnt", BitmapFont.class);
 		marcador.setColor(Color.GRAY);
-	    stage = new Stage(new StretchViewport(1024, 600));
+	    stage = new Stage(new StretchViewport(SeeSawCircus.screenwidth, SeeSawCircus.screenheight));
 	    fondoincio = new ActorGenerico(0f,0f,"fondomain.png");
 	    nube1 = new ActorGenerico(0f,400f,"nube.png");
 	    nube2 = new ActorGenerico(1024f,300f,"nube.png");
@@ -80,7 +80,6 @@ public class MainScreen implements Screen{
 						
 					}})
 				));
-	    //fondoincio.addAction(Actions.moveTo(600, 60, 3f));
 		letrero = new ActorGenerico(50,900,"letrero.png");
 		letrero.addAction(sequence(delay(8),moveTo(50,420f,2f)
 				));

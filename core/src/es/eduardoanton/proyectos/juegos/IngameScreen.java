@@ -243,7 +243,7 @@ public class IngameScreen implements Screen{
 			batch.draw(paraguas,gamew.paraguasfalling.x,gamew.paraguasfalling.y);
 			redondo.setX(gamew.trampolin.posicion.x + 62);
 			redondo.setY(gamew.trampolin.posicion.y);
-			redondo.rotate(gamew.redondo * delta);
+			redondo.rotate(gamew.trampolin.rotacion * delta);
 			redondo.draw(batch);
 			batch.draw(trapecio, gamew.trapecio.x,gamew.trapecio.y);
 			if ( gamew.ispremio ){
@@ -286,7 +286,7 @@ public class IngameScreen implements Screen{
 		}
 		redondo.setX(gamew.trampolin.posicion.x + 62);
 		redondo.setY(gamew.trampolin.posicion.y);
-		redondo.rotate(gamew.redondo * delta);
+		redondo.rotate(gamew.trampolin.rotacion * delta);
 		redondo.draw(batch);
 	}
 	
@@ -308,7 +308,7 @@ public class IngameScreen implements Screen{
 		}
 		redondo.setX(gamew.trampolin.posicion.x + 62);
 		redondo.setY(gamew.trampolin.posicion.y);
-		redondo.rotate(gamew.redondo * delta);
+		redondo.rotate(gamew.trampolin.rotacion * delta);
 		redondo.draw(batch);
 		if ( ! explosionA.isAnimationFinished(statetime)){
 			batch.draw(explosionA.getKeyFrame(statetime),payasomuerto.posicion.x - 100, -40);

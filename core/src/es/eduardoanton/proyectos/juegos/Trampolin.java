@@ -4,11 +4,11 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 
 public class Trampolin {
-	public Vector2 posicion;
-	public Vector2 velocidad,aceleracion;
+	public Vector2 posicion,velocidad,aceleracion;; 
 	public Rectangle dimensiones;
 	public enum TrampolinState { LEFT, RIGHT};
 	public TrampolinState view;
+	public float rotacion = 0;
 	
 	Trampolin (){
 		posicion = new Vector2(410,40);
@@ -16,6 +16,7 @@ public class Trampolin {
 		aceleracion = new Vector2(0,0);
 		dimensiones = new Rectangle(0,0,170,42);
 		view = TrampolinState.RIGHT;
+		rotacion = 0f;
 	}
 	
 	public void setVelocity(float vel){

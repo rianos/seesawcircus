@@ -27,13 +27,11 @@ public class InputProcesador implements InputProcessor{
 					){
 			if (keycode == Input.Keys.LEFT){
 				gamew.trampolin.setVelocity(-400*gamew.isvelocidad);
-				gamew.redondo = rotationSpeed;
-			//	gamew.trampolin.view = 1;
+				gamew.trampolin.rotacion = rotationSpeed;
 			}
 			if (keycode == Input.Keys.RIGHT){
 				gamew.trampolin.setVelocity(400*gamew.isvelocidad);
-				gamew.redondo = -rotationSpeed;
-				//gamew.trampolin.view = 0;
+				gamew.trampolin.rotacion = -rotationSpeed;
 			}
 		}
 		return false;
@@ -42,7 +40,7 @@ public class InputProcesador implements InputProcessor{
 	@Override
 	public boolean keyUp(int keycode) {
 		gamew.trampolin.setVelocity(0);
-		gamew.redondo = 0f;
+		gamew.trampolin.rotacion = 0f;
 		return false;
 	}
 
@@ -62,11 +60,11 @@ public class InputProcesador implements InputProcessor{
 				){
 			if ( touchpos.x <= 512 ){
 				gamew.trampolin.setVelocity(-400*gamew.isvelocidad);
-				gamew.redondo = rotationSpeed;
+				gamew.trampolin.rotacion = rotationSpeed;
 				last = 0;
 			}else{
 				gamew.trampolin.setVelocity(400*gamew.isvelocidad);
-				gamew.redondo =  -rotationSpeed;
+				gamew.trampolin.rotacion =  -rotationSpeed;
 				last = 1;
 			}
 		}
@@ -80,10 +78,11 @@ public class InputProcesador implements InputProcessor{
 		cam.unproject(touchpos);
 		if (cuentabotones == 0){
 			gamew.trampolin.setVelocity(0);
-			gamew.redondo = 0f;
+			gamew.trampolin.rotacion = 0f;
 		}else{
 			if ( (last == 1 && touchpos.x > 512) || (last == 0 && touchpos.x <=512 )){
 				gamew.trampolin.velocidad.x = gamew.trampolin.velocidad.x * -1;
+				gamew.trampolin.rotacion*=-1f;
 			}
 		}
 		return false;
@@ -91,7 +90,6 @@ public class InputProcesador implements InputProcessor{
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-	
 		return false;
 	}
 
