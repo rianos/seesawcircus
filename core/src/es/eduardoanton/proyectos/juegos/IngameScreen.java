@@ -25,7 +25,7 @@ public class IngameScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio;
+	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
 	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
@@ -33,7 +33,7 @@ public class IngameScreen implements Screen{
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
 	public BitmapFont marcador,gameover,letrero,informe;
 	public static float statetime = 0f;
-	public Texture caramelos[];
+	public Texture filaitems[];
 	private InputProcessor iproc;
 	public Color tmp;
 	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED"};
@@ -41,6 +41,7 @@ public class IngameScreen implements Screen{
 
 	private GameWorld gamew;
 	private float a = 0f;
+	private int ref = 0;
 	public IngameScreen( SeeSawCircus gam){
 		this.game = gam;
 		cam = new OrthographicCamera();
@@ -79,38 +80,41 @@ public class IngameScreen implements Screen{
 		paraguas = game.asset.get("paraguas.png", Texture.class);
 		paraguasp = game.asset.get("paraguasp.png", Texture.class);
 		trapecio = game.asset.get("trapecio.png", Texture.class);
-	
+		red = game.asset.get("red.png", Texture.class);
+		panelvidas = game.asset.get("panelvidas.png", Texture.class);
+		corazonp = game.asset.get("corazonp.png", Texture.class);
+		paraguaspp = game.asset.get("paraguaspp.png", Texture.class);
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
 		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
 		explosion[2] = new TextureRegion(game.asset.get("explosion3.png", Texture.class));
 		explosion[3] = new TextureRegion(game.asset.get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
-		//caramelos = new Texture[4];
-		caramelos = new Texture[21];
-		caramelos[0] = game.asset.get("carameloa.png", Texture.class);
-		caramelos[1] = game.asset.get("caramelov.png", Texture.class);
-		caramelos[2] = game.asset.get("caramelor.png", Texture.class);
-		caramelos[3] = game.asset.get("carameloz.png", Texture.class);
+		//filaitems = new Texture[4];
+		filaitems = new Texture[21];
+		filaitems[0] = game.asset.get("carameloa.png", Texture.class);
+		filaitems[1] = game.asset.get("caramelov.png", Texture.class);
+		filaitems[2] = game.asset.get("caramelor.png", Texture.class);
+		filaitems[3] = game.asset.get("carameloz.png", Texture.class);
 	
-		caramelos[4] = game.asset.get("globoa.png", Texture.class);
-		caramelos[5] = game.asset.get("globoz.png", Texture.class);
-		caramelos[6] = game.asset.get("globov.png", Texture.class);
-		caramelos[7] = game.asset.get("globor.png", Texture.class);
+		filaitems[4] = game.asset.get("globoa.png", Texture.class);
+		filaitems[5] = game.asset.get("globoz.png", Texture.class);
+		filaitems[6] = game.asset.get("globov.png", Texture.class);
+		filaitems[7] = game.asset.get("globor.png", Texture.class);
 		
-		caramelos[15] = game.asset.get("monedaluciap.png", Texture.class);
-		caramelos[16] = game.asset.get("monedasoniap.png", Texture.class);
-		caramelos[17] = game.asset.get("monedalucia.png", Texture.class);
-		caramelos[18] = game.asset.get("monedasonia.png", Texture.class);
-		caramelos[19] = game.asset.get("billeteedu.png", Texture.class);
-		caramelos[20] = game.asset.get("regalo.png", Texture.class);
-		caramelos[8] = game.asset.get("leon.png", Texture.class);
-		caramelos[9] = game.asset.get("caballo.png", Texture.class);
-		caramelos[10] = game.asset.get("oso.png", Texture.class);
-		caramelos[11] = game.asset.get("elefante.png", Texture.class);
-		caramelos[12] = game.asset.get("mono.png", Texture.class);
-		caramelos[13] = game.asset.get("foca.png", Texture.class);
-		caramelos[14] = game.asset.get("perro.png", Texture.class);
+		filaitems[15] = game.asset.get("monedaluciap.png", Texture.class);
+		filaitems[16] = game.asset.get("monedasoniap.png", Texture.class);
+		filaitems[17] = game.asset.get("monedalucia.png", Texture.class);
+		filaitems[18] = game.asset.get("monedasonia.png", Texture.class);
+		filaitems[19] = game.asset.get("billeteedu.png", Texture.class);
+		filaitems[20] = game.asset.get("regalo.png", Texture.class);
+		filaitems[8] = game.asset.get("leon.png", Texture.class);
+		filaitems[9] = game.asset.get("caballo.png", Texture.class);
+		filaitems[10] = game.asset.get("oso.png", Texture.class);
+		filaitems[11] = game.asset.get("elefante.png", Texture.class);
+		filaitems[12] = game.asset.get("mono.png", Texture.class);
+		filaitems[13] = game.asset.get("foca.png", Texture.class);
+		filaitems[14] = game.asset.get("perro.png", Texture.class);
 		
 		p1llorando = new TextureRegion[2];
 		p1llorando[0] =  new TextureRegion(game.asset.get("p1c1.png", Texture.class));
@@ -151,7 +155,6 @@ public class IngameScreen implements Screen{
 	
 	@Override
 	public void render(float delta) {
-	
 		a+=delta;
 		gamew.update(delta);
 		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
@@ -164,32 +167,51 @@ public class IngameScreen implements Screen{
 			batch.setColor(tmp);
 		}
 		batch.draw(fondo,0,0);
+		if ( gamew.modechildren){
+			batch.draw(red,0,-20);
+		}
+		//Dibujamos las filas
 		for (int j=0;j<4;j++){
 			for (int i=0;i<10;i++){
 				if (gamew.arrayFilaObjetivos[j].elementos[i] != -1 ){
-					batch.draw(caramelos[(gamew.arrayFilaObjetivos[j].elementos[i])], gamew.arrayFilaObjetivos[j].posicion.x + (caramelos[1].getWidth() + 20)*i,gamew.arrayFilaObjetivos[j].posicion.y);
+					batch.draw(filaitems[(gamew.arrayFilaObjetivos[j].elementos[i])], gamew.arrayFilaObjetivos[j].posicion.x + (filaitems[1].getWidth() + 20)*i,gamew.arrayFilaObjetivos[j].posicion.y);
 				}
 			}
 		}
-		
-		//marcador.draw(batch,String.format("%d", gamew.scoreboard), 512 - (marcador.getBounds("" + gamew.scoreboard).width)/2, 350);
+		//Dibujamos cartel y corona si hay record
 		if ( gamew.isrecord){
 			batch.draw(corona, SeeSawCircus.screenwidth - corona.getWidth() -10, 10);
 			if ( gamew.time < 2){
 				gamew.time+=delta;
 				informe.setColor(Color.YELLOW);
 				informe.draw(batch,"NUEVO RECORD / NEW RECORD", 512 - (informe.getBounds("NUEVO RECORD / NEW RECORD").width/2), 450);
-				//informe.draw(batch,"NEW RECORD", 512 - (informe.getBounds("NEW RECORD").width/2), 400);
 			}
 		}
+		// Dibujamos puntuación
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
-		batch.draw(musica, 0, 0);
-		letrero.draw(batch, " " + Musica.getName() , 25, 20);
+		//Dibujamos musica por
+		if (gamew.modechildren){
+			batch.draw(musica, 0, 30);
+			letrero.draw(batch, " " + Musica.getName() , 25, 50);
+		}else{
+			batch.draw(musica, 0, 0);
+			letrero.draw(batch, " " + Musica.getName() , 25, 20);
+		}
+		/* Metodo antiguo de dibujar vidas
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
 		}
 		for ( int i=1;i<=gamew.paraguasc;i++){
 			batch.draw(paraguasp, -30 + 45*i,500);
+		}
+		*/
+		ref=0;
+		batch.draw(panelvidas, 512 - panelvidas.getWidth()/2, 0 + ref);
+		for ( int i=1;i<=gamew.vidas;i++){
+			batch.draw(corazonp, (512 - panelvidas.getWidth()/2) - 20 + (corazon.getWidth()- 7)*i,7 + ref);
+		}
+		for ( int i=1;i<=gamew.paraguasc;i++){
+			batch.draw(paraguaspp, 515 + 30*i,7 + ref);
 		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setColor(Color.YELLOW);
@@ -216,7 +238,6 @@ public class IngameScreen implements Screen{
 				batch.draw(payasoc, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
 		    }else if (gamew.payaso1.velocidad.y >= 0f || gamew.payaso1.state != Payaso.PayasoState.FLYING ){
 				batch.draw(payaso, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
-			
 			}else{
 				batch.draw(payasob, gamew.payaso1.posicion.x,gamew.payaso1.posicion.y);
 			}
@@ -252,20 +273,17 @@ public class IngameScreen implements Screen{
 					tmp = batch.getColor();
 					tmp.a = 0.8f;
 					batch.setColor(tmp);
-					//batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2) , 300, 0, 0, premio[gamew.regalo].getRegionWidth(), premio[gamew.regalo].getRegionHeight(), 1f, 1f,-90f, false);
 					batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2), 200);
-					informe.setColor(Color.WHITE);
+					informe.setColor(Color.YELLOW);
 					informe.draw(batch,mensaje[gamew.regalo], 512 - (informe.getBounds(mensaje[gamew.regalo]).width/2), 400);
 					tmp.a = 1f;
 					batch.setColor(tmp);
 				}else{
 					gamew.ispremio = false;
 				}
-			}
-			
+			}	
 		}
 		batch.end();
-			
 	}
 
 

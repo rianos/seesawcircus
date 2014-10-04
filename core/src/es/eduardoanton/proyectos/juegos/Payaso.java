@@ -17,7 +17,7 @@ public class Payaso {
 	public PayasoState state,oldstate;
 	public int PayasoID;
 	public Payaso pc; 
-	public final float vellimit = -600f;
+	public final float vellimit = -400f;
 	private float time= 0f;
 	private boolean angelSplayed = false;
 	
@@ -70,7 +70,36 @@ public class Payaso {
 		if ( state == PayasoState.FLYING && game.gamestate == GameState.RUNNING){
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
-			if (posicion.y < 20 ){
+			if (posicion.y < 20 && game.modechildren){
+				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
+						(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
+						velocidad.y = 800;
+						posicion.y = 21;
+						game.bounS.play();
+				}else{
+					game.vidas--;
+					game.isvelocidad = 1f;
+					state = PayasoState.MESSCRASH;
+					game.gamestate = GameState.DEATH;
+					game.ispremio= false;
+					time = delta;
+					IngameScreen.statetime = 0f;
+					posicion.y = 25;
+					game.trampolin.velocidad.y = Math.min(-velocidad.y,800);
+					game.trampolin.velocidad.x = velocidad.x;
+					game.trampolin.aceleracion.y= GameWorld.aceleracion;
+					pc.oldstate = pc.state;
+					pc.state = Payaso.PayasoState.MESSCRY;
+					pc.velocidad.x = 0f;
+					pc.posicion.y = 25;
+					pc.velocidad.y =  0f;
+					game.hurtS.play();
+					game.cryS.play(0.2f);
+					game.wowS.play();
+					game.crashS.play();
+				}
+				
+			}else if (posicion.y < 20 && !game.modechildren ){
 				game.vidas--;
 				game.isvelocidad = 1f;
 				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
@@ -104,8 +133,12 @@ public class Payaso {
 					game.wowS.play();
 					game.crashS.play();
 				}
-			}else if (posicion.x <= 0 || posicion.x >= 1024 - dimensiones.width ){
+			}else if (posicion.x <= 0 ){
 				velocidad.x = velocidad.x * -1;
+				posicion.x = 0;
+			}else if (posicion.x >= SeeSawCircus.screenwidth - dimensiones.width ){
+				velocidad.x = velocidad.x * -1;
+				posicion.x = SeeSawCircus.screenwidth - dimensiones.width;
 			}else if (posicion.y < (game.trampolin.dimensiones.height/2 + game.trampolin.posicion.y) && (velocidad.y < vellimit) ){
 				if ( game.trampolin.view == TrampolinState.LEFT){
 					if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){
@@ -120,7 +153,6 @@ public class Payaso {
 						game.flipsC+=1;
 					}
 				}		
-			//}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (velocidad.y < vellimit)) && game.paraguasc > 0){
 			}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (true)) && game.paraguasc > 0){
 				if ( game.trampolin.view == TrampolinState.LEFT){
 					if ((game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25) &&
@@ -144,8 +176,6 @@ public class Payaso {
 		if ( state == PayasoState.MESSCRASH){
 			time+=delta;
 			if (time > 2.5){
-				state=PayasoState.FLYING;
-				game.gamestate = GameState.READY;
 				game.resetready(this);
 			}
 		}
@@ -160,8 +190,6 @@ public class Payaso {
 			
 			if (posicion.y > game.worlheight){
 				angelSplayed = false;
-				state=PayasoState.FLYING;
-				game.gamestate = GameState.READY;
 				game.resetready(this);
 			}
 		}

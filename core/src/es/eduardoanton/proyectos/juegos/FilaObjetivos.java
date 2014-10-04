@@ -25,7 +25,7 @@ public class FilaObjetivos {
 	public FilaObjetivos(int id, float x, float y, float vel,GameWorld gam){
 		this.ID = id;
 		posicion = new Vector2(x,y);
-		velocidad = new Vector2(MathUtils.random(200,400)*vel,0);
+		velocidad = new Vector2(MathUtils.random(150,320)*vel,0);
 		elementos = new int[10];
 		game = gam;
 		generarFila();
