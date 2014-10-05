@@ -120,6 +120,7 @@ public class SeeSawCircus extends Game {
 		asset.load("payaso_sombra.png", Texture.class);
 		asset.load("trapecio.png", Texture.class);
 		asset.load("red.png", Texture.class);
+		asset.load("muelle.png", Texture.class);
 		asset.load("panelvidas.png", Texture.class);
 		asset.load("corazonp.png", Texture.class);
 		asset.load("paraguaspp.png", Texture.class);
@@ -157,7 +158,7 @@ public class SeeSawCircus extends Game {
 		asset.load("dog_barking_05.mp3", Sound.class);
 		asset.load("animal_chimpanzee_chimp_screams.ogg", Sound.class);
 		asset.load("41384__sandyrb__milk-jug-seal-01.ogg", Sound.class);
-		asset.load("trampoline_bounce_lite_01.mp3", Sound.class);
+		asset.load("trampoline_bounce_lite_01.ogg", Sound.class);
 	}
 }
 		

@@ -70,6 +70,14 @@ public class Payaso {
 		if ( state == PayasoState.FLYING && game.gamestate == GameState.RUNNING){
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
+			if (posicion.y < 500 && velocidad.y < 0 && !game.modechildren && game.muellec > 0 &&((posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
+					(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width) )){
+				
+				game.muelle.x = posicion.x;
+				game.muelle.y = 0;
+			}else{
+				game.muelle.x = -100;
+			}
 			if (posicion.y < 20 && game.modechildren){
 				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
 						(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
@@ -99,7 +107,12 @@ public class Payaso {
 					game.crashS.play();
 				}
 				
-			}else if (posicion.y < 20 && !game.modechildren ){
+			}else if (posicion.y < 20 && !game.modechildren && game.muellec > 0 && game.muelle.x != -100){
+				game.muellec--;
+				velocidad.y = 800;
+				posicion.y = 21;
+				game.bounS.play();
+			}else if (posicion.y < 20 && !game.modechildren  ){
 				game.vidas--;
 				game.isvelocidad = 1f;
 				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 

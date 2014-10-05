@@ -15,6 +15,7 @@ public class GameWorld {
 	public Payaso payaso1;
 	public Payaso payaso2;
 	public Vector2 paraguas,paraguasfalling;
+	public Vector2 muelle,muellefalling;
 	public Vector2 paraguasv,trapecio;
 	public FilaObjetivos arrayFilaObjetivos[];
 	public final static int aceleracion = -1380;
@@ -28,6 +29,7 @@ public class GameWorld {
 	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0,regalosC = 0;
 	public short vidas = 5;
 	public short paraguasc = 3;
+	public short muellec = 3;
 	public float time = 0f,timeready = 0f;
 	public float timeregalo = 0f;
 	public enum GameState { GAMEOVER, RUNNING, DEATH, READY};
@@ -47,6 +49,9 @@ public class GameWorld {
 		payaso2.setPayasoCompañero(payaso1);
 		paraguas = new Vector2(-100,-100);
 		paraguasfalling = new Vector2(-100,-100);
+		muelle = new Vector2(-100,-100);
+		muellefalling = new Vector2(-100,-100);
+		muellec = 3;
 		paraguasv = new Vector2(0,-200);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
@@ -77,13 +82,15 @@ public class GameWorld {
 		bonusS = SeeSawCircus.asset.get("bonus_1.mp3",Sound.class);
 		jumpiniS = SeeSawCircus.asset.get("182442__qubodup__drum-roll-with-cymbals-crash.ogg", Sound.class);
 		gameoverS = SeeSawCircus.asset.get("comedy_trumpet_playing_sad_song_wah_wah_wah_wah.mp3", Sound.class);
-		bounS = SeeSawCircus.asset.get("trampoline_bounce_lite_01.mp3", Sound.class);
+		bounS = SeeSawCircus.asset.get("trampoline_bounce_lite_01.ogg", Sound.class);
 		ispremio = false;
 		timeready = 0f;
 	}
 	
 	public void reset(){
-		
+		muelle = new Vector2(-100,-100);
+		muellefalling = new Vector2(-100,-100);
+		muellec = 3;
 		paraguas = new Vector2(-100,-100);
 		isvelocidad = 1f;
 		paraguasfalling = new Vector2(-100,-100);

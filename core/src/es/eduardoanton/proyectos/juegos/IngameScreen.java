@@ -25,7 +25,7 @@ public class IngameScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp;
+	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
 	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
@@ -81,6 +81,7 @@ public class IngameScreen implements Screen{
 		paraguasp = game.asset.get("paraguasp.png", Texture.class);
 		trapecio = game.asset.get("trapecio.png", Texture.class);
 		red = game.asset.get("red.png", Texture.class);
+		muelle = game.asset.get("muelle.png", Texture.class);
 		panelvidas = game.asset.get("panelvidas.png", Texture.class);
 		corazonp = game.asset.get("corazonp.png", Texture.class);
 		paraguaspp = game.asset.get("paraguaspp.png", Texture.class);
@@ -191,7 +192,7 @@ public class IngameScreen implements Screen{
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
 		//Dibujamos musica por
 		if (gamew.modechildren){
-			batch.draw(musica, 0, 30);
+			batch.draw(musica, 0, 45);
 			letrero.draw(batch, " " + Musica.getName() , 25, 50);
 		}else{
 			batch.draw(musica, 0, 0);
@@ -208,10 +209,10 @@ public class IngameScreen implements Screen{
 		ref=0;
 		batch.draw(panelvidas, 512 - panelvidas.getWidth()/2, 0 + ref);
 		for ( int i=1;i<=gamew.vidas;i++){
-			batch.draw(corazonp, (512 - panelvidas.getWidth()/2) - 20 + (corazon.getWidth()- 7)*i,7 + ref);
+			batch.draw(corazonp, (512 - panelvidas.getWidth()/2) - 20 + (corazon.getWidth()- 7)*i,3 + ref);
 		}
 		for ( int i=1;i<=gamew.paraguasc;i++){
-			batch.draw(paraguaspp, 515 + 30*i,7 + ref);
+			batch.draw(paraguaspp, 515 + 30*i,5 + ref);
 		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setColor(Color.YELLOW);
@@ -267,6 +268,7 @@ public class IngameScreen implements Screen{
 			redondo.rotate(gamew.trampolin.rotacion * delta);
 			redondo.draw(batch);
 			batch.draw(trapecio, gamew.trapecio.x,gamew.trapecio.y);
+			batch.draw(muelle, gamew.muelle.x,gamew.muelle.y);
 			if ( gamew.ispremio ){
 				if ( gamew.timeregalo < 4f && gamew.gamestate == GameState.RUNNING){
 					gamew.timeregalo+=delta;
