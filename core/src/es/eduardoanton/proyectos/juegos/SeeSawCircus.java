@@ -87,6 +87,7 @@ public class SeeSawCircus extends Game {
 		asset.load("monedasoniap.png", Texture.class);
 		asset.load("billeteedu.png", Texture.class);
 		asset.load("regalo.png", Texture.class);
+		asset.load("regalo2.png", Texture.class);
 		asset.load("globoa.png", Texture.class);
 		asset.load("globoz.png", Texture.class);
 		asset.load("globor.png", Texture.class);
@@ -109,6 +110,7 @@ public class SeeSawCircus extends Game {
 		asset.load("premioparaguas.png", Texture.class);
 		asset.load("premiogordo.png", Texture.class);
 		asset.load("premiohueso.png", Texture.class);
+		asset.load("premiomuelle.png", Texture.class);
 		asset.load("musica.png", Texture.class);
 		asset.load("trampolin_sombra.png", Texture.class);
 		asset.load("filascompletas.png", Texture.class);
@@ -123,6 +125,7 @@ public class SeeSawCircus extends Game {
 		asset.load("trapecio.png", Texture.class);
 		asset.load("red.png", Texture.class);
 		asset.load("muelle.png", Texture.class);
+		asset.load("muellep.png", Texture.class);
 		asset.load("panelvidas.png", Texture.class);
 		asset.load("corazonp.png", Texture.class);
 		asset.load("paraguaspp.png", Texture.class);

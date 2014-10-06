@@ -25,9 +25,9 @@ public class IngameScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c;
-	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso;
+	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle,muellep;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c,regalo2;
+	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso,premiomuelle;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
@@ -36,7 +36,7 @@ public class IngameScreen implements Screen{
 	public Texture filaitems[];
 	private InputProcessor iproc;
 	public Color tmp;
-	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED"};
+	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED", "NUEVO MUELLE / NEW SPRING"};
 
 
 	private GameWorld gamew;
@@ -69,12 +69,14 @@ public class IngameScreen implements Screen{
 		premioparaguas  =game.asset.get("premioparaguas.png", Texture.class);
 		premiogordo = game.asset.get("premiogordo.png", Texture.class);
 		premiohueso = game.asset.get("premiohueso.png", Texture.class);
-		premio = new TextureRegion[5];
+		premiomuelle = game.asset.get("premiomuelle.png", Texture.class);
+		premio = new TextureRegion[6];
 		premio[0] = new TextureRegion(premiocorazon);
 		premio[1] = new TextureRegion(premioparaguas);
 		premio[2] = new TextureRegion(premiogordo);
 		premio[3] = new TextureRegion(premiohueso);
 		premio[4] = new TextureRegion(premiospeed);
+		premio[5] = new TextureRegion(premiomuelle);
 		musica =game.asset.get("musica.png", Texture.class);
 		corona = game.asset.get("record.png", Texture.class);
 		paraguas = game.asset.get("paraguas.png", Texture.class);
@@ -85,6 +87,7 @@ public class IngameScreen implements Screen{
 		panelvidas = game.asset.get("panelvidas.png", Texture.class);
 		corazonp = game.asset.get("corazonp.png", Texture.class);
 		paraguaspp = game.asset.get("paraguaspp.png", Texture.class);
+		muellep = game.asset.get("muellep.png", Texture.class);
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
 		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
@@ -92,7 +95,7 @@ public class IngameScreen implements Screen{
 		explosion[3] = new TextureRegion(game.asset.get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
 		//filaitems = new Texture[4];
-		filaitems = new Texture[21];
+		filaitems = new Texture[22];
 		filaitems[0] = game.asset.get("carameloa.png", Texture.class);
 		filaitems[1] = game.asset.get("caramelov.png", Texture.class);
 		filaitems[2] = game.asset.get("caramelor.png", Texture.class);
@@ -109,6 +112,7 @@ public class IngameScreen implements Screen{
 		filaitems[18] = game.asset.get("monedasonia.png", Texture.class);
 		filaitems[19] = game.asset.get("billeteedu.png", Texture.class);
 		filaitems[20] = game.asset.get("regalo.png", Texture.class);
+		filaitems[21] = game.asset.get("regalo2.png", Texture.class);
 		filaitems[8] = game.asset.get("leon.png", Texture.class);
 		filaitems[9] = game.asset.get("caballo.png", Texture.class);
 		filaitems[10] = game.asset.get("oso.png", Texture.class);
@@ -212,7 +216,10 @@ public class IngameScreen implements Screen{
 			batch.draw(corazonp, (512 - panelvidas.getWidth()/2) - 20 + (corazon.getWidth()- 7)*i,3 + ref);
 		}
 		for ( int i=1;i<=gamew.paraguasc;i++){
-			batch.draw(paraguaspp, 515 + 30*i,5 + ref);
+			batch.draw(paraguaspp, 465 + 30*i,5 + ref);
+		}
+		for ( int i=1;i<=gamew.muellec;i++){
+			batch.draw(muellep, 560 + 30*i,5 + ref);
 		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setColor(Color.YELLOW);
@@ -269,6 +276,7 @@ public class IngameScreen implements Screen{
 			redondo.draw(batch);
 			batch.draw(trapecio, gamew.trapecio.x,gamew.trapecio.y);
 			batch.draw(muelle, gamew.muelle.x,gamew.muelle.y);
+			batch.draw(muelle,gamew.muellefalling.x,gamew.muellefalling.y);
 			if ( gamew.ispremio ){
 				if ( gamew.timeregalo < 4f && gamew.gamestate == GameState.RUNNING){
 					gamew.timeregalo+=delta;

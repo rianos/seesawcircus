@@ -112,6 +112,8 @@ public class Payaso {
 				velocidad.y = 800;
 				posicion.y = 21;
 				game.bounS.play();
+				game.muellefalling.x = game.muelle.x;
+				game.muellefalling.y = game.muelle.y;
 			}else if (posicion.y < 20 && !game.modechildren  ){
 				game.vidas--;
 				game.isvelocidad = 1f;

@@ -15,7 +15,7 @@ public class GameWorld {
 	public Payaso payaso1;
 	public Payaso payaso2;
 	public Vector2 paraguas,paraguasfalling;
-	public Vector2 muelle,muellefalling;
+	public Vector2 muelle,muellefalling,muellev;
 	public Vector2 paraguasv,trapecio;
 	public FilaObjetivos arrayFilaObjetivos[];
 	public final static int aceleracion = -1380;
@@ -53,6 +53,7 @@ public class GameWorld {
 		muellefalling = new Vector2(-100,-100);
 		muellec = 3;
 		paraguasv = new Vector2(0,-200);
+		muellev = new Vector2(0,-20);
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
@@ -192,6 +193,13 @@ public class GameWorld {
 			}else{
 				paraguasfalling.add(paraguasv.cpy().scl(delta));
 			}
+			if ( muellefalling.y < -40 ){
+				muellefalling.x = -100;
+				muellefalling.y = 0;
+				
+			}else{
+				muellefalling.add(muellev.cpy().scl(delta));
+			}
 			for (FilaObjetivos fila : arrayFilaObjetivos){
 				fila.update(delta);
 			}
@@ -269,6 +277,59 @@ public class GameWorld {
 		}
 		return tmp;
 	}
+	
+	public int generapremiodos(){
+		// premios
+		// vida = 0
+		// paraguas = 1
+		// gran premio = 2
+		// hueso = 3
+		// velocidad = 4
+		// muelle = 5;
+		int tmp;
+		if (vidas < 5  && paraguasc < 3 && muellec < 3){
+			int array[] = {5,5,5,5,5,1,1,1,0,0};
+			tmp =  MathUtils.random(0,9);
+			tmp = array[tmp];
+		}else if (vidas < 5 && paraguasc == 3 && muellec < 3){
+			int array[] =  {5,5,5,5,0,0};
+			tmp =   MathUtils.random(0,5);
+			tmp = array[tmp];
+		}else if (vidas == 5 && paraguasc < 3 && muellec == 3){
+			int array[] = {1,1};
+			tmp =  MathUtils.random(0,1);
+			tmp = array[tmp];
+		}else if (vidas == 5 && paraguasc == 3 && muellec < 3){
+			int array[] = {5,5};
+			tmp =  MathUtils.random(0,1);
+			tmp = array[tmp];
+		}else if (vidas < 5 && paraguasc == 3 && muellec == 3){
+			int array[] = {0,0};
+			tmp =  MathUtils.random(0,1);
+			tmp = array[tmp];
+		}else{
+			int array[] = {2,4};
+			tmp =  MathUtils.random(0,1);
+			tmp = array[tmp];
+		}
+		switch (tmp){
+			case 0: vidas++;
+					break;
+			case 1: paraguasc++;
+					break;
+			case 2: scoreboard+=1000;
+					break;
+			case 3: scoreboard+=5000;
+					dogS.play();
+					break;
+			case 4: isvelocidad = 1.5f;
+					break;
+			case 5: muellec++;
+					break;
+		}
+		return tmp;
+	}
+	
 	
 	public void flip(){
 		float distancia;

@@ -18,7 +18,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
-	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f};
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f};
 	private GameWorld game;
 	
 	
@@ -98,6 +98,12 @@ public class FilaObjetivos {
 								game.regalo = game.generapremio();
 								game.regalosC++;
 								game.ispremio = true;
+							}else if (elementos[i] == 21){
+								game.bonusS.play();
+								game.timeregalo = delta;
+								game.regalo = game.generapremiodos();
+								game.regalosC++;
+								game.ispremio = true;
 							}else{
 								game.clanS.play();
 								game.caramelosC+=1;
@@ -127,6 +133,7 @@ public class FilaObjetivos {
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,10);
 			}
+			this.elementos[MathUtils.random(0,9)] = 21;
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,18);
