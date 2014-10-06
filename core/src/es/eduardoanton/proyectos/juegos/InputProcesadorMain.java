@@ -65,10 +65,19 @@ public class InputProcesadorMain implements InputProcessor{
 			Gdx.app.exit();
 			return true;
 		}
-		if (touchpos.x > 482 && touchpos.x < 570 && touchpos.y > 340 && touchpos.y < 450 ){
-			game.gamew.modechildren = true;
+		
+		if (touchpos.x > 16 && touchpos.x < 230 && touchpos.y > 280 && touchpos.y < 390 ){
+			game.gamew.modechildren = !game.gamew.modechildren;
 			MainScreen.clic.play();
-			this.game.setScreen(SeeSawCircus.ingamescreen);
+			if ( game.gamew.modechildren){
+				mscreen.botonninos.setTexture("botonninoson.png");
+				SeeSawCircus.prefs.putBoolean("modoninos",true);
+				SeeSawCircus.prefs.flush();
+			}else{
+				mscreen.botonninos.setTexture("botonninosoff.png");
+				SeeSawCircus.prefs.putBoolean("modoninos",false);
+				SeeSawCircus.prefs.flush();
+			}
 			return true;
 		}
 		playRandomSound();

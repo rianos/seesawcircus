@@ -218,8 +218,10 @@ public class IngameScreen implements Screen{
 		for ( int i=1;i<=gamew.paraguasc;i++){
 			batch.draw(paraguaspp, 465 + 30*i,5 + ref);
 		}
-		for ( int i=1;i<=gamew.muellec;i++){
+		if (! gamew.modechildren){
+			for ( int i=1;i<=gamew.muellec;i++){
 			batch.draw(muellep, 560 + 30*i,5 + ref);
+			}
 		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setColor(Color.YELLOW);

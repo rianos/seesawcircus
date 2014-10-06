@@ -31,7 +31,7 @@ public class MainScreen implements Screen{
 	private Stage stage;
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
 	private Actor payaso1,payaso2,globos1,globos2,gato;
-	public  ActorGenerico botoninicio,salir;
+	public  ActorGenerico botoninicio,salir,botonninos;
 	public BitmapFont marcador;
 	private Texture corona;
 	
@@ -49,6 +49,14 @@ public class MainScreen implements Screen{
 		marcador =game.asset.get("fuente.fnt", BitmapFont.class);
 		marcador.setColor(Color.GRAY);
 	    stage = new Stage(new StretchViewport(SeeSawCircus.screenwidth, SeeSawCircus.screenheight));
+	    if (game.gamew.modechildren){
+	    	botonninos = new ActorGenerico(440f - 400f,310f,"botonninoson.png");
+	    }else{
+	    	botonninos = new ActorGenerico(440f - 400f,310f,"botonninosoff.png");
+	    }
+	    botonninos.addAction(sequence(
+				visible(false),delay(9),visible(true)
+				));
 	    fondoincio = new ActorGenerico(0f,0f,"fondomain.png");
 	    nube1 = new ActorGenerico(0f,400f,"nube.png");
 	    nube2 = new ActorGenerico(1024f,300f,"nube.png");
@@ -133,6 +141,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(globos1);
 	    stage.addActor(globos2);
 	    stage.addActor(gato);
+	    stage.addActor(botonninos);
 	    stage.addActor(botoninicio);
 	    stage.addActor(salir);
 	
@@ -146,7 +155,11 @@ public class MainScreen implements Screen{
 		if (gato.isVisible()){
 			batch.begin();
 			marcador.setColor(Color.GRAY);
-			marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("record",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2),45);
+			if ( game.gamew.modechildren){
+				marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("recordninos",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("recordninos",0)).width/2),45);
+			}else{
+				marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("record",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2),45);
+			}
 			batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,5);
 			batch.end();
 		}

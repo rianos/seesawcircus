@@ -61,6 +61,9 @@ public class GameOverScreen implements Screen{
 	}
 	
 	public void reset(){
+		GameOverScreen.botonreload = SeeSawCircus.asset.get("botonreload.png");
+		GameOverScreen.botonhome = SeeSawCircus.asset.get("botonhome.png");
+		GameOverScreen.salida = SeeSawCircus.asset.get("salir.png");
 		trampolinp = new Vector2(SeeSawCircus.screenwidth,530);
 		caramelop = new Vector2(SeeSawCircus.screenwidth + 300,470);
 		globop = new Vector2(SeeSawCircus.screenwidth + 600,410);
@@ -146,7 +149,11 @@ public class GameOverScreen implements Screen{
 	public void show() {
 		reset();
 		if (SeeSawCircus.gamew.isrecord){
-			SeeSawCircus.prefs.putLong("record", SeeSawCircus.gamew.record);
+			if ( SeeSawCircus.gamew.modechildren){
+				SeeSawCircus.prefs.putLong("recordninos", SeeSawCircus.gamew.record);
+			}else{
+				SeeSawCircus.prefs.putLong("record", SeeSawCircus.gamew.record);
+			}
 			SeeSawCircus.prefs.flush();
 		}
 		Gdx.input.setInputProcessor(iproc);

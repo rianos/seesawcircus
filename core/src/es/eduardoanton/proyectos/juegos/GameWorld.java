@@ -86,9 +86,11 @@ public class GameWorld {
 		bounS = SeeSawCircus.asset.get("trampoline_bounce_lite_01.ogg", Sound.class);
 		ispremio = false;
 		timeready = 0f;
+		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
 	}
 	
 	public void reset(){
+		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
 		muelle = new Vector2(-100,-100);
 		muellefalling = new Vector2(-100,-100);
 		muellec = 3;
@@ -124,7 +126,11 @@ public class GameWorld {
 		playedrecord = false;
 		ispremio = false;
 		trapecio = new Vector2(446,580);
-		record = SeeSawCircus.prefs.getLong("record", 0);
+		if ( modechildren ){
+			record = SeeSawCircus.prefs.getLong("recordninos", 0);
+		}else{
+			record = SeeSawCircus.prefs.getLong("record", 0);
+		}
 		resetready(payaso2);
 	}
 	
