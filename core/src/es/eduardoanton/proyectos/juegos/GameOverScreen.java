@@ -17,13 +17,14 @@ public class GameOverScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture fondo,corona,botoninicio,salida;
-	private Texture caramelo,globo,animal,moneda,monedao,billete,regalo,trampolin,filascompletas,finalscore,botonhome,botonreload,corona2;
+	private Texture fondo,corona,botoninicio;
+	private Texture caramelo,globo,animal,moneda,monedao,billete,regalo,trampolin,filascompletas,finalscore,corona2;
 	private Vector2 caramelop,globop,animalp,monedap,monedaop,billetep,regalop,trampolinp,filacompletap;
 	private Music musica;
 	public static Sound clic;
 	private InputProcessor iproc;
 	public BitmapFont marcador,fuente;
+	public static Texture botonhome,botonreload,botonhomep,botonreloadp,salida,salidap;
 	
 	public GameOverScreen (SeeSawCircus game){
 		this.game = game;
@@ -49,11 +50,13 @@ public class GameOverScreen implements Screen{
 		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		fuente = game.asset.get("fuente.fnt", BitmapFont.class);
 		salida = SeeSawCircus.asset.get("salir.png");
+		salidap = SeeSawCircus.asset.get("salirp.png");
 		botoninicio = SeeSawCircus.asset.get("botoninicio.png");
 		botonhome = SeeSawCircus.asset.get("botonhome.png");
 		botonreload = SeeSawCircus.asset.get("botonreload.png");
+		botonhomep = SeeSawCircus.asset.get("botonhomep.png");
+		botonreloadp = SeeSawCircus.asset.get("botonreloadp.png");
 		corona2 = SeeSawCircus.asset.get("recordp.png");
-		
 		reset();
 	}
 	

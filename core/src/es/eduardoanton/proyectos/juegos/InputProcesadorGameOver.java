@@ -37,13 +37,16 @@ public class InputProcesadorGameOver implements InputProcessor{
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
-		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
-			//gameover.botoninicio.setTexture("botoniniciop.png");
+		if (touchpos.x > 512 && touchpos.x < 720 && touchpos.y > 00 && touchpos.y < 220 ){
+			GameOverScreen.botonreload = GameOverScreen.botonreloadp;
+			return true;
+		}
+		if (touchpos.x > 760 && touchpos.x < 990 && touchpos.y > 0 && touchpos.y < 220 ){
+			GameOverScreen.botonhome = GameOverScreen.botonhomep;
 			return true;
 		}
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 480 && touchpos.y < 600 ){
-			//mscreen.salir.setTexture("salirp.png");
-			return true;
+			GameOverScreen.salida = GameOverScreen.salidap;
 		}
 		return false;
 		
