@@ -157,10 +157,12 @@ public class MainScreen implements Screen{
 			marcador.setColor(Color.GRAY);
 			if ( game.gamew.modechildren){
 				marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("recordninos",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("recordninos",0)).width/2),45);
+				batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("recordninos",0)).width/2) - 50,5);
 			}else{
 				marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("record",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2),45);
+				batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,5);
 			}
-			batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,5);
+			
 			batch.end();
 		}
 	}
