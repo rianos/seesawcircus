@@ -1,6 +1,7 @@
 package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.MathUtils;
@@ -19,7 +20,6 @@ public class InputProcesadorMain implements InputProcessor{
 
 	@Override
 	public boolean keyDown(int keycode) {
-		
 		return false;
 	}
 

@@ -131,6 +131,11 @@ public class SeeSawCircus extends Game {
 		asset.load("panelvidas.png", Texture.class);
 		asset.load("corazonp.png", Texture.class);
 		asset.load("paraguaspp.png", Texture.class);
+		asset.load("paused.png", Texture.class);
+		asset.load("botonreloadpe.png", Texture.class);
+		asset.load("botonreloadpep.png", Texture.class);
+		asset.load("botonhomepe.png", Texture.class);
+		asset.load("botonhomepep.png", Texture.class);
 		for ( String musica : Musica.lista){
 			asset.load(musica, Music.class);
 		}

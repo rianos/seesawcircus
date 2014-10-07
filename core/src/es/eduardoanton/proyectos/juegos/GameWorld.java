@@ -38,6 +38,7 @@ public class GameWorld {
 	public float isvelocidad = 1;
 	public int regalo;
 	public boolean modechildren = false;
+	public boolean pausedgame = false;
 
 	GameWorld(SeeSawCircus game){
 		this.game = game;
@@ -91,6 +92,7 @@ public class GameWorld {
 	}
 	
 	public void reset(){
+		pausedgame = false;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
 		muelle = new Vector2(-100,-100);
 		muellefalling = new Vector2(-100,-100);
@@ -163,67 +165,68 @@ public class GameWorld {
 	}
 	
 	public void update(float delta){
-		if (gamestate == GameState.READY){
-			Musica.stop();	
-			timeready+=delta;
-			updatetrapecio(delta);
-			
-			trampolin.update(delta);
-			payaso1.update(delta);
-			payaso2.update(delta);
-			for (FilaObjetivos fila : arrayFilaObjetivos){
-				fila.update(delta);
-			}
-			if (timeready > 5.5){
-				gamestate = GameState.RUNNING;
-			}
-		}
-		
-		if ( gamestate == GameState.GAMEOVER){
-			time+=delta;
-			if (time > 3){
-				game.setScreen(SeeSawCircus.gameoverscreen);
-			}
-		}
-		if (gamestate == GameState.RUNNING || gamestate == GameState.DEATH){
-			updatetrapecio(delta);
-			if (!Musica.isPlaying()){
-				Musica.playRandom();
-			}
-			trampolin.update(delta);
-			payaso1.update(delta);
-			payaso2.update(delta);
-			if ( paraguasfalling.y < -10 ){
-				paraguasfalling.x = -100;
-				paraguasfalling.y = 0;
+		if (!pausedgame){
+			if (gamestate == GameState.READY){
+				Musica.stop();	
+				timeready+=delta;
+				updatetrapecio(delta);
 				
-			}else{
-				paraguasfalling.add(paraguasv.cpy().scl(delta));
-			}
-			if ( muellefalling.y < -40 ){
-				muellefalling.x = -100;
-				muellefalling.y = 0;
-				
-			}else{
-				muellefalling.add(muellev.cpy().scl(delta));
-			}
-			for (FilaObjetivos fila : arrayFilaObjetivos){
-				fila.update(delta);
-			}
-			if ( scoreboard >= record){
-				record = scoreboard;
-				if (!playedrecord){
-					Musica.highscoreplay(0.5f);
-					isrecord = true;
-					playedrecord = true;
-					time = delta;
+				trampolin.update(delta);
+				payaso1.update(delta);
+				payaso2.update(delta);
+				for (FilaObjetivos fila : arrayFilaObjetivos){
+					fila.update(delta);
+				}
+				if (timeready > 5.5){
+					gamestate = GameState.RUNNING;
 				}
 			}
-			if ( this.vidas == 0){
-				this.gamestate = GameState.GAMEOVER;
-				time = delta;
-				Musica.stop();
-				gameoverS.play();
+			
+			if ( gamestate == GameState.GAMEOVER){
+				time+=delta;
+				if (time > 3){
+					game.setScreen(SeeSawCircus.gameoverscreen);
+				}
+			}
+			if (gamestate == GameState.RUNNING || gamestate == GameState.DEATH){
+				updatetrapecio(delta);
+				if (!Musica.isPlaying()){
+					Musica.playRandom();
+				}
+				trampolin.update(delta);
+				payaso1.update(delta);
+				payaso2.update(delta);
+				if ( paraguasfalling.y < -10 ){
+					paraguasfalling.x = -100;
+					paraguasfalling.y = 0;
+				
+				}else{
+					paraguasfalling.add(paraguasv.cpy().scl(delta));
+				}
+				if ( muellefalling.y < -40 ){
+					muellefalling.x = -100;
+					muellefalling.y = 0;
+				}else{
+					muellefalling.add(muellev.cpy().scl(delta));
+				}
+				for (FilaObjetivos fila : arrayFilaObjetivos){
+					fila.update(delta);
+				}
+				if ( scoreboard >= record){
+					record = scoreboard;
+					if (!playedrecord){
+						Musica.highscoreplay(0.5f);
+						isrecord = true;
+						playedrecord = true;
+						time = delta;
+					}
+				}
+				if ( this.vidas == 0){
+					this.gamestate = GameState.GAMEOVER;
+					time = delta;
+					Musica.stop();
+					gameoverS.play();
+				}
 			}
 		}
 	}

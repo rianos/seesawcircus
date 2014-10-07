@@ -26,7 +26,8 @@ public class IngameScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle,muellep;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c,regalo2;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c,regalo2,paused;
+	public static Texture botoninicio,botoniniciop,botonhomepe,botonhomepep,botonreloadpe,botonreloadpep;
 	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso,premiomuelle;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
 	private Sprite redondo;
@@ -70,6 +71,7 @@ public class IngameScreen implements Screen{
 		premiogordo = game.asset.get("premiogordo.png", Texture.class);
 		premiohueso = game.asset.get("premiohueso.png", Texture.class);
 		premiomuelle = game.asset.get("premiomuelle.png", Texture.class);
+		paused = game.asset.get("paused.png", Texture.class);
 		premio = new TextureRegion[6];
 		premio[0] = new TextureRegion(premiocorazon);
 		premio[1] = new TextureRegion(premioparaguas);
@@ -88,6 +90,12 @@ public class IngameScreen implements Screen{
 		corazonp = game.asset.get("corazonp.png", Texture.class);
 		paraguaspp = game.asset.get("paraguaspp.png", Texture.class);
 		muellep = game.asset.get("muellep.png", Texture.class);
+		botoninicio = game.asset.get("botoninicio.png", Texture.class);
+		botoniniciop = game.asset.get("botoniniciop.png", Texture.class);
+		botonreloadpe = game.asset.get("salir.png", Texture.class);
+		botonreloadpep = game.asset.get("salirp.png", Texture.class);
+		botonhomepe = game.asset.get("botonhomepe.png", Texture.class);
+		botonhomepep = game.asset.get("botonhomepep.png", Texture.class);
 		explosion = new TextureRegion[4];
 		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
 		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
@@ -149,6 +157,7 @@ public class IngameScreen implements Screen{
 		redondo =  new Sprite( (Texture) game.asset.get("redondo.png"));
 		gamew = SeeSawCircus.gamew;
 		iproc = new InputProcesador(cam,gamew);
+		
 		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
 		informe =game.asset.get("fuente.fnt", BitmapFont.class);	
 		informe.setColor(Color.YELLOW);
@@ -166,6 +175,11 @@ public class IngameScreen implements Screen{
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		
 		batch.begin();
+		if (gamew.pausedgame){
+			tmp = batch.getColor();
+			tmp.a = 0.4f;
+			batch.setColor(tmp);
+		}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			tmp = batch.getColor();
 			tmp.a = 0.4f;
@@ -285,7 +299,9 @@ public class IngameScreen implements Screen{
 			redondo.setX(gamew.trampolin.posicion.x + 62);
 			redondo.setY(gamew.trampolin.posicion.y);
 			redondo.rotate(gamew.trampolin.rotacion * delta);
-			redondo.draw(batch);
+			if (!gamew.pausedgame){
+				redondo.draw(batch);
+			}
 			batch.draw(trapecio, gamew.trapecio.x,gamew.trapecio.y);
 			batch.draw(muelle, gamew.muelle.x,gamew.muelle.y);
 			batch.draw(muelle,gamew.muellefalling.x,gamew.muellefalling.y);
@@ -304,6 +320,15 @@ public class IngameScreen implements Screen{
 					gamew.ispremio = false;
 				}
 			}	
+		}
+		if (gamew.pausedgame){
+			tmp = batch.getColor();
+			tmp.a = 1f;
+			batch.setColor(tmp);
+			batch.draw(paused,(SeeSawCircus.screenwidth/2) - (paused.getWidth()/2),100);
+			batch.draw(botoninicio,(SeeSawCircus.screenwidth/2) - (botoninicio.getWidth()/2),150);
+			batch.draw(botonhomepe,250,350);
+			batch.draw(botonreloadpe,700,350);
 		}
 		batch.end();
 	}
@@ -364,12 +389,15 @@ public class IngameScreen implements Screen{
 	@Override
 	public void show() {
 		Gdx.input.setInputProcessor(iproc);
+		Gdx.input.setCatchBackKey(true);
 		Musica.playRandom();	
 		marcador.setColor(Color.WHITE);
 		tmp = batch.getColor();
 		tmp.a = 1f;
 		batch.setColor(tmp);
-		gamew.reset();
+		if (!gamew.pausedgame){
+			gamew.reset();
+		}
 	}
 
 	@Override
@@ -380,6 +408,11 @@ public class IngameScreen implements Screen{
 
 	@Override
 	public void pause() {
+			IngameScreen.botoninicio = game.asset.get("botoninicio.png", Texture.class);
+			IngameScreen.botonreloadpe = game.asset.get("salir.png", Texture.class);
+			IngameScreen.botonhomepe = game.asset.get("botonhomepe.png", Texture.class);
+			gamew.pausedgame = true;
+			Musica.stop();
 		// TODO Auto-generated method stub
 		
 	}
