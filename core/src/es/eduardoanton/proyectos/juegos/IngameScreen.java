@@ -215,14 +215,24 @@ public class IngameScreen implements Screen{
 		for ( int i=1;i<=gamew.vidas;i++){
 			batch.draw(corazonp, (512 - panelvidas.getWidth()/2) - 20 + (corazon.getWidth()- 7)*i,3 + ref);
 		}
-		for ( int i=1;i<=gamew.paraguasc;i++){
-			batch.draw(paraguaspp, 465 + 30*i,5 + ref);
-		}
-		if (! gamew.modechildren){
+		if ( gamew.modechildren){
+			for ( int i=1;i<=gamew.paraguasc;i++){
+				batch.draw(paraguaspp, 510 + 30*i,5 + ref);
+			}
+		}else{
 			for ( int i=1;i<=gamew.muellec;i++){
-			batch.draw(muellep, 560 + 30*i,5 + ref);
+				batch.draw(muellep, 510 + 30*i,5 + ref);
 			}
 		}
+		//Metodo antiguo con paraguas
+		//for ( int i=1;i<=gamew.paraguasc;i++){
+		//	batch.draw(paraguaspp, 465 + 30*i,5 + ref);
+		//}
+		//if (! gamew.modechildren){
+		//	for ( int i=1;i<=gamew.muellec;i++){
+		//	batch.draw(muellep, 560 + 30*i,5 + ref);
+		//	}
+		//}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setColor(Color.YELLOW);
 			marcador.draw(batch, "GAME OVER", 200, 350);

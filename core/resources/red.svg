@@ -1202,5 +1202,27 @@
          inkscape:export-xdpi="27"
          inkscape:export-ydpi="27" />
     </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\panelvidas.png"
+       style="fill:#f6ffd5"
+       transform="matrix(0.93228594,0,0,0.71153845,15.748207,321.64418)"
+       id="g5001">
+      <rect
+         style="fill:#cdde87;fill-opacity:1;stroke:none"
+         id="rect5003"
+         width="311.42856"
+         height="37.142857"
+         x="175.71428"
+         y="908.07648" />
+      <rect
+         y="911.612"
+         x="181.23126"
+         height="30.071787"
+         width="300.35574"
+         id="rect5005"
+         style="fill:#eef4d7;fill-opacity:1;stroke:none" />
+    </g>
   </g>
 </svg>

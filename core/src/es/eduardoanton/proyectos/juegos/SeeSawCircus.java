@@ -166,6 +166,7 @@ public class SeeSawCircus extends Game {
 		asset.load("animal_chimpanzee_chimp_screams.ogg", Sound.class);
 		asset.load("41384__sandyrb__milk-jug-seal-01.ogg", Sound.class);
 		asset.load("trampoline_bounce_lite_01.ogg", Sound.class);
+		asset.load("cartoon_fast_whoosh_good_for_karate_chop_other_fast_movement_or_swipe_001.mp3", Sound.class);
 	}
 }
 		

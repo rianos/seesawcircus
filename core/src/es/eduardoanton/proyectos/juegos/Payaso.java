@@ -37,11 +37,12 @@ public class Payaso {
 	}
 
 	
+	
 	public void update(float delta ){
 		if ( state == PayasoState.STANDBYR ){
 			posicion.y = 50;
 			posicion.x = game.trampolin.posicion.x + game.trampolin.dimensiones.width  - dimensiones.width;
-			if ( game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.125 ){
+			if ( (game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.125) && game.modechildren ){
 				game.paraguas.x = posicion.x - 10;
 				game.paraguas.y = posicion.y + 15 ;
 			}else{
@@ -52,7 +53,7 @@ public class Payaso {
 		if ( state == PayasoState.STANDBYL ){
 			posicion.y = 50;
 			posicion.x = game.trampolin.posicion.x  ;
-			if ( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /8 ){
+			if ( (game.trampolin.posicion.x <= game.trampolin.dimensiones.width /8 ) && game.modechildren){
 				game.paraguas.x = posicion.x - 10;
 				game.paraguas.y = posicion.y + 15;
 			}else{
@@ -168,7 +169,7 @@ public class Payaso {
 						game.flipsC+=1;
 					}
 				}		
-			}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (true)) && game.paraguasc > 0){
+			}else if ((posicion.y < (game.trampolin.dimensiones.height + game.trampolin.posicion.y + 10) && (true)) && game.paraguasc > 0 && game.modechildren){
 				if ( game.trampolin.view == TrampolinState.LEFT){
 					if ((game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25) &&
 							 (posicion.x + (dimensiones.width/2) > game.trampolin.posicion.x + (game.trampolin.dimensiones.width/2))

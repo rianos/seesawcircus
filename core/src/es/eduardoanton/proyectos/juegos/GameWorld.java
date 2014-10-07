@@ -25,7 +25,7 @@ public class GameWorld {
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,gameoverS;
-	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS,jumpiniS,bounS;
+	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS,jumpiniS,bounS,swapS;
 	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0,regalosC = 0;
 	public short vidas = 5;
 	public short paraguasc = 3;
@@ -84,6 +84,7 @@ public class GameWorld {
 		jumpiniS = SeeSawCircus.asset.get("182442__qubodup__drum-roll-with-cymbals-crash.ogg", Sound.class);
 		gameoverS = SeeSawCircus.asset.get("comedy_trumpet_playing_sad_song_wah_wah_wah_wah.mp3", Sound.class);
 		bounS = SeeSawCircus.asset.get("trampoline_bounce_lite_01.ogg", Sound.class);
+		swapS = SeeSawCircus.asset.get("cartoon_fast_whoosh_good_for_karate_chop_other_fast_movement_or_swipe_001.mp3", Sound.class);
 		ispremio = false;
 		timeready = 0f;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
@@ -145,7 +146,7 @@ public class GameWorld {
 		trampolin.posicion.x = 390;
 	    trampolin.velocidad.y = 0;
 		trampolin.velocidad.x = 0;
-		if (p.PayasoID == 1){
+		if ( trampolin.view == TrampolinState.LEFT){
 			p.pc.posicion.x = 350;
 			p.pc.posicion.y = 50;
 			p.pc.state = PayasoState.STANDBYR;
@@ -337,27 +338,87 @@ public class GameWorld {
 	}
 	
 	
+	public int generapremiotres(){
+		// premios
+		// vida = 0
+		// paraguas = 1
+		// gran premio = 2
+		// hueso = 3
+		// velocidad = 4
+		// muelle = 5;
+		int tmp;
+		if (vidas < 5  && muellec < 3){
+			if (vidas < 3){
+				int array[] = {0,0,5,5,5,5,5,2,2,3,4,4};
+				tmp =  MathUtils.random(0,11);
+				tmp = array[tmp];
+			}else{
+				int array[] = {0,5,5,5,5,5,5,2,2,3,4,4};
+				tmp =  MathUtils.random(0,11);
+				tmp = array[tmp];
+			}
+		}else if (vidas < 5 && muellec == 3){
+			if (vidas < 3){
+				int array[] =  {0,4,2,3,4};
+				tmp =   MathUtils.random(0,4);
+				tmp = array[tmp];
+			}else{
+				int array[] =  {0,4,2,2,2,3,4};
+				tmp =   MathUtils.random(0,6);
+				tmp = array[tmp];
+			}
+		}else if (vidas == 5 && muellec < 3){
+			int array[] = {5,5,5,5,2,2,3,4};
+			tmp =  MathUtils.random(0,7);
+			tmp = array[tmp];
+		}else{
+			int array[] = {2,2,2,3,4};
+			tmp =  MathUtils.random(0,4);
+			tmp = array[tmp];
+		}
+		switch (tmp){
+			case 0: vidas++;
+					break;
+			case 1: paraguasc++;
+					break;
+			case 2: scoreboard+=1000;
+					break;
+			case 3: scoreboard+=5000;
+					dogS.play();
+					break;
+			case 4: isvelocidad = 1.5f;
+					break;
+			case 5: muellec++;
+					break;
+		}
+		return tmp;
+	}
+	
+	
+	
 	public void flip(){
 		float distancia;
+		Payaso pf,ps;
+		pf = getPayasoFlying();
+		ps = pf.pc;
 		if (trampolin.view == TrampolinState.LEFT){
 			trampolin.view = TrampolinState.RIGHT;
 			distancia = (trampolin.posicion.x + (trampolin.dimensiones.width / 4));
-			distancia = distancia - payaso1.posicion.x - (payaso1.dimensiones.width /2);		
-			payaso1.state = PayasoState.STANDBYL;
-			payaso2.velocidad.y = payaso1.velocidad.y*-1  + distancia*redimen2;
-			payaso2.velocidad.y = Math.min(payaso2.velocidad.y, maxvel);
-			payaso2.velocidad.x = distancia * redimen ;
-			payaso2.state = PayasoState.FLYING;
-			
+			distancia = distancia - pf.posicion.x - (pf.dimensiones.width / 2);
+			pf.state = PayasoState.STANDBYL;
+			ps.velocidad.y = pf.velocidad.y*-1  + distancia*redimen2;
+			ps.velocidad.y = Math.min(ps.velocidad.y, maxvel);
+			ps.velocidad.x = distancia * redimen ;
+			ps.state = PayasoState.FLYING;
 		}else{
 			trampolin.view = TrampolinState.LEFT;
 			distancia = (trampolin.posicion.x + (trampolin.dimensiones.width / 4)*3);
-			distancia = distancia - payaso2.posicion.x - (payaso2.dimensiones.width /2);
-			payaso2.state = PayasoState.STANDBYR;
-			payaso1.velocidad.y = payaso2.velocidad.y*-1  - distancia*redimen2;
-			payaso1.velocidad.y = Math.min(payaso1.velocidad.y, maxvel);
-			payaso1.velocidad.x = distancia * redimen ;
-			payaso1.state = PayasoState.FLYING;
+			distancia = distancia - pf.posicion.x - (pf.dimensiones.width /2);
+			pf.state = PayasoState.STANDBYR;
+			ps.velocidad.y = pf.velocidad.y*-1  - distancia*redimen2;
+			ps.velocidad.y = Math.min(ps.velocidad.y, maxvel);
+			ps.velocidad.x = distancia * redimen ;
+			ps.state = PayasoState.FLYING;
 		}
 		if ((payaso1.velocidad.y > 1200 || payaso2.velocidad.y > 1200) && Math.random() > 0.7f){
 			jump2S.play(0.4f);

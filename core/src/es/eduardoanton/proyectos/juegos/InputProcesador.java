@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector3;
 
 import es.eduardoanton.proyectos.juegos.GameWorld.GameState;
+import es.eduardoanton.proyectos.juegos.Payaso.PayasoState;
 
 public class InputProcesador implements InputProcessor{
 
@@ -15,6 +16,9 @@ public class InputProcesador implements InputProcessor{
 	private int cuentabotones = 0;
 	private int last = 0;
 	private final static float rotationSpeed = 360f;
+	
+	private boolean dragging = false;
+	private float firstdragged;
 	
 	InputProcesador(OrthographicCamera cam, GameWorld gamew){
 		this.cam = cam;
@@ -75,6 +79,7 @@ public class InputProcesador implements InputProcessor{
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 		cuentabotones--;
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
+		Payaso tmp;
 		cam.unproject(touchpos);
 		if (cuentabotones == 0){
 			gamew.trampolin.setVelocity(0);
@@ -85,11 +90,31 @@ public class InputProcesador implements InputProcessor{
 				gamew.trampolin.rotacion*=-1f;
 			}
 		}
+		if (dragging == true){
+			dragging = false;
+			if ( touchpos.y - firstdragged > 30 && (gamew.gamestate == GameState.READY || gamew.gamestate == GameState.RUNNING)  ){
+				gamew.trampolin.flip();
+				tmp = gamew.getPayasoFlying();
+				tmp = tmp.pc;
+				if ( tmp.state == PayasoState.STANDBYL){
+					tmp.state = PayasoState.STANDBYR;
+				}else{
+					tmp.state = PayasoState.STANDBYL;
+				}
+				gamew.swapS.play();
+			}
+		}
 		return false;
 	}
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
+		Vector3 touchpos = new Vector3(screenX,screenY,0);
+		cam.unproject(touchpos);
+		if ( ! dragging){
+			firstdragged = touchpos.y;
+			dragging = true;
+		}
 		return false;
 	}
 
