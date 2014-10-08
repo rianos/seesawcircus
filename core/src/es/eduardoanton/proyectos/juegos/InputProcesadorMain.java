@@ -66,7 +66,7 @@ public class InputProcesadorMain implements InputProcessor{
 			return true;
 		}
 		
-		if (touchpos.x > 16 && touchpos.x < 230 && touchpos.y > 280 && touchpos.y < 390 ){
+		if (touchpos.x > 55 && touchpos.x < 267 && touchpos.y > 227 && touchpos.y < 421 ){
 			game.gamew.modechildren = !game.gamew.modechildren;
 			MainScreen.clic.play();
 			if ( game.gamew.modechildren){

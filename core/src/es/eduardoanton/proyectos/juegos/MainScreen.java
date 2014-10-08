@@ -50,9 +50,9 @@ public class MainScreen implements Screen{
 		marcador.setColor(Color.GRAY);
 	    stage = new Stage(new StretchViewport(SeeSawCircus.screenwidth, SeeSawCircus.screenheight));
 	    if (game.gamew.modechildren){
-	    	botonninos = new ActorGenerico(440f - 400f,310f,"botonninoson.png");
+	    	botonninos = new ActorGenerico(87f,245f,"botonninoson.png");
 	    }else{
-	    	botonninos = new ActorGenerico(440f - 400f,310f,"botonninosoff.png");
+	    	botonninos = new ActorGenerico(87f,245f,"botonninosoff.png");
 	    }
 	    botonninos.addAction(sequence(
 				visible(false),delay(9),visible(true)
