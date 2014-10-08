@@ -213,6 +213,7 @@ public class IngameScreen implements Screen{
 			}
 		}
 		// Dibujamos puntuación
+		marcador.setScale(1.0f);
 		marcador.draw(batch,String.format("%d", gamew.scoreboard), 1000 - (marcador.getBounds("" + gamew.scoreboard).width), 600);
 		//Dibujamos musica por
 		if (gamew.modechildren){
@@ -418,6 +419,7 @@ public class IngameScreen implements Screen{
 			IngameScreen.botonreloadpe = game.asset.get("salir.png", Texture.class);
 			IngameScreen.botonhomepe = game.asset.get("botonhomepe.png", Texture.class);
 			gamew.pausedgame = true;
+			gamew.jumpiniS.stop();
 			Musica.stop();
 		// TODO Auto-generated method stub
 		

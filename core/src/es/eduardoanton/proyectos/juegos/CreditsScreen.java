@@ -2,6 +2,7 @@ package es.eduardoanton.proyectos.juegos;
 
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -15,7 +16,9 @@ public class CreditsScreen implements Screen {
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture circo,idea,art,music,musiclogo1,musiclogo2;
+	public static Texture botonhome;
 	public BitmapFont marcador, informe;
+	public InputProcessor iproc;
 	
 	CreditsScreen (SeeSawCircus game){
 		this.game = game;
@@ -32,6 +35,8 @@ public class CreditsScreen implements Screen {
 		music = SeeSawCircus.asset.get("creditsmusic.png");
 		musiclogo1 = SeeSawCircus.asset.get("logomusica1.png");
 		musiclogo2 = SeeSawCircus.asset.get("logomusica2.png");
+		botonhome = SeeSawCircus.asset.get("botonhomepe.png");
+		iproc = new InputProcesadorCredits(cam,game,this);
 	}
 	@Override
 	public void render(float delta) {
@@ -39,6 +44,7 @@ public class CreditsScreen implements Screen {
 		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		batch.begin();
+		batch.draw(botonhome,930, cam.position.y + 200);
 		batch.draw(idea,512 - idea.getWidth()/2,0);
 		marcador.setScale(0.5f);
 		marcador.draw(batch,"EDUARDO ANTON SANTA-MARIA",512 - (marcador.getBounds("EDUARDO ANTON SANTA-MARIA").width/2), -70);
@@ -85,13 +91,14 @@ public class CreditsScreen implements Screen {
 
 	@Override
 	public void show() {
-		// TODO Auto-generated method stub
-		
+		botonhome =game.asset.get("botonhomepe.png");
+		Gdx.input.setInputProcessor(iproc);
+		Musica.playRandom();
 	}
 
 	@Override
 	public void hide() {
-		
+		Musica.stop();
 	}
 
 	@Override

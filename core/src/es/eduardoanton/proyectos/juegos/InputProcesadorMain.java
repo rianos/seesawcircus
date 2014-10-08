@@ -39,7 +39,7 @@ public class InputProcesadorMain implements InputProcessor{
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
-		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
+		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
 			mscreen.botoninicio.setTexture("botoniniciop.png");
 			return true;
 		}
@@ -47,7 +47,7 @@ public class InputProcesadorMain implements InputProcessor{
 			mscreen.salir.setTexture("salirp.png");
 			return true;
 		}
-		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 ){
+		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible()){
 			mscreen.botoncreditos.setTexture("botoncreditosp.png");
 			return true;
 		}
@@ -59,7 +59,7 @@ public class InputProcesadorMain implements InputProcessor{
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
 		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
-		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
+		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
 			game.gamew.modechildren = false;
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.ingamescreen);
@@ -70,7 +70,7 @@ public class InputProcesadorMain implements InputProcessor{
 			return true;
 		}
 		
-		if (touchpos.x > 55 && touchpos.x < 267 && touchpos.y > 227 && touchpos.y < 421 ){
+		if (touchpos.x > 55 && touchpos.x < 267 && touchpos.y > 227 && touchpos.y < 421 && mscreen.botonninos.isVisible()){
 			game.gamew.modechildren = !game.gamew.modechildren;
 			MainScreen.clic.play();
 			if ( game.gamew.modechildren){
@@ -84,7 +84,7 @@ public class InputProcesadorMain implements InputProcessor{
 			}
 			return true;
 		}
-		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 ){
+		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible() ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.creditsscreen);
 			return true;

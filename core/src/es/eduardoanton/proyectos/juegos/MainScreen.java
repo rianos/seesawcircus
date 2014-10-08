@@ -181,6 +181,7 @@ public class MainScreen implements Screen{
 	@Override
 	public void show() {
 		botoninicio.setTexture("botoninicio.png");
+		botoncreditos.setTexture("botoncreditos.png");
 		this.musica.setVolume(1f);
 		this.musica.setLooping(true);
 		this.musica.play();
