@@ -31,7 +31,7 @@ public class MainScreen implements Screen{
 	private Stage stage;
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
 	private Actor payaso1,payaso2,globos1,globos2,gato;
-	public  ActorGenerico botoninicio,salir,botonninos;
+	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos;
 	public BitmapFont marcador;
 	private Texture corona;
 	
@@ -55,7 +55,11 @@ public class MainScreen implements Screen{
 	    	botonninos = new ActorGenerico(87f,245f,"botonninosoff.png");
 	    }
 	    botonninos.addAction(sequence(
-				visible(false),delay(9),visible(true)
+				visible(false),delay(11),visible(true)
+				));
+	    botoncreditos = new ActorGenerico(817f,245f,"botoncreditos.png");
+	    botoncreditos.addAction(sequence(
+				visible(false),delay(11),visible(true)
 				));
 	    fondoincio = new ActorGenerico(0f,0f,"fondomain.png");
 	    nube1 = new ActorGenerico(0f,400f,"nube.png");
@@ -143,6 +147,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(gato);
 	    stage.addActor(botonninos);
 	    stage.addActor(botoninicio);
+	    stage.addActor(botoncreditos);
 	    stage.addActor(salir);
 	
 	}

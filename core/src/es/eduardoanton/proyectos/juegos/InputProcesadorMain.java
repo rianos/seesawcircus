@@ -47,6 +47,10 @@ public class InputProcesadorMain implements InputProcessor{
 			mscreen.salir.setTexture("salirp.png");
 			return true;
 		}
+		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 ){
+			mscreen.botoncreditos.setTexture("botoncreditosp.png");
+			return true;
+		}
 		return false;
 	}
 
@@ -78,6 +82,11 @@ public class InputProcesadorMain implements InputProcessor{
 				SeeSawCircus.prefs.putBoolean("modoninos",false);
 				SeeSawCircus.prefs.flush();
 			}
+			return true;
+		}
+		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 ){
+			MainScreen.clic.play();
+			this.game.setScreen(SeeSawCircus.creditsscreen);
 			return true;
 		}
 		playRandomSound();

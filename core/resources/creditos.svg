@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg7127"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="Documento nuevo 13">
+  <defs
+     id="defs7129" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="102.4055"
+     inkscape:cy="397.3824"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1574"
+     inkscape:window-height="893"
+     inkscape:window-x="66"
+     inkscape:window-y="87"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7132">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#f4eb74;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(14.615385,0,0,12.545657,-1905.3031,-3775.6301)" />
+    <path
+       style="color:#000000;fill:#fff9b1;fill-opacity:0.43850265;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 200.01011,480.1507 c 4.80378,74.24582 110.57854,88.3484 57.57877,88.3484 -52.99977,0 -95.96447,-42.55437 -95.96447,-95.04778 0,-52.49342 42.9647,-95.04766 95.96447,-95.04766 52.99977,0 -65.29643,-17.53607 -57.57877,101.74704 z"
+       id="path7645"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7648"
+       sodipodi:cx="318.70312"
+       sodipodi:cy="401.82394"
+       sodipodi:rx="13.637059"
+       sodipodi:ry="14.142136"
+       d="m 332.34018,401.82394 a 13.637059,14.142136 0 1 1 -27.27411,0 13.637059,14.142136 0 1 1 27.27411,0 z"
+       transform="matrix(0.82608696,0,0,0.82900821,44.798067,103.90808)" />
+    <g
+       transform="matrix(0.17682422,0,0,0.20985475,744.96562,465.20531)"
+       style="stroke:none;display:inline"
+       id="g3490"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\premiomuelle.png"
+       inkscape:export-xdpi="29.713543"
+       inkscape:export-ydpi="29.713543">
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.98330546,-0.18196257,0.06778997,0.36632946,-861.20198,231.20182)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path5995"
+         style="fill:#59c0f9;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#59c0f9;fill-opacity:1;stroke:none"
+         id="path5997"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.98330546,-0.18196257,0.06778997,0.36632946,-841.20198,299.77325)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.98330546,-0.18196257,0.06778997,0.36632946,-832.63055,366.9161)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path5999"
+         style="fill:#59c0f9;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#59c0f9;fill-opacity:1;stroke:none"
+         id="path6001"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.98330546,-0.18196257,0.06778997,0.36632946,-856.91627,451.20182)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.98330546,-0.18196257,0.06778997,0.36632946,-848.34484,528.34468)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6003"
+         style="fill:#59c0f9;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="opacity:0;fill:#2b48ed;fill-opacity:1;stroke:none"
+         id="path6005"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.99770103,-0.06776916,0.02524734,0.37169252,-849.54319,474.93269)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.99644783,-0.08421238,0.03137323,0.37122564,-858.24505,442.15209)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6521"
+         style="fill:#2c7daa;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#2c7daa;fill-opacity:1;stroke:none"
+         id="path6523"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.99783372,-0.06578652,0.02450869,0.37174195,-817.96168,558.71203)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.99929796,-0.03746459,0.01395738,0.37228745,-810.88327,681.24957)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6525"
+         style="fill:#2c7daa;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#2c7daa;fill-opacity:1;stroke:none"
+         id="path6527"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.99929796,-0.03746459,0.01395738,0.37228745,-830.88327,761.24957)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.99929796,-0.03746459,0.01395738,0.37228745,-819.4547,846.96386)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6529"
+         style="fill:#2c7daa;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#2c7daa;fill-opacity:1;stroke:none"
+         id="path6531"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.99929796,-0.03746459,0.01395738,0.37228745,-833.74042,446.96387)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.80939684,-0.01399273,0.011305,0.13904636,-1202.5955,460.19109)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6533"
+         style="fill:#bbe1f6;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#bbe1f6;fill-opacity:1;stroke:none"
+         id="path6535"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.80572526,-0.0782678,0.02231867,0.13770828,-1216.669,423.41875)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.8083091,-0.04422044,0.01649161,0.13852697,-1186.8234,565.45922)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6537"
+         style="fill:#bbe1f6;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#bbe1f6;fill-opacity:1;stroke:none"
+         id="path6539"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.80897135,-0.0297389,0.01400835,0.13880007,-1187.3265,663.05233)" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         transform="matrix(0.80897135,-0.0297389,0.01400835,0.13880007,-1181.6122,743.05233)"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         sodipodi:ry="72.85714"
+         sodipodi:rx="300"
+         sodipodi:cy="-134.78067"
+         sodipodi:cx="-1902.8572"
+         id="path6541"
+         style="fill:#bbe1f6;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="2.1321712"
+         inkscape:export-xdpi="2.1321712"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\muellep.png"
+         sodipodi:type="arc"
+         style="fill:#bbe1f6;fill-opacity:1;stroke:none"
+         id="path6543"
+         sodipodi:cx="-1902.8572"
+         sodipodi:cy="-134.78067"
+         sodipodi:rx="300"
+         sodipodi:ry="72.85714"
+         d="m -1602.8572,-134.78067 c 0,40.237887 -134.3146,72.857139 -300,72.857139 -165.6854,0 -300,-32.619252 -300,-72.857139 0,-40.23789 134.3146,-72.85714 300,-72.85714 165.6854,0 300,32.61925 300,72.85714 z"
+         transform="matrix(0.80897135,-0.0297389,0.01400835,0.13880007,-1174.4693,828.76662)" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#d09652;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135-1"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(14.615385,0,0,12.545657,-2395.2272,-3853.3183)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#d09652;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135-15"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(14.615385,0,0,12.545657,-2299.2627,-3876.5518)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#d09652;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135-2"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(14.615385,0,0,12.545657,-2302.2932,-3839.1761)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#d09652;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135-7"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(14.615385,0,0,12.545657,-2241.684,-3841.1965)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#d09652;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135-6"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(14.615385,0,0,12.545657,-2335.6281,-3838.166)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path7135-14"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(4.2859344,0,0,3.6789905,-910.90296,-880.07167)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       transform="matrix(4.2859344,0,0,3.6789905,-843.22274,-903.30518)"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       sodipodi:ry="7.5761442"
+       sodipodi:rx="6.5659914"
+       sodipodi:cy="338.68942"
+       sodipodi:cx="147.98735"
+       id="path8160"
+       style="color:#000000;fill:#0040ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#2bff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path8162"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(4.2859344,0,0,3.6789905,-768.47145,-924.51838)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       transform="matrix(4.2859344,0,0,3.6789905,-692.71001,-891.18335)"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       sodipodi:ry="7.5761442"
+       sodipodi:rx="6.5659914"
+       sodipodi:cy="338.68942"
+       sodipodi:cx="147.98735"
+       id="path8164"
+       style="color:#000000;fill:#fdff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#5a3456;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path8166"
+       sodipodi:cx="147.98735"
+       sodipodi:cy="338.68942"
+       sodipodi:rx="6.5659914"
+       sodipodi:ry="7.5761442"
+       d="m 154.55334,338.68942 a 6.5659914,7.5761442 0 1 1 -13.13198,0 6.5659914,7.5761442 0 1 1 13.13198,0 z"
+       transform="matrix(4.2859344,0,0,3.6789905,-664.42574,-824.51328)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path8178"
+       d="m -25.25383,484.15138 c 0,19.85673 -94.48247,22.82182 -147.48224,22.82182 -52.99977,0 -147.48239,-53.47274 -147.48239,-73.32947 0,-19.85673 46.00543,-46.0463 77.78176,-3.62886 28.75621,38.38581 217.18287,34.27978 217.18287,54.13651 z"
+       style="color:#000000;fill:#5e073a;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="rect8187"
+       d="m 28.178212,399.83202 32.663836,-16.8768 c 5.624973,-2.90632 12.404563,1.64922 14.198933,7.72106 l 0.216155,0.73143 c 1.79437,6.07184 -1.403498,13.78019 -7.721064,14.19893 l -39.092409,2.59109 c -6.317566,0.41874 -3.637652,-7.3031 -5.627504,-1.29249 l -2.35901,7.12572 c -1.989853,6.01061 2.09609,-11.29262 7.721063,-14.19894 z"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#22220c;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       transform="matrix(0.93404304,-0.23323153,0.35716048,0.6099451,-189.56546,117.00923)"
+       d="m 63.639603,488.69705 a 199.50513,22.223356 0 1 1 -399.010253,0 199.50513,22.223356 0 1 1 399.010253,0 z"
+       sodipodi:ry="22.223356"
+       sodipodi:rx="199.50513"
+       sodipodi:cy="488.69705"
+       sodipodi:cx="-135.86552"
+       id="path8168"
+       style="color:#000000;fill:#5b2a10;fill-opacity:1;fill-rule:nonzero;stroke:#22220c;stroke-width:2.84620309;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       style="color:#000000;fill:#fef059;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:5.93499994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -204.05083,314.90917 c 0,-19.85673 25.72569,-15.75075 -27.27409,-15.75075 -52.99977,0 -78.79202,38.32045 -78.79202,58.17718 0,19.85673 50.04605,14.73157 81.82238,-27.68587 28.75621,-38.38582 24.24373,5.11617 24.24373,-14.74056 z"
+       id="path8181"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       d="m 42.857142,403.43362 a 8.2142859,8.2142859 0 1 1 -16.428571,0 8.2142859,8.2142859 0 1 1 16.428571,0 z"
+       sodipodi:ry="8.2142859"
+       sodipodi:rx="8.2142859"
+       sodipodi:cy="403.43362"
+       sodipodi:cx="34.642857"
+       id="path8190"
+       style="color:#000000;fill:#cf811c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.29999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8099"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#676761;font-family:Sans;stroke-width:2.29999999999999980;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="translate(64.649763,0)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsidea.png"
+       inkscape:export-xdpi="59.34367"
+       inkscape:export-ydpi="59.34367"><flowRegion
+         id="flowRegion8101"><rect
+           id="rect8103"
+           width="452.54834"
+           height="86.873116"
+           x="50.507626"
+           y="662.4433"
+           style="stroke-width:2.29999999999999980;stroke-miterlimit:4;stroke-dasharray:none;stroke:#676761;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara8105"
+         style="-inkscape-font-specification:Sans Bold;font-family:Sans;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:40px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;fill:#f7f0f0;fill-opacity:1;stroke:#676761;stroke-opacity:1;stroke-width:2.29999999999999980;stroke-miterlimit:4;stroke-dasharray:none">ORIGINAL IDEA</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8099-2"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#676761;stroke-width:2.29999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans"
+       transform="translate(-362.01817,-143.3495)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsart.png"
+       inkscape:export-xdpi="59.34367"
+       inkscape:export-ydpi="59.34367"><flowRegion
+         id="flowRegion8101-3"><rect
+           id="rect8103-2"
+           width="452.54834"
+           height="86.873116"
+           x="50.507626"
+           y="662.4433"
+           style="stroke:#676761;stroke-width:2.29999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /></flowRegion><flowPara
+         id="flowPara8105-2"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#f7f0f0;fill-opacity:1;stroke:#676761;stroke-width:2.29999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans;-inkscape-font-specification:Sans Bold">GRAPHICS ART</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8219"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion8221"><rect
+           id="rect8223"
+           width="568.71588"
+           height="361.63461"
+           x="-463.66"
+           y="232.11832" /></flowRegion><flowPara
+         id="flowPara8225"></flowPara></flowRoot>    <rect
+       style="color:#000000;fill:#6897d4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.29999995000000010;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect8264"
+       width="398.11905"
+       height="21.213203"
+       x="-481.84277"
+       y="631.1286"
+       ry="10.606602"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsmusic.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <rect
+       ry="10.606602"
+       y="679.61591"
+       x="-480.83261"
+       height="21.213203"
+       width="399.54764"
+       id="rect8266"
+       style="color:#000000;fill:#6897d4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.29999995000000010;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsmusic.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <rect
+       style="color:#000000;fill:#6897d4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.29999995000000010;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect8268"
+       width="405.26193"
+       height="21.213203"
+       x="-482.85291"
+       y="731.13367"
+       ry="10.606602"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsmusic.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <rect
+       ry="10.606602"
+       y="781.6413"
+       x="-481.84274"
+       height="21.213203"
+       width="406.69049"
+       id="rect8270"
+       style="color:#000000;fill:#6897d4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.29999995000000010;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsmusic.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <path
+       style="color:#000000;fill:#fff5f5;fill-opacity:1;fill-rule:nonzero;stroke:#22220c;stroke-width:2.05028296;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M -365.6875 608.90625 C -370.72412 608.90625 -374.78125 612.96338 -374.78125 618 L -374.78125 629.09375 C -374.78125 633.78214 -371.23583 637.61675 -366.6875 638.125 L -366.6875 724.21875 C -367.85471 724.13503 -369.02822 724.0625 -370.21875 724.0625 C -395.04494 724.0625 -415.1875 742.59518 -415.1875 765.46875 C -415.1875 788.34232 -395.04494 806.90625 -370.21875 806.90625 C -345.39256 806.90625 -325.28125 788.34232 -325.28125 765.46875 C -325.28125 751.95563 -332.28846 739.96597 -343.15625 732.40625 C -342.06736 730.73964 -341.4375 728.74148 -341.4375 726.59375 L -341.4375 638.1875 L -222.21875 638.1875 L -222.21875 684.65625 C -246.81357 684.90431 -266.6875 703.37462 -266.6875 726.09375 C -266.6875 748.96732 -246.54494 767.5 -221.71875 767.5 C -196.89256 767.5 -176.78125 748.96732 -176.78125 726.09375 C -176.78125 708.99472 -188.0129 694.29045 -204.0625 687.96875 L -204.0625 636.75 C -201.55882 635.13411 -199.90625 632.30769 -199.90625 629.09375 L -199.90625 618 C -199.90625 612.96338 -203.96338 608.90625 -209 608.90625 L -365.6875 608.90625 z "
+       id="path8272"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsmusic.png"
+       inkscape:export-xdpi="59"
+       inkscape:export-ydpi="59" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8099-1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#676761;stroke-width:2.29999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans"
+       transform="translate(-406.69978,160.81815)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\creditsmusic.png"
+       inkscape:export-xdpi="59.34367"
+       inkscape:export-ydpi="59.34367"><flowRegion
+         id="flowRegion8101-6"><rect
+           id="rect8103-8"
+           width="452.54834"
+           height="86.873116"
+           x="50.507626"
+           y="662.4433"
+           style="stroke:#676761;stroke-width:2.29999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /></flowRegion><flowPara
+         id="flowPara8105-5"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#f7f0f0;fill-opacity:1;stroke:#676761;stroke-width:2.29999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans;-inkscape-font-specification:Sans Bold">MUSIC</flowPara></flowRoot>  </g>
+</svg>

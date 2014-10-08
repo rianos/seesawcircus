@@ -673,6 +673,79 @@
          height="187"
          width="186" />
     </pattern>
+    <linearGradient
+       id="linearGradient4126">
+      <stop
+         style="stop-color:#1b516d;stop-opacity:1;"
+         offset="0"
+         id="stop4128" />
+      <stop
+         style="stop-color:#003b97;stop-opacity:0;"
+         offset="1"
+         id="stop4130" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6107-4"
+       id="linearGradient4871-1-1-7"
+       gradientUnits="userSpaceOnUse"
+       x1="-3803.9329"
+       y1="325.05237"
+       x2="-3808.5767"
+       y2="1347.3268" />
+    <linearGradient
+       id="linearGradient6107-4">
+      <stop
+         style="stop-color:#f70000;stop-opacity:1;"
+         offset="0"
+         id="stop6109-0" />
+      <stop
+         style="stop-color:#d8381a;stop-opacity:1;"
+         offset="1"
+         id="stop6111-9" />
+    </linearGradient>
+    <linearGradient
+       y2="1347.3268"
+       x2="-3808.5767"
+       y1="325.05237"
+       x1="-3803.9329"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6151"
+       xlink:href="#linearGradient4938-3"
+       inkscape:collect="always" />
+    <path
+       style="fill:none;stroke:none"
+       d="m -776.26945,-42.397624 c 116.76844,-104.875356 231.37452,94.063462 231.37452,94.063462"
+       id="path6133-5-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4938-3"
+       id="linearGradient7050"
+       gradientUnits="userSpaceOnUse"
+       x1="-3803.9329"
+       y1="325.05237"
+       x2="-3808.5767"
+       y2="1347.3268" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5492"
+       id="linearGradient7104"
+       gradientUnits="userSpaceOnUse"
+       x1="-3803.9329"
+       y1="325.05237"
+       x2="-3808.5767"
+       y2="1347.3268" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6107"
+       id="linearGradient7108"
+       gradientUnits="userSpaceOnUse"
+       x1="-3803.9329"
+       y1="325.05237"
+       x2="-3808.5767"
+       y2="1347.3268" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -681,9 +754,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-2808.7921"
-     inkscape:cy="3183.6439"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="-3575.8919"
+     inkscape:cy="2708.5615"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -710,90 +783,175 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       transform="matrix(2.1182737,0,0,2.1155371,-1926.7492,-2652.2314)"
-       id="g4878-4-4"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botonninosoff.png"
-       inkscape:export-xdpi="21.203163"
-       inkscape:export-ydpi="21.203163">
-      <g
-         id="g4944-2"
-         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoniniciop.png"
-         inkscape:export-xdpi="45.93153"
-         inkscape:export-ydpi="45.93153">
-        <rect
-           ry="43.295616"
-           y="-102.73622"
-           x="-826.37518"
-           height="86.591232"
-           width="256.4386"
-           id="rect6171"
-           style="color:#000000;fill:#263c4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76603258;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-        <rect
-           style="color:#000000;fill:#00487e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.11775923;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.7326203;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="rect6169"
-           width="252.99829"
-           height="85.413956"
-           x="-824.92297"
-           y="-112.67493"
-           ry="42.706978" />
-        <path
-           sodipodi:type="arc"
-           style="fill:url(#linearGradient4871-1-1);fill-opacity:1;stroke:none"
-           id="path4489-8-7"
-           sodipodi:cx="-3810.2954"
-           sodipodi:cy="866.49414"
-           sodipodi:rx="266.68027"
-           sodipodi:ry="270.72089"
-           d="m -3543.6151,866.49414 c 0,149.51506 -119.3969,270.72086 -266.6803,270.72086 -147.2835,0 -266.6803,-121.2058 -266.6803,-270.72086 0,-149.51502 119.3968,-270.72089 266.6803,-270.72089 147.2834,0 266.6803,121.20587 266.6803,270.72089 z"
-           transform="matrix(0.55354263,0,0,0.55369582,1410.7371,-390.76057)"
-           inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
-           inkscape:export-xdpi="27.434013"
-           inkscape:export-ydpi="27.434013" />
-        <path
-           sodipodi:type="arc"
-           style="color:#000000;fill:#eaddc9;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:8.47241211;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.7326203;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="path6113"
-           sodipodi:cx="-2095.0564"
-           sodipodi:cy="-2709.446"
-           sodipodi:rx="398.00012"
-           sodipodi:ry="185.86807"
-           d="m -1697.0563,-2709.446 c 0,102.6521 -178.1907,185.868 -398.0001,185.868 -219.8094,0 -398.0001,-83.2159 -398.0001,-185.868 0,-102.6521 178.1907,-185.8681 398.0001,-185.8681 219.8094,0 398.0001,83.216 398.0001,185.8681 z"
-           transform="matrix(0.26758069,0,0,0.50607653,-137.28657,1473.6688)" />
-        <path
-           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.47238776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="M -689.8661,151.8036 -624.3107,43.913654 -716.039,135.64068 z"
-           id="path6115"
-           inkscape:connector-curvature="0"
-           inkscape:transform-center-x="-146.23652"
-           inkscape:transform-center-y="-198.06459" />
-        <path
-           sodipodi:nodetypes="sssss"
-           inkscape:connector-curvature="0"
-           id="path7971-4-3"
-           d="m -576.64178,24.457126 c 0,29.9243 -71.36898,44.4354 -129.6028,1.3255 -42.45444,-31.4285001 -109.92075,31.4559 -109.92075,1.5316 0,-29.9243001 38.7359,-79.8971 111.19034,-79.8971 72.45441,0 128.33321,47.1156999 128.33321,77.04 z"
-           style="fill:#e3ee49;fill-opacity:0.39572191;stroke:none" />
-        <path
-           style="fill:none;stroke:none"
-           d="m -776.26945,-42.397624 c 116.76844,-104.875356 231.37452,94.063462 231.37452,94.063462"
-           id="path6133"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc" />
-        <text
-           xml:space="preserve"
-           style="font-size:10.703228px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f1dcdc;fill-opacity:1;stroke:none;font-family:Sans"
-           id="text6143"
-           sodipodi:linespacing="125%"><textPath
-             xlink:href="#path6133"
-             id="textPath6149"><tspan
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4522"
+       d="m -4653.8467,-2221.2944 -55.7129,0 -68.8219,327.7233 124.5348,0 z"
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <rect
+       style="color:#000000;fill:#00487e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.5999999;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6169-6-8"
+       width="535.91962"
+       height="180.6964"
+       x="-4952.8081"
+       y="-2500.0166"
+       ry="90.348198"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <rect
+       inkscape:export-ydpi="20.15955"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       ry="90.348198"
+       y="-1427.2346"
+       x="-5324.5444"
+       height="180.6964"
+       width="535.91962"
+       id="rect7054"
+       style="color:#000000;fill:#00487e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.5999999;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       ry="91.593483"
+       y="-2869.5737"
+       x="-3677.238"
+       height="183.18697"
+       width="543.20715"
+       id="rect6171"
+       style="color:#000000;fill:#263c4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76603258;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#00487e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:6.5999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.7326203;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6169"
+       width="535.91962"
+       height="180.6964"
+       x="-3674.1619"
+       y="-2890.5994"
+       ry="90.348198" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient7108);fill-opacity:1;stroke:none"
+       id="path4489-8-7"
+       sodipodi:cx="-3810.2954"
+       sodipodi:cy="866.49414"
+       sodipodi:rx="266.68027"
+       sodipodi:ry="270.72089"
+       d="m -3543.6151,866.49414 a 266.68027,270.72089 0 1 1 -533.3606,0 266.68027,270.72089 0 1 1 533.3606,0 z"
+       transform="matrix(1.1725548,0,0,1.171364,1061.5781,-3478.8999)"
+       inkscape:export-filename="C:\Documents and Settings\Administrador\git\seesawcircus\android\assets\fondoinicio.png"
+       inkscape:export-xdpi="27.434013"
+       inkscape:export-ydpi="27.434013" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#eaddc9;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:8.47241211;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.7326203;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6113"
+       sodipodi:cx="-2095.0564"
+       sodipodi:cy="-2709.446"
+       sodipodi:rx="398.00012"
+       sodipodi:ry="185.86807"
+       d="m -1697.0563,-2709.446 a 398.00012,185.86807 0 1 1 -796.0002,0 398.00012,185.86807 0 1 1 796.0002,0 z"
+       transform="matrix(0.56680914,0,0,1.0706237,-2217.5597,465.36962)" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -3388.0744,-2331.0853 138.8643,-228.2451 -194.3057,194.0519 z"
+       id="path6115"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-146.23652"
+       inkscape:transform-center-y="-198.06459" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path7971-4-3"
+       d="m -3148.2343,-2600.4914 c 0,63.3059 -151.1791,94.0047 -274.5342,2.8041 -89.9301,-66.4882 -232.8423,66.5461 -232.8423,3.2402 0,-63.306 82.0533,-169.0253 235.5316,-169.0253 153.4783,0 271.8449,99.675 271.8449,162.981 z"
+       style="fill:#e3ee49;fill-opacity:0.39572191;stroke:none" />
+    <path
+       style="fill:none;stroke:none"
+       d="m -3571.1004,-2741.9251 c 247.3476,-221.8678 490.1146,198.9947 490.1146,198.9947"
+       id="path6133"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.703228px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f1dcdc;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text6143"
+       sodipodi:linespacing="125%"
+       transform="matrix(2.1182737,0,0,2.1155371,-1926.7492,-2652.2314)"><textPath
+         xlink:href="#path6133"
+         id="textPath6149"><tspan
    id="tspan6145"
    style="fill:#f1dcdc;fill-opacity:1"><tspan
      id="tspan6147"
      style="font-size:38.53162003px;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#f1dcdc;fill-opacity:1;font-family:Bernard MT Condensed;-inkscape-font-specification:'Bernard MT Condensed,'"
      y="-159.98314"
      x="-790.21808">DIFFICULTY</tspan></tspan></textPath></text>
-      </g>
-    </g>
+    <rect
+       ry="91.593483"
+       y="-2512.1357"
+       x="-4971.8433"
+       height="183.18697"
+       width="543.20715"
+       id="rect6171-7"
+       style="color:#000000;fill:#263c4d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.73852301;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient7050);fill-opacity:1;stroke:none"
+       id="path4489-8-7-4"
+       sodipodi:cx="-3810.2954"
+       sodipodi:cy="866.49414"
+       sodipodi:rx="266.68027"
+       sodipodi:ry="270.72089"
+       d="m -3543.6151,866.49414 a 266.68027,270.72089 0 1 1 -533.3606,0 266.68027,270.72089 0 1 1 533.3606,0 z"
+       transform="matrix(1.1725548,0,0,1.171364,-217.06859,-3096.0769)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path7971-4-3-8"
+       d="m -4428.3031,-2206.754 c 0,63.306 -151.1791,94.0047 -274.5344,2.8041 -89.9301,-66.4881 -232.8422,66.5462 -232.8422,3.2402 0,-63.306 82.0533,-169.0253 235.5315,-169.0253 153.4785,0 271.8451,99.675 271.8451,162.981 z"
+       style="fill:#e3ee49;fill-opacity:0.39572191;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <rect
+       style="color:#000000;fill:#263c4d;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.73852301;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect7056"
+       width="543.20715"
+       height="183.18697"
+       x="-5343.5796"
+       y="-1439.3539"
+       ry="91.593483"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       inkscape:export-ydpi="20.15955"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       transform="matrix(1.1725548,0,0,1.171364,-588.80472,-2023.2949)"
+       d="m -3543.6151,866.49414 a 266.68027,270.72089 0 1 1 -533.3606,0 266.68027,270.72089 0 1 1 533.3606,0 z"
+       sodipodi:ry="270.72089"
+       sodipodi:rx="266.68027"
+       sodipodi:cy="866.49414"
+       sodipodi:cx="-3810.2954"
+       id="path7058"
+       style="fill:url(#linearGradient7104);fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       style="fill:#e3ee49;fill-opacity:0.39572191;stroke:none"
+       d="m -4800.0392,-1133.972 c 0,63.306 -151.1791,94.0047 -274.5344,2.8041 -89.93,-66.4881 -232.8421,66.5462 -232.8421,3.2402 0,-63.306 82.0532,-169.0253 235.5315,-169.0253 153.4784,0 271.845,99.675 271.845,162.981 z"
+       id="path7060"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
     <rect
        style="color:#000000;fill:url(#linearGradient4256);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3887"
@@ -6318,5 +6476,322 @@
            sodipodi:open="true" />
       </g>
     </g>
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4520"
+       d="m -4768.8405,-2223.3108 -32.1341,-3.7943 -67.3109,321.6391 71.8292,8.481 z"
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4522-1"
+       d="m -4692.9787,-2211.6653 -77.758,0 -64.1213,321.5096 141.8793,0 z"
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       d="m -4695.3058,-2209.7202 -39.3935,0 -48.6629,323.2984 88.0564,0 z"
+       id="path4524"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       d="m -4649.9779,-2211.6653 63.4723,0 78.407,321.5096 -141.8793,0 z"
+       id="path6131"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path6129"
+       d="m -4659.3573,-2203.4225 39.3935,0 48.6629,319.2553 -88.0564,0 z"
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       d="m -4664.4073,-2200.2367 -29.1866,-5.7143 -46.9784,324.3667 110.4507,-2.8571 z"
+       id="path6938"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <path
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       d="m -4605.0716,-2177.7082 67.9649,-31.4286 48.6629,319.2553 -28.0564,-2.8571 z"
+       id="path6942"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573" />
+    <g
+       id="g4049"
+       transform="matrix(2.0424123,0,0,2.0424123,-4192.4252,-2675.6434)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573">
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="rect4042"
+         d="m -321.22849,218.98633 c 0,0 52.89623,12.12183 79.80205,12.12183 26.90582,0 79.80205,-12.12183 79.80205,-12.12183 l 0,18.18274 c 0,0 -53.20137,7.07107 -79.80205,7.07107 -26.60068,0 -79.80205,-7.07107 -79.80205,-7.07107 z"
+         style="fill:#e19393;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#ff9292;fill-opacity:1;stroke:none"
+         d="m -161.00627,222.14584 c 0,0 -6.93655,53.82225 -4.32808,80.60133 2.60846,26.77908 19.80138,78.25095 19.80138,78.25095 l -18.09709,1.76279 c 0,0 -12.19553,-52.26524 -14.77441,-78.74062 -2.57889,-26.47538 -0.69889,-80.11166 -0.69889,-80.11166 z"
+         id="path4045"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path4047"
+         d="m -322.88549,222.14584 c 0,0 6.93655,53.82225 4.32808,80.60133 -2.60846,26.77908 -19.80138,78.25095 -19.80138,78.25095 l 18.09709,1.76279 c 0,0 12.19553,-52.26524 14.77441,-78.74062 2.57889,-26.47538 0.69889,-80.11166 0.69889,-80.11166 z"
+         style="fill:#ff9292;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none"
+       id="g6962"
+       transform="matrix(2.2733411,0,0,2.2187939,-4123.3945,-2720.7839)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573">
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path6964"
+         d="m -321.22849,218.98633 c 0,0 52.89623,12.12183 79.80205,12.12183 26.90582,0 79.80205,-12.12183 79.80205,-12.12183 l 0,18.18274 c 0,0 -53.20137,7.07107 -79.80205,7.07107 -26.60068,0 -79.80205,-7.07107 -79.80205,-7.07107 z"
+         style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none" />
+      <path
+         style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none"
+         d="m -161.00627,222.14584 c 0,0 -6.93655,53.82225 -4.32808,80.60133 2.60846,26.77908 19.80138,78.25095 19.80138,78.25095 l -18.09709,1.76279 c 0,0 -12.19553,-52.26524 -14.77441,-78.74062 -2.57889,-26.47538 -0.69889,-80.11166 -0.69889,-80.11166 z"
+         id="path6966"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path6968"
+         d="m -322.88549,222.14584 c 0,0 6.93655,53.82225 4.32808,80.60133 -2.60846,26.77908 -19.80138,78.25095 -19.80138,78.25095 l 18.09709,1.76279 c 0,0 12.19553,-52.26524 14.77441,-78.74062 2.57889,-26.47538 0.69889,-80.11166 0.69889,-80.11166 z"
+         style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none" />
+    </g>
+    <g
+       transform="matrix(2.2733411,0,0,2.2187939,-4137.6802,-2737.9268)"
+       id="g4105"
+       style="fill:#f92114;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573">
+      <path
+         style="fill:#f92114;fill-opacity:1;stroke:none"
+         d="m -321.22849,218.98633 c 0,0 52.89623,12.12183 79.80205,12.12183 26.90582,0 79.80205,-12.12183 79.80205,-12.12183 l 0,18.18274 c 0,0 -53.20137,7.07107 -79.80205,7.07107 -26.60068,0 -79.80205,-7.07107 -79.80205,-7.07107 z"
+         id="path4107"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path4109"
+         d="m -161.00627,222.14584 c 0,0 -6.93655,53.82225 -4.32808,80.60133 2.60846,26.77908 19.80138,78.25095 19.80138,78.25095 l -18.09709,1.76279 c 0,0 -12.19553,-52.26524 -14.77441,-78.74062 -2.57889,-26.47538 -0.69889,-80.11166 -0.69889,-80.11166 z"
+         style="fill:#f92114;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#f92114;fill-opacity:1;stroke:none"
+         d="m -322.88549,222.14584 c 0,0 6.93655,53.82225 4.32808,80.60133 -2.60846,26.77908 -19.80138,78.25095 -19.80138,78.25095 l 18.09709,1.76279 c 0,0 12.19553,-52.26524 14.77441,-78.74062 2.57889,-26.47538 0.69889,-80.11166 0.69889,-80.11166 z"
+         id="path4111"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:10.703228px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f1dcdc;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text6143-0-4"
+       sodipodi:linespacing="125%"
+       transform="matrix(2.1182737,0,0,2.1155371,-3207.6324,-2273.0148)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditos.png"
+       inkscape:export-xdpi="20.159573"
+       inkscape:export-ydpi="20.159573"
+       inkscape:transform-center-x="-1760"
+       inkscape:transform-center-y="-680"><textPath
+         xlink:href="#path6133-5-2"
+         id="textPath6149-9-5"
+         style="font-size:42.51490021px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Rockwell Condensed;-inkscape-font-specification:'Rockwell Condensed, Bold'">CREDITOS</textPath></text>
+    <path
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       d="m -5025.5828,-1148.5124 -55.7129,0 -68.8219,327.7233 124.5348,0 z"
+       id="path7052"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       d="m -5140.5766,-1150.5288 -32.1341,-3.7943 -67.3109,321.6391 71.8292,8.481 z"
+       id="path7062"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       d="m -5064.7148,-1138.8833 -77.758,0 -64.1213,321.5096 141.8793,0 z"
+       id="path7064"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path7066"
+       d="m -5067.0419,-1136.9382 -39.3935,0 -48.6629,323.2984 88.0564,0 z"
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path7068"
+       d="m -5021.714,-1138.8833 63.4723,0 78.407,321.5096 -141.8793,0 z"
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       d="m -5031.0934,-1130.6405 39.3935,0 48.6629,319.2553 -88.0564,0 z"
+       id="path7070"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path7072"
+       d="m -5036.1434,-1127.4547 -29.1866,-5.7143 -46.9784,324.3667 110.4507,-2.8571 z"
+       style="fill:#9a9a9a;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path7074"
+       d="m -4976.8077,-1104.9262 67.9649,-31.4286 48.6629,319.2553 -28.0564,-2.8571 z"
+       style="fill:#e1e1e1;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955" />
+    <g
+       transform="matrix(2.0424123,0,0,2.0424123,-4564.1613,-1602.8614)"
+       id="g7076"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955">
+      <path
+         style="fill:#e19393;fill-opacity:1;stroke:none"
+         d="m -321.22849,218.98633 c 0,0 52.89623,12.12183 79.80205,12.12183 26.90582,0 79.80205,-12.12183 79.80205,-12.12183 l 0,18.18274 c 0,0 -53.20137,7.07107 -79.80205,7.07107 -26.60068,0 -79.80205,-7.07107 -79.80205,-7.07107 z"
+         id="path7078"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path7080"
+         d="m -161.00627,222.14584 c 0,0 -6.93655,53.82225 -4.32808,80.60133 2.60846,26.77908 19.80138,78.25095 19.80138,78.25095 l -18.09709,1.76279 c 0,0 -12.19553,-52.26524 -14.77441,-78.74062 -2.57889,-26.47538 -0.69889,-80.11166 -0.69889,-80.11166 z"
+         style="fill:#ff9292;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#ff9292;fill-opacity:1;stroke:none"
+         d="m -322.88549,222.14584 c 0,0 6.93655,53.82225 4.32808,80.60133 -2.60846,26.77908 -19.80138,78.25095 -19.80138,78.25095 l 18.09709,1.76279 c 0,0 12.19553,-52.26524 14.77441,-78.74062 2.57889,-26.47538 0.69889,-80.11166 0.69889,-80.11166 z"
+         id="path7082"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+    </g>
+    <g
+       transform="matrix(2.2733411,0,0,2.2187939,-4495.1306,-1648.0019)"
+       id="g7084"
+       style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955">
+      <path
+         style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none"
+         d="m -321.22849,218.98633 c 0,0 52.89623,12.12183 79.80205,12.12183 26.90582,0 79.80205,-12.12183 79.80205,-12.12183 l 0,18.18274 c 0,0 -53.20137,7.07107 -79.80205,7.07107 -26.60068,0 -79.80205,-7.07107 -79.80205,-7.07107 z"
+         id="path7086"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path7088"
+         d="m -161.00627,222.14584 c 0,0 -6.93655,53.82225 -4.32808,80.60133 2.60846,26.77908 19.80138,78.25095 19.80138,78.25095 l -18.09709,1.76279 c 0,0 -12.19553,-52.26524 -14.77441,-78.74062 -2.57889,-26.47538 -0.69889,-80.11166 -0.69889,-80.11166 z"
+         style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none" />
+      <path
+         style="fill:#6c0c07;fill-opacity:0.43850265;stroke:none"
+         d="m -322.88549,222.14584 c 0,0 6.93655,53.82225 4.32808,80.60133 -2.60846,26.77908 -19.80138,78.25095 -19.80138,78.25095 l 18.09709,1.76279 c 0,0 12.19553,-52.26524 14.77441,-78.74062 2.57889,-26.47538 0.69889,-80.11166 0.69889,-80.11166 z"
+         id="path7090"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+    </g>
+    <g
+       style="fill:#f92114;fill-opacity:1;stroke:none"
+       id="g7092"
+       transform="matrix(2.2733411,0,0,2.2187939,-4509.4163,-1665.1448)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-ydpi="20.15955">
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path7094"
+         d="m -321.22849,218.98633 c 0,0 52.89623,12.12183 79.80205,12.12183 26.90582,0 79.80205,-12.12183 79.80205,-12.12183 l 0,18.18274 c 0,0 -53.20137,7.07107 -79.80205,7.07107 -26.60068,0 -79.80205,-7.07107 -79.80205,-7.07107 z"
+         style="fill:#f92114;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#f92114;fill-opacity:1;stroke:none"
+         d="m -161.00627,222.14584 c 0,0 -6.93655,53.82225 -4.32808,80.60133 2.60846,26.77908 19.80138,78.25095 19.80138,78.25095 l -18.09709,1.76279 c 0,0 -12.19553,-52.26524 -14.77441,-78.74062 -2.57889,-26.47538 -0.69889,-80.11166 -0.69889,-80.11166 z"
+         id="path7096"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccscc" />
+      <path
+         sodipodi:nodetypes="csccscc"
+         inkscape:connector-curvature="0"
+         id="path7098"
+         d="m -322.88549,222.14584 c 0,0 6.93655,53.82225 4.32808,80.60133 -2.60846,26.77908 -19.80138,78.25095 -19.80138,78.25095 l 18.09709,1.76279 c 0,0 12.19553,-52.26524 14.77441,-78.74062 2.57889,-26.47538 0.69889,-80.11166 0.69889,-80.11166 z"
+         style="fill:#f92114;fill-opacity:1;stroke:none" />
+    </g>
+    <text
+       inkscape:transform-center-y="-680"
+       inkscape:transform-center-x="-1760"
+       inkscape:export-ydpi="20.15955"
+       inkscape:export-xdpi="20.15955"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoncreditosp.png"
+       transform="matrix(2.1182737,0,0,2.1155371,-3579.3685,-1200.2328)"
+       sodipodi:linespacing="125%"
+       id="text7100"
+       style="font-size:10.703228px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f1dcdc;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><textPath
+         style="font-size:42.51490021px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Rockwell Condensed;-inkscape-font-specification:'Rockwell Condensed, Bold'"
+         id="textPath7102"
+         xlink:href="#path6133-5-2">CREDITOS</textPath></text>
   </g>
 </svg>

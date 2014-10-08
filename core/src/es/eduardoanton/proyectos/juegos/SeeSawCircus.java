@@ -15,7 +15,7 @@ public class SeeSawCircus extends Game {
 	public static AssetManager asset;
 	public final static float screenwidth = 1024f;
 	public final static float screenheight = 600f;
-	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen;
+	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen,creditsscreen;
 	public static GameWorld gamew;
 	public static Preferences prefs;
 	
@@ -35,16 +35,24 @@ public class SeeSawCircus extends Game {
 		mainscreen = new MainScreen(this);
 		ingamescreen = new IngameScreen( this );
 		gameoverscreen = new GameOverScreen(this);
+		creditsscreen = new CreditsScreen(this);
 		this.setScreen(mainscreen);
 	}
 	
 	private void loadassets(){
 		asset = new AssetManager();
+		asset.load("creditsidea.png", Texture.class);
+		asset.load("creditsart.png", Texture.class);
+		asset.load("creditsmusic.png", Texture.class);
+		asset.load("logomusica1.png", Texture.class);
+		asset.load("logomusica2.png", Texture.class);
 		asset.load("trampolin.png", Texture.class);
 		asset.load("nube.png", Texture.class);
 		asset.load("gato.png", Texture.class);
 		asset.load("botoninicio.png", Texture.class);
 		asset.load("botoniniciop.png", Texture.class);
+		asset.load("botoncreditos.png", Texture.class);
+		asset.load("botoncreditosp.png", Texture.class);
 		asset.load("salir.png", Texture.class);
 		asset.load("salirp.png", Texture.class);
 		asset.load("circo.png", Texture.class);
