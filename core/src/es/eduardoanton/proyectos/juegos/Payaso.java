@@ -20,7 +20,7 @@ public class Payaso {
 	public final float vellimit = -400f;
 	private float time= 0f;
 	private boolean angelSplayed = false;
-	
+	private long tempninossalto;
 	
 	Payaso (int x, int y, int vx, int vy, PayasoState s, GameWorld game,int id){
 		PayasoID = id;
@@ -30,6 +30,7 @@ public class Payaso {
 		aceleracion = new Vector2(0,GameWorld.aceleracion);
 		state = s;
 		this.game = game;
+		tempninossalto = 0;
 	}
 	
 	public void setPayasoCompañero(Payaso p){
@@ -82,10 +83,12 @@ public class Payaso {
 			if (posicion.y < 20 && game.modechildren){
 				if ( (posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
 						(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width)) {
-						velocidad.y = 800;
+						velocidad.y = 800 - tempninossalto;
+						tempninossalto+=150;
 						posicion.y = 21;
 						game.bounS.play();
 				}else{
+					tempninossalto = 0;
 					game.vidas--;
 					game.isvelocidad = 1f;
 					state = PayasoState.MESSCRASH;
@@ -158,12 +161,14 @@ public class Payaso {
 			}else if (posicion.y < (game.trampolin.dimensiones.height/2 + game.trampolin.posicion.y) && (velocidad.y < vellimit) ){
 				if ( game.trampolin.view == TrampolinState.LEFT){
 					if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){
+						tempninossalto = 0;
 						game.flip();
 						game.scoreboard+=1;
 						game.flipsC+=1;
 					}
 				}else{
 					if ( posicion.x  < game.trampolin.posicion.x + game.trampolin.dimensiones.width && (posicion.x + (dimensiones.width/2)) > (game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 ))){
+						tempninossalto = 0;
 						game.flip();
 						game.scoreboard+=1;
 						game.flipsC+=1;
@@ -174,6 +179,7 @@ public class Payaso {
 					if ((game.trampolin.posicion.x >= SeeSawCircus.screenwidth - game.trampolin.dimensiones.width*1.25) &&
 							 (posicion.x + (dimensiones.width/2) > game.trampolin.posicion.x + (game.trampolin.dimensiones.width/2))
 							){
+						tempninossalto = 0;
 						game.flipParaguas();
 						game.scoreboard+=1;
 						game.flipsC+=1;
@@ -182,6 +188,7 @@ public class Payaso {
 					 if (( game.trampolin.posicion.x <= game.trampolin.dimensiones.width /4 ) &&
 							((posicion.x - (dimensiones.width /2)) < game.trampolin.dimensiones.width/4)					 
 							 ){
+						 tempninossalto = 0;
 						game.flipParaguas();
 						game.scoreboard+=1;
 						game.flipsC+=1;

@@ -39,7 +39,7 @@ public class GameWorld {
 	public int regalo;
 	public boolean modechildren = false;
 	public boolean pausedgame = false;
-	public long vidaseach = 15000, muelleseach = 5000,lastvidas = 0, lastmuelles = 0;
+	public long vidaseach = 25000, muelleseach = 10000,lastvidas = 0, lastmuelles = 0;
 
 
 	GameWorld(SeeSawCircus game){
@@ -240,20 +240,28 @@ public class GameWorld {
 	
 	public void calculapremiosespeciales(float delta){
 		long rv = (long)(scoreboard / vidaseach);
-		if ( rv > lastvidas && vidas < 3){
-			vidas++;
-			lastvidas = rv;
-			timeregalo = delta;
-			regalo = 0;
-			ispremio = true;
+		if ( rv > lastvidas ){
+			if ( vidas < 3){
+				vidas++;
+				lastvidas = rv;
+				timeregalo = delta;
+				regalo = 0;
+				ispremio = true;
+			}else{
+				lastvidas = rv;
+			}
 		}
 		rv =  (long)(scoreboard / muelleseach);
-		if ( rv > lastmuelles && muellec < 3){
-			muellec++;
-			lastmuelles = rv;
-			timeregalo = delta;
-			regalo = 5;
-			ispremio = true;
+		if ( rv > lastmuelles ){
+			if (muellec < 3){
+				muellec++;
+				lastmuelles = rv;
+				timeregalo = delta;
+				regalo = 5;
+				ispremio = true;
+			}else{
+				lastmuelles = rv;
+			}
 		}
 	}
 	
