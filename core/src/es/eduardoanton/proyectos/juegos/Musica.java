@@ -7,8 +7,8 @@ import com.badlogic.gdx.math.MathUtils;
 public class Musica {
 	public static Music musica,hsmusic;
 	public static int i;
-	public static String[] lista = {"Run Amok.ogg","Monkeys Spinning Monkeys.ogg"
-		,"Waunobe March.ogg","Fig Leaf Times Two.ogg","Merry Go.ogg","Plucky Daisy.ogg","Look Busy.ogg",
+	public static String[] lista = {"Monkeys Spinning Monkeys.ogg"
+		,"Plucky Daisy.ogg","Look Busy.ogg",
 		"Five Card Shuffle.ogg","Friendly Day.ogg","Hyperfun.ogg"};
 	
 	public static void playRandom(){
