@@ -137,9 +137,6 @@ public class FilaObjetivos {
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,10);
 			}
-			//if (!game.modechildren){
-			//	this.elementos[MathUtils.random(0,9)] = 21;
-			//}
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,18);

@@ -25,7 +25,7 @@ public class IngameScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle,muellep;
+	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle,muellep,tesoro;
 	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c,regalo2,paused;
 	public static Texture botoninicio,botoniniciop,botonhomepe,botonhomepep,botonreloadpe,botonreloadpep;
 	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso,premiomuelle;
@@ -37,7 +37,8 @@ public class IngameScreen implements Screen{
 	public Texture filaitems[];
 	private InputProcessor iproc;
 	public Color tmp;
-	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED", "NUEVO MUELLE / NEW SPRING"};
+	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED", "NUEVO MUELLE / NEW SPRING"
+			,"+100 PUNTOS / POINTS", "+200 PUNTOS / POINTS", "+400 PUNTOS / POINTS", "+500 PUNTOS /POINTS"};
 
 
 	private GameWorld gamew;
@@ -71,14 +72,19 @@ public class IngameScreen implements Screen{
 		premiogordo = game.asset.get("premiogordo.png", Texture.class);
 		premiohueso = game.asset.get("premiohueso.png", Texture.class);
 		premiomuelle = game.asset.get("premiomuelle.png", Texture.class);
+		tesoro = game.asset.get("tesoro.png", Texture.class);
 		paused = game.asset.get("paused.png", Texture.class);
-		premio = new TextureRegion[6];
+		premio = new TextureRegion[10];
 		premio[0] = new TextureRegion(premiocorazon);
 		premio[1] = new TextureRegion(premioparaguas);
 		premio[2] = new TextureRegion(premiogordo);
 		premio[3] = new TextureRegion(premiohueso);
 		premio[4] = new TextureRegion(premiospeed);
 		premio[5] = new TextureRegion(premiomuelle);
+		premio[6] = new TextureRegion(tesoro);
+		premio[7] = premio[6];
+		premio[8] = premio[6];
+		premio[9] = premio[6];
 		musica =game.asset.get("musica.png", Texture.class);
 		corona = game.asset.get("record.png", Texture.class);
 		paraguas = game.asset.get("paraguas.png", Texture.class);
@@ -231,11 +237,11 @@ public class IngameScreen implements Screen{
 		}
 		if ( gamew.modechildren){
 			for ( int i=1;i<=gamew.paraguasc;i++){
-				batch.draw(paraguaspp, 510 + 30*i,5 + ref);
+				batch.draw(paraguaspp, 490 + 30*i,5 + ref);
 			}
 		}else{
 			for ( int i=1;i<=gamew.muellec;i++){
-				batch.draw(muellep, 510 + 30*i,5 + ref);
+				batch.draw(muellep, 490 + 30*i,5 + ref);
 			}
 		}
 		//Metodo antiguo con paraguas

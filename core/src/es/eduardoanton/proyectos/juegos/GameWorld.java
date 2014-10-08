@@ -39,6 +39,8 @@ public class GameWorld {
 	public int regalo;
 	public boolean modechildren = false;
 	public boolean pausedgame = false;
+	public long vidaseach = 15000, muelleseach = 5000,lastvidas = 0, lastmuelles = 0;
+
 
 	GameWorld(SeeSawCircus game){
 		this.game = game;
@@ -92,6 +94,10 @@ public class GameWorld {
 	}
 	
 	public void reset(){
+		vidaseach = 15000;
+		muelleseach = 6000;
+		lastvidas = 0;
+		lastmuelles = 0;
 		pausedgame = false;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
 		muelle = new Vector2(-100,-100);
@@ -113,7 +119,7 @@ public class GameWorld {
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
 		scoreboard = 0;
 		timeready = 0f;
-		vidas = 5;
+		vidas = 3;
 		paraguasc = 3;
 		flipsC = 0;
 		caramelosC = 0;
@@ -221,6 +227,7 @@ public class GameWorld {
 						time = delta;
 					}
 				}
+				calculapremiosespeciales(delta);
 				if ( this.vidas == 0){
 					this.gamestate = GameState.GAMEOVER;
 					time = delta;
@@ -230,6 +237,26 @@ public class GameWorld {
 			}
 		}
 	}
+	
+	public void calculapremiosespeciales(float delta){
+		long rv = (long)(scoreboard / vidaseach);
+		if ( rv > lastvidas && vidas < 3){
+			vidas++;
+			lastvidas = rv;
+			timeregalo = delta;
+			regalo = 0;
+			ispremio = true;
+		}
+		rv =  (long)(scoreboard / muelleseach);
+		if ( rv > lastmuelles && muellec < 3){
+			muellec++;
+			lastmuelles = rv;
+			timeregalo = delta;
+			regalo = 5;
+			ispremio = true;
+		}
+	}
+	
 	
 	public void updatetrapecio(float delta){
 		if (gamestate == GameState.READY ){
@@ -349,36 +376,15 @@ public class GameWorld {
 		// hueso = 3
 		// velocidad = 4
 		// muelle = 5;
+		// +100 = 6
+		// +200 = 7
+		// +400 = 8
+		// +500 = 9
 		int tmp;
-		if (vidas < 5  && muellec < 3){
-			if (vidas < 3){
-				int array[] = {0,0,5,5,5,5,5,2,2,3,4,4};
-				tmp =  MathUtils.random(0,11);
-				tmp = array[tmp];
-			}else{
-				int array[] = {0,5,5,5,5,5,5,2,2,3,4,4};
-				tmp =  MathUtils.random(0,11);
-				tmp = array[tmp];
-			}
-		}else if (vidas < 5 && muellec == 3){
-			if (vidas < 3){
-				int array[] =  {0,4,2,3,4};
-				tmp =   MathUtils.random(0,4);
-				tmp = array[tmp];
-			}else{
-				int array[] =  {0,4,2,2,2,3,4};
-				tmp =   MathUtils.random(0,6);
-				tmp = array[tmp];
-			}
-		}else if (vidas == 5 && muellec < 3){
-			int array[] = {5,5,5,5,2,2,3,4};
-			tmp =  MathUtils.random(0,7);
-			tmp = array[tmp];
-		}else{
-			int array[] = {2,2,2,3,4};
-			tmp =  MathUtils.random(0,4);
-			tmp = array[tmp];
-		}
+		int  array[] = {3,2,2,4,4,4,4,9,9,9,8,8,8,8,8,7,7,7,7,7,7,7,7,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6};
+		tmp =  MathUtils.random(0,40);
+		tmp = array[tmp];
+		
 		switch (tmp){
 			case 0: vidas++;
 					break;
@@ -393,7 +399,15 @@ public class GameWorld {
 					break;
 			case 5: muellec++;
 					break;
-		}
+			case 6: scoreboard+=100;
+					break;
+			case 7: scoreboard+=200;
+					break;
+			case 8: scoreboard+=400;
+				    break;
+			case 9: scoreboard+=500;
+					break;
+		}	
 		return tmp;
 	}
 	
