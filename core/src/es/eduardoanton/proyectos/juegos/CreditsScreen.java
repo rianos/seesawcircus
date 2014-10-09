@@ -92,6 +92,9 @@ public class CreditsScreen implements Screen {
 	@Override
 	public void show() {
 		botonhome =game.asset.get("botonhomepe.png");
+		cam.position.y = 300;
+		cam.update();
+		batch.setProjectionMatrix(cam.combined);
 		Gdx.input.setInputProcessor(iproc);
 		Musica.playRandom();
 	}

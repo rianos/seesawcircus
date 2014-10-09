@@ -39,7 +39,7 @@ public class GameWorld {
 	public int regalo;
 	public boolean modechildren = false;
 	public boolean pausedgame = false;
-	public long vidaseach = 25000, muelleseach = 10000,lastvidas = 0, lastmuelles = 0;
+	public long vidaseach, muelleseach,lastvidas = 0, lastmuelles = 0;
 
 
 	GameWorld(SeeSawCircus game){
@@ -94,8 +94,8 @@ public class GameWorld {
 	}
 	
 	public void reset(){
-		vidaseach = 15000;
-		muelleseach = 6000;
+		vidaseach = 25000;
+		muelleseach = 10000;
 		lastvidas = 0;
 		lastmuelles = 0;
 		pausedgame = false;
@@ -242,6 +242,7 @@ public class GameWorld {
 		long rv = (long)(scoreboard / vidaseach);
 		if ( rv > lastvidas ){
 			if ( vidas < 3){
+				bonusS.play();
 				vidas++;
 				lastvidas = rv;
 				timeregalo = delta;
@@ -254,6 +255,7 @@ public class GameWorld {
 		rv =  (long)(scoreboard / muelleseach);
 		if ( rv > lastmuelles ){
 			if (muellec < 3){
+				bonusS.play();
 				muellec++;
 				lastmuelles = rv;
 				timeregalo = delta;
@@ -290,15 +292,15 @@ public class GameWorld {
 		// hueso = 3
 		// velocidad = 4
 		int tmp;
-		if (vidas < 5  && paraguasc < 3){
+		if (vidas < 3  && paraguasc < 3){
 			int array[] = {0,0,0,1,1,1,1,1,2,2,3,4};
 			tmp =  MathUtils.random(0,11);
 			tmp = array[tmp];
-		}else if (vidas < 5 && paraguasc == 3){
+		}else if (vidas < 3 && paraguasc == 3){
 			int array[] =  {0,0,0,2,3,4};
 			tmp =   MathUtils.random(0,5);
 			tmp = array[tmp];
-		}else if (vidas == 5 && paraguasc < 3){
+		}else if (vidas == 3 && paraguasc < 3){
 			int array[] = {1,1,1,1,2,2,3,4};
 			tmp =  MathUtils.random(0,7);
 			tmp = array[tmp];
