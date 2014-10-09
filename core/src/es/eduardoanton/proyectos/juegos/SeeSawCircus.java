@@ -58,6 +58,7 @@ public class SeeSawCircus extends Game {
 		asset.load("trampolin.png", Texture.class);
 		asset.load("nube.png", Texture.class);
 		asset.load("gato.png", Texture.class);
+		asset.load("piedra.png", Texture.class);
 		asset.load("botoninicio.png", Texture.class);
 		asset.load("botoniniciop.png", Texture.class);
 		asset.load("botoncreditos.png", Texture.class);

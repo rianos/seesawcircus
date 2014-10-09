@@ -18,7 +18,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
-	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f};
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f,0f};
 	private GameWorld game;
 	
 	
@@ -51,6 +51,15 @@ public class FilaObjetivos {
 					if (elementos[i] != -1 ){
 						Rectangle r = new Rectangle(posicion.x + (20 + objetowidth)*i,posicion.y,objetowidth,objetoheight);
 						if (p.dimensiones.overlaps(r)){
+							if ( elementos[i] == 22){
+								if ( (posicion.y   < p.posicion.y )) {
+									p.velocidad.y*=-1;							
+								}
+								if ( (posicion.y + objetowidth/2  > p.posicion.y )) {
+									p.velocidad.y=-10;
+								}
+								return;
+							}
 							game.scoreboard+=puntos[elementos[i]];
 							quedan--;
 							if ( (posicion.y   < p.posicion.y ) && p.velocidad.y < 0){
@@ -144,6 +153,8 @@ public class FilaObjetivos {
 		}else{
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,5);
+				this.elementos[3]=22;
+				this.elementos[6]=22;
 			}
 		}
 		this.quedan = 10;
