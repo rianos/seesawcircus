@@ -85,6 +85,7 @@ public class InputProcesadorMain implements InputProcessor{
 			return true;
 		}
 		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible() ){
+		//if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440  ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.creditsscreen);
 			return true;

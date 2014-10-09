@@ -44,6 +44,15 @@ public class SeeSawCircus extends Game {
 		asset.load("creditsidea.png", Texture.class);
 		asset.load("creditsart.png", Texture.class);
 		asset.load("creditsmusic.png", Texture.class);
+		asset.load("creditssound.png", Texture.class);
+		asset.load("creditsbeta.png", Texture.class);
+		asset.load("creditscode.png", Texture.class);
+		asset.load("creditsend.png", Texture.class);
+		asset.load("logolibgdx.png", Texture.class);
+		asset.load("logoart.png", Texture.class);
+		asset.load("infatigables.png", Texture.class);
+		asset.load("logofreesound.png", Texture.class);
+		asset.load("logofreeSFX.png", Texture.class);
 		asset.load("logomusica1.png", Texture.class);
 		asset.load("logomusica2.png", Texture.class);
 		asset.load("trampolin.png", Texture.class);
