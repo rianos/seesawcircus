@@ -38,6 +38,7 @@ public class GameWorld {
 	public float isvelocidad = 1;
 	public int regalo;
 	public boolean modechildren = false;
+	public static boolean modemusic = false;
 	public boolean pausedgame = false;
 	public long vidaseach, muelleseach,lastvidas = 0, lastmuelles = 0;
 
@@ -91,6 +92,7 @@ public class GameWorld {
 		ispremio = false;
 		timeready = 0f;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
+		modemusic =  SeeSawCircus.prefs.getBoolean("modomusica", true);
 	}
 	
 	public void reset(){
@@ -100,6 +102,7 @@ public class GameWorld {
 		lastmuelles = 0;
 		pausedgame = false;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
+		modemusic =  SeeSawCircus.prefs.getBoolean("modomusica", true);
 		muelle = new Vector2(-100,-100);
 		muellefalling = new Vector2(-100,-100);
 		muellec = 3;

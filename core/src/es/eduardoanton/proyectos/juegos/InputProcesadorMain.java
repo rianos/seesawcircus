@@ -84,8 +84,24 @@ public class InputProcesadorMain implements InputProcessor{
 			}
 			return true;
 		}
+		if (touchpos.x > 0 && touchpos.x < 103 && touchpos.y > 490 && touchpos.y < 600 && mscreen.botonmusica.isVisible()){
+			game.gamew.modemusic = !game.gamew.modemusic;
+			MainScreen.clic.play();
+			if ( game.gamew.modemusic){
+				mscreen.botonmusica.setTexture("botonmusicaon.png");
+				SeeSawCircus.prefs.putBoolean("modomusica",true);
+				SeeSawCircus.prefs.flush();
+				mscreen.musica.play();
+			}else{
+				mscreen.botonmusica.setTexture("botonmusicaoff.png");
+				SeeSawCircus.prefs.putBoolean("modomusica",false);
+				SeeSawCircus.prefs.flush();
+				mscreen.musica.stop();
+			}
+			return true;
+		}
+		
 		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible() ){
-		//if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440  ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.creditsscreen);
 			return true;

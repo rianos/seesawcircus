@@ -12,11 +12,13 @@ public class Musica {
 		"Five Card Shuffle.ogg","Friendly Day.ogg","Hyperfun.ogg"};
 	
 	public static void playRandom(){
-		i = MathUtils.random(lista.length - 1);
-		musica = SeeSawCircus.asset.get(lista[i]);
-		musica.setVolume(0.5f);
-		musica.setLooping(false);
-		musica.play();
+		if (GameWorld.modemusic){
+			i = MathUtils.random(lista.length - 1);
+			musica = SeeSawCircus.asset.get(lista[i]);
+			musica.setVolume(0.5f);
+			musica.setLooping(false);
+			musica.play();
+		}
 	}
 	
 	public static void setVolume(float vol){
@@ -40,7 +42,9 @@ public class Musica {
 	}
 
 	public static void stop(){
-		musica.stop();
+		if (musica.isPlaying()){
+			musica.stop();
+		}
 	}
 	
 }

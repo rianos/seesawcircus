@@ -25,13 +25,13 @@ public class MainScreen implements Screen{
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture fondo;
-	private Music musica;
+	public Music musica;
 	public static Sound clic;
 	private InputProcessor iproc;
 	private Stage stage;
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
 	private Actor payaso1,payaso2,globos1,globos2,gato;
-	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos;
+	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos,botonmusica;
 	public BitmapFont marcador;
 	private Texture corona;
 	
@@ -49,6 +49,11 @@ public class MainScreen implements Screen{
 		marcador =game.asset.get("fuente.fnt", BitmapFont.class);
 		marcador.setColor(Color.GRAY);
 	    stage = new Stage(new StretchViewport(SeeSawCircus.screenwidth, SeeSawCircus.screenheight));
+	    if (game.gamew.modemusic){
+	    	botonmusica = new ActorGenerico(17f,505f,"botonmusicaon.png");
+	    }else{
+	    	botonmusica = new ActorGenerico(17f,505f,"botonmusicaoff.png");
+	    }
 	    if (game.gamew.modechildren){
 	    	botonninos = new ActorGenerico(87f,245f,"botonninoson.png");
 	    }else{
@@ -145,6 +150,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(globos1);
 	    stage.addActor(globos2);
 	    stage.addActor(gato);
+	    stage.addActor(botonmusica);
 	    stage.addActor(botonninos);
 	    stage.addActor(botoninicio);
 	    stage.addActor(botoncreditos);
@@ -182,9 +188,11 @@ public class MainScreen implements Screen{
 	public void show() {
 		botoninicio.setTexture("botoninicio.png");
 		botoncreditos.setTexture("botoncreditos.png");
-		this.musica.setVolume(1f);
-		this.musica.setLooping(true);
-		this.musica.play();
+		if ( GameWorld.modemusic){
+			this.musica.setVolume(1f);
+			this.musica.setLooping(true);
+			this.musica.play();
+		}
 		Gdx.input.setInputProcessor(iproc);
 		
 	}
