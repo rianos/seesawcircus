@@ -118,12 +118,12 @@ public class GameWorld {
 		payaso2 = new Payaso(500,300,0,200,PayasoState.FLYING, this, 2);
 		payaso1.setPayasoCompañero(payaso2);
 		payaso2.setPayasoCompañero(payaso1);
+		scoreboard = 0;
 		arrayFilaObjetivos = new FilaObjetivos[4];
 		arrayFilaObjetivos[0] = new FilaObjetivos(0,0,400,-1,this);
 		arrayFilaObjetivos[1] = new FilaObjetivos(1,0,450,1,this);
 		arrayFilaObjetivos[2] = new FilaObjetivos(2,0,500,-1,this);
 		arrayFilaObjetivos[3] = new FilaObjetivos(3,0,550,1,this);
-		scoreboard = 0;
 		timeready = 0f;
 		vidas = 3;
 		paraguasc = 3;

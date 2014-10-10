@@ -86,16 +86,17 @@ public class FilaObjetivos {
 									p.posicion.y = r.y - p.dimensiones.height;
 									switch (elementos[i]){
 										case 22: elementos[i] = 23;
-												 game.piedra1S.play();
+												 game.piedra2S.play();
 												 break;
 										case 23: elementos[i] = 24;
-												 game.piedra1S.play();
+												 game.piedra2S.play();
 												 break;
 										case 24: elementos[i] = 25;
-												 game.piedra1S.play();
+												 game.piedra2S.play();
 												 break;
 										case 25: elementos[i] = -1;
-												 game.piedra2S.play();
+												 game.piedra1S.play();
+												 quedan--;
 												 break;
 									}
 								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) > (r.y + (r.height/2)))){	 	
@@ -215,13 +216,13 @@ public class FilaObjetivos {
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,18);
-				generaPiedras();
 			}
+			generaPiedras();
 		}else{
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,5);
-				generaPiedras();
 			}
+			generaPiedras();
 		}
 		this.quedan = 10;
 	}
@@ -231,14 +232,16 @@ public class FilaObjetivos {
 		int j;
 		if ( this.ID == 2){
 			tmp = (long) (game.scoreboard / 8000);
+			//tmp = (long) (game.scoreboard / 3000);
 		}else{
 			tmp = (long) (game.scoreboard / 3500);
+			//tmp = (long) (game.scoreboard / 1000);
 		}
 		tmp = Math.min(tmp, 10);
 		for ( int i=1; i <= tmp;i++){
 			do{
 				j = MathUtils.random(0,9);
-			}while (elementos[j] != 22);
+			}while (elementos[j] == 22);
 			elementos[j] = 22;
 		}
 	}
