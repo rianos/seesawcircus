@@ -109,7 +109,7 @@ public class IngameScreen implements Screen{
 		explosion[3] = new TextureRegion(game.asset.get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
 		//filaitems = new Texture[4];
-		filaitems = new Texture[23];
+		filaitems = new Texture[26];
 		filaitems[0] = game.asset.get("carameloa.png", Texture.class);
 		filaitems[1] = game.asset.get("caramelov.png", Texture.class);
 		filaitems[2] = game.asset.get("caramelor.png", Texture.class);
@@ -128,6 +128,9 @@ public class IngameScreen implements Screen{
 		filaitems[20] = game.asset.get("regalo.png", Texture.class);
 		filaitems[21] = game.asset.get("regalo2.png", Texture.class);
 		filaitems[22] = game.asset.get("piedra.png", Texture.class);
+		filaitems[23] = game.asset.get("piedra2.png", Texture.class);
+		filaitems[24] = game.asset.get("piedra3.png", Texture.class);
+		filaitems[25] = game.asset.get("piedra4.png", Texture.class);
 		filaitems[8] = game.asset.get("leon.png", Texture.class);
 		filaitems[9] = game.asset.get("caballo.png", Texture.class);
 		filaitems[10] = game.asset.get("oso.png", Texture.class);

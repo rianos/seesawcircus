@@ -18,7 +18,7 @@ public class FilaObjetivos {
 
 	public final static long objetowidth = 75;
 	public final static long objetoheight = 32;
-	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f,0f};
+	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f,0f,0f,0f,0f};
 	private GameWorld game;
 	
 	
@@ -51,12 +51,78 @@ public class FilaObjetivos {
 					if (elementos[i] != -1 ){
 						Rectangle r = new Rectangle(posicion.x + (20 + objetowidth)*i,posicion.y,objetowidth,objetoheight);
 						if (p.dimensiones.overlaps(r)){
-							if ( elementos[i] == 22){
-								if ( (posicion.y   < p.posicion.y )) {
-									p.velocidad.y*=-1;							
-								}
-								if ( (posicion.y + objetowidth/2  > p.posicion.y )) {
-									p.velocidad.y=-10;
+							if ( elementos[i] == 22 || elementos[i] == 23 || elementos[i] == 24 || elementos[i] == 25){
+								if ( p.velocidad.y < 0 && ((p.posicion.y > (r.y + (r.height/2))))){
+									game.piedra3S.play();
+									p.velocidad.y*= -1;
+									p.velocidad.y = Math.max(0,p.velocidad.y - 10);
+									p.posicion.y = r.y + r.height;	
+								}else if ( p.velocidad.y < 0 && ((p.posicion.y < (r.y + (r.height/2))))){ 						
+									 if ( p.posicion.x  > r.x ){
+										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
+											 p.velocidad.x = Math.max(p.velocidad.x,this.velocidad.x);
+										 }else if ( this.velocidad.x > 0 && p.velocidad.x <= 0){
+											 p.velocidad.x = this.velocidad.x;
+										 }else if ( this.velocidad.x <= 0 && p.velocidad.x > 0){
+											 p.velocidad.x= p.velocidad.x;
+										 }else {
+											 p.velocidad.x = 0;
+										 }
+										 p.posicion.x = r.x + r.width;
+									 }else{
+										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
+											 p.velocidad.x =this.velocidad.x;
+										 }else if ( this.velocidad.x > 0 && p.velocidad.x <= 0){
+											 p.velocidad.x = 0;
+										 }else if ( this.velocidad.x <= 0 && p.velocidad.x > 0){
+											 p.velocidad.x = 0;
+										 }else {
+											 p.velocidad.x = Math.min(p.velocidad.x,this.velocidad.x);
+										 }
+										 p.posicion.x = r.x - p.dimensiones.width;
+									 }
+								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) < (r.y + (r.height/2)))){
+									p.velocidad.y = -10;
+									p.posicion.y = r.y - p.dimensiones.height;
+									switch (elementos[i]){
+										case 22: elementos[i] = 23;
+												 game.piedra1S.play();
+												 break;
+										case 23: elementos[i] = 24;
+												 game.piedra1S.play();
+												 break;
+										case 24: elementos[i] = 25;
+												 game.piedra1S.play();
+												 break;
+										case 25: elementos[i] = -1;
+												 game.piedra2S.play();
+												 break;
+									}
+								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) > (r.y + (r.height/2)))){	 	
+									 p.velocidad.y-=100;
+									 if ( p.posicion.x  > r.x ){
+										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
+											 p.velocidad.x = Math.max(p.velocidad.x,this.velocidad.x);
+										 }else if ( this.velocidad.x > 0 && p.velocidad.x <= 0){
+											 p.velocidad.x = this.velocidad.x;
+										 }else if ( this.velocidad.x <= 0 && p.velocidad.x > 0){
+											 p.velocidad.x= p.velocidad.x;
+										 }else {
+											 p.velocidad.x = 0;
+										 }
+										 p.posicion.x = r.x + r.width;
+									 }else{
+										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
+											 p.velocidad.x =this.velocidad.x;
+										 }else if ( this.velocidad.x > 0 && p.velocidad.x <= 0){
+											 p.velocidad.x = 0;
+										 }else if ( this.velocidad.x <= 0 && p.velocidad.x > 0){
+											 p.velocidad.x = 0;
+										 }else {
+											 p.velocidad.x = Math.min(p.velocidad.x,this.velocidad.x);
+										 }
+										 p.posicion.x = r.x - p.dimensiones.width;
+									 }
 								}
 								return;
 							}
@@ -149,14 +215,31 @@ public class FilaObjetivos {
 		}else if ( ID == 2){
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,18);
+				generaPiedras();
 			}
 		}else{
 			for (int i=0;i<10;i++){
 				this.elementos[i]=MathUtils.random(0,5);
-				this.elementos[3]=22;
-				this.elementos[6]=22;
+				generaPiedras();
 			}
 		}
 		this.quedan = 10;
+	}
+	
+	public void generaPiedras(){
+		long tmp=0;
+		int j;
+		if ( this.ID == 2){
+			tmp = (long) (game.scoreboard / 8000);
+		}else{
+			tmp = (long) (game.scoreboard / 3500);
+		}
+		tmp = Math.min(tmp, 10);
+		for ( int i=1; i <= tmp;i++){
+			do{
+				j = MathUtils.random(0,9);
+			}while (elementos[j] != 22);
+			elementos[j] = 22;
+		}
 	}
 }

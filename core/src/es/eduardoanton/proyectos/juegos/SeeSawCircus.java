@@ -59,6 +59,9 @@ public class SeeSawCircus extends Game {
 		asset.load("nube.png", Texture.class);
 		asset.load("gato.png", Texture.class);
 		asset.load("piedra.png", Texture.class);
+		asset.load("piedra2.png", Texture.class);
+		asset.load("piedra3.png", Texture.class);
+		asset.load("piedra4.png", Texture.class);
 		asset.load("botoninicio.png", Texture.class);
 		asset.load("botoniniciop.png", Texture.class);
 		asset.load("botoncreditos.png", Texture.class);
@@ -193,6 +196,10 @@ public class SeeSawCircus extends Game {
 		asset.load("41384__sandyrb__milk-jug-seal-01.ogg", Sound.class);
 		asset.load("trampoline_bounce_lite_01.ogg", Sound.class);
 		asset.load("cartoon_fast_whoosh_good_for_karate_chop_other_fast_movement_or_swipe_001.mp3", Sound.class);
+		asset.load("impact_rock_on_rubble_003.mp3", Sound.class);
+		asset.load("impact_rock_on_rubble_006.mp3", Sound.class);
+		asset.load("wood_stick_hit_log_soft.mp3", Sound.class);
+		
 	}
 }
 		

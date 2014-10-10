@@ -25,7 +25,7 @@ public class GameWorld {
 	public final static int worlheight = 600;
 	public final static int worlwidth = 1024;
 	public Sound boingS,crashS,angelS,hurtS,cryS,mareoS,clanS,succesS,wowS,jump2S,coinS,billeteS,ballonS,gameoverS;
-	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS,jumpiniS,bounS,swapS;
+	public Sound horseS,lionroarS,bearS,elephantS,dogS,focaS,monoS,highscoreS,boingpS,bonusS,jumpiniS,bounS,swapS,piedra1S,piedra2S,piedra3S;
 	public long scoreboard = 0,record = 0,flipsC = 0,caramelosC = 0, globosC=0,animalesC=0,mplataC=0,moroC=0,billeteC=0,fcompletaC=0,regalosC = 0;
 	public short vidas = 5;
 	public short paraguasc = 3;
@@ -89,6 +89,9 @@ public class GameWorld {
 		gameoverS = SeeSawCircus.asset.get("comedy_trumpet_playing_sad_song_wah_wah_wah_wah.mp3", Sound.class);
 		bounS = SeeSawCircus.asset.get("trampoline_bounce_lite_01.ogg", Sound.class);
 		swapS = SeeSawCircus.asset.get("cartoon_fast_whoosh_good_for_karate_chop_other_fast_movement_or_swipe_001.mp3", Sound.class);
+		piedra1S = SeeSawCircus.asset.get("impact_rock_on_rubble_003.mp3", Sound.class);
+		piedra2S = SeeSawCircus.asset.get("impact_rock_on_rubble_006.mp3", Sound.class);
+		piedra3S = SeeSawCircus.asset.get("wood_stick_hit_log_soft.mp3", Sound.class);
 		ispremio = false;
 		timeready = 0f;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);

@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="-434.96824"
-     inkscape:cy="555.20899"
+     inkscape:zoom="0.7"
+     inkscape:cx="-737.91568"
+     inkscape:cy="172.96557"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,7 +34,14 @@
      inkscape:window-height="994"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-1680.8938,1092.985"
+       id="guide3908" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -441,136 +448,140 @@
        inkscape:export-filename="C:\gdx\seesawcircus\android\assets\carameloz.png"
        inkscape:export-xdpi="17"
        inkscape:export-ydpi="17" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       sodipodi:nodetypes="sccsssss"
-       inkscape:connector-curvature="0"
-       id="path3937"
-       d="m 247.43661,878.51442 c 21.79504,-20.07438 93.89342,24.28571 93.89342,24.28571 l -7.85714,41.01525 c 0,0 -60.0839,42.38096 -81.03628,21.42858 -5.95238,-5.95238 22.14286,-10.40731 22.14286,-18.82524 0,-8.41794 -23.15928,-9.98097 -27.14286,-17.39667 -11.42857,-21.27508 18.57143,-15.40731 18.57143,-23.82525 0,-8.41793 -36.66667,-10.01571 -18.57143,-26.68238 z"
-       style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#121212;stroke-width:5;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       transform="matrix(1.2823007,0,0,1.023679,-60.82373,393.38448)"
-       d="m 469.72095,517.48639 a 80.307129,80.307129 0 1 1 -160.61426,0 80.307129,80.307129 0 1 1 160.61426,0 z"
-       sodipodi:ry="80.307129"
-       sodipodi:rx="80.307129"
-       sodipodi:cy="517.48639"
-       sodipodi:cx="389.41382"
-       id="path3939"
-       style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.36408424000000040;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       sodipodi:type="arc" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       sodipodi:nodetypes="sssss"
-       inkscape:connector-curvature="0"
-       id="path3941"
-       d="m 537.58739,894.53255 c 15.93466,73.24593 -38.72499,110.23915 -95.5981,110.23915 -56.87311,0 -77.51343,-19.26357 -94.43125,-44.93773 -24.10613,-36.58307 59.86112,34.47559 114.52592,17.92792 70.04942,-21.20478 65.94005,-127.18878 75.50343,-83.22934 z"
-       style="color:#000000;fill:#610a2f;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#fffcfc;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 443.83792,896.73828 c 0.0704,5.88643 -17.51087,16.92928 -28.84167,16.92928 -11.3308,0 -20.51623,-4.77228 -20.51623,-10.65916 0,-5.88692 8.26427,-9.95636 19.32687,-12.54022 9.27598,-2.16656 29.95977,0.30808 30.03103,6.2701 z"
-       id="path3943"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssss" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#fbf1cb;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 347.81372,888.15764 c 20.54547,-22.91686 23.04507,-27.33354 39.87197,-34.15795 15.32305,-6.21452 39.3781,-14.17053 45.40615,-7.53046 3.54375,3.90354 -19.05687,14.4157 -40.48266,24.70787 -51.67233,24.8215 -57.15219,30.76352 -44.79546,16.98054 z"
-       id="path3945"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssss" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 332.46273,933.21855 1.01016,10.59683 c 0,0 -60.0839,42.38096 -81.03628,21.42858 38.35164,-16.42951 49.44195,-6.13299 80.02612,-32.02541 z"
-       id="path3947"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path3949"
-       d="m 283.37834,934.22514 -8.91973,4.97479 c 0,0 -30.2735,-5.63849 -28.10007,-20.5911 12.6387,6.88572 19.9555,3.78396 37.0198,15.61631 z"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 271.50905,896.59695 -1.84866,9.0154 c 0,0 -27.74812,-10.43671 -25.57469,-25.38932 12.6387,6.88572 10.35905,4.54157 27.42335,16.37392 z"
-       id="path3951"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 332.51924,940.03595 -7.32301,-7.11925 c 0,0 -3.27663,-30.61929 11.67148,-32.82353 -2.97361,14.08217 2.09546,20.20271 -4.34847,39.94278 z"
-       id="path3953"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#121212;stroke-width:5;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 630.77188,872.45351 c -21.79504,-20.07438 -93.89342,24.28571 -93.89342,24.28571 l 7.85714,41.01525 c 0,0 60.0839,42.38096 81.03628,21.42858 5.95238,-5.95238 -22.14286,-10.40731 -22.14286,-18.82524 0,-8.41794 23.15928,-9.98097 27.14286,-17.39667 11.42857,-21.27508 -18.57143,-15.40731 -18.57143,-23.82525 0,-8.41793 36.66667,-10.01571 18.57143,-26.68238 z"
-       id="path3955"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sccsssss" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path3957"
-       d="m 545.74576,927.15764 -1.01016,10.59683 c 0,0 60.0839,42.38096 81.03628,21.42858 -38.35164,-16.42951 -49.44195,-6.13299 -80.02612,-32.02541 z"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 594.83015,928.16423 8.91973,4.97479 c 0,0 30.2735,-5.63849 28.10007,-20.5911 -12.6387,6.88572 -19.9555,3.78396 -37.0198,15.61631 z"
-       id="path3959"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path3961"
-       d="m 606.69944,890.53604 1.84866,9.0154 c 0,0 27.74812,-10.43671 25.57469,-25.38932 -12.6387,6.88572 -10.35905,4.54157 -27.42335,16.37392 z"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       inkscape:export-ydpi="17"
-       inkscape:export-xdpi="17"
-       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path3963"
-       d="m 545.68925,933.97504 7.32301,-7.11925 c 0,0 3.27663,-30.61929 -11.67148,-32.82353 2.97361,14.08217 -2.09546,20.20271 4.34847,39.94278 z"
-       style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <g
+       id="g3832"
+       transform="translate(-37.142857,2.8571428)">
+      <path
+         style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#121212;stroke-width:5;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 247.43661,878.51442 c 21.79504,-20.07438 93.89342,24.28571 93.89342,24.28571 l -7.85714,41.01525 c 0,0 -60.0839,42.38096 -81.03628,21.42858 -5.95238,-5.95238 22.14286,-10.40731 22.14286,-18.82524 0,-8.41794 -23.15928,-9.98097 -27.14286,-17.39667 -11.42857,-21.27508 18.57143,-15.40731 18.57143,-23.82525 0,-8.41793 -36.66667,-10.01571 -18.57143,-26.68238 z"
+         id="path3937"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sccsssss"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.36408424;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3939"
+         sodipodi:cx="389.41382"
+         sodipodi:cy="517.48639"
+         sodipodi:rx="80.307129"
+         sodipodi:ry="80.307129"
+         d="m 469.72095,517.48639 c 0,44.3524 -35.95473,80.30713 -80.30713,80.30713 -44.3524,0 -80.30713,-35.95473 -80.30713,-80.30713 0,-44.3524 35.95473,-80.30713 80.30713,-80.30713 44.3524,0 80.30713,35.95473 80.30713,80.30713 z"
+         transform="matrix(1.2823007,0,0,1.023679,-60.82373,393.38448)"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#610a2f;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 537.58739,894.53255 c 15.93466,73.24593 -38.72499,110.23915 -95.5981,110.23915 -56.87311,0 -77.51343,-19.26357 -94.43125,-44.93773 -24.10613,-36.58307 59.86112,34.47559 114.52592,17.92792 70.04942,-21.20478 65.94005,-127.18878 75.50343,-83.22934 z"
+         id="path3941"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3943"
+         d="m 443.83792,896.73828 c 0.0704,5.88643 -17.51087,16.92928 -28.84167,16.92928 -11.3308,0 -20.51623,-4.77228 -20.51623,-10.65916 0,-5.88692 8.26427,-9.95636 19.32687,-12.54022 9.27598,-2.16656 29.95977,0.30808 30.03103,6.2701 z"
+         style="color:#000000;fill:#fffcfc;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3945"
+         d="m 347.81372,888.15764 c 20.54547,-22.91686 23.04507,-27.33354 39.87197,-34.15795 15.32305,-6.21452 39.3781,-14.17053 45.40615,-7.53046 3.54375,3.90354 -19.05687,14.4157 -40.48266,24.70787 -51.67233,24.8215 -57.15219,30.76352 -44.79546,16.98054 z"
+         style="color:#000000;fill:#fbf1cb;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3947"
+         d="m 332.46273,933.21855 1.01016,10.59683 c 0,0 -60.0839,42.38096 -81.03628,21.42858 38.35164,-16.42951 49.44195,-6.13299 80.02612,-32.02541 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 283.37834,934.22514 -8.91973,4.97479 c 0,0 -30.2735,-5.63849 -28.10007,-20.5911 12.6387,6.88572 19.9555,3.78396 37.0198,15.61631 z"
+         id="path3949"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3951"
+         d="m 271.50905,896.59695 -1.84866,9.0154 c 0,0 -27.74812,-10.43671 -25.57469,-25.38932 12.6387,6.88572 10.35905,4.54157 27.42335,16.37392 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3953"
+         d="m 332.51924,940.03595 -7.32301,-7.11925 c 0,0 -3.27663,-30.61929 11.67148,-32.82353 -2.97361,14.08217 2.09546,20.20271 -4.34847,39.94278 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="sccsssss"
+         inkscape:connector-curvature="0"
+         id="path3955"
+         d="m 630.77188,872.45351 c -21.79504,-20.07438 -93.89342,24.28571 -93.89342,24.28571 l 7.85714,41.01525 c 0,0 60.0839,42.38096 81.03628,21.42858 5.95238,-5.95238 -22.14286,-10.40731 -22.14286,-18.82524 0,-8.41794 23.15928,-9.98097 27.14286,-17.39667 11.42857,-21.27508 -18.57143,-15.40731 -18.57143,-23.82525 0,-8.41793 36.66667,-10.01571 18.57143,-26.68238 z"
+         style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#121212;stroke-width:5;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 545.74576,927.15764 -1.01016,10.59683 c 0,0 60.0839,42.38096 81.03628,21.42858 -38.35164,-16.42951 -49.44195,-6.13299 -80.02612,-32.02541 z"
+         id="path3957"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3959"
+         d="m 594.83015,928.16423 8.91973,4.97479 c 0,0 30.2735,-5.63849 28.10007,-20.5911 -12.6387,6.88572 -19.9555,3.78396 -37.0198,15.61631 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 606.69944,890.53604 1.84866,9.0154 c 0,0 27.74812,-10.43671 25.57469,-25.38932 -12.6387,6.88572 -10.35905,4.54157 -27.42335,16.37392 z"
+         id="path3961"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 545.68925,933.97504 7.32301,-7.11925 c 0,0 3.27663,-30.61929 -11.67148,-32.82353 2.97361,14.08217 -2.09546,20.20271 4.34847,39.94278 z"
+         id="path3963"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+    </g>
     <g
        id="g3890"
        inkscape:export-filename="C:\gdx\seesawcircus\android\assets\filasconpletas.png"
@@ -615,5 +626,547 @@
          id="path3888"
          inkscape:connector-curvature="0" />
     </g>
+    <g
+       id="g3910"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra.png"
+       inkscape:export-xdpi="15.478502"
+       inkscape:export-ydpi="15.478502">
+      <rect
+         ry="86.488419"
+         y="611.9422"
+         x="-890.67767"
+         height="172.97684"
+         width="410.12192"
+         id="rect3045"
+         style="color:#000000;fill:#717171;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:7.25600004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3815"
+         d="m -713.13565,668.58061 c -12.4279,52.23107 -20.5335,16.83843 -56.8134,16.83843 -36.2799,0 -74.5677,39.98494 -74.5677,13.77693 0,-26.20803 18.7581,-70.41534 55.0381,-70.41534 36.2799,0 82.4518,14.12665 76.343,39.79998 z"
+         style="color:#000000;fill:#b2abab;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:transform-center-y="77.444101"
+         inkscape:transform-center-x="25.183177"
+         style="color:#000000;fill:#979797;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -608.50295,688.46335 c 59.0049,-15.96025 32.3637,-18.70675 57.0604,-9.72037 33.4253,12.16238 50.0891,52.14091 23.5065,64.85131 -26.5826,12.71039 -80.5191,20.00616 -98.1142,-7.34945 -17.595,-27.35561 -11.4556,-39.93649 17.5473,-47.78149 z"
+         id="path3819"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         inkscape:transform-center-x="14.689909"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -768.58845,756.43894 c -5.7375,-34.7841 2.1818,-30.74256 36.8917,-36.7064 34.71,-5.96382 69.6266,-20.51041 78.4716,-4.08185 8.8451,16.42852 5.8184,47.22353 -28.8916,53.18739 -34.7099,5.96381 -83.6515,4.69841 -86.4717,-12.39914 z"
+         id="path3823"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3825"
+         d="m -690.46995,681.43128 c -28.1573,-25.39729 -6.6954,-53.70407 28.0146,-59.66793 34.71,-5.9638 74.9528,2.45112 83.7978,18.8797 8.8451,16.42851 12.9201,25.79277 -21.7899,31.75663 -34.71,5.9638 -67.6727,29.1907 -90.0225,9.0316 z"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:transform-center-x="14.689905" />
+      <path
+         sodipodi:nodetypes="sssssss"
+         inkscape:connector-curvature="0"
+         id="rect3827"
+         d="m -813.44685,758.89593 296.495,-2.29616 c 15.245,-0.11805 6.214,-8.55239 6.214,4.59232 0,13.14471 -58.4344,23.72691 -73.6799,23.72691 l -220.152,0 c -15.2456,0 -61.2521,-15.17451 -61.2521,-28.31922 0,-13.14471 37.13,2.41421 52.375,2.29615 z"
+         style="color:#000000;fill:#8b1174;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         style="color:#000000;fill:#fdffb8;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -563.12015,639.57484 -296.4951,2.29614 c -15.2449,0.11806 -6.214,8.5524 -6.214,-4.59231 0,-13.14471 58.4345,-23.72691 73.6801,-23.72691 l 220.152,0 c 15.2454,0 61.2519,15.17451 61.2519,28.31922 0,13.14471 -37.13,-2.41421 -52.3749,-2.29614 z"
+         id="path3830"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssss" />
+    </g>
+    <g
+       id="g3832-1"
+       transform="translate(-1811.7715,-87.414897)">
+      <path
+         style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#121212;stroke-width:5;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 247.43661,878.51442 c 21.79504,-20.07438 93.89342,24.28571 93.89342,24.28571 l -7.85714,41.01525 c 0,0 -60.0839,42.38096 -81.03628,21.42858 -5.95238,-5.95238 22.14286,-10.40731 22.14286,-18.82524 0,-8.41794 -23.15928,-9.98097 -27.14286,-17.39667 -11.42857,-21.27508 18.57143,-15.40731 18.57143,-23.82525 0,-8.41793 -36.66667,-10.01571 -18.57143,-26.68238 z"
+         id="path3937-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sccsssss"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.36408424;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3939-4"
+         sodipodi:cx="389.41382"
+         sodipodi:cy="517.48639"
+         sodipodi:rx="80.307129"
+         sodipodi:ry="80.307129"
+         d="m 469.72095,517.48639 c 0,44.3524 -35.95473,80.30713 -80.30713,80.30713 -44.3524,0 -80.30713,-35.95473 -80.30713,-80.30713 0,-44.3524 35.95473,-80.30713 80.30713,-80.30713 44.3524,0 80.30713,35.95473 80.30713,80.30713 z"
+         transform="matrix(1.2823007,0,0,1.023679,-60.82373,393.38448)"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#610a2f;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 537.58739,894.53255 c 15.93466,73.24593 -38.72499,110.23915 -95.5981,110.23915 -56.87311,0 -77.51343,-19.26357 -94.43125,-44.93773 -24.10613,-36.58307 59.86112,34.47559 114.52592,17.92792 70.04942,-21.20478 65.94005,-127.18878 75.50343,-83.22934 z"
+         id="path3941-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3943-9"
+         d="m 443.83792,896.73828 c 0.0704,5.88643 -17.51087,16.92928 -28.84167,16.92928 -11.3308,0 -20.51623,-4.77228 -20.51623,-10.65916 0,-5.88692 8.26427,-9.95636 19.32687,-12.54022 9.27598,-2.16656 29.95977,0.30808 30.03103,6.2701 z"
+         style="color:#000000;fill:#fffcfc;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3945-4"
+         d="m 347.81372,888.15764 c 20.54547,-22.91686 23.04507,-27.33354 39.87197,-34.15795 15.32305,-6.21452 39.3781,-14.17053 45.40615,-7.53046 3.54375,3.90354 -19.05687,14.4157 -40.48266,24.70787 -51.67233,24.8215 -57.15219,30.76352 -44.79546,16.98054 z"
+         style="color:#000000;fill:#fbf1cb;fill-opacity:0.40106955;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3947-8"
+         d="m 332.46273,933.21855 1.01016,10.59683 c 0,0 -60.0839,42.38096 -81.03628,21.42858 38.35164,-16.42951 49.44195,-6.13299 80.02612,-32.02541 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 283.37834,934.22514 -8.91973,4.97479 c 0,0 -30.2735,-5.63849 -28.10007,-20.5911 12.6387,6.88572 19.9555,3.78396 37.0198,15.61631 z"
+         id="path3949-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3951-2"
+         d="m 271.50905,896.59695 -1.84866,9.0154 c 0,0 -27.74812,-10.43671 -25.57469,-25.38932 12.6387,6.88572 10.35905,4.54157 27.42335,16.37392 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3953-4"
+         d="m 332.51924,940.03595 -7.32301,-7.11925 c 0,0 -3.27663,-30.61929 11.67148,-32.82353 -2.97361,14.08217 2.09546,20.20271 -4.34847,39.94278 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="sccsssss"
+         inkscape:connector-curvature="0"
+         id="path3955-5"
+         d="m 630.77188,872.45351 c -21.79504,-20.07438 -93.89342,24.28571 -93.89342,24.28571 l 7.85714,41.01525 c 0,0 60.0839,42.38096 81.03628,21.42858 5.95238,-5.95238 -22.14286,-10.40731 -22.14286,-18.82524 0,-8.41794 23.15928,-9.98097 27.14286,-17.39667 11.42857,-21.27508 -18.57143,-15.40731 -18.57143,-23.82525 0,-8.41793 36.66667,-10.01571 18.57143,-26.68238 z"
+         style="color:#000000;fill:#64e800;fill-opacity:1;fill-rule:nonzero;stroke:#121212;stroke-width:5;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 545.74576,927.15764 -1.01016,10.59683 c 0,0 60.0839,42.38096 81.03628,21.42858 -38.35164,-16.42951 -49.44195,-6.13299 -80.02612,-32.02541 z"
+         id="path3957-5"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3959-1"
+         d="m 594.83015,928.16423 8.91973,4.97479 c 0,0 30.2735,-5.63849 28.10007,-20.5911 -12.6387,6.88572 -19.9555,3.78396 -37.0198,15.61631 z"
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 606.69944,890.53604 1.84866,9.0154 c 0,0 27.74812,-10.43671 25.57469,-25.38932 -12.6387,6.88572 -10.35905,4.54157 -27.42335,16.37392 z"
+         id="path3961-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+      <path
+         style="color:#000000;fill:#5d186c;fill-opacity:0.4278075;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 545.68925,933.97504 7.32301,-7.11925 c 0,0 3.27663,-30.61929 -11.67148,-32.82353 2.97361,14.08217 -2.09546,20.20271 4.34847,39.94278 z"
+         id="path3963-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\gdx\seesawcircus\android\assets\caramelov.png"
+         inkscape:export-xdpi="17"
+         inkscape:export-ydpi="17" />
+    </g>
+    <g
+       transform="translate(8.8145143,210.4899)"
+       id="g3910-1"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606">
+      <rect
+         ry="86.488419"
+         y="611.9422"
+         x="-890.67767"
+         height="172.97684"
+         width="410.12192"
+         id="rect3045-7"
+         style="color:#000000;fill:#717171;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:7.25600004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3815-4"
+         d="m -713.13565,668.58061 c -12.4279,52.23107 -20.5335,16.83843 -56.8134,16.83843 -36.2799,0 -74.5677,39.98494 -74.5677,13.77693 0,-26.20803 18.7581,-70.41534 55.0381,-70.41534 36.2799,0 82.4518,14.12665 76.343,39.79998 z"
+         style="color:#000000;fill:#b2abab;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:transform-center-y="77.444101"
+         inkscape:transform-center-x="25.183177"
+         style="color:#000000;fill:#979797;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -608.50295,688.46335 c 59.0049,-15.96025 32.3637,-18.70675 57.0604,-9.72037 33.4253,12.16238 50.0891,52.14091 23.5065,64.85131 -26.5826,12.71039 -80.5191,20.00616 -98.1142,-7.34945 -17.595,-27.35561 -11.4556,-39.93649 17.5473,-47.78149 z"
+         id="path3819-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         inkscape:transform-center-x="14.689909"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -768.58845,756.43894 c -5.7375,-34.7841 2.1818,-30.74256 36.8917,-36.7064 34.71,-5.96382 69.6266,-20.51041 78.4716,-4.08185 8.8451,16.42852 5.8184,47.22353 -28.8916,53.18739 -34.7099,5.96381 -83.6515,4.69841 -86.4717,-12.39914 z"
+         id="path3823-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3825-4"
+         d="m -690.46995,681.43128 c -28.1573,-25.39729 -6.6954,-53.70407 28.0146,-59.66793 34.71,-5.9638 74.9528,2.45112 83.7978,18.8797 8.8451,16.42851 12.9201,25.79277 -21.7899,31.75663 -34.71,5.9638 -67.6727,29.1907 -90.0225,9.0316 z"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:transform-center-x="14.689905" />
+      <path
+         sodipodi:nodetypes="sssssss"
+         inkscape:connector-curvature="0"
+         id="rect3827-8"
+         d="m -813.44685,758.89593 296.495,-2.29616 c 15.245,-0.11805 6.214,-8.55239 6.214,4.59232 0,13.14471 -58.4344,23.72691 -73.6799,23.72691 l -220.152,0 c -15.2456,0 -61.2521,-15.17451 -61.2521,-28.31922 0,-13.14471 37.13,2.41421 52.375,2.29615 z"
+         style="color:#000000;fill:#8b1174;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         style="color:#000000;fill:#fdffb8;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -563.12015,639.57484 -296.4951,2.29614 c -15.2449,0.11806 -6.214,8.5524 -6.214,-4.59231 0,-13.14471 58.4345,-23.72691 73.6801,-23.72691 l 220.152,0 c 15.2454,0 61.2519,15.17451 61.2519,28.31922 0,13.14471 -37.13,-2.41421 -52.3749,-2.29614 z"
+         id="path3830-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssss" />
+    </g>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m -796.0002,995.79364 c 22.22336,-56.56854 22.22336,-36.36549 22.22336,-36.36549 l 32.32488,-40.4061 -10.10153,44.44671 z"
+       id="path3231"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -690.94434,996.48693 -4.04061,-45.14 -18.18274,-30.30458 30.30457,20.20305 4.04061,30.30458 z"
+       id="path4001"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -882.87332,923.06266 20.20305,-16.16244 38.3858,26.26396 4.04061,-32.32488 28.28427,-26.26396 -26.26397,0 -16.16244,36.36549 -26.26396,-24.24366 -21.38652,6.06091 z"
+       id="path4003"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4005"
+       d="m -496.6367,968.41738 -7.74038,-18.73784 -46.47927,1.71544 13.84034,-29.49016 -9.89512,-37.30794 22.2081,14.02129 -5.74757,39.37816 35.15081,-6.4785 17.2641,18.06767 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -725.64437,821.36393 -1.03073,20.67716 42.48797,18.92188 -25.40977,20.3855 -7.5399,37.85426 -13.76743,-22.36636 22.49655,-32.8265 -34.41328,-9.65797 -7.54693,-23.82296 z"
+       id="path4007"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-62.629457"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4009"
+       d="m -614.17275,908.92055 -4.04061,-56.56857 -18.18274,-30.30458 30.30457,20.20305 4.04061,30.30458 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -608.11183,997.81397 -4.04061,-40.782 -18.18274,-21.8475 30.30457,14.565 4.04061,21.84749 z"
+       id="path4011"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra3.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <g
+       inkscape:export-ydpi="15.525606"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       id="g4013"
+       transform="translate(22.95665,446.86559)">
+      <rect
+         style="color:#000000;fill:#717171;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:7.25600004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4015"
+         width="410.12192"
+         height="172.97684"
+         x="-890.67767"
+         y="611.9422"
+         ry="86.488419" />
+      <path
+         style="color:#000000;fill:#b2abab;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -713.13565,668.58061 c -12.4279,52.23107 -20.5335,16.83843 -56.8134,16.83843 -36.2799,0 -74.5677,39.98494 -74.5677,13.77693 0,-26.20803 18.7581,-70.41534 55.0381,-70.41534 36.2799,0 82.4518,14.12665 76.343,39.79998 z"
+         id="path4017"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path4019"
+         d="m -608.50295,688.46335 c 59.0049,-15.96025 32.3637,-18.70675 57.0604,-9.72037 33.4253,12.16238 50.0891,52.14091 23.5065,64.85131 -26.5826,12.71039 -80.5191,20.00616 -98.1142,-7.34945 -17.595,-27.35561 -11.4556,-39.93649 17.5473,-47.78149 z"
+         style="color:#000000;fill:#979797;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:transform-center-x="25.183177"
+         inkscape:transform-center-y="77.444101" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path4021"
+         d="m -768.58845,756.43894 c -5.7375,-34.7841 2.1818,-30.74256 36.8917,-36.7064 34.71,-5.96382 69.6266,-20.51041 78.4716,-4.08185 8.8451,16.42852 5.8184,47.22353 -28.8916,53.18739 -34.7099,5.96381 -83.6515,4.69841 -86.4717,-12.39914 z"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:transform-center-x="14.689909" />
+      <path
+         inkscape:transform-center-x="14.689905"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -690.46995,681.43128 c -28.1573,-25.39729 -6.6954,-53.70407 28.0146,-59.66793 34.71,-5.9638 74.9528,2.45112 83.7978,18.8797 8.8451,16.42851 12.9201,25.79277 -21.7899,31.75663 -34.71,5.9638 -67.6727,29.1907 -90.0225,9.0316 z"
+         id="path4023"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         style="color:#000000;fill:#8b1174;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -813.44685,758.89593 296.495,-2.29616 c 15.245,-0.11805 6.214,-8.55239 6.214,4.59232 0,13.14471 -58.4344,23.72691 -73.6799,23.72691 l -220.152,0 c -15.2456,0 -61.2521,-15.17451 -61.2521,-28.31922 0,-13.14471 37.13,2.41421 52.375,2.29615 z"
+         id="path4025"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssss" />
+      <path
+         sodipodi:nodetypes="sssssss"
+         inkscape:connector-curvature="0"
+         id="path4027"
+         d="m -563.12015,639.57484 -296.4951,2.29614 c -15.2449,0.11806 -6.214,8.5524 -6.214,-4.59231 0,-13.14471 58.4345,-23.72691 73.6801,-23.72691 l 220.152,0 c 15.2454,0 61.2519,15.17451 61.2519,28.31922 0,13.14471 -37.13,-2.41421 -52.3749,-2.29614 z"
+         style="color:#000000;fill:#fdffb8;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4029"
+       d="m -781.85806,1232.1693 c 29.36622,-38.7114 32.22336,-27.7941 32.22336,-27.7941 l 22.32488,-48.9775 -10.10153,44.4468 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4031"
+       d="m -676.8022,1232.1483 -4.04061,-44.4257 -18.18274,-30.3046 21.01886,24.4888 4.75489,21.7332 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4033"
+       d="m -868.73118,1159.4384 20.20305,-16.1625 32.67151,21.264 9.7549,-27.3249 28.28427,-26.264 -16.97826,8.5714 -23.30529,37.0798 -29.83539,-22.1007 -22.81509,14.6323 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -481.78027,1210.5074 1.54533,-33.7379 -43.62213,1.7155 0.9832,-20.2045 -9.89512,-37.3079 10.77953,14.7356 5.681,38.6638 35.15081,-6.4785 17.2641,18.0677 z"
+       id="path4035"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:transform-center-x="-62.629457"
+       inkscape:connector-curvature="0"
+       id="path4037"
+       d="m -709.35937,1058.4539 -3.17359,19.9629 42.48797,18.9219 -36.83834,31.8141 3.88867,26.4256 -13.76743,-22.3663 34.63941,-34.2551 -36.55614,-17.5151 -1.83264,-15.2516 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -600.03061,1145.2962 1.67368,-62.9971 -23.89703,-23.876 30.30457,20.203 4.04061,30.3046 z"
+       id="path4039"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4041"
+       d="m -593.96969,1234.1897 -4.04061,-40.782 -18.18274,-21.8475 23.876,16.7079 1.89775,19.7046 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra2.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <g
+       transform="translate(-454.38328,382.85523)"
+       id="g3910-1-5"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606">
+      <rect
+         ry="86.488419"
+         y="611.9422"
+         x="-890.67767"
+         height="172.97684"
+         width="410.12192"
+         id="rect3045-7-2"
+         style="color:#000000;fill:#717171;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:7.25600004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3815-4-7"
+         d="m -713.13565,668.58061 c -12.4279,52.23107 -20.5335,16.83843 -56.8134,16.83843 -36.2799,0 -74.5677,39.98494 -74.5677,13.77693 0,-26.20803 18.7581,-70.41534 55.0381,-70.41534 36.2799,0 82.4518,14.12665 76.343,39.79998 z"
+         style="color:#000000;fill:#b2abab;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:transform-center-y="77.444101"
+         inkscape:transform-center-x="25.183177"
+         style="color:#000000;fill:#979797;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -608.50295,688.46335 c 59.0049,-15.96025 32.3637,-18.70675 57.0604,-9.72037 33.4253,12.16238 50.0891,52.14091 23.5065,64.85131 -26.5826,12.71039 -80.5191,20.00616 -98.1142,-7.34945 -17.595,-27.35561 -11.4556,-39.93649 17.5473,-47.78149 z"
+         id="path3819-0-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         inkscape:transform-center-x="14.689909"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -768.58845,756.43894 c -5.7375,-34.7841 2.1818,-30.74256 36.8917,-36.7064 34.71,-5.96382 69.6266,-20.51041 78.4716,-4.08185 8.8451,16.42852 5.8184,47.22353 -28.8916,53.18739 -34.7099,5.96381 -83.6515,4.69841 -86.4717,-12.39914 z"
+         id="path3823-9-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3825-4-4"
+         d="m -690.46995,681.43128 c -28.1573,-25.39729 -6.6954,-53.70407 28.0146,-59.66793 34.71,-5.9638 74.9528,2.45112 83.7978,18.8797 8.8451,16.42851 12.9201,25.79277 -21.7899,31.75663 -34.71,5.9638 -67.6727,29.1907 -90.0225,9.0316 z"
+         style="color:#000000;fill:#c8bebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.45600009;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:transform-center-x="14.689905" />
+      <path
+         sodipodi:nodetypes="sssssss"
+         inkscape:connector-curvature="0"
+         id="rect3827-8-2"
+         d="m -813.44685,758.89593 296.495,-2.29616 c 15.245,-0.11805 6.214,-8.55239 6.214,4.59232 0,13.14471 -58.4344,23.72691 -73.6799,23.72691 l -220.152,0 c -15.2456,0 -61.2521,-15.17451 -61.2521,-28.31922 0,-13.14471 37.13,2.41421 52.375,2.29615 z"
+         style="color:#000000;fill:#8b1174;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         style="color:#000000;fill:#fdffb8;fill-opacity:0.3475936;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -563.12015,639.57484 -296.4951,2.29614 c -15.2449,0.11806 -6.214,8.5524 -6.214,-4.59231 0,-13.14471 58.4345,-23.72691 73.6801,-23.72691 l 220.152,0 c 15.2454,0 61.2519,15.17451 61.2519,28.31922 0,13.14471 -37.13,-2.41421 -52.3749,-2.29614 z"
+         id="path3830-8-3"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssss" />
+    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1259.198,1168.159 c 40.0805,-45.8543 14.3663,-65.6512 14.3663,-65.6512 l 40.182,-11.1205 8.4698,56.5897 z"
+       id="path3231-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1154.1421,1169.5665 3.8165,-60.14 -26.0399,-16.0189 45.3046,-6.9398 13.3263,58.8761 z"
+       id="path4001-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1346.0711,1095.4279 20.2031,-16.1624 38.3858,26.264 21.1835,-18.7535 53.2842,-43.4068 -68.4068,3.5714 -13.3054,21.3655 -10.5496,-25.6722 -39.2437,19.6324 z"
+       id="path4003-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4005-6"
+       d="m -959.1202,1146.497 -8.45467,-24.4522 -65.76493,15.2869 33.126,-43.0616 -38.4665,-70.165 69.35091,36.1641 -24.319,50.0924 35.15081,-6.4785 17.2641,18.0677 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1188.8422,994.44355 -1.0307,19.96285 76.0594,18.9219 -51.1241,36.8141 -15.397,21.4256 -13.7674,-22.3663 23.2108,-29.2551 -46.5561,-5.3723 3.8816,-31.68 z"
+       id="path4007-8"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-62.629457"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4009-5"
+       d="m -1128.0848,1085.5715 46.6736,-60.8542 -18.1827,-30.30457 30.3046,20.20307 31.1835,36.0188 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1071.3096,1170.1793 -4.0406,-40.782 -18.1828,-21.8475 55.3046,-12.5779 -20.9594,48.9904 z"
+       id="path4011-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\piedra4.png"
+       inkscape:export-xdpi="15.525606"
+       inkscape:export-ydpi="15.525606" />
   </g>
 </svg>

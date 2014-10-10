@@ -60,6 +60,7 @@ public class InputProcesadorMain implements InputProcessor{
 		cam.unproject(touchpos);
 		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
 		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
+		//if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
 			game.gamew.modechildren = false;
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.ingamescreen);

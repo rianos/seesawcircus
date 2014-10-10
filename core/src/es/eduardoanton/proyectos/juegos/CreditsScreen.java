@@ -129,7 +129,10 @@ public class CreditsScreen implements Screen {
 		informe.draw(batch,"Trampoline Bounce lite 1",512 - (informe.getBounds("Trampoline Bounce lite 1").width/2), i - 40*15);
 		informe.draw(batch,"Animal Chimpanzee Chimp Screams",512 - (informe.getBounds("Animal Chimpanzee Chimp Screams").width/2), i - 40*16);
 		informe.draw(batch,"Trampoline Bounce Lite 1",512 - (informe.getBounds("Trampoline Bounce Lite 1").width/2), i - 40*17);
-		i = i - 40*17 - 280;
+		informe.draw(batch,"Wood Stick hit long soft",512 - (informe.getBounds("Wood Stick hit long soft").width/2), i - 40*18);
+		informe.draw(batch,"Impact Rock on rubble 6",512 - (informe.getBounds("Impact Rock on rubble 6").width/2), i - 40*19);
+		informe.draw(batch,"Impact Rock on rubble 3",512 - (informe.getBounds("Impact Rock on rubble 3").width/2), i - 40*20);
+		i = i - 40*20 - 280;
 		batch.draw(beta, 512 - beta.getWidth()/2, i);
 		marcador.draw(batch, "PABLO ANTON SANTA-MARIA",512 - (marcador.getBounds("PABLO ANTON SANTA-MARIA").width/2), i - 50);
 		marcador.draw(batch, "DIEGO CANCELA CARO",512 - (marcador.getBounds("DIEGO CANCELA CARO").width/2), i - 50*2);
@@ -165,8 +168,8 @@ public class CreditsScreen implements Screen {
 
 	public void update (float delta){
 		cam.position.y-= delta*80;
-		if (cam.position.y < - 6600){
-			cam.position.y = - 6600;
+		if (cam.position.y < - 6720){
+			cam.position.y = - 6720;
 		}
 		cam.update();
 		batch.setProjectionMatrix(cam.combined);
