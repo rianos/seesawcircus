@@ -20,10 +20,11 @@ public class FilaObjetivos {
 	public final static long objetoheight = 32;
 	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f,0f,0f,0f,0f};
 	private GameWorld game;
-	
+	private float vel;
 	
 	public FilaObjetivos(int id, float x, float y, float vel,GameWorld gam){
 		this.ID = id;
+		this.vel = vel;
 		posicion = new Vector2(x,y);
 		velocidad = new Vector2(MathUtils.random(150,320)*vel,0);
 		elementos = new int[10];
@@ -54,8 +55,8 @@ public class FilaObjetivos {
 							if ( elementos[i] == 22 || elementos[i] == 23 || elementos[i] == 24 || elementos[i] == 25){
 								if ( p.velocidad.y < 0 && ((p.posicion.y > (r.y + (r.height/2))))){
 									game.piedra3S.play();
-									p.velocidad.y*= -1;
-									p.velocidad.y = Math.max(0,p.velocidad.y - 10);
+									p.velocidad.y*= -0.9;
+									//p.velocidad.y = Math.max(0,p.velocidad.y - 20);
 									p.posicion.y = r.y + r.height;	
 								}else if ( p.velocidad.y < 0 && ((p.posicion.y < (r.y + (r.height/2))))){ 						
 									 if ( p.posicion.x  > r.x ){
@@ -68,7 +69,9 @@ public class FilaObjetivos {
 										 }else {
 											 p.velocidad.x = 0;
 										 }
-										 p.posicion.x = r.x + r.width;
+										 p.posicion.x = r.x + r.width + 5;
+										 p.velocidad.y = 250;
+										 game.piedra3S.play();
 									 }else{
 										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
 											 p.velocidad.x =this.velocidad.x;
@@ -79,9 +82,11 @@ public class FilaObjetivos {
 										 }else {
 											 p.velocidad.x = Math.min(p.velocidad.x,this.velocidad.x);
 										 }
-										 p.posicion.x = r.x - p.dimensiones.width;
+										 p.posicion.x = r.x - p.dimensiones.width - 5;
+										 p.velocidad.y = 250;
+										 game.piedra3S.play();
 									 }
-								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) < (r.y + (r.height/2)))){
+								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) < (r.y + (r.height/1)))){
 									p.velocidad.y = -10;
 									p.posicion.y = r.y - p.dimensiones.height;
 									switch (elementos[i]){
@@ -99,7 +104,7 @@ public class FilaObjetivos {
 												 quedan--;
 												 break;
 									}
-								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) > (r.y + (r.height/2)))){	 	
+								}else if (  p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) > (r.y + (r.height/2)))){	 	
 									 p.velocidad.y-=100;
 									 if ( p.posicion.x  > r.x ){
 										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
@@ -111,7 +116,9 @@ public class FilaObjetivos {
 										 }else {
 											 p.velocidad.x = 0;
 										 }
-										 p.posicion.x = r.x + r.width;
+										 p.posicion.x = r.x + r.width + 5;
+										 p.velocidad.y = 0;
+										 game.piedra3S.play();
 									 }else{
 										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
 											 p.velocidad.x =this.velocidad.x;
@@ -122,7 +129,9 @@ public class FilaObjetivos {
 										 }else {
 											 p.velocidad.x = Math.min(p.velocidad.x,this.velocidad.x);
 										 }
-										 p.posicion.x = r.x - p.dimensiones.width;
+										 p.posicion.x = r.x - p.dimensiones.width - 5;
+										 p.velocidad.y = 0;
+										 game.piedra3S.play();
 									 }
 								}
 								return;
@@ -235,8 +244,9 @@ public class FilaObjetivos {
 			//tmp = (long) (game.scoreboard / 3000);
 		}else{
 			tmp = (long) (game.scoreboard / 3500);
-			//tmp = (long) (game.scoreboard / 1000);
+			//tmp = (long) (game.scoreboard / 500);
 		}
+		//tmp=3;
 		tmp = Math.min(tmp, 10);
 		for ( int i=1; i <= tmp;i++){
 			do{
@@ -244,5 +254,8 @@ public class FilaObjetivos {
 			}while (elementos[j] == 22);
 			elementos[j] = 22;
 		}
+		//if ( tmp > 0){
+		//	this.velocidad.x = MathUtils.random(50,150)*this.vel;
+		//}
 	}
 }
