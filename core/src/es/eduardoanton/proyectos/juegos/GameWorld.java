@@ -476,7 +476,7 @@ public class GameWorld {
 	}
 	
 	public Payaso  getPayasoFlying(){
-		if (payaso1.state == PayasoState.FLYING){
+		if (payaso1.state == PayasoState.FLYING || payaso1.state == PayasoState.AGARRADO ){
 			return payaso1;
 		}else{
 			return payaso2;
@@ -484,7 +484,7 @@ public class GameWorld {
 	}
 	
 	public Payaso  notgetPayasoFlying(){
-		if (payaso1.state == PayasoState.FLYING){
+		if (payaso1.state == PayasoState.FLYING || payaso1.state == PayasoState.AGARRADO){
 			return payaso2;
 		}else{
 			return payaso1;

@@ -12,7 +12,7 @@ public class Payaso {
 	public Vector2 aceleracion;
 	public Rectangle dimensiones;
 	private GameWorld game;
-	public enum PayasoState { STANDBYL, STANDBYR, FLYING, JUMPING,MESSDEATH,MESSCRASH, MESSCRY };
+	public enum PayasoState { STANDBYL, STANDBYR, FLYING, JUMPING,MESSDEATH,MESSCRASH, MESSCRY, AGARRADO };
 	public PayasoState state,oldstate;
 	public int PayasoID;
 	public Payaso pc; 
@@ -20,6 +20,7 @@ public class Payaso {
 	private float time= 0f;
 	private boolean angelSplayed = false;
 	private long tempninossalto;
+	public int pfila;
 	
 	Payaso (int x, int y, int vx, int vy, PayasoState s, GameWorld game,int id){
 		PayasoID = id;
@@ -59,6 +60,31 @@ public class Payaso {
 				game.paraguas.y = -100;
 			}
 		}
+		
+		if ( state == PayasoState.AGARRADO){
+			if ( SeeSawCircus.gamew.arrayFilaObjetivos[pfila].velocidad.x != velocidad.x){
+				state = PayasoState.FLYING;
+				velocidad.x = 0;
+				velocidad.y = 0;
+				posicion.y = SeeSawCircus.gamew.arrayFilaObjetivos[pfila].posicion.y - 60;
+			}
+			if (posicion.x <= 0 ){
+				posicion.x = 1;
+				state = PayasoState.FLYING;
+				velocidad.x = 0;
+				velocidad.y = 0;
+				posicion.y = SeeSawCircus.gamew.arrayFilaObjetivos[pfila].posicion.y - 60;
+			}else if ( posicion.x >= SeeSawCircus.screenwidth - dimensiones.width){
+				posicion.x = SeeSawCircus.screenwidth - dimensiones.width - 1;
+				state= PayasoState.FLYING;
+				velocidad.x = 0;
+				velocidad.y = 0;
+				posicion.y = SeeSawCircus.gamew.arrayFilaObjetivos[pfila].posicion.y - 60;
+			}else{
+				posicion.x+= velocidad.x*delta;
+			}
+		}
+		
 		if ( state == PayasoState.FLYING && game.gamestate == GameState.READY){
 			posicion.y-=100*delta;
 			if ( posicion.y <= 300){

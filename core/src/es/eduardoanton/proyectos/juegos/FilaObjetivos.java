@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 
 import es.eduardoanton.proyectos.juegos.GameWorld.GameState;
+import es.eduardoanton.proyectos.juegos.Payaso.PayasoState;
 
 public class FilaObjetivos {
 	public Vector2 posicion;
@@ -53,7 +54,6 @@ public class FilaObjetivos {
 								if ( p.velocidad.y < 0 && ((p.posicion.y > (r.y + (r.height/2))))){
 									game.piedra3S.play();
 									p.velocidad.y*= -0.9;
-									//p.velocidad.y = Math.max(0,p.velocidad.y - 20);
 									p.posicion.y = r.y + r.height;	
 								}else if ( p.velocidad.y < 0 && ((p.posicion.y < (r.y + (r.height/2))))){ 						
 									 if ( p.posicion.x  > r.x ){
@@ -69,6 +69,10 @@ public class FilaObjetivos {
 										 p.posicion.x = r.x + r.width + 5;
 										 p.velocidad.y = 250;
 										 game.piedra3S.play();
+										 p.state = PayasoState.AGARRADO;
+										 p.posicion.y = posicion.y;
+										 p.velocidad.x = velocidad.x;
+										 p.pfila = ID;
 									 }else{
 										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
 											 p.velocidad.x =this.velocidad.x;
@@ -82,6 +86,10 @@ public class FilaObjetivos {
 										 p.posicion.x = r.x - p.dimensiones.width - 5;
 										 p.velocidad.y = 250;
 										 game.piedra3S.play();
+										 p.state = PayasoState.AGARRADO;
+										 p.posicion.y = posicion.y;
+										 p.velocidad.x = velocidad.x;
+										 p.pfila = ID;
 									 }
 								}else if (p.velocidad.y > 0 && ((p.posicion.y + p.dimensiones.height) < (r.y + (r.height/1)))){
 									p.velocidad.y = -10;
@@ -116,6 +124,10 @@ public class FilaObjetivos {
 										 p.posicion.x = r.x + r.width + 5;
 										 p.velocidad.y = 0;
 										 game.piedra3S.play();
+										 p.state = PayasoState.AGARRADO;
+										 p.posicion.y = posicion.y;
+										 p.velocidad.x = velocidad.x;
+										 p.pfila = ID;
 									 }else{
 										 if( this.velocidad.x > 0 && p.velocidad.x > 0){
 											 p.velocidad.x =this.velocidad.x;
@@ -129,6 +141,10 @@ public class FilaObjetivos {
 										 p.posicion.x = r.x - p.dimensiones.width - 5;
 										 p.velocidad.y = 0;
 										 game.piedra3S.play();
+										 p.state = PayasoState.AGARRADO;
+										 p.posicion.y = posicion.y;
+										 p.velocidad.x = velocidad.x;
+										 p.pfila = ID;
 									 }
 								}
 								return;
@@ -236,12 +252,13 @@ public class FilaObjetivos {
 	public void generaPiedras(){
 		long tmp=0;
 		int j;
-		if ( this.ID == 4){
+		if ( this.ID == 0){
 			tmp = (long) (game.scoreboard / 8000);		
 		}else if (this.ID  == 2){
-			tmp = (long) (game.scoreboard / 3500);
+			tmp = (long) (game.scoreboard / 100);
 		}
-		tmp = Math.min(tmp, 10);
+		//tmp = Math.min(tmp, 10);
+		tmp = 3;
 		for ( int i=1; i <= tmp;i++){
 			do{
 				j = MathUtils.random(0,9);
