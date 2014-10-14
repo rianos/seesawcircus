@@ -1,7 +1,6 @@
 package es.eduardoanton.proyectos.juegos;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.MathUtils;
@@ -10,11 +9,9 @@ import com.badlogic.gdx.math.Vector3;
 public class InputProcesadorMain implements InputProcessor{
 	
 	private OrthographicCamera cam;
-	private SeeSawCircus game;
 	private MainScreen mscreen;
-	public InputProcesadorMain(OrthographicCamera cam, SeeSawCircus game, MainScreen mscreen){
+	public InputProcesadorMain(OrthographicCamera cam, MainScreen mscreen){
 		this.cam = cam;
-		this.game = game;
 		this.mscreen = mscreen;
 	}
 
@@ -60,10 +57,9 @@ public class InputProcesadorMain implements InputProcessor{
 		cam.unproject(touchpos);
 		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
 		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
-		//if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 ){
-			game.gamew.modechildren = false;
+			SeeSawCircus.gamew.modechildren = false;
 			MainScreen.clic.play();
-			this.game.setScreen(SeeSawCircus.ingamescreen);
+			mscreen.game.setScreen(SeeSawCircus.ingamescreen);
 			return true;
 		}
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 480 && touchpos.y < 600 ){
@@ -72,9 +68,9 @@ public class InputProcesadorMain implements InputProcessor{
 		}
 		
 		if (touchpos.x > 55 && touchpos.x < 267 && touchpos.y > 227 && touchpos.y < 421 && mscreen.botonninos.isVisible()){
-			game.gamew.modechildren = !game.gamew.modechildren;
+			SeeSawCircus.gamew.modechildren = !SeeSawCircus.gamew.modechildren;
 			MainScreen.clic.play();
-			if ( game.gamew.modechildren){
+			if ( SeeSawCircus.gamew.modechildren){
 				mscreen.botonninos.setTexture("botonninoson.png");
 				SeeSawCircus.prefs.putBoolean("modoninos",true);
 				SeeSawCircus.prefs.flush();
@@ -86,9 +82,9 @@ public class InputProcesadorMain implements InputProcessor{
 			return true;
 		}
 		if (touchpos.x > 0 && touchpos.x < 103 && touchpos.y > 490 && touchpos.y < 600 && mscreen.botonmusica.isVisible()){
-			game.gamew.modemusic = !game.gamew.modemusic;
+			GameWorld.modemusic = !GameWorld.modemusic;
 			MainScreen.clic.play();
-			if ( game.gamew.modemusic){
+			if ( GameWorld.modemusic){
 				mscreen.botonmusica.setTexture("botonmusicaon.png");
 				SeeSawCircus.prefs.putBoolean("modomusica",true);
 				SeeSawCircus.prefs.flush();
@@ -104,7 +100,7 @@ public class InputProcesadorMain implements InputProcessor{
 		
 		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible() ){
 			MainScreen.clic.play();
-			this.game.setScreen(SeeSawCircus.creditsscreen);
+			mscreen.game.setScreen(SeeSawCircus.creditsscreen);
 			return true;
 		}
 		playRandomSound();

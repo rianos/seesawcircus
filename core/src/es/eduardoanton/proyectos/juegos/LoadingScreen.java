@@ -15,7 +15,6 @@ public class LoadingScreen implements Screen{
 	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture loading;
 	private BitmapFont font;
 	private Texture emptyT,circo;
 	private NinePatch empty;
@@ -40,16 +39,16 @@ public class LoadingScreen implements Screen{
 	
 	@Override
 	public void render(float delta) {
-		if (game.asset.update()){
+		if (SeeSawCircus.asset.update()){
 			game.mainscreen();
 		}else{
 			Gdx.gl.glClearColor(0.12f,0.22f ,0.22f, 1);
 			Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 			batch.begin();
 			batch.draw(circo, 200, 150);
-			empty.draw(batch, 200, 70, SeeSawCircus.screenwidth -400, 30);
-			full.draw(batch, 200, 70, game.asset.getProgress()*(SeeSawCircus.screenwidth - 400) + 1, 30);
-			font.drawMultiLine(batch,"Cargando... " + (int)(game.asset.getProgress()*100)+"% loaded",500,92,0, BitmapFont.HAlignment.CENTER);
+			empty.draw(batch, 200, 70, SeeSawCircus.screenwidth - 400, 30);
+			full.draw(batch, 200, 70, SeeSawCircus.asset.getProgress()*(SeeSawCircus.screenwidth - 400) + 1, 30);
+			font.drawMultiLine(batch,"Cargando... " + (int)(SeeSawCircus.asset.getProgress()*100)+"% loaded",500,92,0, BitmapFont.HAlignment.CENTER);
 			batch.end();
 		}		
 	}
@@ -90,5 +89,6 @@ public class LoadingScreen implements Screen{
 		this.fullT.dispose();
 		this.font.dispose();
 		this.circo.dispose();
+		this.batch.dispose();
 	}
 }

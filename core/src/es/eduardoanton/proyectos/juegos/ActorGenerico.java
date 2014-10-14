@@ -7,12 +7,10 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 public class ActorGenerico extends Actor {
 	Texture texture;
 
-	
 	public ActorGenerico(float x, float y, String textura){
 		texture = SeeSawCircus.asset.get(textura, Texture.class );
 		setX(x);
 		setY(y);
-	
 	}
 	
 	public void draw(Batch b, float alpha){

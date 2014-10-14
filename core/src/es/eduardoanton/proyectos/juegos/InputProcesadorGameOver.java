@@ -12,7 +12,6 @@ public class InputProcesadorGameOver implements InputProcessor{
 	public InputProcesadorGameOver(OrthographicCamera cam, SeeSawCircus game){
 		this.cam = cam;
 		this.game = game;
-		
 	}
 
 	@Override
@@ -56,7 +55,6 @@ public class InputProcesadorGameOver implements InputProcessor{
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
-		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
 		if (touchpos.x > 512 && touchpos.x < 720 && touchpos.y > 00 && touchpos.y < 220 ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.ingamescreen);

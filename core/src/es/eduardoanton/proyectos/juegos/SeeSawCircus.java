@@ -24,8 +24,6 @@ public class SeeSawCircus extends Game {
 	public void create() {
 		loadassets();
 		prefs = Gdx.app.getPreferences("SEESAWCIRCUS");
-		//prefs.putLong("record", 1000);
-		//prefs.flush();
 		loadingscreen = new LoadingScreen(this);
 		this.setScreen(loadingscreen);
 	}
@@ -37,6 +35,12 @@ public class SeeSawCircus extends Game {
 		gameoverscreen = new GameOverScreen(this);
 		creditsscreen = new CreditsScreen(this);
 		this.setScreen(mainscreen);
+	}
+	
+	@Override
+	public void dispose () {
+		super.dispose();
+		asset.dispose();
 	}
 	
 	private void loadassets(){
@@ -199,7 +203,6 @@ public class SeeSawCircus extends Game {
 		asset.load("impact_rock_on_rubble_003.mp3", Sound.class);
 		asset.load("impact_rock_on_rubble_006.mp3", Sound.class);
 		asset.load("wood_stick_hit_log_soft.mp3", Sound.class);
-		
 	}
 }
 		

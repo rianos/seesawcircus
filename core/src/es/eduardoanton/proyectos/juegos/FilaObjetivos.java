@@ -20,11 +20,9 @@ public class FilaObjetivos {
 	public final static long objetoheight = 32;
 	public float puntos[] = {10f,10f,10f,10f,20f,20f,20f,20f,25f,25f,25f,25f,25f,25f,25f,30f,30f,40f,40f,50f,0f,0f,0f,0f,0f,0f};
 	private GameWorld game;
-	private float vel;
-	
+
 	public FilaObjetivos(int id, float x, float y, float vel,GameWorld gam){
 		this.ID = id;
-		this.vel = vel;
 		posicion = new Vector2(x,y);
 		velocidad = new Vector2(MathUtils.random(150,320)*vel,0);
 		elementos = new int[10];
@@ -33,8 +31,7 @@ public class FilaObjetivos {
 	}
 	
 	public void update (float delta){
-		posicion.add(velocidad.cpy().scl(delta));
-		
+		posicion.add(velocidad.cpy().scl(delta));	
 		if (posicion.x < limitexI){
 			velocidad.x*=-1;
 			posicion.x = limitexI + 2;
@@ -239,14 +236,11 @@ public class FilaObjetivos {
 	public void generaPiedras(){
 		long tmp=0;
 		int j;
-		if ( this.ID == 2){
-			tmp = (long) (game.scoreboard / 8000);
-			//tmp = (long) (game.scoreboard / 3000);
-		}else{
+		if ( this.ID == 4){
+			tmp = (long) (game.scoreboard / 8000);		
+		}else if (this.ID  == 2){
 			tmp = (long) (game.scoreboard / 3500);
-			//tmp = (long) (game.scoreboard / 500);
 		}
-		//tmp=3;
 		tmp = Math.min(tmp, 10);
 		for ( int i=1; i <= tmp;i++){
 			do{
@@ -254,8 +248,5 @@ public class FilaObjetivos {
 			}while (elementos[j] == 22);
 			elementos[j] = 22;
 		}
-		//if ( tmp > 0){
-		//	this.velocidad.x = MathUtils.random(50,150)*this.vel;
-		//}
 	}
 }

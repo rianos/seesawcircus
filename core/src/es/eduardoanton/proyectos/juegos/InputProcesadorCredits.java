@@ -1,25 +1,21 @@
 package es.eduardoanton.proyectos.juegos;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector3;
 
 public class InputProcesadorCredits implements InputProcessor {
 
-	
 	private OrthographicCamera cam;
-	private SeeSawCircus game;
 	private CreditsScreen cscreen;
-	public InputProcesadorCredits(OrthographicCamera cam, SeeSawCircus game, CreditsScreen cscreen){
+	
+	public InputProcesadorCredits(OrthographicCamera cam, CreditsScreen cscreen){
 		this.cam = cam;
-		this.game = game;
 		this.cscreen = cscreen;
 	}
 	
 	@Override
 	public boolean keyDown(int keycode) {
-		
 		return false;
 	}
 
@@ -41,7 +37,7 @@ public class InputProcesadorCredits implements InputProcessor {
 		cam.unproject(touchpos);
 		touchpos.y = touchpos.y - cam.position.y + 300;
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 470 && touchpos.y < 600 ){
-			cscreen.botonhome = game.asset.get("botonhomepep.png");
+			CreditsScreen.botonhome = SeeSawCircus.asset.get("botonhomepep.png");
 			return true;
 		}
 		return false;
@@ -54,7 +50,7 @@ public class InputProcesadorCredits implements InputProcessor {
 		touchpos.y = touchpos.y - cam.position.y + 300;
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 470 && touchpos.y < 600 ){
 			MainScreen.clic.play();
-			this.game.setScreen(SeeSawCircus.mainscreen);
+			cscreen.game.setScreen(SeeSawCircus.mainscreen);
 			return true;
 		}
 		return false;

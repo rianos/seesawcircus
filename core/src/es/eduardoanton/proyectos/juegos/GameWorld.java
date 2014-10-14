@@ -99,8 +99,10 @@ public class GameWorld {
 	}
 	
 	public void reset(){
-		vidaseach = 25000;
-		muelleseach = 10000;
+		//vidaseach = 25000;
+		//muelleseach = 10000;
+		vidaseach = 15000;
+		muelleseach = 8000;
 		lastvidas = 0;
 		lastmuelles = 0;
 		pausedgame = false;

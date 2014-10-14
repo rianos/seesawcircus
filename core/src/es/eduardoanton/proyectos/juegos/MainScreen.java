@@ -11,20 +11,16 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.actions.Actions;
-import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
 public class MainScreen implements Screen{
-	private SeeSawCircus game;
+	public SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture fondo;
 	public Music musica;
 	public static Sound clic;
 	private InputProcessor iproc;
@@ -45,8 +41,8 @@ public class MainScreen implements Screen{
 		corona = SeeSawCircus.asset.get("recordp.png");
 		musica = SeeSawCircus.asset.get("Circus Dilemma.ogg");
 		clic = SeeSawCircus.asset.get("app_game_interactive_alert_tone_015.mp3");
-		iproc = new InputProcesadorMain(cam,game,this);
-		marcador =game.asset.get("fuente.fnt", BitmapFont.class);
+		iproc = new InputProcesadorMain(cam,this);
+		marcador =SeeSawCircus.asset.get("fuente.fnt", BitmapFont.class);
 		marcador.setColor(Color.GRAY);
 	    stage = new Stage(new StretchViewport(SeeSawCircus.screenwidth, SeeSawCircus.screenheight));
 	    if (game.gamew.modemusic){
@@ -74,27 +70,23 @@ public class MainScreen implements Screen{
 	              moveTo(0, 400, 10)
 	              )));
 	    nube2.addAction(forever(sequence(
-	              moveTo(0, 300, 10),
+	              moveTo(0, 300, 8),
 	              moveTo(1024, 300, 8)
 	              ))); 
 		circo = new ActorGenerico(220f,600f,"circo.png");
 		circo.addAction(sequence(delay(4f),moveTo(220f,80f,0.5f),
 				run(new Runnable(){
-
 					@Override
 					public void run() {
 						Sound s = SeeSawCircus.asset.get("box_trash_impact_03.mp3");
 						s.play();
-						
 					}}),
 				moveTo(220f,100f,0.2f),moveTo(220f,80f,0.1f),
 				run(new Runnable(){
-
 					@Override
 					public void run() {
 						Sound s = SeeSawCircus.asset.get("box_trash_impact_03.mp3");
 						s.play();
-						
 					}})
 				));
 		letrero = new ActorGenerico(50,900,"letrero.png");
@@ -123,12 +115,10 @@ public class MainScreen implements Screen{
 		gato.addAction(sequence(visible(false),delay(6),visible(true),
 				delay(2),moveTo(512,240,0.3f),moveTo(700,240,1.5f),moveTo(500,360,0.1f),
 				run(new Runnable(){
-
 					@Override
 					public void run() {
 						Sound s = SeeSawCircus.asset.get("cat_meow_human_voice_3.mp3");
 						s.play();
-						
 					}})
 				));
 		botoninicio = new ActorGenerico(430,40,"botoninicio.png");
@@ -173,10 +163,10 @@ public class MainScreen implements Screen{
 				marcador.draw(batch, "" + SeeSawCircus.prefs.getLong("record",0), 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2),45);
 				batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,5);
 			}
-			
 			batch.end();
 		}
 	}
+
 
 	@Override
 	public void resize(int width, int height) {
@@ -194,7 +184,6 @@ public class MainScreen implements Screen{
 			this.musica.play();
 		}
 		Gdx.input.setInputProcessor(iproc);
-		
 	}
 
 	@Override
@@ -217,8 +206,7 @@ public class MainScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		batch.dispose();
 	}
 
 }

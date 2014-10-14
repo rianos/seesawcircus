@@ -320,7 +320,7 @@ public class IngameScreen implements Screen{
 				if ( gamew.timeregalo < 4f && gamew.gamestate == GameState.RUNNING){
 					gamew.timeregalo+=delta;
 					tmp = batch.getColor();
-					tmp.a = 0.8f;
+					tmp.a = 0.65f;
 					batch.setColor(tmp);
 					batch.draw(premio[gamew.regalo], (SeeSawCircus.screenwidth/2) - (premio[gamew.regalo].getRegionWidth()/2), 200);
 					informe.setColor(Color.YELLOW);

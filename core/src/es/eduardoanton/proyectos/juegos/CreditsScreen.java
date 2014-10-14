@@ -12,10 +12,10 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class CreditsScreen implements Screen {
-	private SeeSawCircus game;
+	public SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
-	private Texture circo,idea,art,music,sound,beta,code,end,infa,musiclogo1,musiclogo2,soundlogo1,soundlogo2,endlogo1,endlogo2;
+	private Texture idea,art,music,sound,beta,code,end,infa,musiclogo1,musiclogo2,soundlogo1,soundlogo2,endlogo1,endlogo2;
 	public static Texture botonhome;
 	public BitmapFont marcador, informe;
 	public InputProcessor iproc;
@@ -26,10 +26,9 @@ public class CreditsScreen implements Screen {
 		cam.setToOrtho(false, SeeSawCircus.screenwidth,SeeSawCircus.screenheight);
 		cam.update();
 		batch = new SpriteBatch();
-		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
-		informe =game.asset.get("fuente.fnt", BitmapFont.class);
+		marcador =SeeSawCircus.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
+		informe =SeeSawCircus.asset.get("fuente.fnt", BitmapFont.class);
 		batch.setProjectionMatrix(cam.combined);
-		circo = SeeSawCircus.asset.get("circo.png");
 		idea = SeeSawCircus.asset.get("creditsidea.png");
 		art = SeeSawCircus.asset.get("creditsart.png");
 		music = SeeSawCircus.asset.get("creditsmusic.png");
@@ -45,7 +44,7 @@ public class CreditsScreen implements Screen {
 		endlogo1 = SeeSawCircus.asset.get("logolibgdx.png");
 		endlogo2 = SeeSawCircus.asset.get("logoart.png");
 		botonhome = SeeSawCircus.asset.get("botonhomepe.png");
-		iproc = new InputProcesadorCredits(cam,game,this);
+		iproc = new InputProcesadorCredits(cam,this);
 	}
 	@Override
 	public void render(float delta) {
@@ -182,7 +181,7 @@ public class CreditsScreen implements Screen {
 
 	@Override
 	public void show() {
-		botonhome =game.asset.get("botonhomepe.png");
+		botonhome =SeeSawCircus.asset.get("botonhomepe.png");
 		cam.position.y = 300;
 		cam.update();
 		batch.setProjectionMatrix(cam.combined);
@@ -209,8 +208,7 @@ public class CreditsScreen implements Screen {
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		batch.dispose();
 	}
 
 }

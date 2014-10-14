@@ -22,7 +22,9 @@ public class Musica {
 	}
 	
 	public static void setVolume(float vol){
-		musica.setVolume(vol);
+		if (GameWorld.modemusic){
+			musica.setVolume(vol);
+		}
 	}
 
 	public static void highscoreplay(float vol){
@@ -42,7 +44,7 @@ public class Musica {
 	}
 
 	public static void stop(){
-		if (musica.isPlaying()){
+		if (musica != null && musica.isPlaying()){
 			musica.stop();
 		}
 	}
