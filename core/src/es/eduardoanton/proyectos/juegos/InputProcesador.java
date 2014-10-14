@@ -29,15 +29,14 @@ public class InputProcesador implements InputProcessor{
 	@Override
 	public boolean keyDown(int keycode) {
 		if(keycode == Keys.BACK){
-			IngameScreen.botoninicio = gamew.game.asset.get("botoninicio.png", Texture.class);
-			IngameScreen.botonreloadpe = gamew.game.asset.get("salir.png", Texture.class);
-			IngameScreen.botonhomepe = gamew.game.asset.get("botonhomepe.png", Texture.class);
+			IngameScreen.botoninicio = SeeSawCircus.asset.get("botoninicio.png", Texture.class);
+			IngameScreen.botonreloadpe = SeeSawCircus.asset.get("salir.png", Texture.class);
+			IngameScreen.botonhomepe = SeeSawCircus.asset.get("botonhomepe.png", Texture.class);
 			Musica.stop();
-			 gamew.pausedgame = true;
-			 return true;
+			gamew.pausedgame = true;
+			return true;
 		 }
 		if (!gamew.pausedgame){
-			 
 			if (gamew.payaso1.state != Payaso.PayasoState.MESSDEATH && gamew.payaso2.state != Payaso.PayasoState.MESSDEATH 
 					&&	gamew.payaso1.state != Payaso.PayasoState.MESSCRASH && gamew.payaso2.state != Payaso.PayasoState.MESSCRASH
 					){
@@ -91,7 +90,6 @@ public class InputProcesador implements InputProcessor{
 		}else{
 			Vector3 touchpos = new Vector3(screenX,screenY,0);
 			cam.unproject(touchpos);
-			Gdx.app.log("CIRCUS","X:" + touchpos.x + "  Y: " + touchpos.y);
 			if (touchpos.x > 219 && touchpos.x < 350 && touchpos.y > 320 && touchpos.y < 450 ){
 				IngameScreen.botonhomepe = IngameScreen.botonhomepep;
 				return true;
@@ -110,7 +108,6 @@ public class InputProcesador implements InputProcessor{
 
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		
 		if (!gamew.pausedgame){
 			cuentabotones--;
 			Vector3 touchpos = new Vector3(screenX,screenY,0);
@@ -142,7 +139,6 @@ public class InputProcesador implements InputProcessor{
 		}else{
 			Vector3 touchpos = new Vector3(screenX,screenY,0);
 			cam.unproject(touchpos);
-			Gdx.app.log("CIRCUS","X:" + touchpos.x + "  Y: " + touchpos.y);
 			if (touchpos.x > 219 && touchpos.x < 350 && touchpos.y > 320 && touchpos.y < 450 ){
 				MainScreen.clic.play();
 				gamew.pausedgame = false;

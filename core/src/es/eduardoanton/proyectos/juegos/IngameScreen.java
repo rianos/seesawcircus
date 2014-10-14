@@ -3,7 +3,6 @@ package es.eduardoanton.proyectos.juegos;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -13,22 +12,18 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
-import com.badlogic.gdx.math.MathUtils;
+
 
 import es.eduardoanton.proyectos.juegos.GameWorld.GameState;
 import es.eduardoanton.proyectos.juegos.Trampolin.TrampolinState;
 
 public class IngameScreen implements Screen{
-
-	private SeeSawCircus game;
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Texture trampolintexturel,trampolinsombra,payasosombra,trapecio,red,panelvidas,corazonp,paraguaspp,muelle,muellep,tesoro;
-	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c,regalo2,paused;
+	private Texture payaso,payaso2,fondo,payasodeath,lapida,corazon,musica,payasob,payaso2b,payasoc,payaso2c,paused;
 	public static Texture botoninicio,botoniniciop,botonhomepe,botonhomepep,botonreloadpe,botonreloadpep;
-	private Texture carameloa,carameloz,caramelov,caramelor,corona,paraguas,paraguasp,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso,premiomuelle;
+	private Texture corona,paraguas,premiospeed,premiocorazon,premioparaguas,premiogordo,premiohueso,premiomuelle;
 	private TextureRegion trampolintexturer,p1llorando[],p2llorando[],p1estrellas[],p2estrellas[],explosion[],premio[];
 	private Sprite redondo;
 	public Animation p1llorandoA,p2llorandoA,p1estrellasA,p2estrellasA,explosionA;
@@ -39,41 +34,37 @@ public class IngameScreen implements Screen{
 	public Color tmp;
 	public 	String mensaje[] = {"NUEVA VIDA / NEW LIFE", "NUEVO PARAGUAS / NEW UMBRELLA", "+1000 PUNTOS / POINTS", "+5000 PUNTOS / POINTS","VELOCIDAD 1.5x SPEED", "NUEVO MUELLE / NEW SPRING"
 			,"+100 PUNTOS / POINTS", "+200 PUNTOS / POINTS", "+400 PUNTOS / POINTS", "+500 PUNTOS /POINTS"};
-
-
 	private GameWorld gamew;
-	private float a = 0f;
 	private int ref = 0;
+	
 	public IngameScreen( SeeSawCircus gam){
-		this.game = gam;
 		cam = new OrthographicCamera();
 		cam.setToOrtho(false, 1024,600);
-		cam.update();
-		
+		cam.update();	
 		batch = new SpriteBatch();
 		batch.setProjectionMatrix(cam.combined);	
-		trampolintexturel = game.asset.get("trampolin.png", Texture.class );
-		trampolinsombra = game.asset.get("trampolin_sombra.png", Texture.class );
-		payasosombra = game.asset.get("payaso_sombra.png", Texture.class );
+		trampolintexturel = SeeSawCircus.asset.get("trampolin.png", Texture.class );
+		trampolinsombra = SeeSawCircus.asset.get("trampolin_sombra.png", Texture.class );
+		payasosombra = SeeSawCircus.asset.get("payaso_sombra.png", Texture.class );
 		trampolintexturer = new TextureRegion(trampolintexturel);
 		trampolintexturer.flip(true,false);
-		payaso = game.asset.get("payaso22.png", Texture.class);
-		payaso2 = game.asset.get("payaso33.png", Texture.class);
-		payasob = game.asset.get("payaso22bajando.png", Texture.class);
-		payaso2b = game.asset.get("payaso33bajando.png", Texture.class);
-		payasoc = game.asset.get("payaso22cruz.png", Texture.class);
-		payaso2c = game.asset.get("payaso33cruz.png", Texture.class);
-		payasodeath =game.asset.get("payasodeath.png", Texture.class);
-		lapida =game.asset.get("lapida.png", Texture.class);
-		corazon =game.asset.get("corazon.png", Texture.class);
-		premiospeed  =game.asset.get("premiospeed.png", Texture.class);
-		premiocorazon  =game.asset.get("premiocorazon.png", Texture.class);
-		premioparaguas  =game.asset.get("premioparaguas.png", Texture.class);
-		premiogordo = game.asset.get("premiogordo.png", Texture.class);
-		premiohueso = game.asset.get("premiohueso.png", Texture.class);
-		premiomuelle = game.asset.get("premiomuelle.png", Texture.class);
-		tesoro = game.asset.get("tesoro.png", Texture.class);
-		paused = game.asset.get("paused.png", Texture.class);
+		payaso = SeeSawCircus.asset.get("payaso22.png", Texture.class);
+		payaso2 = SeeSawCircus.asset.get("payaso33.png", Texture.class);
+		payasob = SeeSawCircus.asset.get("payaso22bajando.png", Texture.class);
+		payaso2b = SeeSawCircus.asset.get("payaso33bajando.png", Texture.class);
+		payasoc = SeeSawCircus.asset.get("payaso22cruz.png", Texture.class);
+		payaso2c = SeeSawCircus.asset.get("payaso33cruz.png", Texture.class);
+		payasodeath =SeeSawCircus.asset.get("payasodeath.png", Texture.class);
+		lapida =SeeSawCircus.asset.get("lapida.png", Texture.class);
+		corazon =SeeSawCircus.asset.get("corazon.png", Texture.class);
+		premiospeed  =SeeSawCircus.asset.get("premiospeed.png", Texture.class);
+		premiocorazon  =SeeSawCircus.asset.get("premiocorazon.png", Texture.class);
+		premioparaguas  =SeeSawCircus.asset.get("premioparaguas.png", Texture.class);
+		premiogordo = SeeSawCircus.asset.get("premiogordo.png", Texture.class);
+		premiohueso = SeeSawCircus.asset.get("premiohueso.png", Texture.class);
+		premiomuelle = SeeSawCircus.asset.get("premiomuelle.png", Texture.class);
+		tesoro = SeeSawCircus.asset.get("tesoro.png", Texture.class);
+		paused = SeeSawCircus.asset.get("paused.png", Texture.class);
 		premio = new TextureRegion[10];
 		premio[0] = new TextureRegion(premiocorazon);
 		premio[1] = new TextureRegion(premioparaguas);
@@ -85,101 +76,92 @@ public class IngameScreen implements Screen{
 		premio[7] = premio[6];
 		premio[8] = premio[6];
 		premio[9] = premio[6];
-		musica =game.asset.get("musica.png", Texture.class);
-		corona = game.asset.get("record.png", Texture.class);
-		paraguas = game.asset.get("paraguas.png", Texture.class);
-		paraguasp = game.asset.get("paraguasp.png", Texture.class);
-		trapecio = game.asset.get("trapecio.png", Texture.class);
-		red = game.asset.get("red.png", Texture.class);
-		muelle = game.asset.get("muelle.png", Texture.class);
-		panelvidas = game.asset.get("panelvidas.png", Texture.class);
-		corazonp = game.asset.get("corazonp.png", Texture.class);
-		paraguaspp = game.asset.get("paraguaspp.png", Texture.class);
-		muellep = game.asset.get("muellep.png", Texture.class);
-		botoninicio = game.asset.get("botoninicio.png", Texture.class);
-		botoniniciop = game.asset.get("botoniniciop.png", Texture.class);
-		botonreloadpe = game.asset.get("salir.png", Texture.class);
-		botonreloadpep = game.asset.get("salirp.png", Texture.class);
-		botonhomepe = game.asset.get("botonhomepe.png", Texture.class);
-		botonhomepep = game.asset.get("botonhomepep.png", Texture.class);
+		musica =SeeSawCircus.asset.get("musica.png", Texture.class);
+		corona = SeeSawCircus.asset.get("record.png", Texture.class);
+		paraguas = SeeSawCircus.asset.get("paraguas.png", Texture.class);
+		trapecio = SeeSawCircus.asset.get("trapecio.png", Texture.class);
+		red = SeeSawCircus.asset.get("red.png", Texture.class);
+		muelle = SeeSawCircus.asset.get("muelle.png", Texture.class);
+		panelvidas = SeeSawCircus.asset.get("panelvidas.png", Texture.class);
+		corazonp = SeeSawCircus.asset.get("corazonp.png", Texture.class);
+		paraguaspp = SeeSawCircus.asset.get("paraguaspp.png", Texture.class);
+		muellep = SeeSawCircus.asset.get("muellep.png", Texture.class);
+		botoninicio = SeeSawCircus.asset.get("botoninicio.png", Texture.class);
+		botoniniciop = SeeSawCircus.asset.get("botoniniciop.png", Texture.class);
+		botonreloadpe = SeeSawCircus.asset.get("salir.png", Texture.class);
+		botonreloadpep = SeeSawCircus.asset.get("salirp.png", Texture.class);
+		botonhomepe = SeeSawCircus.asset.get("botonhomepe.png", Texture.class);
+		botonhomepep = SeeSawCircus.asset.get("botonhomepep.png", Texture.class);
 		explosion = new TextureRegion[4];
-		explosion[0] = new TextureRegion(game.asset.get("explosion1.png", Texture.class));
-		explosion[1] = new TextureRegion(game.asset.get("explosion2.png", Texture.class));
-		explosion[2] = new TextureRegion(game.asset.get("explosion3.png", Texture.class));
-		explosion[3] = new TextureRegion(game.asset.get("explosion4.png", Texture.class));
+		explosion[0] = new TextureRegion(SeeSawCircus.asset.get("explosion1.png", Texture.class));
+		explosion[1] = new TextureRegion(SeeSawCircus.asset.get("explosion2.png", Texture.class));
+		explosion[2] = new TextureRegion(SeeSawCircus.asset.get("explosion3.png", Texture.class));
+		explosion[3] = new TextureRegion(SeeSawCircus.asset.get("explosion4.png", Texture.class));
 		explosionA = new Animation(0.2f,explosion);
-		//filaitems = new Texture[4];
 		filaitems = new Texture[26];
-		filaitems[0] = game.asset.get("carameloa.png", Texture.class);
-		filaitems[1] = game.asset.get("caramelov.png", Texture.class);
-		filaitems[2] = game.asset.get("caramelor.png", Texture.class);
-		filaitems[3] = game.asset.get("carameloz.png", Texture.class);
-	
-		filaitems[4] = game.asset.get("globoa.png", Texture.class);
-		filaitems[5] = game.asset.get("globoz.png", Texture.class);
-		filaitems[6] = game.asset.get("globov.png", Texture.class);
-		filaitems[7] = game.asset.get("globor.png", Texture.class);
-		
-		filaitems[15] = game.asset.get("monedaluciap.png", Texture.class);
-		filaitems[16] = game.asset.get("monedasoniap.png", Texture.class);
-		filaitems[17] = game.asset.get("monedalucia.png", Texture.class);
-		filaitems[18] = game.asset.get("monedasonia.png", Texture.class);
-		filaitems[19] = game.asset.get("billeteedu.png", Texture.class);
-		filaitems[20] = game.asset.get("regalo.png", Texture.class);
-		filaitems[21] = game.asset.get("regalo2.png", Texture.class);
-		filaitems[22] = game.asset.get("piedra.png", Texture.class);
-		filaitems[23] = game.asset.get("piedra2.png", Texture.class);
-		filaitems[24] = game.asset.get("piedra3.png", Texture.class);
-		filaitems[25] = game.asset.get("piedra4.png", Texture.class);
-		filaitems[8] = game.asset.get("leon.png", Texture.class);
-		filaitems[9] = game.asset.get("caballo.png", Texture.class);
-		filaitems[10] = game.asset.get("oso.png", Texture.class);
-		filaitems[11] = game.asset.get("elefante.png", Texture.class);
-		filaitems[12] = game.asset.get("mono.png", Texture.class);
-		filaitems[13] = game.asset.get("foca.png", Texture.class);
-		filaitems[14] = game.asset.get("perro.png", Texture.class);
-		
+		filaitems[0] = SeeSawCircus.asset.get("carameloa.png", Texture.class);
+		filaitems[1] = SeeSawCircus.asset.get("caramelov.png", Texture.class);
+		filaitems[2] = SeeSawCircus.asset.get("caramelor.png", Texture.class);
+		filaitems[3] = SeeSawCircus.asset.get("carameloz.png", Texture.class);
+		filaitems[4] = SeeSawCircus.asset.get("globoa.png", Texture.class);
+		filaitems[5] = SeeSawCircus.asset.get("globoz.png", Texture.class);
+		filaitems[6] = SeeSawCircus.asset.get("globov.png", Texture.class);
+		filaitems[7] = SeeSawCircus.asset.get("globor.png", Texture.class);
+		filaitems[8] = SeeSawCircus.asset.get("leon.png", Texture.class);
+		filaitems[9] = SeeSawCircus.asset.get("caballo.png", Texture.class);
+		filaitems[10] = SeeSawCircus.asset.get("oso.png", Texture.class);
+		filaitems[11] = SeeSawCircus.asset.get("elefante.png", Texture.class);
+		filaitems[12] = SeeSawCircus.asset.get("mono.png", Texture.class);
+		filaitems[13] = SeeSawCircus.asset.get("foca.png", Texture.class);
+		filaitems[14] = SeeSawCircus.asset.get("perro.png", Texture.class);
+		filaitems[15] = SeeSawCircus.asset.get("monedaluciap.png", Texture.class);
+		filaitems[16] = SeeSawCircus.asset.get("monedasoniap.png", Texture.class);
+		filaitems[17] = SeeSawCircus.asset.get("monedalucia.png", Texture.class);
+		filaitems[18] = SeeSawCircus.asset.get("monedasonia.png", Texture.class);
+		filaitems[19] = SeeSawCircus.asset.get("billeteedu.png", Texture.class);
+		filaitems[20] = SeeSawCircus.asset.get("regalo.png", Texture.class);
+		filaitems[21] = SeeSawCircus.asset.get("regalo2.png", Texture.class);
+		filaitems[22] = SeeSawCircus.asset.get("piedra.png", Texture.class);
+		filaitems[23] = SeeSawCircus.asset.get("piedra2.png", Texture.class);
+		filaitems[24] = SeeSawCircus.asset.get("piedra3.png", Texture.class);
+		filaitems[25] = SeeSawCircus.asset.get("piedra4.png", Texture.class);
 		p1llorando = new TextureRegion[2];
-		p1llorando[0] =  new TextureRegion(game.asset.get("p1c1.png", Texture.class));
-		p1llorando[1] =  new TextureRegion(game.asset.get("p1c2.png", Texture.class));
+		p1llorando[0] =  new TextureRegion(SeeSawCircus.asset.get("p1c1.png", Texture.class));
+		p1llorando[1] =  new TextureRegion(SeeSawCircus.asset.get("p1c2.png", Texture.class));
 		p1llorandoA = new Animation(0.1f,p1llorando);
 		p1llorandoA.setPlayMode(Animation.PlayMode.LOOP);
 		p2llorando = new TextureRegion[2];
-		p2llorando[0] =  new TextureRegion(game.asset.get("p2c1.png", Texture.class));
-		p2llorando[1] =  new TextureRegion(game.asset.get("p2c2.png", Texture.class));
+		p2llorando[0] =  new TextureRegion(SeeSawCircus.asset.get("p2c1.png", Texture.class));
+		p2llorando[1] =  new TextureRegion(SeeSawCircus.asset.get("p2c2.png", Texture.class));
 		p2llorandoA = new Animation(0.1f,p2llorando);
 		p2llorandoA.setPlayMode(Animation.PlayMode.LOOP);
 		p1estrellas = new TextureRegion[4];
-		p1estrellas[0] =  new TextureRegion(game.asset.get("p1e1.png", Texture.class));
-		p1estrellas[1] =  new TextureRegion(game.asset.get("p1e2.png", Texture.class));
-		p1estrellas[2] =  new TextureRegion(game.asset.get("p1e3.png", Texture.class));
-		p1estrellas[3] =  new TextureRegion(game.asset.get("p1e4.png", Texture.class));
+		p1estrellas[0] =  new TextureRegion(SeeSawCircus.asset.get("p1e1.png", Texture.class));
+		p1estrellas[1] =  new TextureRegion(SeeSawCircus.asset.get("p1e2.png", Texture.class));
+		p1estrellas[2] =  new TextureRegion(SeeSawCircus.asset.get("p1e3.png", Texture.class));
+		p1estrellas[3] =  new TextureRegion(SeeSawCircus.asset.get("p1e4.png", Texture.class));
 		p1estrellasA = new Animation(0.24f,p1estrellas);
 		p1estrellasA.setPlayMode(Animation.PlayMode.LOOP);
 		p2estrellas = new TextureRegion[4];
-		p2estrellas[0] =  new TextureRegion(game.asset.get("p2e1.png", Texture.class));
-		p2estrellas[1] =  new TextureRegion(game.asset.get("p2e2.png", Texture.class));
-		p2estrellas[2] =  new TextureRegion(game.asset.get("p2e3.png", Texture.class));
-		p2estrellas[3] =  new TextureRegion(game.asset.get("p2e4.png", Texture.class));
+		p2estrellas[0] =  new TextureRegion(SeeSawCircus.asset.get("p2e1.png", Texture.class));
+		p2estrellas[1] =  new TextureRegion(SeeSawCircus.asset.get("p2e2.png", Texture.class));
+		p2estrellas[2] =  new TextureRegion(SeeSawCircus.asset.get("p2e3.png", Texture.class));
+		p2estrellas[3] =  new TextureRegion(SeeSawCircus.asset.get("p2e4.png", Texture.class));
 		p2estrellasA = new Animation(0.24f,p2estrellas);
 		p2estrellasA.setPlayMode(Animation.PlayMode.LOOP);		
-		fondo = game.asset.get("fondo.png", Texture.class);
-		redondo =  new Sprite( (Texture) game.asset.get("redondo.png"));
+		fondo = SeeSawCircus.asset.get("fondo.png", Texture.class);
+		redondo =  new Sprite( (Texture) SeeSawCircus.asset.get("redondo.png"));
 		gamew = SeeSawCircus.gamew;
 		iproc = new InputProcesador(cam,gamew);
-		
-		marcador =game.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
-		informe =game.asset.get("fuente.fnt", BitmapFont.class);	
+		marcador =SeeSawCircus.asset.get("fuenteBerlinSansFBDemi.fnt", BitmapFont.class);
+		informe =SeeSawCircus.asset.get("fuente.fnt", BitmapFont.class);	
 		informe.setColor(Color.YELLOW);
 		letrero = new BitmapFont();
 		letrero.setColor(Color.GRAY);
-		
 	}
-	
 	
 	@Override
 	public void render(float delta) {
-		a+=delta;
 		gamew.update(delta);
 		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
@@ -227,14 +209,6 @@ public class IngameScreen implements Screen{
 			batch.draw(musica, 0, 0);
 			letrero.draw(batch, " " + Musica.getName() , 25, 20);
 		}
-		/* Metodo antiguo de dibujar vidas
-		for ( int i=1;i<=gamew.vidas;i++){
-			batch.draw(corazon, -30 + (corazon.getWidth() + 5)*i,550);
-		}
-		for ( int i=1;i<=gamew.paraguasc;i++){
-			batch.draw(paraguasp, -30 + 45*i,500);
-		}
-		*/
 		ref=0;
 		batch.draw(panelvidas, 512 - panelvidas.getWidth()/2, 0 + ref);
 		for ( int i=1;i<=gamew.vidas;i++){
@@ -249,15 +223,6 @@ public class IngameScreen implements Screen{
 				batch.draw(muellep, 490 + 30*i,5 + ref);
 			}
 		}
-		//Metodo antiguo con paraguas
-		//for ( int i=1;i<=gamew.paraguasc;i++){
-		//	batch.draw(paraguaspp, 465 + 30*i,5 + ref);
-		//}
-		//if (! gamew.modechildren){
-		//	for ( int i=1;i<=gamew.muellec;i++){
-		//	batch.draw(muellep, 560 + 30*i,5 + ref);
-		//	}
-		//}
 		if (gamew.gamestate == GameWorld.GameState.GAMEOVER){
 			marcador.setColor(Color.YELLOW);
 			marcador.draw(batch, "GAME OVER", 200, 350);
@@ -419,9 +384,9 @@ public class IngameScreen implements Screen{
 
 	@Override
 	public void pause() {
-			IngameScreen.botoninicio = game.asset.get("botoninicio.png", Texture.class);
-			IngameScreen.botonreloadpe = game.asset.get("salir.png", Texture.class);
-			IngameScreen.botonhomepe = game.asset.get("botonhomepe.png", Texture.class);
+			IngameScreen.botoninicio = SeeSawCircus.asset.get("botoninicio.png", Texture.class);
+			IngameScreen.botonreloadpe = SeeSawCircus.asset.get("salir.png", Texture.class);
+			IngameScreen.botonhomepe = SeeSawCircus.asset.get("botonhomepe.png", Texture.class);
 			gamew.pausedgame = true;
 			gamew.jumpiniS.stop();
 			Musica.stop();
@@ -437,8 +402,7 @@ public class IngameScreen implements Screen{
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		batch.dispose();	
 	}
 	
 

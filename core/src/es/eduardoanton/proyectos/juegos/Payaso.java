@@ -1,6 +1,5 @@
 package es.eduardoanton.proyectos.juegos;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 
@@ -36,8 +35,6 @@ public class Payaso {
 	public void setPayasoCompañero(Payaso p){
 		pc = p;
 	}
-
-	
 	
 	public void update(float delta ){
 		if ( state == PayasoState.STANDBYR ){
@@ -72,9 +69,9 @@ public class Payaso {
 		if ( state == PayasoState.FLYING && game.gamestate == GameState.RUNNING){
 			velocidad.add(aceleracion.cpy().scl(delta));
 			posicion.add(velocidad.cpy().scl(delta));
+			//Mostramos un muelle abajo en la pantalla si nos quedan muelles en modo adulto
 			if (posicion.y < 500 && velocidad.y < 0 && !game.modechildren && game.muellec > 0 &&((posicion.x + dimensiones.width < game.trampolin.posicion.x )|| 
 					(posicion.x > game.trampolin.posicion.x + game.trampolin.dimensiones.width) )){
-				
 				game.muelle.x = posicion.x;
 				game.muelle.y = 0;
 			}else{
@@ -86,7 +83,11 @@ public class Payaso {
 						velocidad.y = 800 - tempninossalto;
 						tempninossalto+=150;
 						posicion.y = 21;
-						game.bounS.play();
+						if (velocidad.y > 0){
+							game.bounS.play();
+						}else{
+							velocidad.x = 0;
+						}
 				}else{
 					tempninossalto = 0;
 					game.vidas--;
@@ -210,8 +211,7 @@ public class Payaso {
 				angelSplayed = true;
 			}
 			posicion.add(velocidad.cpy().scl(delta));
-			
-			if (posicion.y > game.worlheight){
+			if (posicion.y > GameWorld.worlheight){
 				angelSplayed = false;
 				game.resetready(this);
 			}
