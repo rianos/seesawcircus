@@ -59,7 +59,7 @@ public class CreditsScreen implements Screen {
 		marcador.draw(batch,"EDUARDO ANTON SANTA-MARIA",512 - (marcador.getBounds("EDUARDO ANTON SANTA-MARIA").width/2), -70);
 		informe.setScale(0.7f);
 		informe.setColor(Color.GRAY);
-		informe.draw(batch,"Based on Atari 2600 videogame Seesaw Circus",512 - (informe.getBounds("Based on Atari 2600 videogame Seesaw Circus").width/2), -120);
+		informe.draw(batch,"Based on Atari 2600 videogame Circus Atari",512 - (informe.getBounds("Based on Atari 2600 videogame Seesaw Circus").width/2), -120);
 		batch.draw(art,512 - art.getWidth()/2,-400);
 		marcador.draw(batch,"EDUARDO ANTON SANTA-MARIA",512 - (marcador.getBounds("EDUARDO ANTON SANTA-MARIA").width/2), -470);
 		marcador.draw(batch,"SONIA ANTON RIANO",512 - (marcador.getBounds("SONIA ANTON RIANO").width/2), -520);
