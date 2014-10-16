@@ -5,6 +5,7 @@ import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -37,7 +38,7 @@ public class InstructionsScreen implements Screen {
 	}
 	@Override
 	public void render(float delta) {
-		Gdx.gl.glClearColor(0.02f,0.22f ,0.22f, 1);
+		Gdx.gl.glClearColor(0.01f,0.01f ,0.02f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);	
 		stage.act(delta);
 		stage.draw();
@@ -54,6 +55,9 @@ public class InstructionsScreen implements Screen {
 		botonhome.setTexture("botonhomepe.png");
 		botoninicio.setTexture("botoninicio.png");
 		Gdx.input.setInputProcessor(iproc);
+		SeeSawCircus.prefs.putBoolean("modomanual", true);
+		SeeSawCircus.prefs.flush();
+		SeeSawCircus.gamew.modemanual = true;
 		reset();
 	}
 
@@ -136,16 +140,34 @@ public class InstructionsScreen implements Screen {
 		        visible(true),
 		        delay(1),
 		        moveTo(470,60,1),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("boingsda.mp3");
+						s.play();
+					}}),
 		        moveTo(490,140,0.3f),
 		        moveTo(530,120,0.1f),
 		        moveTo(570,60,0.3f),
 		        delay(1),
 		        moveBy(-150,300),
 		        moveTo(420,70,1),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("boingsda.mp3");
+						s.play();
+					}}),
 		        moveTo(330,300,0.3f),
 		        delay(1),
 		        moveBy(40,50),
 		        moveTo(355,70,1),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("boingsda.mp3");
+						s.play();
+					}}),
 		        moveTo(100,550,0.3f),
 		        delay(0.5f),
 		        visible(false)
@@ -209,7 +231,7 @@ public class InstructionsScreen implements Screen {
 		        visible(false),
 		        delay(2),
 		        visible(true),
-		        delay(12),
+		        delay(13.3f),
 		        visible(false)
 		              )));
 		dedogr.addAction((sequence(
@@ -233,6 +255,12 @@ public class InstructionsScreen implements Screen {
 				visible(false),
 		        delay(2),
 		        visible(true),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("box_trash_impact_03.mp3");
+						s.play();
+					}}),
 		        delay(2),
 		        visible(false),
 		        delay(14)
@@ -241,16 +269,34 @@ public class InstructionsScreen implements Screen {
 				visible(false),
 		        delay(7),
 		        visible(true),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("box_trash_impact_03.mp3");
+						s.play();
+					}}),
 		        delay(2),
 		        visible(false),
 		        delay(2),
 		        visible(true),
 		        moveTo(850,200,1),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("cartoon_fast_whoosh_good_for_karate_chop_other_fast_movement_or_swipe_001.mp3");
+						s.play();
+					}}),
 		        visible(false),
 		        moveBy(0,-200),
 		        delay(3),
 		        visible(true),
 		        moveTo(850,200,1),
+		        run(new Runnable(){
+					@Override
+					public void run() {
+						Sound s = SeeSawCircus.asset.get("cartoon_fast_whoosh_good_for_karate_chop_other_fast_movement_or_swipe_001.mp3");
+						s.play();
+					}}),
 		        visible(false),
 		        delay(4)
 		              )));

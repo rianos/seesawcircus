@@ -62,7 +62,11 @@ public class InputProcesadorMain implements InputProcessor{
 		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
 			SeeSawCircus.gamew.modechildren = false;
 			MainScreen.clic.play();
-			mscreen.game.setScreen(SeeSawCircus.ingamescreen);
+			if ( SeeSawCircus.gamew.modemanual){
+				mscreen.game.setScreen(SeeSawCircus.ingamescreen);
+			}else{
+				mscreen.game.setScreen(SeeSawCircus.instructionscreen);
+			}
 			return true;
 		}
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 480 && touchpos.y < 600 ){

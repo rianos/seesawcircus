@@ -37,6 +37,7 @@ public class GameWorld {
 	public int regalo;
 	public boolean modechildren = false;
 	public static boolean modemusic = false;
+	public static boolean modemanual = false;
 	public boolean pausedgame = false;
 	public long vidaseach, muelleseach,lastvidas = 0, lastmuelles = 0;
 
@@ -94,6 +95,7 @@ public class GameWorld {
 		timeready = 0f;
 		modechildren =  SeeSawCircus.prefs.getBoolean("modoninos", false);
 		modemusic =  SeeSawCircus.prefs.getBoolean("modomusica", true);
+		modemanual = SeeSawCircus.prefs.getBoolean("modomanual", false);
 	}
 	
 	public void reset(){
