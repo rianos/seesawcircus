@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="instucciones.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-679.01804"
+     inkscape:cy="422.82508"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="994"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3773"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\dedog.png"
+       inkscape:export-xdpi="57.468273"
+       inkscape:export-ydpi="57.468273">
+      <path
+         id="path2985"
+         d="M 381.4375 258.0625 C 323.84209 258.0625 277.15625 302.21675 277.15625 356.65625 C 277.15625 399.3528 282.25756 433.3586 291.28125 459.65625 C 277.45087 488.23277 267.79013 516.06497 268.5625 525.15625 L 282.84375 693.3125 C 284.62395 714.26666 320.39517 723.78125 352.84375 723.78125 L 418.5625 723.78125 C 451.01107 723.78125 475.14634 707.17686 477.15625 685.90625 L 488.5625 564.96875 C 489.69664 552.96626 477.59199 496.83505 461 450.1875 C 476.34621 416.68525 485.71875 380.34691 485.71875 356.65625 C 485.71875 302.21675 439.03291 258.0625 381.4375 258.0625 z "
+         style="color:#000000;fill:#ffac87;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.256;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3759"
+         d="m 471.42857,356.64789 c 0,43.3938 -39.65478,61.42857 -88.57143,61.42857 -48.91665,0 -88.57143,-18.03477 -88.57143,-61.42857 0,-43.3938 39.65478,-78.57142 88.57143,-78.57142 48.91665,0 88.57143,35.17762 88.57143,78.57142 z"
+         style="color:#000000;fill:#e9c3b1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         style="color:#000000;fill:#ffdece;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 452.71136,385.48171 c 0,23.02528 -33.19358,32.59475 -74.13994,32.59475 -40.94636,0 -74.13993,-9.56947 -74.13993,-32.59475 0,-23.02528 33.19357,-41.69095 74.13993,-41.69095 40.94636,0 74.13994,18.66567 74.13994,41.69095 z"
+         id="path3762"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+      <path
+         transform="matrix(1,0,0,0.58333332,202.85714,226.34139)"
+         d="m 260,546.64789 a 81.428574,17.142857 0 1 1 -162.857147,0 81.428574,17.142857 0 1 1 162.857147,0 z"
+         sodipodi:ry="17.142857"
+         sodipodi:rx="81.428574"
+         sodipodi:cy="546.64789"
+         sodipodi:cx="178.57143"
+         id="path3764"
+         style="color:#000000;fill:#bca7a7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#828282;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3766"
+         sodipodi:cx="178.57143"
+         sodipodi:cy="546.64789"
+         sodipodi:rx="81.428574"
+         sodipodi:ry="17.142857"
+         d="m 260,546.64789 a 81.428574,17.142857 0 1 1 -162.857147,0 81.428574,17.142857 0 1 1 162.857147,0 z"
+         transform="matrix(1,0,0,0.58333332,202.85714,269.19853)" />
+      <path
+         transform="matrix(0.21917808,0,0,2.6666667,377.02546,-947.27029)"
+         d="m 482.85715,575.2193 a 104.28571,51.42857 0 1 1 -208.57142,0 104.28571,51.42857 0 1 1 208.57142,0 z"
+         sodipodi:ry="51.42857"
+         sodipodi:rx="104.28571"
+         sodipodi:cy="575.2193"
+         sodipodi:cx="378.57144"
+         id="path3769"
+         style="color:#000000;fill:#8d128b;fill-opacity:0.13368985;fill-rule:nonzero;stroke:none;stroke-width:2.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#fff595;fill-opacity:0.13368985;fill-rule:nonzero;stroke:none;stroke-width:2.25600004000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3771"
+         sodipodi:cx="378.57144"
+         sodipodi:cy="575.2193"
+         sodipodi:rx="104.28571"
+         sodipodi:ry="51.42857"
+         d="m 482.85715,575.2193 a 104.28571,51.42857 0 1 1 -208.57142,0 104.28571,51.42857 0 1 1 208.57142,0 z"
+         transform="matrix(0.21917808,0,0,2.6666667,214.16832,-944.41315)" />
+    </g>
+    <rect
+       style="color:#000000;fill:#eae1a9;fill-opacity:0.24598933;fill-rule:nonzero;stroke:#a69d9d;stroke-width:2.25600004;stroke-opacity:0.28877007;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3782"
+       width="509.74402"
+       height="597.74402"
+       x="-1025.7142"
+       y="-408.23898"
+       ry="51.92268"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\capa.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3784"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Sans"
+       transform="translate(351.42857,-200)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\i1.png"
+       inkscape:export-xdpi="68.224884"
+       inkscape:export-ydpi="68.224884"><flowRegion
+         id="flowRegion3786"><rect
+           id="rect3788"
+           width="674.28571"
+           height="248.57143"
+           x="-1680"
+           y="880.93359"
+           style="fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007" /></flowRegion><flowPara
+         id="flowPara3790"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'">PRESIONE LA PARTE IZQUIERDA DE LA PANTALLA PARA IR A LA IZQUIERDA</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3792" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff8800;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3794">PRESS MID-LEFT SCREEN TO GO LEFT</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3784-1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Sans"
+       transform="translate(447.32282,383.90084)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\i2.png"
+       inkscape:export-xdpi="68.224884"
+       inkscape:export-ydpi="68.224884"><flowRegion
+         id="flowRegion3786-7"><rect
+           id="rect3788-4"
+           width="674.28571"
+           height="248.57143"
+           x="-1680"
+           y="880.93359"
+           style="fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007" /></flowRegion><flowPara
+         id="flowPara3790-0"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'">PRESIONE LA PARTE DERECHA DE LA PANTALLA PARA IR A LA DERECHA</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3792-9" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff9d00;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3794-4">PRESS MID-RIGHT SCREEN TO GO RIGHT</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3784-8"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Sans"
+       transform="translate(1290.18,361.0437)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\i3.png"
+       inkscape:export-xdpi="68.224884"
+       inkscape:export-ydpi="68.224884"><flowRegion
+         id="flowRegion3786-8"><rect
+           id="rect3788-2"
+           width="674.28571"
+           height="248.57143"
+           x="-1680"
+           y="880.93359"
+           style="fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007" /></flowRegion><flowPara
+         id="flowPara3790-4"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff6100;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'">DRAG UPWARDS TO FLIP SEESAW</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3792-5" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3794-5">DESLIZE HACIA ARRIBA PARA CAMBIAR</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara3862">POSICION DE TRAMPOLIN</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3784-17"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Sans"
+       transform="translate(-272.67718,163.90085)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\i4.png"
+       inkscape:export-xdpi="68.224884"
+       inkscape:export-ydpi="68.224884"><flowRegion
+         id="flowRegion3786-4"><rect
+           id="rect3788-0"
+           width="674.28571"
+           height="248.57143"
+           x="-1680"
+           y="880.93359"
+           style="fill:#000000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007" /></flowRegion><flowPara
+         id="flowPara3790-9"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'">CUANTO MAS AL FILO MAS ALTO </flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffe000;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877007;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara7227">SE SALTA</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff9500;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara7225">THE MORE TO THE SEESAW END </flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff9500;fill-opacity:1;stroke:#a69d9d;stroke-opacity:0.28877006999999999;font-family:Tw Cen MT Condensed;-inkscape-font-specification:'Tw Cen MT Condensed, Bold'"
+         id="flowPara7223">JUMPS HIGHER</flowPara></flowRoot>  </g>
+</svg>

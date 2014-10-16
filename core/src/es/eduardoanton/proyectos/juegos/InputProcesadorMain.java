@@ -48,6 +48,10 @@ public class InputProcesadorMain implements InputProcessor{
 			mscreen.botoncreditos.setTexture("botoncreditosp.png");
 			return true;
 		}
+		if (touchpos.x > 900 && touchpos.x < 1020 && touchpos.y > 0 && touchpos.y < 115 && mscreen.botoninfo.isVisible()){
+			mscreen.botoninfo.setTexture("botoninfop.png");
+			return true;
+		}
 		return false;
 	}
 
@@ -55,7 +59,6 @@ public class InputProcesadorMain implements InputProcessor{
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
-		Gdx.app.log("CIRCUS","X:" + touchpos.x + " Y: " + touchpos.y);
 		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
 			SeeSawCircus.gamew.modechildren = false;
 			MainScreen.clic.play();
@@ -101,6 +104,11 @@ public class InputProcesadorMain implements InputProcessor{
 		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible() ){
 			MainScreen.clic.play();
 			mscreen.game.setScreen(SeeSawCircus.creditsscreen);
+			return true;
+		}
+		if (touchpos.x > 900 && touchpos.x < 1020 && touchpos.y > 0 && touchpos.y < 115 && mscreen.botoninfo.isVisible()){
+			MainScreen.clic.play();
+			mscreen.game.setScreen(SeeSawCircus.instructionscreen);
 			return true;
 		}
 		playRandomSound();

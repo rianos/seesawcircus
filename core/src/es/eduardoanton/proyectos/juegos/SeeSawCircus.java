@@ -15,7 +15,7 @@ public class SeeSawCircus extends Game {
 	public static AssetManager asset;
 	public final static float screenwidth = 1024f;
 	public final static float screenheight = 600f;
-	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen,creditsscreen;
+	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen,creditsscreen,instructionscreen;
 	public static GameWorld gamew;
 	public static Preferences prefs;
 	
@@ -34,6 +34,7 @@ public class SeeSawCircus extends Game {
 		ingamescreen = new IngameScreen( this );
 		gameoverscreen = new GameOverScreen(this);
 		creditsscreen = new CreditsScreen(this);
+		instructionscreen = new InstructionsScreen(this);
 		this.setScreen(mainscreen);
 	}
 	
@@ -60,6 +61,17 @@ public class SeeSawCircus extends Game {
 		asset.load("logomusica1.png", Texture.class);
 		asset.load("logomusica2.png", Texture.class);
 		asset.load("trampolin.png", Texture.class);
+		asset.load("trampolin2.png", Texture.class);
+		asset.load("salto1.png", Texture.class);
+		asset.load("salto2.png", Texture.class);
+		asset.load("salto3.png", Texture.class);
+		asset.load("dedo.png", Texture.class);
+		asset.load("dedog.png", Texture.class);
+		asset.load("capa.png", Texture.class);
+		asset.load("i1.png", Texture.class);
+		asset.load("i2.png", Texture.class);
+		asset.load("i3.png", Texture.class);
+		asset.load("i4.png", Texture.class);
 		asset.load("nube.png", Texture.class);
 		asset.load("gato.png", Texture.class);
 		asset.load("piedra.png", Texture.class);
@@ -72,6 +84,8 @@ public class SeeSawCircus extends Game {
 		asset.load("botoncreditosp.png", Texture.class);
 		asset.load("botonmusicaon.png", Texture.class);
 		asset.load("botonmusicaoff.png", Texture.class);
+		asset.load("botoninfo.png", Texture.class);
+		asset.load("botoninfop.png", Texture.class);
 		asset.load("salir.png", Texture.class);
 		asset.load("salirp.png", Texture.class);
 		asset.load("circo.png", Texture.class);

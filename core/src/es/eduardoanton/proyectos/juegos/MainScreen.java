@@ -27,7 +27,7 @@ public class MainScreen implements Screen{
 	private Stage stage;
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
 	private Actor payaso1,payaso2,globos1,globos2,gato;
-	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos,botonmusica;
+	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos,botonmusica,botoninfo;
 	public BitmapFont marcador;
 	private Texture corona;
 	
@@ -129,6 +129,10 @@ public class MainScreen implements Screen{
 		salir.addAction(sequence(
 				visible(false),delay(9),visible(true)
 				));
+		botoninfo = new ActorGenerico(930,3, "botoninfo.png");
+		botoninfo.addAction(sequence(
+				visible(false),delay(11),visible(true)
+				));
 	    stage.addActor(fondoincio);
 	    stage.addActor(nube1);
 	    stage.addActor(nube2);
@@ -144,6 +148,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(botonninos);
 	    stage.addActor(botoninicio);
 	    stage.addActor(botoncreditos);
+	    stage.addActor(botoninfo);
 	    stage.addActor(salir);
 	
 	}
@@ -178,6 +183,7 @@ public class MainScreen implements Screen{
 	public void show() {
 		botoninicio.setTexture("botoninicio.png");
 		botoncreditos.setTexture("botoncreditos.png");
+		botoninfo.setTexture("botoninfo.png");
 		if ( GameWorld.modemusic){
 			this.musica.setVolume(1f);
 			this.musica.setLooping(true);
@@ -206,6 +212,7 @@ public class MainScreen implements Screen{
 
 	@Override
 	public void dispose() {
+		stage.dispose();
 		batch.dispose();
 	}
 

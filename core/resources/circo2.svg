@@ -15,7 +15,10 @@
    id="svg4233"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="circo2.svg">
+   sodipodi:docname="circo2.svg"
+   inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+   inkscape:export-xdpi="9.878252"
+   inkscape:export-ydpi="9.878252">
   <defs
      id="defs4235">
     <linearGradient
@@ -800,6 +803,18 @@
          offset="1"
          id="stop6111-4-8" />
     </linearGradient>
+    <path
+       style="fill:none;stroke:none"
+       d="m -776.26945,-42.397624 c 116.76844,-104.875356 231.37452,94.063462 231.37452,94.063462"
+       id="path6133-5-9-6-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:none"
+       d="m -776.26945,-42.397624 c 116.76844,-104.875356 231.37452,94.063462 231.37452,94.063462"
+       id="path6133-5-9-6-1-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -808,9 +823,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497474"
-     inkscape:cx="-1905.4077"
-     inkscape:cy="2616.0454"
+     inkscape:zoom="0.35"
+     inkscape:cx="-1150.8619"
+     inkscape:cy="2624.8991"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -7207,5 +7222,241 @@
          id="tspan4416"
          x="-2820.3459"
          y="-1535.6487" /></text>
+    <path
+       style="color:#000000;fill:#27ff00;fill-opacity:1;fill-rule:nonzero;stroke:#143600;stroke-width:6.07199955;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -918.21473,-1550.5342 c -4.3565,-4.5399 -31.861,17.7012 -44.8655,40.5591 -7.214,12.6803 -13.2268,26.2988 -15.7873,35.1471 -2.714,-4.8186 -6.7675,-17.8897 -11.1571,-23.6377 -11.48227,-15.0355 -32.56627,-22.8836 -35.73847,-20.7837 -3.1721,2.0999 15.7383,15.185 27.22057,30.2205 7.7994,10.2129 13.171,23.9814 18.4837,27.4777 0.3432,0.7471 0.8379,1.2659 1.4996,1.5267 0.5053,0.1991 1.0912,0.24 1.7449,0.137 0.9355,0.2884 1.6852,0.2823 2.2004,-0.059 0.3374,-0.2234 0.5533,-0.5859 0.6727,-1.0634 7.468,-4.246 11.1465,-24.4412 22.2206,-43.9061 13.8714,-24.3818 24.888,-41.2719 29.4862,-37.3359 8.3371,7.1363 7.4996,-4.6562 4.0197,-8.2826 z"
+       id="path3633-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sscssscscscsss"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <rect
+       style="color:#000000;fill:#263c4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76603258;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6171-5-6-4"
+       width="543.20715"
+       height="183.18697"
+       x="-1157.2957"
+       y="-2076.8582"
+       ry="91.593483"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <rect
+       ry="90.348198"
+       y="-2097.8838"
+       x="-1154.2195"
+       height="180.6964"
+       width="535.91962"
+       id="rect6169-5-0-0"
+       style="color:#000000;fill:#00487e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:6.5999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.7326203;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <path
+       inkscape:export-ydpi="9.878252"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       transform="matrix(1.1725548,0,0,1.171364,3581.5207,-2686.1846)"
+       d="m -3543.6151,866.49414 a 266.68027,270.72089 0 1 1 -533.3606,0 266.68027,270.72089 0 1 1 533.3606,0 z"
+       sodipodi:ry="270.72089"
+       sodipodi:rx="266.68027"
+       sodipodi:cy="866.49414"
+       sodipodi:cx="-3810.2954"
+       id="path4489-8-7-1-2-9"
+       style="fill:#0247dd;fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6133-52-8-8"
+       d="m -1051.1579,-1949.2097 c 247.34747,-221.8679 490.11457,198.9946 490.11457,198.9946"
+       style="fill:none;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <text
+       transform="scale(1.0006466,0.99935382)"
+       xml:space="preserve"
+       style="font-size:22.65771484px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-887.74536"
+       y="-1511.6366"
+       id="text5078-6-6-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252"><tspan
+         sodipodi:role="line"
+         id="tspan5080-1-5-2"
+         x="-887.74536"
+         y="-1511.6366"> </tspan></text>
+    <text
+       inkscape:export-ydpi="9.878252"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       transform="matrix(2.1182737,0,0,2.1155371,606.97089,-1867.2758)"
+       sodipodi:linespacing="125%"
+       id="text6143-0-3-6-5"
+       style="font-size:10.703228px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f1dcdc;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><textPath
+         id="textPath6149-9-1-1-5"
+         xlink:href="#path6133-5-9-6-1"><tspan
+   style="fill:#f1dcdc;fill-opacity:1"
+   id="tspan6145-0-9-3-1"><tspan
+     x="-790.21808"
+     y="-159.98314"
+     style="font-size:38.53162003px;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#f1dcdc;fill-opacity:1;font-family:Bernard MT Condensed;-inkscape-font-specification:'Bernard MT Condensed,'"
+     id="tspan6147-0-8-8-7">   MANUAL </tspan></tspan></textPath></text>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#edf2ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path5663"
+       sodipodi:cx="-258.57144"
+       sodipodi:cy="-1943.3522"
+       sodipodi:rx="61.428574"
+       sodipodi:ry="61.428574"
+       d="m -197.14287,-1943.3522 a 61.428574,61.428574 0 1 1 -122.85715,0 61.428574,61.428574 0 1 1 122.85715,0 z"
+       transform="translate(-631.42857,125.71429)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <rect
+       style="color:#000000;fill:#edf2ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5665"
+       width="117.14286"
+       height="317.14285"
+       x="-948.57141"
+       y="-1730.495"
+       ry="58.57143"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <path
+       style="fill:#e3ee49;fill-opacity:0.39572191;stroke:none"
+       d="m -628.29183,-1807.7761 c 0,63.3059 -151.1791,94.0048 -274.5342,2.8041 -89.9301,-66.4881 -232.84227,66.5462 -232.84227,3.2402 0,-63.3059 82.0533,-169.0253 235.53157,-169.0253 153.4783,0 271.8449,99.6749 271.8449,162.981 z"
+       id="path7971-4-3-1-4-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfo.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <path
+       style="color:#000000;fill:#27ff00;fill-opacity:1;fill-rule:nonzero;stroke:#143600;stroke-width:6.07199955;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -101.07185,-1610.5342 c -4.3565,-4.5399 -31.861,17.7012 -44.8655,40.5591 -7.214,12.6803 -13.2268,26.2988 -15.7873,35.1471 -2.714,-4.8186 -6.7675,-17.8897 -11.1571,-23.6377 -11.48227,-15.0355 -32.56627,-22.8836 -35.73847,-20.7837 -3.1721,2.0999 15.7383,15.185 27.22057,30.2205 7.7994,10.2129 13.171,23.9814 18.4837,27.4777 0.3432,0.7471 0.8379,1.2659 1.4996,1.5267 0.5053,0.1991 1.0912,0.24 1.7449,0.137 0.9355,0.2884 1.6852,0.2823 2.2004,-0.059 0.3374,-0.2234 0.5533,-0.5859 0.6727,-1.0634 7.468,-4.246 11.1465,-24.4412 22.2206,-43.9061 13.8714,-24.3818 24.888,-41.2719 29.4862,-37.3359 8.337095,7.1363 7.499595,-4.6562 4.0197,-8.2826 z"
+       id="path3633-6-7-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sscssscscscsss"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <rect
+       style="color:#000000;fill:#263c4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76603258;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6171-5-6-4-4"
+       width="543.20715"
+       height="183.18697"
+       x="-340.1528"
+       y="-2136.8582"
+       ry="91.593483"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <rect
+       ry="90.348198"
+       y="-2157.8838"
+       x="-337.07663"
+       height="180.6964"
+       width="535.91962"
+       id="rect6169-5-0-0-2"
+       style="color:#000000;fill:#00487e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:6.5999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.7326203;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <path
+       inkscape:export-ydpi="9.878252"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       transform="matrix(1.1725548,0,0,1.171364,4398.6636,-2746.1846)"
+       d="m -3543.6151,866.49414 a 266.68027,270.72089 0 1 1 -533.3606,0 266.68027,270.72089 0 1 1 533.3606,0 z"
+       sodipodi:ry="270.72089"
+       sodipodi:rx="266.68027"
+       sodipodi:cy="866.49414"
+       sodipodi:cx="-3810.2954"
+       id="path4489-8-7-1-2-9-3"
+       style="fill:#dd02b8;fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6133-52-8-8-2"
+       d="m -234.01502,-2009.2097 c 247.347465,-221.8679 490.11457,198.9946 490.11457,198.9946"
+       style="fill:none;stroke:none"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <text
+       transform="scale(1.0006466,0.99935382)"
+       xml:space="preserve"
+       style="font-size:22.65771484px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-71.130508"
+       y="-1571.6754"
+       id="text5078-6-6-8-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252"><tspan
+         sodipodi:role="line"
+         id="tspan5080-1-5-2-1"
+         x="-71.130508"
+         y="-1571.6754"> </tspan></text>
+    <text
+       inkscape:export-ydpi="9.878252"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       transform="matrix(2.1182737,0,0,2.1155371,1424.1138,-1927.2758)"
+       sodipodi:linespacing="125%"
+       id="text6143-0-3-6-5-6"
+       style="font-size:10.703228px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f1dcdc;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><textPath
+         id="textPath6149-9-1-1-5-8"
+         xlink:href="#path6133-5-9-6-1-6"><tspan
+   style="fill:#f1dcdc;fill-opacity:1"
+   id="tspan6145-0-9-3-1-5"><tspan
+     x="-790.21808"
+     y="-159.98314"
+     style="font-size:38.53162003px;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#f1dcdc;fill-opacity:1;font-family:Bernard MT Condensed;-inkscape-font-specification:'Bernard MT Condensed,'"
+     id="tspan6147-0-8-8-7-7">   MANUAL </tspan></tspan></textPath></text>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#edf2ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path5663-6"
+       sodipodi:cx="-258.57144"
+       sodipodi:cy="-1943.3522"
+       sodipodi:rx="61.428574"
+       sodipodi:ry="61.428574"
+       d="m -197.14287,-1943.3522 a 61.428574,61.428574 0 1 1 -122.85715,0 61.428574,61.428574 0 1 1 122.85715,0 z"
+       transform="translate(185.71431,65.714281)"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <rect
+       style="color:#000000;fill:#edf2ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.25600004;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5665-1"
+       width="117.14286"
+       height="317.14285"
+       x="-131.42854"
+       y="-1790.495"
+       ry="58.57143"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
+    <path
+       style="fill:#e3ee49;fill-opacity:0.39572191;stroke:none"
+       d="m 188.85105,-1867.7761 c 0,63.3059 -151.179105,94.0048 -274.534205,2.8041 -89.930095,-66.4881 -232.842265,66.5462 -232.842265,3.2402 0,-63.3059 82.0533,-169.0253 235.531565,-169.0253 153.4783,0 271.844905,99.6749 271.844905,162.981 z"
+       id="path7971-4-3-1-4-4-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\gdx\seesawcircus\android\assets\botoninfop.png"
+       inkscape:export-xdpi="9.878252"
+       inkscape:export-ydpi="9.878252" />
   </g>
 </svg>
