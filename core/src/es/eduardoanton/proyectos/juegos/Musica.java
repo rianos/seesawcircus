@@ -35,7 +35,10 @@ public class Musica {
 	}
 
 	public static boolean isPlaying() {
-		return musica.isPlaying();
+		if (GameWorld.modemusic){
+			return musica.isPlaying();
+		}
+		return false;
 		
 	}
 	
@@ -44,8 +47,10 @@ public class Musica {
 	}
 
 	public static void stop(){
-		if (musica != null && musica.isPlaying()){
-			musica.stop();
+		if (GameWorld.modemusic){
+			if (musica != null && musica.isPlaying()){
+				musica.stop();
+			}
 		}
 	}
 	
