@@ -155,10 +155,10 @@ public class Payaso {
 				}
 			}else if (posicion.x <= 0 ){
 				velocidad.x = velocidad.x * -1;
-				posicion.x = 0;
+				posicion.x = 1;
 			}else if (posicion.x >= SeeSawCircus.screenwidth - dimensiones.width ){
 				velocidad.x = velocidad.x * -1;
-				posicion.x = SeeSawCircus.screenwidth - dimensiones.width;
+				posicion.x = SeeSawCircus.screenwidth - dimensiones.width - 1;
 			}else if (posicion.y < (game.trampolin.dimensiones.height/2 + game.trampolin.posicion.y) && (velocidad.y < vellimit) ){
 				if ( game.trampolin.view == TrampolinState.LEFT){
 					if ( posicion.x + dimensiones.width > game.trampolin.posicion.x && posicion.x + dimensiones.width/2 < game.trampolin.posicion.x + (game.trampolin.dimensiones.width /2 )){

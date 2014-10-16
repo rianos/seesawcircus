@@ -236,7 +236,7 @@ public class FilaObjetivos {
 	public void generaPiedras(){
 		long tmp=0;
 		int j;
-		if ( this.ID == 4){
+		if ( this.ID == 0){
 			tmp = (long) (game.scoreboard / 8000);		
 		}else if (this.ID  == 2){
 			tmp = (long) (game.scoreboard / 3500);
