@@ -47,6 +47,8 @@ public class SeeSawCircus extends Game {
 	private void loadassets(){
 		asset = new AssetManager();
 		asset.load("creditsidea.png", Texture.class);
+		asset.load("fondoinstrucciones.png", Texture.class);
+		asset.load("jugar.png", Texture.class);
 		asset.load("creditsart.png", Texture.class);
 		asset.load("creditsmusic.png", Texture.class);
 		asset.load("creditssound.png", Texture.class);

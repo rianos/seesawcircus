@@ -19,7 +19,7 @@ public class InstructionsScreen implements Screen {
 	private SpriteBatch batch;
 	private OrthographicCamera cam;
 	private Stage stage;
-	private Actor capa,capa2,capa3,capa4,i4,fondo,trampolin,trampolin2;
+	private Actor capa,capa2,capa3,capa4,i4,fondo,trampolin,trampolin2,letrero;
 	private Actor circulo2,circulo,payaso1,payaso2,dedo,dedor,dedogl,dedogr,i1,i2,i3,salto1,salto2,salto3,payaso3;
 	public static ActorGenerico botoninicio,botonhome;
 	private Group trampolines,trampolines2,info1,info2,info3,info4;
@@ -86,7 +86,8 @@ public class InstructionsScreen implements Screen {
 
 	}
 	public void reset(){
-		fondo= new ActorGenerico(0,0,"fondo.png");
+		fondo= new ActorGenerico(0,0,"fondoinstrucciones.png");
+		letrero= new ActorGenerico(370,300,"jugar.png");
 		trampolin = new ActorGenerico(410,40,"trampolin.png");
 		trampolin2 = new ActorGenerico(410,40,"trampolin2.png");
 		circulo = new ActorGenerico(475,40, "redondo.png");
@@ -105,13 +106,16 @@ public class InstructionsScreen implements Screen {
 		botonhome = new ActorGenerico(930,500,"botonhomepe.png");
 		i1 = new ActorGenerico(50,400,"i1.png");
 		i2 = new ActorGenerico(525,400,"i2.png");
-		i3 = new ActorGenerico(330,450,"i3.png");
+		i3 = new ActorGenerico(320,450,"i3.png");
 		i4 = new ActorGenerico(330,450,"i4.png");
 		salto1 = new ActorGenerico(485,60,"salto1.png");
 		salto2 = new ActorGenerico(310,70,"salto2.png");
 		salto3 = new ActorGenerico(065,67,"salto3.png");
 		botoninicio = new ActorGenerico(430,40,"botoninicio.png");
 		botoninicio.addAction(sequence(
+				visible(false),delay(28),visible(true)
+				));
+		letrero.addAction(sequence(
 				visible(false),delay(28),visible(true)
 				));
 		trampolines = new Group();
@@ -339,6 +343,7 @@ public class InstructionsScreen implements Screen {
 		stage.addActor(dedogl);
 		stage.addActor(dedogr);
 		stage.addActor(botoninicio);
+		stage.addActor(letrero);
 		iproc = new InputProcesadorInstructions(cam,this);
 	}
 
