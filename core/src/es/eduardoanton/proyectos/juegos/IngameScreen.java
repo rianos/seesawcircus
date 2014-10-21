@@ -366,7 +366,9 @@ public class IngameScreen implements Screen{
 	public void show() {
 		Gdx.input.setInputProcessor(iproc);
 		Gdx.input.setCatchBackKey(true);
-		Musica.playRandom();	
+		if ( GameWorld.modemusic){
+			Musica.playRandom();
+		}
 		marcador.setColor(Color.WHITE);
 		tmp = batch.getColor();
 		tmp.a = 1f;
