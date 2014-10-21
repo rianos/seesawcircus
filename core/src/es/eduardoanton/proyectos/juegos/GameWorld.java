@@ -175,7 +175,9 @@ public class GameWorld {
 		trampolin.posicion.y = 40;
 		jumpiniS.play();
 		timeready = 0;
-		Musica.setVolume(1f);
+		if ( GameWorld.modemusic){
+			Musica.setVolume(1f);
+		}
 	}
 	
 	public void update(float delta){
@@ -204,7 +206,7 @@ public class GameWorld {
 			}
 			if (gamestate == GameState.RUNNING || gamestate == GameState.DEATH){
 				updatetrapecio(delta);
-				if (!Musica.isPlaying()){
+				if (GameWorld.modemusic && !Musica.isPlaying() ) {
 					Musica.playRandom();
 				}
 				trampolin.update(delta);
