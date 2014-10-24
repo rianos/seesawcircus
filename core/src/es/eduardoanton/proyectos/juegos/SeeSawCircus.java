@@ -18,7 +18,12 @@ public class SeeSawCircus extends Game {
 	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen,creditsscreen,instructionscreen;
 	public static GameWorld gamew;
 	public static Preferences prefs;
+	public static IGoogleServices igs;
 	
+	
+	public SeeSawCircus(IGoogleServices igs){
+		SeeSawCircus.igs = igs;
+	}
 	
 	@Override
 	public void create() {
