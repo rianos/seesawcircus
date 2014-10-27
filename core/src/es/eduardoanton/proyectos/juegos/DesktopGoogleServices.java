@@ -14,20 +14,20 @@ public class DesktopGoogleServices implements IGoogleServices {
 	}
 
 	@Override
-	public void enviarPuntosGS(long score, String gameMode) {
+	public void enviarPuntosGS(long score, boolean gameMode,boolean record) {
 		System.out.println("Enviando puntos en GS en modo " + gameMode);
 
 	}
 
 	@Override
-	public void mostrarPuntosGS(String gameMode) {
+	public void mostrarPuntosGS(boolean gameMode) {
 		System.out.println("Mostrando puntos en GS " + gameMode);
 
 	}
 
 	@Override
 	public boolean estaLoginGS() {
-		System.out.println("Viendo si esta logeado en GS");
+		//System.out.println("Viendo si esta logeado en GS");
 		return false;
 	}
 

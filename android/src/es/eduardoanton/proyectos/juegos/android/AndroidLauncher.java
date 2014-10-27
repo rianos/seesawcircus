@@ -35,6 +35,7 @@ public class AndroidLauncher extends AndroidApplication implements IGoogleServic
 				
 			}
 		};
+		_gameHelper.setMaxAutoSignInAttempts(0);
 		_gameHelper.setup(gameHelperListener);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
 		config.useAccelerometer = false;
@@ -73,22 +74,26 @@ public class AndroidLauncher extends AndroidApplication implements IGoogleServic
 	}
 
 	@Override
-	public void enviarPuntosGS(long score, String gameMode) {
+	public void enviarPuntosGS(long score, boolean gameModeChildren,boolean record) {
 		if ( estaLoginGS() ){
-			if ( gameMode.equals("hard")){
+			if ( ! gameModeChildren){
 				Games.Leaderboards.submitScore(_gameHelper.getApiClient(), getString(R.string.leaderboard_id), score);
-				startActivityForResult(Games.Leaderboards.getLeaderboardIntent(_gameHelper.getApiClient(), getString(R.string.leaderboard_id)), 434);
+				if ( record){
+					startActivityForResult(Games.Leaderboards.getLeaderboardIntent(_gameHelper.getApiClient(), getString(R.string.leaderboard_id)), 434);
+				}
 			}else{
 				Games.Leaderboards.submitScore(_gameHelper.getApiClient(), getString(R.string.leaderboardnet_id), score);
-				startActivityForResult(Games.Leaderboards.getLeaderboardIntent(_gameHelper.getApiClient(), getString(R.string.leaderboardnet_id)), 434);
+				if ( record){
+					startActivityForResult(Games.Leaderboards.getLeaderboardIntent(_gameHelper.getApiClient(), getString(R.string.leaderboardnet_id)), 434);
+				}
 			}
 		}
 	}
 
 	@Override
-	public void mostrarPuntosGS(String gameMode) {
+	public void mostrarPuntosGS(boolean gameModeChildren) {
 		if ( estaLoginGS() ){
-			if ( gameMode.equals("hard")){
+			if ( ! gameModeChildren ){
 				startActivityForResult(Games.Leaderboards.getLeaderboardIntent(_gameHelper.getApiClient(), getString(R.string.leaderboard_id)), 434);
 			}else{
 				startActivityForResult(Games.Leaderboards.getLeaderboardIntent(_gameHelper.getApiClient(), getString(R.string.leaderboardnet_id)), 434);
