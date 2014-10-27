@@ -18,7 +18,12 @@ public class SeeSawCircus extends Game {
 	public static Screen mainscreen,ingamescreen,gameoverscreen,loadingscreen,creditsscreen,instructionscreen;
 	public static GameWorld gamew;
 	public static Preferences prefs;
+	public static IGoogleServices igs;
 	
+	
+	public SeeSawCircus(IGoogleServices igs){
+		SeeSawCircus.igs = igs;
+	}
 	
 	@Override
 	public void create() {
@@ -36,6 +41,7 @@ public class SeeSawCircus extends Game {
 		creditsscreen = new CreditsScreen(this);
 		instructionscreen = new InstructionsScreen(this);
 		this.setScreen(mainscreen);
+		//this.setScreen(gameoverscreen);
 	}
 	
 	@Override
@@ -86,6 +92,7 @@ public class SeeSawCircus extends Game {
 		asset.load("botoncreditosp.png", Texture.class);
 		asset.load("botonmusicaon.png", Texture.class);
 		asset.load("botonmusicaoff.png", Texture.class);
+		asset.load("botonleader.png", Texture.class);
 		asset.load("botoninfo.png", Texture.class);
 		asset.load("botoninfop.png", Texture.class);
 		asset.load("salir.png", Texture.class);
@@ -180,6 +187,8 @@ public class SeeSawCircus extends Game {
 		asset.load("botonreloadpep.png", Texture.class);
 		asset.load("botonhomepe.png", Texture.class);
 		asset.load("botonhomepep.png", Texture.class);
+		asset.load("botongson.png", Texture.class);
+		asset.load("botongsoff.png", Texture.class);
 		for ( String musica : Musica.lista){
 			asset.load(musica, Music.class);
 		}

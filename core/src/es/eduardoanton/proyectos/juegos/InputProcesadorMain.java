@@ -36,6 +36,7 @@ public class InputProcesadorMain implements InputProcessor{
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
+		Gdx.app.log("POS", "X " + touchpos.x + " Y: " + touchpos.y);
 		if (touchpos.x > 400 && touchpos.x < 611 && touchpos.y > 20 && touchpos.y < 214 && mscreen.botoninicio.isVisible()){
 			mscreen.botoninicio.setTexture("botoniniciop.png");
 			return true;
@@ -73,7 +74,14 @@ public class InputProcesadorMain implements InputProcessor{
 			Gdx.app.exit();
 			return true;
 		}
-		
+		if (touchpos.x > 0 && touchpos.x < 104 && touchpos.y > 0 && touchpos.y < 105 ){
+			if ( ! SeeSawCircus.igs.estaLoginGS()){
+				SeeSawCircus.igs.entrarGS();				
+			}else{
+				SeeSawCircus.igs.salirGS();
+			}
+			return true;
+		}
 		if (touchpos.x > 55 && touchpos.x < 267 && touchpos.y > 227 && touchpos.y < 421 && mscreen.botonninos.isVisible()){
 			SeeSawCircus.gamew.modechildren = !SeeSawCircus.gamew.modechildren;
 			MainScreen.clic.play();

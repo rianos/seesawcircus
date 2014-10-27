@@ -21,7 +21,7 @@ public class GameOverScreen implements Screen{
 	public static Sound clic;
 	private InputProcessor iproc;
 	public BitmapFont marcador,fuente;
-	public static Texture botonhome,botonreload,botonhomep,botonreloadp,salida,salidap;
+	public static Texture botonhome,botonreload,botonhomep,botonreloadp,salida,salidap,botonleader;
 	
 	public GameOverScreen (SeeSawCircus game){
 		cam = new OrthographicCamera();
@@ -50,6 +50,7 @@ public class GameOverScreen implements Screen{
 		botonreload = SeeSawCircus.asset.get("botonreload.png");
 		botonhomep = SeeSawCircus.asset.get("botonhomep.png");
 		botonreloadp = SeeSawCircus.asset.get("botonreloadp.png");
+		botonleader = SeeSawCircus.asset.get("botonleader.png");
 		corona2 = SeeSawCircus.asset.get("recordp.png");
 		reset();
 	}
@@ -98,6 +99,7 @@ public class GameOverScreen implements Screen{
 		batch.draw(salida,930,500);
 		batch.draw(botonreload, 550, 40);
 		batch.draw(botonhome, 800, 40);
+		batch.draw(botonleader, 710,230);
 		batch.draw(trampolin,trampolinp.x,trampolinp.y);
 		fuente.draw(batch,"" + SeeSawCircus.gamew.flipsC ,trampolinp.x + billete.getWidth() + 20, trampolinp.y + 45);
 		batch.draw(caramelo,caramelop.x,caramelop.y);
@@ -121,11 +123,14 @@ public class GameOverScreen implements Screen{
 		fuente.setColor(Color.GRAY);
 		fuente.draw(batch, "" + SeeSawCircus.prefs.getLong("record",0), 582 - (fuente.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2),575);
 		batch.draw(corona2, 578 - (fuente.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,535);
+	
 		if (SeeSawCircus.gamew.isrecord){
 			fuente.setColor(Color.YELLOW);
-			fuente.draw(batch,"NUEVO RECORD",570,265);
+			//fuente.draw(batch,"NUEVO RECORD",570,265);
+			fuente.draw(batch,"NUEVO RECORD",570,465);
 			fuente.setColor(Color.BLACK);
-			batch.draw(corona,465,215 );
+			//batch.draw(corona,465,215 );
+			batch.draw(corona,465,415 );
 		}else{
 			fuente.draw(batch,"Record a conseguir: " + SeeSawCircus.gamew.record,0,0);
 		}
@@ -149,6 +154,9 @@ public class GameOverScreen implements Screen{
 				SeeSawCircus.prefs.putLong("record", SeeSawCircus.gamew.record);
 			}
 			SeeSawCircus.prefs.flush();
+		}
+		if ( SeeSawCircus.igs.estaLoginGS()){
+			SeeSawCircus.igs.enviarPuntosGS((long) SeeSawCircus.gamew.record, SeeSawCircus.gamew.modechildren, SeeSawCircus.gamew.isrecord);
 		}
 		Gdx.input.setInputProcessor(iproc);	
 	}

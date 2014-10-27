@@ -27,7 +27,7 @@ public class MainScreen implements Screen{
 	private Stage stage;
 	private Actor fondoincio,nube1,nube2,circo,letrero,letreroe;
 	private Actor payaso1,payaso2,globos1,globos2,gato;
-	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos,botonmusica,botoninfo;
+	public  ActorGenerico botoninicio,salir,botonninos,botoncreditos,botonmusica,botoninfo,botongs;
 	public BitmapFont marcador;
 	private Texture corona;
 	
@@ -55,6 +55,10 @@ public class MainScreen implements Screen{
 	    }else{
 	    	botonninos = new ActorGenerico(87f,245f,"botonninosoff.png");
 	    }
+	    botongs = new ActorGenerico(17,12,"botongsoff.png");
+	    botongs.addAction(sequence(
+				visible(false),delay(11),visible(true)
+				));
 	    botonninos.addAction(sequence(
 				visible(false),delay(11),visible(true)
 				));
@@ -149,6 +153,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(botoninicio);
 	    stage.addActor(botoncreditos);
 	    stage.addActor(botoninfo);
+	    stage.addActor(botongs);
 	    stage.addActor(salir);
 	
 	}
@@ -169,6 +174,11 @@ public class MainScreen implements Screen{
 				batch.draw(corona, 532 - (marcador.getBounds("" + SeeSawCircus.prefs.getLong("record",0)).width/2) - 50,5);
 			}
 			batch.end();
+		}
+		if (SeeSawCircus.igs.estaLoginGS()){
+			botongs.setTexture("botongson.png");
+		}else{
+			botongs.setTexture("botongsoff.png");
 		}
 	}
 

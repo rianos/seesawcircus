@@ -55,6 +55,7 @@ public class InputProcesadorGameOver implements InputProcessor{
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 		Vector3 touchpos = new Vector3(screenX,screenY,0);
 		cam.unproject(touchpos);
+		Gdx.app.log("POS", "X " + touchpos.x + " Y: " + touchpos.y);
 		if (touchpos.x > 512 && touchpos.x < 720 && touchpos.y > 00 && touchpos.y < 220 ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.ingamescreen);
@@ -63,6 +64,13 @@ public class InputProcesadorGameOver implements InputProcessor{
 		if (touchpos.x > 760 && touchpos.x < 990 && touchpos.y > 0 && touchpos.y < 220 ){
 			MainScreen.clic.play();
 			this.game.setScreen(SeeSawCircus.mainscreen);
+			return true;
+		}
+		if (touchpos.x > 685 && touchpos.x < 800 && touchpos.y > 205 && touchpos.y < 315 ){
+			MainScreen.clic.play();
+			if (SeeSawCircus.igs.estaLoginGS()){
+				SeeSawCircus.igs.mostrarPuntosGS(SeeSawCircus.gamew.modechildren);
+			}
 			return true;
 		}
 		if (touchpos.x > 900 && touchpos.x < 1024 && touchpos.y > 480 && touchpos.y < 600 ){
