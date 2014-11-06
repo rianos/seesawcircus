@@ -15,7 +15,7 @@ public class Musica {
 		if (GameWorld.modemusic){
 			i = MathUtils.random(lista.length - 1);
 			musica = SeeSawCircus.asset.get(lista[i]);
-			musica.setVolume(0.5f);
+			musica.setVolume(0.2f);
 			musica.setLooping(false);
 			musica.play();
 		}

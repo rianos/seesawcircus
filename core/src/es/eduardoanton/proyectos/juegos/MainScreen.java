@@ -148,7 +148,7 @@ public class MainScreen implements Screen{
 	    stage.addActor(globos1);
 	    stage.addActor(globos2);
 	    stage.addActor(gato);
-	    stage.addActor(botonmusica);
+	    //stage.addActor(botonmusica);
 	    stage.addActor(botonninos);
 	    stage.addActor(botoninicio);
 	    stage.addActor(botoncreditos);
@@ -195,7 +195,7 @@ public class MainScreen implements Screen{
 		botoncreditos.setTexture("botoncreditos.png");
 		botoninfo.setTexture("botoninfo.png");
 		if ( GameWorld.modemusic){
-			this.musica.setVolume(1f);
+			this.musica.setVolume(0.2f);
 			this.musica.setLooping(true);
 			this.musica.play();
 		}

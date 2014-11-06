@@ -96,7 +96,7 @@ public class InputProcesadorMain implements InputProcessor{
 			}
 			return true;
 		}
-		if (touchpos.x > 0 && touchpos.x < 103 && touchpos.y > 490 && touchpos.y < 600 && mscreen.botonmusica.isVisible()){
+		/*if (touchpos.x > 0 && touchpos.x < 103 && touchpos.y > 490 && touchpos.y < 600 && mscreen.botonmusica.isVisible()){
 			GameWorld.modemusic = !GameWorld.modemusic;
 			MainScreen.clic.play();
 			if ( GameWorld.modemusic){
@@ -111,7 +111,7 @@ public class InputProcesadorMain implements InputProcessor{
 				mscreen.musica.stop();
 			}
 			return true;
-		}
+		}*/
 		
 		if (touchpos.x > 790 && touchpos.x < 995 && touchpos.y > 224 && touchpos.y < 440 && mscreen.botoncreditos.isVisible() ){
 			MainScreen.clic.play();
